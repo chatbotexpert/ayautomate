@@ -1,5 +1,49 @@
 @import "tailwindcss";
 
+@theme {
+  --font-sans: var(--font-lexend), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-lexend), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --font-serif: var(--font-lexend);
+  --color-primary-purple: #8082c1;
+  --color-text-soft: #a89db0;
+  --color-text-muted: #a89db0;
+  --color-muted-foreground: #a89db0;
+  --color-border-subtle: #ffffff14;
+  --color-border-strong: #ffffff26; /* Slightly stronger than subtle for cards */
+  --color-card: #1D1D29;
+  --color-border: #ffffff1a; /* Background for cards */
+}
+
+.text-primary-purple { color: var(--color-primary-purple); }
+.text-text-soft { color: var(--color-text-soft); }
+.text-text-muted { color: var(--color-text-muted); }
+.text-muted-foreground { color: var(--color-muted-foreground); }
+.border-border-subtle { border-color: var(--color-border-subtle); }
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes blob {
+  0% { transform: translate(0px, 0px) scale(1); }
+  33% { transform: translate(30px, -50px) scale(1.1); }
+  66% { transform: translate(-20px, 20px) scale(0.9); }
+  100% { transform: translate(0px, 0px) scale(1); }
+}
+.animate-blob {
+  animation: blob 7s infinite;
+}
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+@keyframes infinite-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(calc(-50% - 1.5rem)); }
+}
+.animate-infinite-scroll {
+  animation: infinite-scroll 40s linear infinite;
+}
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -8,19 +52,31 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-lexend), ui-sans-serif, system-ui, sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0f0f15;
+    --foreground: #f0edee;
+    --card: #1d1d29;
+    --muted: #1a1525;
+    --muted-foreground: #a89db0;
+    --border: #ffffff14;
+    --primary-purple: #8082c1;
+    --navbar-bg: #1a1525;
+    --hero-dot-color: #f0edee4d;
+    --hero-grid-color: #f0edee24;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+}
+
+@keyframes ay-marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-50% - 1rem)); }
 }

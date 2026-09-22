@@ -1,0 +1,54 @@
+<style>
+          @media (min-width: 768px) {
+            @keyframes beamV {
+              0% { top: -150px; opacity: 0; }
+              10% { opacity: 1; }
+              90% { opacity: 1; }
+              100% { top: 100%; opacity: 0; }
+            }
+            @keyframes beamH {
+              0% { left: -150px; opacity: 0; }
+              10% { opacity: 1; }
+              90% { opacity: 1; }
+              100% { left: 100%; opacity: 0; }
+            }
+            @keyframes beamHRev {
+              0% { right: -150px; opacity: 0; }
+              10% { opacity: 1; }
+              90% { opacity: 1; }
+              100% { right: 100%; opacity: 0; }
+            }
+            .animate-beam-v {
+              animation: beamV 6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+            }
+            .animate-beam-h {
+              animation: beamH 6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+            }
+            .animate-beam-h-rev {
+              animation: beamHRev 6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+            }
+          }
+        </style>
+<style>
+          @keyframes infinite-scroll {
+            from { transform: translateX(0); }
+            to { transform: translateX(-50%); }
+          }
+          .animate-infinite-scroll {
+            animation: infinite-scroll 40s linear infinite;
+          }
+          .animate-infinite-scroll:hover {
+            animation-play-state: paused;
+          }
+        </style>
+<style>
+          @keyframes beamV {
+            0% { top: -150px; opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { top: 100%; opacity: 0; }
+          }
+          .animate-beam-v {
+            animation: beamV 6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+          }
+        </style>
