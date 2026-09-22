@@ -54,7 +54,7 @@ export default function RootLayout({
             </div>
           </div>
 
-          <Footer />
+          
         </ThemeProvider>
       </body>
     </html>
