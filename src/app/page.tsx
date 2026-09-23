@@ -15,14 +15,14 @@ export default function Home() {
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
       <section className="flex flex-col overflow-hidden text-black dark:text-[#f0edee] w-full relative h-screen max-h-screen transition-colors duration-500">
-        <div aria-hidden="true" className="absolute inset-0 z-[-1] pointer-events-none bg-no-repeat bg-cover bg-top opacity-75 dark:opacity-50" style={{ backgroundImage: "url('/hero-pixel-mountains.webp')" }}></div>
-        <div aria-hidden="true" className="absolute inset-0 z-[-1] pointer-events-none bg-gradient-to-b from-white/30 via-white/10 to-white/60 dark:from-[#0E0E14]/30 dark:via-[#0E0E14]/10 dark:to-[#0E0E14]/60"></div>
+        <div aria-hidden={true} className="absolute inset-0 z-[-1] pointer-events-none bg-no-repeat bg-cover bg-top opacity-75 dark:opacity-50" style={{ backgroundImage: "url('/hero-pixel-mountains.webp')" }}></div>
+        <div aria-hidden={true} className="absolute inset-0 z-[-1] pointer-events-none bg-gradient-to-b from-white/30 via-white/10 to-white/60 dark:from-[#0E0E14]/30 dark:via-[#0E0E14]/10 dark:to-[#0E0E14]/60"></div>
         
         {/* Decorative Grid Overlays */}
         <div className="absolute inset-0 z-0 pointer-events-none dark:hidden" style={{ backgroundImage: "radial-gradient(circle, rgba(120,120,120,0.3) 1.2px, transparent 1.2px)", backgroundSize: "7px 7px", backgroundPosition: "3.5px 3.5px", WebkitMaskImage: "radial-gradient(ellipse 80% 60% at 50% 30%, black 10%, rgba(0,0,0,0.7) 30%, rgba(0,0,0,0.3) 50%, transparent 70%)", maskImage: "radial-gradient(ellipse 80% 60% at 50% 30%, black 10%, rgba(0,0,0,0.7) 30%, rgba(0,0,0,0.3) 50%, transparent 70%)" }}></div>
         <div className="absolute inset-0 z-0 pointer-events-none hidden dark:block" style={{ backgroundImage: "radial-gradient(circle, #f0edee4d 1.2px, transparent 1.2px)", backgroundSize: "7px 7px", backgroundPosition: "3.5px 3.5px", WebkitMaskImage: "radial-gradient(ellipse 80% 60% at 50% 30%, black 10%, rgba(0,0,0,0.7) 30%, rgba(0,0,0,0.3) 50%, transparent 70%)", maskImage: "radial-gradient(ellipse 80% 60% at 50% 30%, black 10%, rgba(0,0,0,0.7) 30%, rgba(0,0,0,0.3) 50%, transparent 70%)" }}></div>
         
-        <svg className="absolute w-0 h-0 hidden md:block" aria-hidden="true"><defs><filter id="grid-turbulence" x="0%" y="0%" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="4" seed="5" stitchTiles="stitch" result="noise"></feTurbulence><feColorMatrix type="saturate" values="0" in="noise" result="mono"></feColorMatrix><feComponentTransfer in="mono" result="faded"><feFuncA type="linear" slope="0.06" intercept="0"></feFuncA></feComponentTransfer><feBlend in="SourceGraphic" in2="faded" mode="overlay"></feBlend></filter></defs></svg>
+        <svg className="absolute w-0 h-0 hidden md:block" aria-hidden={true}><defs><filter id="grid-turbulence" x="0%" y="0%" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="4" seed="5" stitchTiles="stitch" result="noise"></feTurbulence><feColorMatrix type="saturate" values="0" in="noise" result="mono"></feColorMatrix><feComponentTransfer in="mono" result="faded"><feFuncA type="linear" slope="0.06" intercept="0"></feFuncA></feComponentTransfer><feBlend in="SourceGraphic" in2="faded" mode="overlay"></feBlend></filter></defs></svg>
         
         <div className="absolute inset-0 z-0 pointer-events-none" style={{ WebkitMaskImage: "linear-gradient(to bottom, transparent 40%, rgba(0,0,0,0.3) 60%, rgba(0,0,0,0.5) 100%)", maskImage: "linear-gradient(to bottom, transparent 40%, rgba(0,0,0,0.3) 60%, rgba(0,0,0,0.5) 100%)" }}>
           <div className="absolute inset-0 md:hidden dark:hidden" style={{ backgroundImage: "linear-gradient(rgba(120,120,120,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(120,120,120,0.1) 1px, transparent 1px)", backgroundSize: "32px 32px" }}></div>
@@ -58,14 +58,14 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 xl:gap-4">
               <button className="relative z-20 group inline-flex items-center justify-center gap-3 px-8 sm:px-12 py-4 sm:py-6 bg-black dark:bg-[#f0edee] text-white dark:text-[#0E0E14] font-bold uppercase text-xs transition-all hover:bg-[#8082C1] dark:hover:bg-[#8082C1] hover:text-white dark:hover:text-white w-full sm:w-auto sm:min-w-[250px] rounded-none">
                 Book a Free Strategy Call
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-arrow-down-right h-5 w-5 group-hover:rotate-45 transition-transform" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-arrow-down-right h-5 w-5 group-hover:rotate-45 transition-transform" aria-hidden={true}>
                   <path d="m7 7 10 10"></path>
                   <path d="M17 7v10H7"></path>
                 </svg>
               </button>
               <button className="relative z-20 group inline-flex items-center justify-center gap-3 px-8 sm:px-12 py-4 sm:py-6 bg-gray-100 dark:bg-[#130f1a] text-black dark:text-[#f0edee] font-bold uppercase text-xs transition-all hover:bg-gray-200 dark:hover:bg-[#130f1a]/80 hover:text-[#8082c1] dark:hover:text-[#8082c1] w-full sm:w-auto sm:min-w-[250px] rounded-none">
                 Explore Solutions
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-arrow-down-right h-5 w-5 group-hover:rotate-45 transition-transform" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-arrow-down-right h-5 w-5 group-hover:rotate-45 transition-transform" aria-hidden={true}>
                   <path d="m7 7 10 10"></path>
                   <path d="M17 7v10H7"></path>
                 </svg>
@@ -91,7 +91,7 @@ export default function Home() {
       <div className="flex justify-center py-8">
         <button type="button" className="relative z-20 group inline-flex items-center justify-center gap-3 px-8 sm:px-12 py-4 sm:py-6 font-bold uppercase text-xs transition-all w-full sm:w-auto sm:min-w-[250px] bg-black dark:bg-[#f0edee] text-white dark:text-black hover:bg-[#8082C1] hover:text-white dark:hover:bg-[#8082C1] dark:hover:text-white">
           Book a Call
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-arrow-down-right h-5 w-5 group-hover:rotate-45 transition-transform" aria-hidden="true"><path d="m7 7 10 10"></path><path d="M17 7v10H7"></path></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-arrow-down-right h-5 w-5 group-hover:rotate-45 transition-transform" aria-hidden={true}><path d="m7 7 10 10"></path><path d="M17 7v10H7"></path></svg>
         </button>
       </div>
 

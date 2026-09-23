@@ -59,7 +59,7 @@ export default function MiniTestimonialSlider() {
             className="p-2.5 -m-1 flex items-center cursor-pointer"
             onClick={() => setActiveIndex(idx)}
           >
-            <span aria-hidden="true" className={`block h-1.5 rounded-full transition-all ${idx === activeIndex ? 'w-6 bg-primary-purple' : 'w-1.5 bg-muted-foreground/30 hover:bg-muted-foreground/60'}`}></span>
+            <span aria-hidden={true} className={`block h-1.5 rounded-full transition-all ${idx === activeIndex ? 'w-6 bg-primary-purple' : 'w-1.5 bg-muted-foreground/30 hover:bg-muted-foreground/60'}`}></span>
           </button>
         ))}
       </div>

@@ -6,7 +6,7 @@ export default function CallToActionSection() {
       {/* The White Box CTA */}
       <div className="relative overflow-hidden border border-foreground/10 bg-foreground text-background mb-24 md:mb-32">
         <div
-          aria-hidden="true"
+          aria-hidden={true}
           className="pointer-events-none absolute inset-0 [background:radial-gradient(700px_350px_at_70%_50%,rgba(128,130,193,0.25),transparent_70%)]"
         ></div>
         <div className="relative grid grid-cols-1 lg:grid-cols-12 gap-8 px-7 md:px-12 py-12 md:py-16 items-center">
@@ -27,7 +27,7 @@ export default function CallToActionSection() {
               href="https://cal.com/walidboulanouar/consultation"
             >
               <span
-                aria-hidden="true"
+                aria-hidden={true}
                 className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/60 to-transparent"
               ></span>
               Book a 15-min call
