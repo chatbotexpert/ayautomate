@@ -18,6 +18,15 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
     }
     
     const html = await res.text();
+    
+    // Extract CSS links to ensure perfect styling
+    const cssMatches = [...html.matchAll(/<link[^>]*rel="stylesheet"[^>]*href="([^"]+)"/g)];
+    const cssLinks = cssMatches.map(m => {
+      let href = m[1];
+      if (href.startsWith('/')) href = 'https://www.ayautomate.com' + href;
+      return href;
+    });
+    
     const mainMatch = html.match(/<main[^>]*>([\s\S]*?)<\/main>/);
     if (!mainMatch) {
       notFound();
@@ -45,11 +54,14 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
 
     return (
       <div className="flex flex-col min-h-screen bg-black">
+        {cssLinks.map((href, i) => (
+          <link key={i} rel="stylesheet" href={href} />
+        ))}
         <Navbar />
         <div className="pt-20">
           <main 
             dangerouslySetInnerHTML={{ __html: content }} 
-            className="min-h-screen"
+            className="min-h-screen w-full"
           />
         </div>
         <DeployAutomationSection />
