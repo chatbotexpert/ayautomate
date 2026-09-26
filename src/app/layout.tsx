@@ -27,7 +27,7 @@ export default function RootLayout({
       className={`${lexend.variable} font-sans h-full antialiased`}
     >
       <body className="min-h-full flex flex-col transition-colors duration-300 bg-white dark:bg-[#0E0E14]">
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
+        <ThemeProvider attribute="class" defaultTheme="dark" forcedTheme="dark">
           <div className="relative flex flex-col min-h-screen">
             {/* Left and Right Global Borders */}
             <div className="fixed left-0 top-0 bottom-0 w-4 md:w-6 lg:w-8 bg-white dark:bg-[#0E0E14] border-r border-gray-200 dark:border-white/10 z-[60] pointer-events-none transition-colors duration-300"></div>

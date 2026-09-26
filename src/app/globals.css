@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:is(.dark *));
+
 @theme {
   --font-sans: var(--font-lexend), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-lexend), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
