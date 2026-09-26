@@ -74,14 +74,6 @@ export default function PlaybooksPage() {
 
       {/* HERO SECTION */}
       <section className="relative pt-32 pb-16 sm:pt-36 sm:pb-20 overflow-hidden border-t border-border">
-        {/* Grid background */}
-        <div
-          className="absolute inset-0 pointer-events-none"
-          style={{
-            backgroundImage: 'linear-gradient(to right, #80808012 1px, transparent 1px), linear-gradient(to bottom, #80808012 1px, transparent 1px)',
-            backgroundSize: '24px 24px',
-          }}
-        />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-4 text-center">
           {/* Badge */}
           <div className="mb-6 flex justify-center">
@@ -111,13 +103,6 @@ export default function PlaybooksPage() {
 
       {/* FILTER + CARDS SECTION */}
       <section className="relative py-12 border-t border-border overflow-hidden">
-        <div
-          className="absolute inset-0 pointer-events-none"
-          style={{
-            backgroundImage: 'linear-gradient(to right, #80808012 1px, transparent 1px), linear-gradient(to bottom, #80808012 1px, transparent 1px)',
-            backgroundSize: '24px 24px',
-          }}
-        />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-4">
           {/* Top Bar: Filters + Search + Layout Toggles */}
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mb-10">
