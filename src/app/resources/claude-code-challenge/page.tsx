@@ -11,10 +11,18 @@ export const metadata = {
   description: "Follow Walid's daily LinkedIn challenge - interactive presentations on mastering Claude Code for your business. One day at a time, from zero to full automation.",
 };
 
+interface ClaudeDay {
+  href: string;
+  day: string;
+  title: string;
+  desc: string;
+  status: string;
+}
+
 export default function ClaudeCodeChallengePage() {
   // Read data from json file
   const dataPath = path.join(process.cwd(), 'src/data/claude-days.json');
-  let days = [];
+  let days: ClaudeDay[] = [];
   try {
     const fileContent = fs.readFileSync(dataPath, 'utf8');
     days = JSON.parse(fileContent);
@@ -132,7 +140,7 @@ export default function ClaudeCodeChallengePage() {
           </div>
 
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {remainingDays.map((day, idx) => (
+            {remainingDays.map((day: ClaudeDay, idx: number) => (
               <a key={idx} href={day.href} target={day.href.startsWith('http') ? '_blank' : undefined} rel={day.href.startsWith('http') ? 'noopener noreferrer' : undefined}>
                 <div className="group relative rounded-xl border p-4 sm:p-5 transition-all border-border bg-card hover:border-primary-purple/50 hover:bg-card/80 h-full flex flex-col">
                   <div className="flex items-center justify-between mb-3">
