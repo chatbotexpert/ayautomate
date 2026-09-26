@@ -18,7 +18,7 @@ export async function generateStaticParams() {
 export default async function BlogPost({ params }: { params: Promise<{ slug: string }> }) {
   const resolvedParams = await params;
   const slug = resolvedParams.slug;
-  const filePath = path.join(process.cwd(), 'src/data/blog', \`\${slug}.json\`);
+  const filePath = path.join(process.cwd(), 'src/data/blog', slug + '.json');
   
   if (!fsModule.existsSync(filePath)) {
     notFound();
