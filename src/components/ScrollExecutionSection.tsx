@@ -65,9 +65,9 @@ const steps = [
   }
 ];
 
-const flattenContent = (contentArray) => {
-  let allItems = [];
-  contentArray.forEach(item => {
+const flattenContent = (contentArray: any[]) => {
+  let allItems: any[] = [];
+  contentArray.forEach((item: any) => {
       if (typeof item === 'string') {
           const chars = item.split('');
           chars.forEach(char => {
@@ -83,7 +83,7 @@ const flattenContent = (contentArray) => {
 export default function ScrollExecutionSection() {
   const [currentStep, setCurrentStep] = useState(0);
   const [subProgress, setSubProgress] = useState(0);
-  const containerRef = useRef(null);
+  const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
