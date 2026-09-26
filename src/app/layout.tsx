@@ -24,9 +24,9 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${lexend.variable} font-sans h-full antialiased`}
+      className={`${lexend.variable} font-sans h-full antialiased dark`}
     >
-      <body className="min-h-full flex flex-col transition-colors duration-300 bg-white dark:bg-[#0E0E14]">
+      <body className="min-h-full flex flex-col transition-colors duration-300 bg-[#0E0E14] text-white">
         <ThemeProvider attribute="class" defaultTheme="dark" forcedTheme="dark">
           <div className="relative flex flex-col min-h-screen">
             {/* Left and Right Global Borders */}
