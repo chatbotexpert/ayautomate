@@ -38,12 +38,33 @@ function extractHeadings(html: string) {
     while ((m2 = r2.exec(html)) !== null) {
       const text = m2[2].replace(/<[^>]+>/g, '').trim();
       if (text && text.length < 120) {
-        const id = text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+        const id = 'user-content-' + text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
         headings.push({ level: parseInt(m2[1]), id, text });
       }
     }
   }
   return headings;
+}
+
+function splitContent(html: string) {
+  // The header section is a <header> tag at the start
+  const headerEnd = html.indexOf('</header>');
+  if (headerEnd === -1) {
+    return { headerHtml: '', featuredHtml: '', articleHtml: html };
+  }
+
+  const headerHtml = html.slice(0, headerEnd + 9);
+
+  // Featured image comes right after </header>
+  // Article body starts roughly where the CTA "Skip the read" begins
+  // We find the opening <div that contains it
+  const skipRead = html.indexOf('Skip the read');
+  let articleStart = html.lastIndexOf('<div', skipRead);
+  // Back up to find the proper container div
+  const featuredHtml = html.slice(headerEnd + 9, articleStart);
+  const articleHtml = html.slice(articleStart);
+
+  return { headerHtml, featuredHtml, articleHtml };
 }
 
 export default async function BlogPost({ params }: { params: Promise<{ slug: string }> }) {
@@ -54,16 +75,30 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
 
   const fileData = fsModule.readFileSync(filePath, 'utf8');
   const post = JSON.parse(fileData);
-  const headings = extractHeadings(post.content);
+
+  const { headerHtml, featuredHtml, articleHtml } = splitContent(post.content);
+  const headings = extractHeadings(articleHtml);
 
   return (
     <div style={{ background: '#000000', minHeight: '100vh', color: '#e5e5e5' }}>
       <Navbar />
       <div style={{ paddingTop: '72px' }}>
+
+        {/* FULL WIDTH HEADER SECTION - title, description, author, date */}
+        {headerHtml && (
+          <div dangerouslySetInnerHTML={{ __html: headerHtml }} />
+        )}
+
+        {/* FULL WIDTH FEATURED IMAGE */}
+        {featuredHtml && (
+          <div dangerouslySetInnerHTML={{ __html: featuredHtml }} />
+        )}
+
+        {/* 2-COLUMN LAYOUT: sidebar + article body */}
         <div style={{
           maxWidth: '1280px',
           margin: '0 auto',
-          padding: '40px 32px 60px',
+          padding: '40px 32px 80px',
           display: 'flex',
           gap: '48px',
           alignItems: 'flex-start',
@@ -73,7 +108,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
           <aside style={{ width: '240px', flexShrink: 0, position: 'sticky', top: '100px', alignSelf: 'flex-start' }}>
             {headings.length > 0 && (
               <div style={{ marginBottom: '32px' }}>
-                <p style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(229,229,229,0.4)', marginBottom: '12px' }}>
+                <p style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(229,229,229,0.4)', marginBottom: '12px', margin: '0 0 12px 0' }}>
                   On This Page
                 </p>
                 <nav>
@@ -90,6 +125,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
                         color: 'rgba(229,229,229,0.55)',
                         textDecoration: 'none',
                         marginBottom: '4px',
+                        borderLeft: '2px solid transparent',
                       }}
                     >
                       {h.text}
@@ -100,15 +136,15 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
             )}
 
             {/* EXPLORE WITH AI */}
-            <div>
-              <p style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(229,229,229,0.4)', marginBottom: '12px' }}>
+            <div style={{ marginTop: '32px' }}>
+              <p style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(229,229,229,0.4)', marginBottom: '12px', margin: '0 0 12px 0' }}>
                 Explore With AI
               </p>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
                 {[
-                  { name: 'ChatGPT', icon: 'https://www.ayautomate.com/chatgpt-icon.svg', url: 'https://chat.openai.com/?q=Summarize%20this%20article:%20https://www.ayautomate.com/blog/' + slug },
-                  { name: 'Claude', icon: 'https://www.ayautomate.com/claude-icon.png', url: 'https://claude.ai/new?q=Summarize%20this%20article:%20https://www.ayautomate.com/blog/' + slug },
-                  { name: 'Gemini', icon: 'https://www.ayautomate.com/gemini-icon.svg', url: 'https://gemini.google.com/app?q=Summarize%20this%20article:%20https://www.ayautomate.com/blog/' + slug },
+                  { name: 'ChatGPT', icon: 'https://www.ayautomate.com/chatgpt-icon.svg', url: 'https://chat.openai.com/?q=Summarize:%20https://www.ayautomate.com/blog/' + slug },
+                  { name: 'Claude', icon: 'https://www.ayautomate.com/claude-icon.png', url: 'https://claude.ai/new?q=Summarize:%20https://www.ayautomate.com/blog/' + slug },
+                  { name: 'Gemini', icon: 'https://www.ayautomate.com/gemini-icon.svg', url: 'https://gemini.google.com/app?q=Summarize:%20https://www.ayautomate.com/blog/' + slug },
                 ].map((ai) => (
                   <a
                     key={ai.name}
@@ -127,7 +163,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
                       fontWeight: 500,
                     }}
                   >
-                    <img src={ai.icon} alt={ai.name} width={18} height={18} style={{ objectFit: 'contain' }} />
+                    <img src={ai.icon} alt={ai.name} width={18} height={18} style={{ objectFit: 'contain', flexShrink: 0 }} />
                     Read with {ai.name}
                   </a>
                 ))}
@@ -135,10 +171,10 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
             </div>
           </aside>
 
-          {/* RIGHT: ARTICLE CONTENT */}
+          {/* RIGHT: ARTICLE BODY */}
           <main
             style={{ flex: 1, minWidth: 0 }}
-            dangerouslySetInnerHTML={{ __html: post.content }}
+            dangerouslySetInnerHTML={{ __html: articleHtml }}
           />
         </div>
       </div>
