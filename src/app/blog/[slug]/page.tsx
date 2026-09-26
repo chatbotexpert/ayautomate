@@ -47,23 +47,15 @@ function extractHeadings(html: string) {
 }
 
 function splitContent(html: string) {
-  // The header section is a <header> tag at the start
   const headerEnd = html.indexOf('</header>');
   if (headerEnd === -1) {
     return { headerHtml: '', featuredHtml: '', articleHtml: html };
   }
-
   const headerHtml = html.slice(0, headerEnd + 9);
-
-  // Featured image comes right after </header>
-  // Article body starts roughly where the CTA "Skip the read" begins
-  // We find the opening <div that contains it
   const skipRead = html.indexOf('Skip the read');
-  let articleStart = html.lastIndexOf('<div', skipRead);
-  // Back up to find the proper container div
+  let articleStart = skipRead > -1 ? html.lastIndexOf('<div', skipRead) : headerEnd + 9;
   const featuredHtml = html.slice(headerEnd + 9, articleStart);
   const articleHtml = html.slice(articleStart);
-
   return { headerHtml, featuredHtml, articleHtml };
 }
 
@@ -75,109 +67,118 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
 
   const fileData = fsModule.readFileSync(filePath, 'utf8');
   const post = JSON.parse(fileData);
-
   const { headerHtml, featuredHtml, articleHtml } = splitContent(post.content);
   const headings = extractHeadings(articleHtml);
 
   return (
-    <div style={{ background: '#000000', minHeight: '100vh', color: '#e5e5e5' }}>
+    <div className="blog-aya-wrapper" style={{ background: '#000000', minHeight: '100vh', color: '#fff' }}>
+      {/* Scoped CSS: override our site variables ONLY within .blog-aya-wrapper
+          so blog content matches original ayautomate.com but navbar is unaffected */}
+      <style>{`
+        .blog-aya-wrapper {
+          --background: #000000;
+          --foreground: #ffffff;
+          --primary-purple: #8b5cf6;
+          --muted-foreground: #a1a1aa;
+          --border: rgba(255,255,255,0.08);
+          --card: #111111;
+          --muted: #18181b;
+          --accent: rgba(255,255,255,0.06);
+          --ring: rgba(139,92,246,0.4);
+          --input: rgba(255,255,255,0.06);
+          --destructive: #ef4444;
+          --secondary: #111111;
+          --secondary-foreground: #ffffff;
+          --accent-foreground: #ffffff;
+          --popover: #111111;
+          --popover-foreground: #ffffff;
+        }
+      `}</style>
+
       <Navbar />
-      <div style={{ paddingTop: '72px' }}>
 
-        {/* FULL WIDTH HEADER SECTION - title, description, author, date */}
-        {headerHtml && (
-          <div dangerouslySetInnerHTML={{ __html: headerHtml }} />
-        )}
+      {/* FULL-WIDTH HEADER: back link, date, title, description, author */}
+      {headerHtml && (
+        <div style={{ paddingTop: '72px' }}
+          dangerouslySetInnerHTML={{ __html: headerHtml }}
+        />
+      )}
 
-        {/* FULL WIDTH FEATURED IMAGE */}
-        {featuredHtml && (
-          <div dangerouslySetInnerHTML={{ __html: featuredHtml }} />
-        )}
+      {/* FULL-WIDTH FEATURED IMAGE */}
+      {featuredHtml && (
+        <div dangerouslySetInnerHTML={{ __html: featuredHtml }} />
+      )}
 
-        {/* 2-COLUMN LAYOUT: sidebar + article body */}
-        <div style={{
-          maxWidth: '1280px',
-          margin: '0 auto',
-          padding: '40px 32px 80px',
-          display: 'flex',
-          gap: '48px',
-          alignItems: 'flex-start',
-        }}>
+      {/* 2-COLUMN LAYOUT */}
+      <div style={{
+        maxWidth: '1280px',
+        margin: '0 auto',
+        padding: '40px 32px 80px',
+        display: 'flex',
+        gap: '48px',
+        alignItems: 'flex-start',
+      }}>
 
-          {/* LEFT SIDEBAR */}
-          <aside style={{ width: '240px', flexShrink: 0, position: 'sticky', top: '100px', alignSelf: 'flex-start' }}>
-            {headings.length > 0 && (
-              <div style={{ marginBottom: '32px' }}>
-                <p style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(229,229,229,0.4)', marginBottom: '12px', margin: '0 0 12px 0' }}>
-                  On This Page
-                </p>
-                <nav>
-                  {headings.map((h, i) => (
-                    <a
-                      key={i}
-                      href={'#' + h.id}
-                      style={{
-                        display: 'block',
-                        padding: '4px 0',
-                        paddingLeft: h.level === 3 ? '16px' : '8px',
-                        fontSize: '13px',
-                        lineHeight: '1.5',
-                        color: 'rgba(229,229,229,0.55)',
-                        textDecoration: 'none',
-                        marginBottom: '4px',
-                        borderLeft: '2px solid transparent',
-                      }}
-                    >
-                      {h.text}
-                    </a>
-                  ))}
-                </nav>
-              </div>
-            )}
-
-            {/* EXPLORE WITH AI */}
-            <div style={{ marginTop: '32px' }}>
-              <p style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(229,229,229,0.4)', marginBottom: '12px', margin: '0 0 12px 0' }}>
-                Explore With AI
+        {/* LEFT SIDEBAR */}
+        <aside style={{ width: '240px', flexShrink: 0, position: 'sticky', top: '100px', alignSelf: 'flex-start' }}>
+          {headings.length > 0 && (
+            <div style={{ marginBottom: '32px' }}>
+              <p style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#52525b', marginBottom: '12px' }}>
+                On This Page
               </p>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                {[
-                  { name: 'ChatGPT', icon: 'https://www.ayautomate.com/chatgpt-icon.svg', url: 'https://chat.openai.com/?q=Summarize:%20https://www.ayautomate.com/blog/' + slug },
-                  { name: 'Claude', icon: 'https://www.ayautomate.com/claude-icon.png', url: 'https://claude.ai/new?q=Summarize:%20https://www.ayautomate.com/blog/' + slug },
-                  { name: 'Gemini', icon: 'https://www.ayautomate.com/gemini-icon.svg', url: 'https://gemini.google.com/app?q=Summarize:%20https://www.ayautomate.com/blog/' + slug },
-                ].map((ai) => (
-                  <a
-                    key={ai.name}
-                    href={ai.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{
-                      display: 'flex', alignItems: 'center', gap: '10px',
-                      padding: '10px 14px',
-                      background: 'rgba(255,255,255,0.04)',
-                      border: '1px solid rgba(255,255,255,0.1)',
-                      borderRadius: '8px',
-                      textDecoration: 'none',
-                      color: '#e5e5e5',
-                      fontSize: '13px',
-                      fontWeight: 500,
-                    }}
-                  >
-                    <img src={ai.icon} alt={ai.name} width={18} height={18} style={{ objectFit: 'contain', flexShrink: 0 }} />
-                    Read with {ai.name}
+              <nav style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
+                {headings.map((h, i) => (
+                  <a key={i} href={'#' + h.id} style={{
+                    display: 'block',
+                    padding: '4px 8px',
+                    paddingLeft: h.level === 3 ? '20px' : '8px',
+                    fontSize: '13px',
+                    lineHeight: '1.5',
+                    color: '#a1a1aa',
+                    textDecoration: 'none',
+                  }}>
+                    {h.text}
                   </a>
                 ))}
-              </div>
+              </nav>
             </div>
-          </aside>
+          )}
 
-          {/* RIGHT: ARTICLE BODY */}
-          <main
-            style={{ flex: 1, minWidth: 0 }}
-            dangerouslySetInnerHTML={{ __html: articleHtml }}
-          />
-        </div>
+          <div style={{ marginTop: headings.length > 0 ? '8px' : '0' }}>
+            <p style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#52525b', marginBottom: '12px' }}>
+              Explore With AI
+            </p>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+              {[
+                { name: 'ChatGPT', icon: '/chatgpt-icon.svg', url: 'https://chat.openai.com/?q=Summarize:%20https://www.ayautomate.com/blog/' + slug },
+                { name: 'Claude', icon: '/claude-icon.png', url: 'https://claude.ai/new?q=Summarize:%20https://www.ayautomate.com/blog/' + slug },
+                { name: 'Gemini', icon: '/gemini-icon.svg', url: 'https://gemini.google.com/app?q=Summarize:%20https://www.ayautomate.com/blog/' + slug },
+              ].map((ai) => (
+                <a key={ai.name} href={ai.url} target="_blank" rel="noopener noreferrer" style={{
+                  display: 'flex', alignItems: 'center', gap: '10px',
+                  padding: '10px 14px',
+                  background: 'rgba(255,255,255,0.04)',
+                  border: '1px solid rgba(255,255,255,0.08)',
+                  borderRadius: '8px',
+                  textDecoration: 'none',
+                  color: '#ffffff',
+                  fontSize: '13px',
+                  fontWeight: 500,
+                }}>
+                  <img src={ai.icon} alt={ai.name} width={18} height={18} style={{ objectFit: 'contain', flexShrink: 0 }} />
+                  Read with {ai.name}
+                </a>
+              ))}
+            </div>
+          </div>
+        </aside>
+
+        {/* RIGHT: ARTICLE BODY */}
+        <main style={{ flex: 1, minWidth: 0 }}
+          dangerouslySetInnerHTML={{ __html: articleHtml }}
+        />
       </div>
+
       <DeployAutomationSection />
       <FooterSection />
     </div>
