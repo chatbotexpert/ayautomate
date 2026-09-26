@@ -46,10 +46,7 @@ html {
 .animate-infinite-scroll {
   animation: infinite-scroll 40s linear infinite;
 }
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+
 
 @theme inline {
   --color-background: var(--background);
@@ -57,8 +54,7 @@ html {
   --font-sans: var(--font-lexend), ui-sans-serif, system-ui, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
+:root {
     --background: #0f0f15;
     --foreground: #f0edee;
     --card: #1d1d29;
@@ -70,7 +66,6 @@ html {
     --hero-dot-color: #f0edee4d;
     --hero-grid-color: #f0edee24;
   }
-}
 
 body {
   background: var(--background);
@@ -81,4 +76,4 @@ body {
 @keyframes ay-marquee {
   0% { transform: translateX(0); }
   100% { transform: translateX(calc(-50% - 1rem)); }
-}
+
