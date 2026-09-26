@@ -1,0 +1,366 @@
+[
+  {
+    "href": "https://www.linkedin.com/in/walid-boulanouar/",
+    "day": "01",
+    "title": "The Challenge Kickoff",
+    "desc": "Watch the introductory video explaining the 30 Days of Claude Code challenge and what you will learn.",
+    "status": "Live"
+  },
+  {
+    "href": "/resources/claude-code-challenge/day-2",
+    "day": "02",
+    "title": "Founder OS - Set up Claude Code for your business",
+    "desc": "One file. Every session starts knowing who you are, what you&#x27;re building, and how you work.",
+    "status": "Locked"
+  },
+  {
+    "href": "/resources/claude-code-challenge/day-3",
+    "day": "03",
+    "title": "Founder OS - The full system breakdown",
+    "desc": "24 MCPs, 25+ skills, 6 hooks, PARA folders, and persistent memory. The complete operating system, laid out.",
+    "status": "Locked"
+  },
+  {
+    "href": "/resources/claude-code-challenge/day-4",
+    "day": "04",
+    "title": "Founder OS - Where Does Each Tool Fit",
+    "desc": "A framework for knowing which tool to open before you start. Claude.ai, Claude Code, n8n, and Cowork compared.",
+    "status": "Locked"
+  },
+  {
+    "href": "/resources/claude-code-challenge/day-5",
+    "day": "05",
+    "title": "Founder OS - Complete Second Brain Setup",
+    "desc": "11 copy-paste prompts that build your full Claude Code second brain. CLAUDE.md, folders, memory, skills, hooks, MCPs, and automation.",
+    "status": "Locked"
+  },
+  {
+    "href": "/resources/claude-code-challenge/day-6",
+    "day": "06",
+    "title": "Founder OS - 10 Must Have Claude Code Skills",
+    "desc": "10 essential skills to drop into .claude/skills/. 5 built-in from the AY second brain, 5 from GitHub. All free, all open source.",
+    "status": "Locked"
+  },
+  {
+    "href": "/resources/claude-code-challenge/day-7",
+    "day": "07",
+    "title": "Founder OS - NotebookLM + Claude Code",
+    "desc": "Stop paying Claude for research. Use NotebookLM for free context gathering, then hand off structured plans to Claude Code. Zero hallucinations.",
+    "status": "Locked"
+  },
+  {
+    "href": "/resources/claude-code-challenge/day-8",
+    "day": "08",
+    "title": "Claude Code Setup Calculator",
+    "desc": "Answer 3-5 questions. Get a personalised plan recommendation, ROI estimate, model stack, and setup tips for your exact role and budget.",
+    "status": "Locked"
+  },
+  {
+    "href": "/resources/claude-code-challenge/day-9",
+    "day": "09",
+    "title": "Secure Your Claude Code Environment in 10 Minutes",
+    "desc": "5 steps. 10 minutes. Lock down .env files, install file-protection hooks, rotate API keys, secure memory.md, and scan your repos for leaks.",
+    "status": "Locked"
+  },
+  {
+    "href": "/resources/claude-code-challenge/day-10",
+    "day": "10",
+    "title": "Founder OS - gstack: How YC’s CEO Engineers with Claude Code",
+    "desc": "Garry Tan’s 8 cognitive modes for Claude Code. Plan, review, ship, browse, QA, and retro as separate skill files. A full engineering org in your terminal.",
+    "status": "Locked"
+  },
+  {
+    "href": "/resources/claude-code-challenge/day-11",
+    "day": "11",
+    "title": "Claude Certified Architect Study Guide",
+    "desc": "Pass the Claude Certified Architect exam. 5 domain breakdowns, 60-question practice simulator, study prompts, and a cheat sheet.",
+    "status": "Locked"
+  },
+  {
+    "href": "/resources/claude-code-challenge/day-12",
+    "day": "12",
+    "title": "cmux Prompt Playbook - The Terminal for Agents",
+    "desc": "Spawn agents. Dispatch tasks. Monitor everything. From one screen. 8 prompt categories, cheat sheet, and the full cmux skill file.",
+    "status": "Locked"
+  },
+  {
+    "href": "/resources/claude-code-challenge/day-13",
+    "day": "13",
+    "title": "8 MCPs That Changed Everything",
+    "desc": "Connect Claude Code to your CRM, Slack, Notion, LinkedIn, GitHub, and n8n. One-line installs and what each MCP unlocks.",
+    "status": "Locked"
+  },
+  {
+    "href": "/resources/claude-code-challenge/day-14",
+    "day": "14",
+    "title": "Claude Code Hooks: Your Safety Net",
+    "desc": "Install 6 shell scripts that protect your git history, block destructive commands, back up files before edits, and notify you when Claude finishes. Set once, forget it.",
+    "status": "Locked"
+  },
+  {
+    "href": "/resources/claude-code-challenge/day-15",
+    "day": "15",
+    "title": "Claude Code Plans - At a Glance",
+    "desc": "Pro, Max 5x, or Max 20x? Compare prompts, models, and pricing side by side. Start with $20 and upgrade only when you hit limits.",
+    "status": "Locked"
+  },
+  {
+    "href": "/resources/claude-code-challenge/day-16",
+    "day": "16",
+    "title": "The Skills Library",
+    "desc": "29+ Claude Code skills across 6 categories - Sales, Content, Client, Intelligence, Technical, and Operations. Searchable and filterable. Each is a markdown slash command.",
+    "status": "Locked"
+  },
+  {
+    "href": "/resources/claude-code-challenge/day-17",
+    "day": "17",
+    "title": "The Founder OS - Complete Map",
+    "desc": "Five layers. One terminal. CLAUDE.md, MEMORY.md, 8 MCPs, 6 safety hooks, and 6 skill categories - your entire company organised and ready for Claude to navigate.",
+    "status": "Locked"
+  },
+  {
+    "href": "/resources/claude-code-challenge/day-18",
+    "day": "18",
+    "title": "The Claude Code Resource Bible - 120+ Links",
+    "desc": "Every tool, repo, MCP server, skill, video, and article worth knowing about Claude Code. 54 tools, 59 videos, 7 articles - curated and categorised.",
+    "status": "Locked"
+  },
+  {
+    "href": "/resources/claude-code-challenge/day-19",
+    "day": "19",
+    "title": "Founder OS - Custom Subagents &amp; Model Routing",
+    "desc": "Build your own agent team. Route cheap tasks to Haiku, complex ones to Sonnet. One markdown file in .claude/agents/ unlocks isolated, parallel workers.",
+    "status": "Locked"
+  },
+  {
+    "href": "/resources/claude-code-challenge/day-20",
+    "day": "20",
+    "title": "Founder OS - Path-Scoped Rules",
+    "desc": "Most people dump everything into one CLAUDE.md. Use .claude/rules/ with path filters so API rules only load when you touch API files. Zero context waste.",
+    "status": "Locked"
+  },
+  {
+    "href": "/resources/claude-code-challenge/day-21",
+    "day": "21",
+    "title": "Founder OS - Output Styles &amp; Explanatory Mode",
+    "desc": "Three built-in output styles nobody talks about. Explanatory mode justifies every decision. Learning mode teaches while building. Plus: write your own.",
+    "status": "Locked"
+  },
+  {
+    "href": "/resources/claude-code-challenge/day-22",
+    "day": "22",
+    "title": "God Mode: Complete Power Stack",
+    "desc": "All 5 layers. All 10 combos. One interactive guide. Memory, Extensions, Automation, Intelligence, and Pipeline - stacked into one unstoppable system. Plus a power level assessment.",
+    "status": "Locked"
+  },
+  {
+    "href": "/resources/claude-code-challenge/day-23",
+    "day": "23",
+    "title": "tmux Cockpit + Git Worktrees",
+    "desc": "Run 4 parallel Claude sessions in one terminal window. Git worktrees give each agent its own full codebase copy. Zero file conflicts. 4× throughput. One script.",
+    "status": "Locked"
+  },
+  {
+    "href": "/resources/claude-code-challenge/day-24",
+    "day": "24",
+    "title": "Agent Swarms",
+    "desc": "One prompt. N agents. Done in parallel. 6 swarm patterns - Fan-Out, MapReduce, Pipeline, Competing Hypotheses, Writer + Critic Loop, and Bash Loop Swarm. Plus an interactive builder and cost calculator.",
+    "status": "Locked"
+  },
+  {
+    "href": "/resources/claude-code-challenge/day-25",
+    "day": "25",
+    "title": "Agent Teams - Multiple Claude Sessions Talking to Each Other",
+    "desc": "Enable experimental agent teams. Full peer-to-peer sessions that self-coordinate via a shared task list. Setup, architecture, 9 copy-paste prompts, and a quiz.",
+    "status": "Locked"
+  },
+  {
+    "href": "/resources/claude-code-challenge/day-26",
+    "day": "26",
+    "title": "Best Prompts Directory",
+    "desc": "52 production-tested prompts across 8 categories. Searchable, filterable, copy-paste ready. Plus a custom prompt builder that assembles prompts from role, format, task, and constraints.",
+    "status": "Locked"
+  },
+  {
+    "href": "/resources/claude-code-challenge/day-27",
+    "day": "27",
+    "title": "Founder OS - Advanced Hooks Guide",
+    "desc": "8 lifecycle events. 3 exit codes. Context injection. Async hooks. Matcher patterns. 10 production templates and an interactive hook builder.",
+    "status": "Locked"
+  },
+  {
+    "href": "/resources/claude-code-challenge/day-28",
+    "day": "28",
+    "title": "Use Cases Gallery by Role",
+    "desc": "8 roles. 5 use cases each. Solo dev, tech lead, agency owner, founder, content creator, data scientist, DevOps, and second brain builder - with prompts, setup roadmap, and ROI calculator.",
+    "status": "Locked"
+  },
+  {
+    "href": "/resources/claude-code-challenge/day-29",
+    "day": "29",
+    "title": "Founder OS - Claude Code + Second Brain",
+    "desc": "Set your Obsidian vault as Claude Code’s working directory. PARA folders, 6 vault skills, auto-memory, and 5 workflows that run your knowledge system automatically.",
+    "status": "Locked"
+  },
+  {
+    "href": "/resources/claude-code-challenge/day-30",
+    "day": "30",
+    "title": "The Master Test (30 Questions)",
+    "desc": "30 days. 11 levels. 1 final test. 30 questions across 5 categories - Basics, Memory, Hooks, Agents, and God Mode. Find out what level you really are.",
+    "status": "Locked"
+  },
+  {
+    "href": "/resources/claude-code-challenge/day-31",
+    "day": "31",
+    "title": "Claude Code Efficiency Playbook: Ship 10x Faster",
+    "desc": "25 battle-tested tips from 800+ hours of Claude Code usage. Organized by skill level: Everyone, Power Users, and Architects. Patterns that compound.",
+    "status": "Locked"
+  },
+  {
+    "href": "/resources/claude-code-challenge/day-32",
+    "day": "32",
+    "title": "The Claude Code Playbook",
+    "desc": "The full playbook for shipping with Claude Code: install, configure, optimize, deploy.",
+    "status": "Locked"
+  },
+  {
+    "href": "/resources/claude-code-challenge/day-33",
+    "day": "33",
+    "title": "Clean Build Run: Daily Loop",
+    "desc": "The morning-to-evening Claude Code loop. Clean state, build features, run tests, capture learnings.",
+    "status": "Locked"
+  },
+  {
+    "href": "/resources/claude-code-challenge/day-34",
+    "day": "34",
+    "title": "FIRE CEO OS: Run a Company From a Terminal",
+    "desc": "Pipeline, content, outreach, hiring, billing: every CEO task as a slash command.",
+    "status": "Locked"
+  },
+  {
+    "href": "/resources/claude-code-challenge/day-35",
+    "day": "35",
+    "title": "Advanced Hooks Mastery",
+    "desc": "Chain hooks for file protection, token tracking, auto-formatting, and audit logs.",
+    "status": "Locked"
+  },
+  {
+    "href": "/resources/claude-code-challenge/day-36",
+    "day": "36",
+    "title": "Agent Swarms: Coordinate Multiple Agents",
+    "desc": "Roles, handoffs, locks, and the tracking layer that keeps a 6-mode pipeline coherent.",
+    "status": "Locked"
+  },
+  {
+    "href": "/resources/claude-code-challenge/day-37",
+    "day": "37",
+    "title": "Agent Teams: Roles &amp; Handoffs",
+    "desc": "Designing teams of specialized agents. Split scope, define handoffs, prevent collisions.",
+    "status": "Locked"
+  },
+  {
+    "href": "/resources/claude-code-challenge/day-38",
+    "day": "38",
+    "title": "Context Engineering Mastery",
+    "desc": "CLAUDE.md hierarchy, retrieval patterns, memory tiers, and prompts that compound.",
+    "status": "Locked"
+  },
+  {
+    "href": "/resources/claude-code-challenge/day-39",
+    "day": "39",
+    "title": "Hooks From Zero to Production",
+    "desc": "The 6 hooks every serious user needs. settings.json schema, lifecycle, debugging.",
+    "status": "Locked"
+  },
+  {
+    "href": "/resources/claude-code-challenge/day-40",
+    "day": "40",
+    "title": "Founder OS: Full System",
+    "desc": "24 MCPs, 25+ skills, 6 hooks, PARA folders, persistent memory.",
+    "status": "Locked"
+  },
+  {
+    "href": "/resources/claude-code-challenge/day-41",
+    "day": "41",
+    "title": "12 Agent Primitives: The Leak Decoded",
+    "desc": "The 12 building blocks every agent system is made of.",
+    "status": "Locked"
+  },
+  {
+    "href": "/resources/claude-code-challenge/day-42",
+    "day": "42",
+    "title": "40 Use Cases Master Map",
+    "desc": "Forty real Claude Code use cases organized by role.",
+    "status": "Locked"
+  },
+  {
+    "href": "/resources/claude-code-challenge/day-43",
+    "day": "43",
+    "title": "Second Brain Architecture",
+    "desc": "Wire Claude Code into your second brain. Obsidian + PARA + daily notes.",
+    "status": "Locked"
+  },
+  {
+    "href": "/resources/claude-code-challenge/day-44",
+    "day": "44",
+    "title": "Boris Cherny&#x27;s 14 Hidden Features",
+    "desc": "The secret features Anthropic&#x27;s CC lead Boris Cherny shared.",
+    "status": "Locked"
+  },
+  {
+    "href": "/resources/claude-code-challenge/day-45",
+    "day": "45",
+    "title": "Cost Optimization Stack",
+    "desc": "Save 75% on tokens. Caching, batching, model routing, compression.",
+    "status": "Locked"
+  },
+  {
+    "href": "/resources/claude-code-challenge/day-46",
+    "day": "46",
+    "title": "Every Claude Code Command",
+    "desc": "The complete reference card. Every flag, slash command, env var.",
+    "status": "Locked"
+  },
+  {
+    "href": "/resources/claude-code-challenge/day-47",
+    "day": "47",
+    "title": "Morning Briefing Automation",
+    "desc": "Wake up to a personalized brief: calendar, inbox, pipeline, content queue.",
+    "status": "Locked"
+  },
+  {
+    "href": "/resources/claude-code-challenge/day-48",
+    "day": "48",
+    "title": "Save 75% on Tokens",
+    "desc": "The exact caching + batching patterns that cut our token spend 4x.",
+    "status": "Locked"
+  },
+  {
+    "href": "/resources/claude-code-challenge/day-49",
+    "day": "49",
+    "title": "The 7 Hooks Every Founder Needs",
+    "desc": "Copy-paste hook starter kit. File protection, auto-format, token tracking, audit log.",
+    "status": "Locked"
+  },
+  {
+    "href": "/resources/claude-code-challenge/day-50",
+    "day": "50",
+    "title": "Skills vs MCP vs CLI: When to Use What",
+    "desc": "The decision framework for picking between skills, MCP servers, and shell commands.",
+    "status": "Locked"
+  },
+  {
+    "href": "/resources/claude-code-challenge/day-51",
+    "day": "51",
+    "title": "When to Use Which: AI Tool Picker",
+    "desc": "Claude.ai, Claude Code, Cowork, n8n, Make: when each wins.",
+    "status": "Locked"
+  },
+  {
+    "href": "/resources/claude-code-challenge/day-52",
+    "day": "52",
+    "title": "Inside the Fable 5 System Prompt Leak",
+    "desc": "120,040 characters decoded. Where the tokens go + 9 lessons for your own prompts.",
+    "status": "Locked"
+  }
+]
