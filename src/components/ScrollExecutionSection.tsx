@@ -6,29 +6,79 @@ const steps = [
   {
     tag: "01",
     eyebrow: "The before",
-    p: "The old answer was a senior full-stack hire. Three months to hire, six months to onboard, twelve months to ship the roadmap. By the time the seat was filled, the market had already moved."
+    content: [
+      <span className="inline-flex items-center gap-1 rounded bg-white/5 px-1.5 py-0.5 text-primary-purple border border-white/10 text-[0.85em] align-middle">3 mo <span className="opacity-50 text-[10px]">--</span></span>,
+      " to hire, ",
+      <span className="inline-flex items-center gap-1 rounded bg-white/5 px-1.5 py-0.5 text-primary-purple border border-white/10 text-[0.85em] align-middle">6 mo <span className="opacity-50 text-[10px]">--</span></span>,
+      " to onboard, ",
+      <span className="inline-flex items-center gap-1 rounded bg-white/5 px-1.5 py-0.5 text-primary-purple border border-white/10 text-[0.85em] align-middle">12 mo <span className="opacity-50 text-[10px]">--</span></span>,
+      " to ship the roadmap. By the time the seat was filled, the ",
+      <span className="inline-block text-primary-purple transform -rotate-45 align-middle">→</span>,
+      " market had already moved."
+    ]
   },
   {
     tag: "02",
     eyebrow: "The shift",
-    p: "AI software engineering is being rewritten in real time. Coding stopped being the bottleneck the moment Claude Code, MCP, and sandboxed agents matured. The bottleneck moved to orchestration."
+    content: [
+      "Coding stopped being the bottleneck the moment ",
+      <img src="https://www.ayautomate.com/clients/claude.png" className="inline-block w-[1em] h-[1em] align-middle rounded-sm" />,
+      " Claude Code, ",
+      <img src="https://www.ayautomate.com/clients/mcp.svg" className="inline-block w-[1em] h-[1em] align-middle" />,
+      " MCP, and sandboxed agents matured. The bottleneck moved to orchestration."
+    ]
   },
   {
     tag: "03",
     eyebrow: "Our move",
-    p: "Our engineers are not full-stack. They are orchestrators of agents. Generalists trained in-house to wire Claude Code, n8n, MCP connectors, and E2B into systems that ship. One human driving a bench of subagents."
+    content: [
+      "Generalists trained in-house to wire ",
+      <img src="https://www.ayautomate.com/clients/claude.png" className="inline-block w-[1em] h-[1em] align-middle rounded-sm" />,
+      " Claude Code, ",
+      <img src="https://www.ayautomate.com/clients/n8n.png" className="inline-block w-[1em] h-[1em] align-middle rounded-sm" />,
+      " n8n, ",
+      <img src="https://www.ayautomate.com/clients/mcp.svg" className="inline-block w-[1em] h-[1em] align-middle" />,
+      " MCP connectors, and ",
+      <img src="https://www.ayautomate.com/clients/e2b.png" className="inline-block w-[1em] h-[1em] align-middle rounded-sm" />,
+      " E2B into systems that ship. One human driving a bench of subagents."
+    ]
   },
   {
     tag: "04",
     eyebrow: "The proof",
-    p: "Same bench ships for Sage on Monday and a solo founder on Tuesday. The multiplier is the stack, not the seniority. That is why we deploy across publicly listed enterprise and bedroom operators without changing model."
+    content: [
+      "The multiplier is the stack, not the seniority. That is why we deploy across ",
+      <strong className="font-bold text-white">publicly listed enterprise</strong>,
+      " and ",
+      <strong className="font-bold text-white">bedroom operators</strong>,
+      " without changing model."
+    ]
   },
   {
     tag: "05",
     eyebrow: "The promise",
-    p: "Embed an engineer. Ship a whole product. If [ICON] month one does not land, you get it back. No conversations, no exit fee, no notice beyond the current month."
+    content: [
+      "Embed an engineer. Ship a whole product. If ",
+      <RotateCcw className="inline-block w-[0.8em] h-[0.8em] transform -rotate-45 align-middle text-text-soft" />,
+      " month one does not land, you get it back. No conversations, no exit fee, no notice beyond the current month."
+    ]
   }
 ];
+
+const flattenContent = (contentArray) => {
+  let allItems = [];
+  contentArray.forEach(item => {
+      if (typeof item === 'string') {
+          const chars = item.split('');
+          chars.forEach(char => {
+              allItems.push({ type: 'char', value: char });
+          });
+      } else {
+          allItems.push({ type: 'jsx', value: item });
+      }
+  });
+  return allItems;
+};
 
 export default function ScrollExecutionSection() {
   const [currentStep, setCurrentStep] = useState(0);
@@ -52,7 +102,7 @@ export default function ScrollExecutionSection() {
         setCurrentStep(steps.length - 1);
         setSubProgress(1);
       } else {
-        const progress = scrolled / scrollDistance; // 0.0 to 1.0
+        const progress = scrolled / scrollDistance;
         const exactStep = progress * steps.length;
         const step = Math.floor(exactStep);
         const sub = exactStep - step;
@@ -68,37 +118,12 @@ export default function ScrollExecutionSection() {
   }, []);
 
   const currentStepData = steps[currentStep];
-
-  // We want to type out the characters.
-  const pText = currentStepData.p;
-  const totalChars = pText.length;
+  const items = flattenContent(currentStepData.content);
   
-  // Calculate how many characters to show based on subProgress.
-  // We can add a slight buffer (e.g. 0.8) so it finishes typing before the step ends.
-  const typingProgress = Math.min(1, subProgress / 0.8);
-  const charsToShow = Math.floor(totalChars * typingProgress);
-  
-  const displayedP = pText.slice(0, charsToShow);
-
-  // Helper to render P with icon if needed
-  const renderP = (text) => {
-    if (text.includes('[ICON]')) {
-      const parts = text.split('[ICON]');
-      return (
-        <>
-          {parts[0]}
-          <RotateCcw className="inline-block w-[0.8em] h-[0.8em] mx-1 transform -rotate-45 text-text-soft" />
-          {parts[1]}
-        </>
-      );
-    }
-    // Handle partial typing of [ICON] - if it ends with [IC etc.
-    const partialMatch = text.match(/\[I?C?O?N?$/);
-    if (partialMatch) {
-      return text.substring(0, partialMatch.index);
-    }
-    return text;
-  };
+  // Make typing finish a bit early in the scroll cycle to avoid trailing
+  const typingProgress = Math.min(1, subProgress / 0.85);
+  const charsToShow = Math.floor(typingProgress * items.length);
+  const displayedItems = items.slice(0, charsToShow);
 
   return (
     <section className="mb-12 pt-6 border-t border-border-subtle relative">
@@ -120,12 +145,17 @@ export default function ScrollExecutionSection() {
             
             <div className="mt-12 max-w-3xl mx-auto h-[180px] flex flex-col items-center justify-center">
               <div className="flex items-baseline justify-center gap-4 mb-4 text-[11px] uppercase tracking-[0.18em] font-semibold">
-                <span className="text-primary-purple transition-all duration-300">{currentStepData.eyebrow}</span>
+                <span className="text-primary-purple transition-all duration-300 uppercase">{currentStepData.eyebrow}</span>
                 <span className="text-text-soft tabular-nums">· {currentStepData.tag} / 05</span>
               </div>
               
               <p className="text-xl md:text-2xl lg:text-[28px] leading-[1.4] tracking-[-0.01em] text-foreground font-medium text-center mx-auto max-w-[95%] min-h-[120px]">
-                {displayedP && renderP(displayedP)}
+                {displayedItems.map((item, i) => {
+                    if (item.type === 'jsx') {
+                        return <React.Fragment key={i}>{item.value}</React.Fragment>;
+                    }
+                    return <span key={i}>{item.value}</span>;
+                })}
                 <span aria-hidden={true} className="inline-block w-[3px] h-[0.95em] align-[-2px] ml-[3px] bg-primary-purple animate-pulse"></span>
               </p>
             </div>
