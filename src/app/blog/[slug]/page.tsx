@@ -41,19 +41,11 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
 
   return (
     <>
-      {/* Inject original ayautomate.com CSS for pixel-perfect rendering */}
-      {(post.cssLinks || []).map((href: string, i: number) => (
-        // eslint-disable-next-line @next/next/no-css-tags
-        <link key={i} rel="stylesheet" href={href} />
-      ))}
+      {/* Inject locally-saved original ayautomate.com CSS - these never expire */}
+      <link rel="stylesheet" href="/blog-styles/original-0.css" />
+      <link rel="stylesheet" href="/blog-styles/original-1.css" />
       <div style={{ background: '#000000', minHeight: '100vh' }}>
         <Navbar />
-        {/* 
-          Render ONLY the scraped main content — no custom hero section.
-          The original site's <main> HTML already contains the correct 
-          2-column layout: left sidebar (ON THIS PAGE + EXPLORE WITH AI) 
-          + right article body with inline images.
-        */}
         <div style={{ paddingTop: '72px' }}>
           <main dangerouslySetInnerHTML={{ __html: post.content }} />
         </div>
