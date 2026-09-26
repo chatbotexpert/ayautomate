@@ -36,7 +36,7 @@ const OurTeamSection = () => {
             <div className="relative mb-6">
               <div className="w-56 h-56 md:w-64 md:h-64 rounded-full overflow-hidden border border-[#8082C1]/20 shadow-[0_0_40px_rgba(128,130,193,0.05)] transition-all duration-500 group-hover:border-[#8082C1]/60 group-hover:shadow-[0_0_60px_rgba(128,130,193,0.15)]">
                 <img 
-                  src="/images/team/team-walid.webp" 
+                  src="https://www.ayautomate.com/images/team/team-walid.webp" 
                   alt="Boulanouar Walid" 
                   loading="lazy" 
                   className="w-full h-full transition-transform duration-700 group-hover:scale-105 object-cover" 
@@ -57,7 +57,7 @@ const OurTeamSection = () => {
             <div className="relative mb-6">
               <div className="w-56 h-56 md:w-64 md:h-64 rounded-full overflow-hidden border border-[#8082C1]/20 shadow-[0_0_40px_rgba(128,130,193,0.05)] transition-all duration-500 group-hover:border-[#8082C1]/60 group-hover:shadow-[0_0_60px_rgba(128,130,193,0.15)]">
                 <img 
-                  src="/images/team/team-adel.webp" 
+                  src="https://www.ayautomate.com/images/team/team-adel.webp" 
                   alt="Adel Dahani" 
                   loading="lazy" 
                   className="w-full h-full transition-transform duration-700 group-hover:scale-105 object-cover" 
@@ -78,7 +78,7 @@ const OurTeamSection = () => {
             <div className="relative mb-6">
               <div className="w-56 h-56 md:w-64 md:h-64 rounded-full overflow-hidden border border-[#8082C1]/20 shadow-[0_0_40px_rgba(128,130,193,0.05)] transition-all duration-500 group-hover:border-[#8082C1]/60 group-hover:shadow-[0_0_60px_rgba(128,130,193,0.15)]">
                 <img 
-                  src="/images/team/david-arnaux.png" 
+                  src="https://www.ayautomate.com/images/team/david-arnaux.png" 
                   alt="David Arnaux" 
                   loading="lazy" 
                   className="w-full h-full transition-transform duration-700 group-hover:scale-105 object-cover" 
@@ -99,7 +99,7 @@ const OurTeamSection = () => {
             <div className="relative mb-6">
               <div className="w-56 h-56 md:w-64 md:h-64 rounded-full overflow-hidden border border-[#8082C1]/20 shadow-[0_0_40px_rgba(128,130,193,0.05)] transition-all duration-500 group-hover:border-[#8082C1]/60 group-hover:shadow-[0_0_60px_rgba(128,130,193,0.15)]">
                 <img 
-                  src="/images/team/vetted-engineers.webp" 
+                  src="https://www.ayautomate.com/images/team/vetted-engineers.webp" 
                   alt="20+ Vetted Engineers" 
                   loading="lazy" 
                   className="w-full h-full transition-transform duration-700 group-hover:scale-105 object-cover" 

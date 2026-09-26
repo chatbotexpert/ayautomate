@@ -1,5 +1,8 @@
 import Navbar from "@/components/Navbar";
 import TestimonialCarousel from "@/components/TestimonialCarousel";
+import ScrollExecutionSection from "@/components/ScrollExecutionSection";
+import StackSection from "@/components/StackSection";
+import TheModelSection from "@/components/TheModelSection";
 import CallToActionSection from "@/components/CallToActionSection";
 import CapabilitiesSection from "@/components/CapabilitiesSection";
 import ToolsMarqueeSection from "@/components/ToolsMarqueeSection";
@@ -186,10 +189,10 @@ export default function Home() {
           
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
             <div className="relative opacity-60 hover:opacity-100 transition-all duration-500">
-              <img alt="Saudi DGA" src="/images/clients/DGA-Logo.svg" className="h-12 md:h-16 w-auto object-contain transition-all duration-300 dark:invert dark:brightness-110" />
+              <img alt="Saudi DGA" src="https://www.ayautomate.com/images/clients/DGA-Logo.svg" className="h-12 md:h-16 w-auto object-contain transition-all duration-300 dark:invert dark:brightness-110" />
             </div>
             <div className="relative opacity-60 hover:opacity-100 transition-all duration-500">
-              <img alt="Maroc Government" src="/images/clients/maroc-gov.svg" className="h-12 md:h-16 w-auto object-contain transition-all duration-300 dark:invert dark:brightness-110" />
+              <img alt="Maroc Government" src="https://www.ayautomate.com/images/clients/maroc-gov.svg" className="h-12 md:h-16 w-auto object-contain transition-all duration-300 dark:invert dark:brightness-110" />
             </div>
           </div>
           
@@ -272,7 +275,7 @@ export default function Home() {
                 </span>
               </div>
               <div className="relative aspect-[4/3] bg-black overflow-hidden">
-                <video src="/cursor-agent.webm" className="absolute inset-0 h-full w-full object-cover" autoPlay loop muted playsInline />
+                <video src="https://www.ayautomate.com/cursor-agent.webm" className="absolute inset-0 h-full w-full object-cover" autoPlay loop muted playsInline />
               </div>
               <div className="p-4">
                 <p className="text-sm font-semibold text-foreground leading-snug">Claude Code agents shipping product features</p>
@@ -294,7 +297,7 @@ export default function Home() {
                 </span>
               </div>
               <div className="relative aspect-[4/3] bg-black overflow-hidden">
-                <video src="/n8n-hero.webm" className="absolute inset-0 h-full w-full object-cover" autoPlay loop muted playsInline />
+                <video src="https://www.ayautomate.com/n8n-hero.webm" className="absolute inset-0 h-full w-full object-cover" autoPlay loop muted playsInline />
               </div>
               <div className="p-4">
                 <p className="text-sm font-semibold text-foreground leading-snug">n8n revenue automation running 24/7</p>
@@ -316,7 +319,7 @@ export default function Home() {
                 </span>
               </div>
               <div className="relative aspect-[4/3] bg-black overflow-hidden">
-                <video src="/make-hero.webm" className="absolute inset-0 h-full w-full object-cover" autoPlay loop muted playsInline />
+                <video src="https://www.ayautomate.com/make-hero.webm" className="absolute inset-0 h-full w-full object-cover" autoPlay loop muted playsInline />
               </div>
               <div className="p-4">
                 <p className="text-sm font-semibold text-foreground leading-snug">Make orchestrations across your stack</p>
@@ -326,11 +329,15 @@ export default function Home() {
         </div>
       </section>
       
+      <ScrollExecutionSection />
+      <StackSection />
+      <TheModelSection />
+      {/* Call To Action — "Fix what's slowing you down" */}
+      <CallToActionSection />
+
       {/* Capabilities Bento Grid — "5 Ways We Automate Your Business Growth" */}
       <CapabilitiesSection />
 
-      {/* Call To Action — "Fix what's slowing you down" */}
-      <CallToActionSection />
 
       {/* Tools Marquee — "Powerful Tools, Expert Implementation" */}
       <ToolsMarqueeSection />
