@@ -24,15 +24,6 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: post.title,
     description: post.description,
-    openGraph: {
-      title: post.title,
-      description: post.description,
-      images: post.featuredImage ? [post.featuredImage] : [],
-    },
-    // Inject the original CSS stylesheets via metadata links
-    other: {
-      cssLinks: (post.cssLinks || []).join(','),
-    }
   };
 }
 
@@ -50,13 +41,19 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
 
   return (
     <>
-      {/* Inject original ayautomate.com CSS for pixel-perfect rendering of blog content */}
+      {/* Inject original ayautomate.com CSS for pixel-perfect rendering */}
       {(post.cssLinks || []).map((href: string, i: number) => (
         // eslint-disable-next-line @next/next/no-css-tags
         <link key={i} rel="stylesheet" href={href} />
       ))}
-      <div className="flex flex-col min-h-screen bg-black">
+      <div style={{ background: '#000000', minHeight: '100vh' }}>
         <Navbar />
+        {/* 
+          Render ONLY the scraped main content — no custom hero section.
+          The original site's <main> HTML already contains the correct 
+          2-column layout: left sidebar (ON THIS PAGE + EXPLORE WITH AI) 
+          + right article body with inline images.
+        */}
         <div style={{ paddingTop: '72px' }}>
           <main dangerouslySetInnerHTML={{ __html: post.content }} />
         </div>
