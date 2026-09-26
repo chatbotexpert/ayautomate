@@ -119,20 +119,58 @@ export default function PlaybooksPage() {
           }}
         />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-4">
-          {/* Filter buttons */}
-          <div className="flex flex-wrap gap-2 mb-10">
-            {categories.map((cat, i) => (
-              <button
-                key={cat}
-                className={`px-4 py-2 text-sm font-medium transition-all rounded-none border ${
-                  i === 0
-                    ? 'bg-muted border-primary-purple/50 text-foreground'
-                    : 'bg-background border-border text-muted-foreground hover:text-foreground hover:border-primary-purple/30'
-                }`}
-              >
-                {cat}
-              </button>
-            ))}
+          {/* Top Bar: Filters + Search + Layout Toggles */}
+          <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mb-10">
+            {/* Filter buttons */}
+            <div className="flex flex-wrap gap-2">
+              {categories.map((cat, i) => (
+                <button
+                  key={cat}
+                  className={`px-4 py-2 text-sm font-medium transition-all rounded-none border ${
+                    i === 0
+                      ? 'bg-muted border-primary-purple/50 text-foreground'
+                      : 'bg-background border-border text-muted-foreground hover:text-foreground hover:border-primary-purple/30'
+                  }`}
+                >
+                  {cat}
+                </button>
+              ))}
+            </div>
+
+            {/* Search and Toggles */}
+            <div className="flex items-center gap-4 w-full md:w-auto">
+              <div className="relative flex-1 md:w-64">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" aria-hidden="true">
+                  <circle cx="11" cy="11" r="8" />
+                  <path d="m21 21-4.34-4.34" />
+                </svg>
+                <input
+                  type="text"
+                  placeholder="Search playbooks..."
+                  className="w-full pl-10 pr-4 py-2.5 bg-background border border-border rounded-none text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary-purple/50 focus:border-primary-purple/50 transition-all"
+                />
+              </div>
+              <div className="flex items-center border border-border">
+                <button className="p-2.5 transition-colors bg-muted text-foreground border-r border-border">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4" aria-hidden="true">
+                    <rect width="7" height="7" x="3" y="3" rx="1" />
+                    <rect width="7" height="7" x="14" y="3" rx="1" />
+                    <rect width="7" height="7" x="14" y="14" rx="1" />
+                    <rect width="7" height="7" x="3" y="14" rx="1" />
+                  </svg>
+                </button>
+                <button className="p-2.5 transition-colors bg-background text-muted-foreground hover:text-foreground">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4" aria-hidden="true">
+                    <line x1="8" x2="21" y1="6" y2="6" />
+                    <line x1="8" x2="21" y1="12" y2="12" />
+                    <line x1="8" x2="21" y1="18" y2="18" />
+                    <line x1="3" x2="3.01" y1="6" y2="6" />
+                    <line x1="3" x2="3.01" y1="12" y2="12" />
+                    <line x1="3" x2="3.01" y1="18" y2="18" />
+                  </svg>
+                </button>
+              </div>
+            </div>
           </div>
 
           {/* Cards grid */}
@@ -190,6 +228,59 @@ export default function PlaybooksPage() {
                 </Link>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA 1: Rather have us build... */}
+      <section className="bg-background/50 py-12">
+        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-4">
+          <div className="border border-border bg-card p-6 sm:p-8 text-center">
+            <p className="text-foreground text-base sm:text-lg font-medium">
+              Rather have us build one of these into your stack?{' '}
+              <Link href="/services/custom-workflow-automation" className="text-primary-purple hover:underline font-semibold">
+                See our workflow automation service
+              </Link>{' '}
+              or{' '}
+              <Link href="/consultation" className="text-primary-purple hover:underline font-semibold">
+                book a free consultation
+              </Link>.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA 2: Free Weekly Brief */}
+      <section className="bg-background border-t border-border py-12">
+        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-4">
+          <div className="relative overflow-hidden border border-border bg-card p-5 sm:p-6">
+            <div aria-hidden="true" className="pointer-events-none absolute top-0 left-0 right-0 h-[3px] bg-primary-purple"></div>
+            <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-primary-purple">Free weekly brief</p>
+            <p className="mt-2 text-lg sm:text-xl font-bold text-foreground leading-tight">The production automations we build for clients, documented</p>
+            <p className="mt-1.5 mb-4 text-sm text-muted-foreground leading-relaxed max-w-xl">
+              The exact n8n flows, Claude Code setups, and prompts we ship, broken down step by step. No spam, unsubscribe anytime.
+            </p>
+            <form className="flex w-full gap-2 flex-col sm:flex-row">
+              <input
+                type="email"
+                inputMode="email"
+                autoComplete="email"
+                required
+                placeholder="you@company.com"
+                aria-label="Email address"
+                className="min-w-0 flex-1 border border-border bg-background px-3 py-2.5 text-base sm:text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary-purple/30 focus:border-primary-purple"
+              />
+              <button
+                type="button"
+                className="group inline-flex items-center justify-center gap-2 bg-primary-purple px-5 py-2.5 text-xs font-bold uppercase tracking-widest text-white transition-colors hover:bg-primary-purple/90 whitespace-nowrap"
+              >
+                Get the teardowns
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4 group-hover:rotate-45 transition-transform" aria-hidden="true">
+                  <path d="m7 7 10 10" />
+                  <path d="M17 7v10H7" />
+                </svg>
+              </button>
+            </form>
           </div>
         </div>
       </section>
