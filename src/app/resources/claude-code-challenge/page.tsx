@@ -133,56 +133,112 @@ export default function ClaudeCodeChallengePage() {
           )}
 
           {/* Grid section */}
-          <div className="mb-6 flex items-center gap-3">
+          <div className="mb-6 flex items-center gap-3 mt-8">
             <span className="text-[10px] font-bold uppercase tracking-widest text-primary-purple">Core series</span>
             <span className="h-px flex-1 bg-border" />
             <span className="text-xs text-muted-foreground font-mono">Days 2-30</span>
           </div>
 
-          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {remainingDays.map((day: ClaudeDay, idx: number) => (
+          <div className="grid gap-4">
+            {remainingDays.filter(d => parseInt(d.day) <= 30).map((day: ClaudeDay, idx: number) => (
               <a key={idx} href={day.href} target={day.href.startsWith('http') ? '_blank' : undefined} rel={day.href.startsWith('http') ? 'noopener noreferrer' : undefined}>
-                <div className="group relative rounded-xl border p-4 sm:p-5 transition-all border-border bg-card hover:border-primary-purple/50 hover:bg-card/80 h-full flex flex-col">
+                <div className="group relative rounded-xl border p-4 sm:p-5 transition-all border-border bg-card hover:border-primary-purple/50 hover:bg-card/80">
                   <div className="flex items-center justify-between mb-3">
                     <div className="flex items-center gap-2 sm:gap-3">
-                      <span className="text-xs sm:text-sm font-mono font-medium text-primary-purple">
-                        Day {day.day}
+                      <span className="px-2 py-0.5 bg-primary-purple/20 text-primary-purple rounded text-[10px] sm:text-xs font-bold font-mono">
+                        {day.day}
                       </span>
-                      {day.status !== 'Locked' && (
-                        <>
-                          <span className="text-muted-foreground text-[10px] sm:text-xs">•</span>
-                          <div className="flex items-center gap-1.5 text-muted-foreground text-[10px] sm:text-xs">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-3 w-3" aria-hidden="true">
-                              <path d="M12 6v6l4 2" />
-                              <circle cx="12" cy="12" r="10" />
-                            </svg>
-                            {day.day} min
-                          </div>
-                        </>
-                      )}
+                      <span className="text-xs sm:text-sm font-mono font-medium text-primary-purple">
+                        DAY {parseInt(day.day)}
+                      </span>
                     </div>
                     {day.status === 'Locked' ? (
                       <div className="text-[10px] sm:text-xs font-medium px-2 py-0.5 rounded-full border border-border text-muted-foreground bg-muted/50">
                         Locked
                       </div>
                     ) : (
-                      <div className="w-6 h-6 rounded-full bg-primary-purple/10 flex items-center justify-center group-hover:bg-primary-purple/20 transition-colors">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-3 w-3 text-primary-purple group-hover:translate-x-0.5 transition-all" aria-hidden="true">
-                          <path d="M5 12h14" />
-                          <path d="m12 5 7 7-7 7" />
-                        </svg>
+                      <div className="flex items-center text-[10px] sm:text-xs text-muted-foreground">
+                        {day.status}
+                        {day.status.includes('min') && (
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-3 w-3 ml-1 group-hover:text-primary-purple group-hover:translate-x-0.5 transition-all" aria-hidden="true">
+                            <path d="M5 12h14" />
+                            <path d="m12 5 7 7-7 7" />
+                          </svg>
+                        )}
                       </div>
                     )}
                   </div>
                   <h3 className={`font-semibold text-sm sm:text-base leading-snug ${day.status === 'Locked' ? 'text-muted-foreground' : 'text-foreground'}`}>
                     {day.title}
                   </h3>
-                  <p className="text-xs sm:text-sm text-muted-foreground mt-1 line-clamp-2 leading-relaxed flex-grow">
+                  <p className="text-xs sm:text-sm text-muted-foreground mt-1 line-clamp-2 sm:line-clamp-1 leading-relaxed">
                     {day.desc.replace(/&#x27;/g, "'")}
                   </p>
                 </div>
               </a>
             ))}
+          </div>
+
+          {/* Bonus Drops section */}
+          <div className="mb-6 flex items-center gap-3 mt-12">
+            <span className="text-[10px] font-bold uppercase tracking-widest text-primary-purple">
+              ★ Bonus drops
+            </span>
+            <span className="h-px flex-1 bg-border" />
+            <span className="text-xs text-muted-foreground font-mono">Days 31-52</span>
+          </div>
+          
+          <p className="text-sm text-muted-foreground mb-6">
+            Beyond the 30-day arc: extended deep dives on playbooks, infographics, hidden features, and advanced patterns from 800+ hours of Claude Code work.
+          </p>
+
+          <div className="grid gap-4">
+            {remainingDays.filter(d => parseInt(d.day) > 30).map((day: ClaudeDay, idx: number) => (
+              <a key={idx} href={day.href} target={day.href.startsWith('http') ? '_blank' : undefined} rel={day.href.startsWith('http') ? 'noopener noreferrer' : undefined}>
+                <div className="group relative rounded-xl border p-4 sm:p-5 transition-all border-border bg-card hover:border-primary-purple/50 hover:bg-card/80">
+                  <div className="flex items-center justify-between mb-3">
+                    <div className="flex items-center gap-2 sm:gap-3">
+                      <span className="px-2 py-0.5 bg-primary-purple/20 text-primary-purple rounded text-[10px] sm:text-xs font-bold font-mono">
+                        {day.day}
+                      </span>
+                      <span className="text-xs sm:text-sm font-mono font-medium text-primary-purple flex items-center gap-2">
+                        DAY {parseInt(day.day)}
+                        <span className="px-1.5 py-0.5 bg-primary-purple/20 text-primary-purple rounded text-[9px] font-bold uppercase tracking-wider">★ Bonus</span>
+                      </span>
+                    </div>
+                    {day.status === 'Locked' ? (
+                      <div className="text-[10px] sm:text-xs font-medium px-2 py-0.5 rounded-full border border-border text-muted-foreground bg-muted/50">
+                        Locked
+                      </div>
+                    ) : (
+                      <div className="flex items-center text-[10px] sm:text-xs text-muted-foreground">
+                        {day.status}
+                        {day.status.includes('min') && (
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-3 w-3 ml-1 group-hover:text-primary-purple group-hover:translate-x-0.5 transition-all" aria-hidden="true">
+                            <path d="M5 12h14" />
+                            <path d="m12 5 7 7-7 7" />
+                          </svg>
+                        )}
+                      </div>
+                    )}
+                  </div>
+                  <h3 className={`font-semibold text-sm sm:text-base leading-snug ${day.status === 'Locked' ? 'text-muted-foreground' : 'text-foreground'}`}>
+                    {day.title}
+                  </h3>
+                  <p className="text-xs sm:text-sm text-muted-foreground mt-1 line-clamp-2 sm:line-clamp-1 leading-relaxed">
+                    {day.desc.replace(/&#x27;/g, "'")}
+                  </p>
+                </div>
+              </a>
+            ))}
+          </div>
+
+          <div className="mt-12 rounded-xl border border-dashed border-border p-6 text-center text-sm text-muted-foreground">
+            More drops coming. Follow the series on <a href="https://www.linkedin.com/in/walid-boulanouar/" target="_blank" rel="noopener noreferrer" className="text-foreground hover:underline">LinkedIn</a> to get notified when each one ships.
+          </div>
+
+          <div className="mt-6 rounded-xl border border-border bg-card p-6 text-center text-sm sm:text-base text-foreground">
+            Applying this in production? Our <Link href="/services/security-audit" className="text-primary-purple font-medium hover:underline">Claude Code Security Audit</Link> locks down agent permissions and secrets before you scale usage, and our <Link href="/services/custom-workflow-automation" className="text-primary-purple font-medium hover:underline">Claude Code development agency</Link> builds the automations for you. <Link href="/consultation" className="text-primary-purple font-medium hover:underline">Book a free consultation</Link> to scope your setup.
           </div>
         </div>
       </div>
