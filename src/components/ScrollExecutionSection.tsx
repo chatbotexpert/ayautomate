@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useState, useRef } from 'react';
+import { RotateCcw } from 'lucide-react';
 
 const steps = [
   {
@@ -25,7 +26,7 @@ const steps = [
   {
     tag: "05",
     eyebrow: "The promise",
-    text: "Month one is fully refundable. Test it. Embed an engineer. Ship a whole product. If month one does not land, you get it back. No conversations, no exit fee, no notice beyond the current month."
+    text: "Embed an engineer. Ship a whole product. If [ICON] month one does not land, you get it back. No conversations, no exit fee, no notice beyond the current month."
   }
 ];
 
@@ -66,14 +67,7 @@ export default function ScrollExecutionSection() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const currentText = steps[currentStep].text;
-  
-  // To make it smoother, we reveal text character by character based on subProgress
-  // Usually the text might pause at the end, so let's say the first 80% of scroll types it out, 
-  // and the last 20% it stays fully typed.
-  const typingProgress = Math.min(1, subProgress / 0.8);
-  const charsToShow = Math.max(1, Math.floor(currentText.length * typingProgress));
-  const displayedText = currentText.slice(0, charsToShow);
+  const currentStepData = steps[currentStep];
 
   return (
     <section className="mb-12 pt-6 border-t border-border-subtle relative">
@@ -95,12 +89,40 @@ export default function ScrollExecutionSection() {
             
             <div className="mt-12 max-w-3xl mx-auto h-[180px] flex flex-col items-center justify-center">
               <div className="flex items-baseline justify-center gap-4 mb-4 text-[11px] uppercase tracking-[0.18em] font-semibold">
-                <span className="text-primary-purple transition-all duration-300">{steps[currentStep].eyebrow}</span>
-                <span className="text-text-soft tabular-nums">· {steps[currentStep].tag} / 05</span>
+                <span className="text-primary-purple transition-all duration-300">{currentStepData.eyebrow}</span>
+                <span className="text-text-soft tabular-nums">· {currentStepData.tag} / 05</span>
               </div>
               
-              <p className="text-xl md:text-2xl lg:text-[28px] leading-[1.4] tracking-[-0.01em] text-foreground font-medium text-left mx-auto max-w-[80%] min-h-[120px]">
-                {displayedText}
+              <p className="text-xl md:text-2xl lg:text-[28px] leading-[1.4] tracking-[-0.01em] font-medium text-center mx-auto max-w-[95%] min-h-[120px]">
+                {(() => {
+                    const textContent = currentStepData.text;
+                    const wordsArr = textContent.split(' ');
+                    
+                    return wordsArr.map((word, i) => {
+                        const wordProgressStart = i / wordsArr.length;
+                        let color = 'var(--muted-foreground)';
+                        
+                        if (subProgress >= wordProgressStart) {
+                            color = 'var(--foreground)';
+                        }
+
+                        if (word === '[ICON]') {
+                            return (
+                                <RotateCcw 
+                                  key={i} 
+                                  className="inline-block w-[0.8em] h-[0.8em] mx-1 transition-colors duration-200" 
+                                  style={{ color, transform: 'rotate(-45deg)' }} 
+                                />
+                            );
+                        }
+
+                        return (
+                            <span key={i} className="transition-colors duration-200" style={{ color }}>
+                                {word}{' '}
+                            </span>
+                        );
+                    });
+                })()}
                 <span aria-hidden={true} className="inline-block w-[3px] h-[0.95em] align-[-2px] ml-[3px] bg-primary-purple animate-pulse"></span>
               </p>
             </div>
