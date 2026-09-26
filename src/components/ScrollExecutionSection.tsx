@@ -71,7 +71,7 @@ export default function ScrollExecutionSection() {
 
   return (
     <section className="mb-12 pt-6 border-t border-border-subtle relative">
-      <div ref={containerRef} className="relative h-[400vh] w-full">
+      <div ref={containerRef} className="relative h-[600vh] w-full">
         
         <div className="sticky top-0 h-screen flex flex-col justify-center items-center overflow-hidden">
           
@@ -93,32 +93,46 @@ export default function ScrollExecutionSection() {
                 <span className="text-text-soft tabular-nums">· {currentStepData.tag} / 05</span>
               </div>
               
-              <p className="text-xl md:text-2xl lg:text-[28px] leading-[1.4] tracking-[-0.01em] font-medium text-center mx-auto max-w-[95%] min-h-[120px]">
+              <p 
+                key={currentStep} 
+                className="text-xl md:text-2xl lg:text-[28px] leading-[1.4] tracking-[-0.01em] font-medium text-center mx-auto max-w-[95%] min-h-[120px] animate-in fade-in duration-500"
+              >
                 {(() => {
                     const textContent = currentStepData.text;
                     const wordsArr = textContent.split(' ');
                     
                     return wordsArr.map((word, i) => {
                         const wordProgressStart = i / wordsArr.length;
-                        let color = 'var(--muted-foreground)';
+                        const wordProgressEnd = (i + 1) / wordsArr.length;
                         
-                        if (subProgress >= wordProgressStart) {
-                            color = 'var(--foreground)';
+                        // Calculate how "active" this word is (0 to 1)
+                        let activeRatio = 0;
+                        if (subProgress >= wordProgressEnd) {
+                            activeRatio = 1;
+                        } else if (subProgress > wordProgressStart) {
+                            activeRatio = (subProgress - wordProgressStart) / (wordProgressEnd - wordProgressStart);
                         }
 
-                        if (word === '[ICON]') {
-                            return (
-                                <RotateCcw 
-                                  key={i} 
-                                  className="inline-block w-[0.8em] h-[0.8em] mx-1 transition-colors duration-200" 
-                                  style={{ color, transform: 'rotate(-45deg)' }} 
-                                />
-                            );
-                        }
-
+                        // We can interpolate color or just use opacity on a white text over gray
+                        // But CSS color interpolation in inline styles is tricky.
+                        // We will use opacity for the white overlay!
+                        
+                        const isIcon = word === '[ICON]';
+                        
                         return (
-                            <span key={i} className="transition-colors duration-200" style={{ color }}>
-                                {word}{' '}
+                            <span key={i} className="relative inline-block mx-[2px]">
+                                {/* Background Gray word */}
+                                <span className="text-muted-foreground transition-none">
+                                    {isIcon ? <RotateCcw className="inline-block w-[0.8em] h-[0.8em] transform -rotate-45" /> : word}
+                                </span>
+                                
+                                {/* Foreground White word that fades in */}
+                                <span 
+                                    className="absolute left-0 top-0 text-foreground transition-none"
+                                    style={{ opacity: activeRatio }}
+                                >
+                                    {isIcon ? <RotateCcw className="inline-block w-[0.8em] h-[0.8em] transform -rotate-45" /> : word}
+                                </span>
                             </span>
                         );
                     });
