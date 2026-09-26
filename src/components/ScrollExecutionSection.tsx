@@ -6,31 +6,26 @@ const steps = [
   {
     tag: "01",
     eyebrow: "The before",
-    h: "The old answer was a senior full-stack hire.",
-    p: "Three months to hire, six months to onboard, twelve months to ship the roadmap. By the time the seat was filled, the market had already moved."
+    p: "The old answer was a senior full-stack hire. Three months to hire, six months to onboard, twelve months to ship the roadmap. By the time the seat was filled, the market had already moved."
   },
   {
     tag: "02",
     eyebrow: "The shift",
-    h: "AI software engineering is being rewritten in real time.",
-    p: "Coding stopped being the bottleneck the moment Claude Code, MCP, and sandboxed agents matured. The bottleneck moved to orchestration."
+    p: "AI software engineering is being rewritten in real time. Coding stopped being the bottleneck the moment Claude Code, MCP, and sandboxed agents matured. The bottleneck moved to orchestration."
   },
   {
     tag: "03",
     eyebrow: "Our move",
-    h: "Our engineers are not full-stack. They are orchestrators of agents.",
-    p: "Generalists trained in-house to wire Claude Code, n8n, MCP connectors, and E2B into systems that ship. One human driving a bench of subagents."
+    p: "Our engineers are not full-stack. They are orchestrators of agents. Generalists trained in-house to wire Claude Code, n8n, MCP connectors, and E2B into systems that ship. One human driving a bench of subagents."
   },
   {
     tag: "04",
     eyebrow: "The proof",
-    h: "Same bench ships for Sage on Monday and a solo founder on Tuesday.",
-    p: "The multiplier is the stack, not the seniority. That is why we deploy across publicly listed enterprise and bedroom operators without changing model."
+    p: "Same bench ships for Sage on Monday and a solo founder on Tuesday. The multiplier is the stack, not the seniority. That is why we deploy across publicly listed enterprise and bedroom operators without changing model."
   },
   {
     tag: "05",
     eyebrow: "The promise",
-    h: "Month one is fully refundable. Test it.",
     p: "Embed an engineer. Ship a whole product. If [ICON] month one does not land, you get it back. No conversations, no exit fee, no notice beyond the current month."
   }
 ];
@@ -57,7 +52,7 @@ export default function ScrollExecutionSection() {
         setCurrentStep(steps.length - 1);
         setSubProgress(1);
       } else {
-        const progress = scrolled / scrollDistance;
+        const progress = scrolled / scrollDistance; // 0.0 to 1.0
         const exactStep = progress * steps.length;
         const step = Math.floor(exactStep);
         const sub = exactStep - step;
@@ -75,25 +70,15 @@ export default function ScrollExecutionSection() {
   const currentStepData = steps[currentStep];
 
   // We want to type out the characters.
-  // The text is: "h " + "p"
-  const hText = currentStepData.h;
   const pText = currentStepData.p;
-  const totalChars = hText.length + 1 + pText.length;
+  const totalChars = pText.length;
   
   // Calculate how many characters to show based on subProgress.
   // We can add a slight buffer (e.g. 0.8) so it finishes typing before the step ends.
   const typingProgress = Math.min(1, subProgress / 0.8);
   const charsToShow = Math.floor(totalChars * typingProgress);
   
-  let displayedH = "";
-  let displayedP = "";
-  
-  if (charsToShow <= hText.length) {
-    displayedH = hText.slice(0, charsToShow);
-  } else {
-    displayedH = hText;
-    displayedP = pText.slice(0, charsToShow - hText.length - 1);
-  }
+  const displayedP = pText.slice(0, charsToShow);
 
   // Helper to render P with icon if needed
   const renderP = (text) => {
@@ -140,8 +125,6 @@ export default function ScrollExecutionSection() {
               </div>
               
               <p className="text-xl md:text-2xl lg:text-[28px] leading-[1.4] tracking-[-0.01em] text-foreground font-medium text-center mx-auto max-w-[95%] min-h-[120px]">
-                {displayedH && <strong>{displayedH}</strong>}
-                {displayedH === hText && " "}
                 {displayedP && renderP(displayedP)}
                 <span aria-hidden={true} className="inline-block w-[3px] h-[0.95em] align-[-2px] ml-[3px] bg-primary-purple animate-pulse"></span>
               </p>
