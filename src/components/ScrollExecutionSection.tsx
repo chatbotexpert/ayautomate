@@ -6,27 +6,32 @@ const steps = [
   {
     tag: "01",
     eyebrow: "The before",
-    text: "The old answer was a senior full-stack hire. Three months to hire, six months to onboard, twelve months to ship the roadmap. By the time the seat was filled, the market had already moved."
+    h: "The old answer was a senior full-stack hire.",
+    p: "Three months to hire, six months to onboard, twelve months to ship the roadmap. By the time the seat was filled, the market had already moved."
   },
   {
     tag: "02",
     eyebrow: "The shift",
-    text: "AI software engineering is being rewritten in real time. Coding stopped being the bottleneck the moment Claude Code, MCP, and sandboxed agents matured. The bottleneck moved to orchestration."
+    h: "AI software engineering is being rewritten in real time.",
+    p: "Coding stopped being the bottleneck the moment Claude Code, MCP, and sandboxed agents matured. The bottleneck moved to orchestration."
   },
   {
     tag: "03",
     eyebrow: "Our move",
-    text: "Our engineers are not full-stack. They are orchestrators of agents. Generalists trained in-house to wire Claude Code, n8n, MCP connectors, and E2B into systems that ship. One human driving a bench of subagents."
+    h: "Our engineers are not full-stack. They are orchestrators of agents.",
+    p: "Generalists trained in-house to wire Claude Code, n8n, MCP connectors, and E2B into systems that ship. One human driving a bench of subagents."
   },
   {
     tag: "04",
     eyebrow: "The proof",
-    text: "Same bench ships for Sage on Monday and a solo founder on Tuesday. The multiplier is the stack, not the seniority. That is why we deploy across publicly listed enterprise and bedroom operators without changing model."
+    h: "Same bench ships for Sage on Monday and a solo founder on Tuesday.",
+    p: "The multiplier is the stack, not the seniority. That is why we deploy across publicly listed enterprise and bedroom operators without changing model."
   },
   {
     tag: "05",
     eyebrow: "The promise",
-    text: "Embed an engineer. Ship a whole product. If [ICON] month one does not land, you get it back. No conversations, no exit fee, no notice beyond the current month."
+    h: "Month one is fully refundable. Test it.",
+    p: "Embed an engineer. Ship a whole product. If [ICON] month one does not land, you get it back. No conversations, no exit fee, no notice beyond the current month."
   }
 ];
 
@@ -50,9 +55,9 @@ export default function ScrollExecutionSection() {
         setSubProgress(0);
       } else if (scrolled >= scrollDistance) {
         setCurrentStep(steps.length - 1);
-        setSubProgress(1); // fully complete
+        setSubProgress(1);
       } else {
-        const progress = scrolled / scrollDistance; // 0.0 to 1.0
+        const progress = scrolled / scrollDistance;
         const exactStep = progress * steps.length;
         const step = Math.floor(exactStep);
         const sub = exactStep - step;
@@ -63,11 +68,52 @@ export default function ScrollExecutionSection() {
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
-    handleScroll(); // init
+    handleScroll();
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const currentStepData = steps[currentStep];
+
+  // We want to type out the characters.
+  // The text is: "h " + "p"
+  const hText = currentStepData.h;
+  const pText = currentStepData.p;
+  const totalChars = hText.length + 1 + pText.length;
+  
+  // Calculate how many characters to show based on subProgress.
+  // We can add a slight buffer (e.g. 0.8) so it finishes typing before the step ends.
+  const typingProgress = Math.min(1, subProgress / 0.8);
+  const charsToShow = Math.floor(totalChars * typingProgress);
+  
+  let displayedH = "";
+  let displayedP = "";
+  
+  if (charsToShow <= hText.length) {
+    displayedH = hText.slice(0, charsToShow);
+  } else {
+    displayedH = hText;
+    displayedP = pText.slice(0, charsToShow - hText.length - 1);
+  }
+
+  // Helper to render P with icon if needed
+  const renderP = (text) => {
+    if (text.includes('[ICON]')) {
+      const parts = text.split('[ICON]');
+      return (
+        <>
+          {parts[0]}
+          <RotateCcw className="inline-block w-[0.8em] h-[0.8em] mx-1 transform -rotate-45 text-text-soft" />
+          {parts[1]}
+        </>
+      );
+    }
+    // Handle partial typing of [ICON] - if it ends with [IC etc.
+    const partialMatch = text.match(/\[I?C?O?N?$/);
+    if (partialMatch) {
+      return text.substring(0, partialMatch.index);
+    }
+    return text;
+  };
 
   return (
     <section className="mb-12 pt-6 border-t border-border-subtle relative">
@@ -93,50 +139,10 @@ export default function ScrollExecutionSection() {
                 <span className="text-text-soft tabular-nums">· {currentStepData.tag} / 05</span>
               </div>
               
-              <p 
-                key={currentStep} 
-                className="text-xl md:text-2xl lg:text-[28px] leading-[1.4] tracking-[-0.01em] font-medium text-center mx-auto max-w-[95%] min-h-[120px] animate-in fade-in duration-500"
-              >
-                {(() => {
-                    const textContent = currentStepData.text;
-                    const wordsArr = textContent.split(' ');
-                    
-                    return wordsArr.map((word, i) => {
-                        const wordProgressStart = i / wordsArr.length;
-                        const wordProgressEnd = (i + 1) / wordsArr.length;
-                        
-                        // Calculate how "active" this word is (0 to 1)
-                        let activeRatio = 0;
-                        if (subProgress >= wordProgressEnd) {
-                            activeRatio = 1;
-                        } else if (subProgress > wordProgressStart) {
-                            activeRatio = (subProgress - wordProgressStart) / (wordProgressEnd - wordProgressStart);
-                        }
-
-                        // We can interpolate color or just use opacity on a white text over gray
-                        // But CSS color interpolation in inline styles is tricky.
-                        // We will use opacity for the white overlay!
-                        
-                        const isIcon = word === '[ICON]';
-                        
-                        return (
-                            <span key={i} className="relative inline-block mx-[2px]">
-                                {/* Background Gray word */}
-                                <span className="text-muted-foreground transition-none">
-                                    {isIcon ? <RotateCcw className="inline-block w-[0.8em] h-[0.8em] transform -rotate-45" /> : word}
-                                </span>
-                                
-                                {/* Foreground White word that fades in */}
-                                <span 
-                                    className="absolute left-0 top-0 text-foreground transition-none"
-                                    style={{ opacity: activeRatio }}
-                                >
-                                    {isIcon ? <RotateCcw className="inline-block w-[0.8em] h-[0.8em] transform -rotate-45" /> : word}
-                                </span>
-                            </span>
-                        );
-                    });
-                })()}
+              <p className="text-xl md:text-2xl lg:text-[28px] leading-[1.4] tracking-[-0.01em] text-foreground font-medium text-center mx-auto max-w-[95%] min-h-[120px]">
+                {displayedH && <strong>{displayedH}</strong>}
+                {displayedH === hText && " "}
+                {displayedP && renderP(displayedP)}
                 <span aria-hidden={true} className="inline-block w-[3px] h-[0.95em] align-[-2px] ml-[3px] bg-primary-purple animate-pulse"></span>
               </p>
             </div>
