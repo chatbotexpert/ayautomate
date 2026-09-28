@@ -193,29 +193,52 @@ export default function FAQPage() {
     <div className="min-h-screen bg-background text-foreground">
       <Navbar />
 
-      <main className="min-h-screen pt-[104px] pb-12 md:pt-[120px] md:pb-16">
-        <div className="text-center px-4 mb-16">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            Frequently Asked Questions
-          </h1>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Everything you need to know about AI workflow automation, staff augmentation, dedicated teams, and working with AY Automate.
-          </p>
-        </div>
+      <main className="min-h-screen">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 xl:px-4 pt-28 pb-16">
+          <div className="text-center mb-16">
+            <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary-purple mb-4">AY Automate</p>
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+              Frequently Asked Questions
+            </h1>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Everything you need to know about AI workflow automation, staff augmentation, dedicated teams, and working with AY Automate.
+            </p>
+          </div>
 
-        <div className="max-w-3xl mx-auto px-4 pb-24">
-          {faqSections.map((section, idx) => (
-            <section key={idx} className="mb-12">
-              <h2 className="text-xl md:text-2xl font-bold text-foreground mb-6 pb-3 border-b border-border">
-                {section.category}
-              </h2>
-              <div className="w-full">
-                {section.questions.map((q, qIdx) => (
-                  <AccordionItem key={qIdx} question={q.question} answer={q.answer} />
-                ))}
+          <div className="space-y-12">
+            {faqSections.map((section, idx) => (
+              <section key={idx}>
+                <h2 className="text-xl md:text-2xl font-bold text-foreground mb-6 pb-3 border-b border-border">
+                  {section.category}
+                </h2>
+                <div className="w-full">
+                  {section.questions.map((q, qIdx) => (
+                    <AccordionItem key={qIdx} question={q.question} answer={q.answer} />
+                  ))}
+                </div>
+              </section>
+            ))}
+          </div>
+
+          {/* Still Have Questions CTA */}
+          <div className="mt-16 bg-card border border-border p-8 md:p-12 relative overflow-hidden">
+            <div className="absolute inset-0 pointer-events-none opacity-[var(--grid-opacity,1)]"
+                 style={{ backgroundImage: 'linear-gradient(to right, #80808012 1px, transparent 1px), linear-gradient(to bottom, #80808012 1px, transparent 1px)', backgroundSize: '24px 24px' }}>
+            </div>
+            <div className="relative z-10 text-center">
+              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-3">Still have questions?</h2>
+              <p className="text-muted-foreground mb-6 max-w-xl mx-auto">Book a free 30-minute discovery call. We&#39;ll assess your automation opportunities and recommend next steps - no obligation.</p>
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="https://cal.com/walidboulanouar/consultation" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm transition-all hover:bg-primary-purple/90 bg-primary-purple text-white rounded-none h-12 px-8 font-bold uppercase tracking-widest">
+                  Book a Free Consultation
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-2 w-4 h-4" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                </a>
+                <a href="mailto:contact@ayautomate.com" className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm transition-all hover:bg-muted border border-border bg-transparent text-foreground rounded-none h-12 px-8 font-bold uppercase tracking-widest">
+                  Contact Us
+                </a>
               </div>
-            </section>
-          ))}
+            </div>
+          </div>
         </div>
       </main>
 
