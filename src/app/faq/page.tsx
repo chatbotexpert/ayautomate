@@ -222,9 +222,6 @@ export default function FAQPage() {
 
           {/* Still Have Questions CTA */}
           <div className="mt-16 bg-card border border-border p-8 md:p-12 relative overflow-hidden">
-            <div className="absolute inset-0 pointer-events-none opacity-[var(--grid-opacity,1)]"
-                 style={{ backgroundImage: 'linear-gradient(to right, #80808012 1px, transparent 1px), linear-gradient(to bottom, #80808012 1px, transparent 1px)', backgroundSize: '24px 24px' }}>
-            </div>
             <div className="relative z-10 text-center">
               <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-3">Still have questions?</h2>
               <p className="text-muted-foreground mb-6 max-w-xl mx-auto">Book a free 30-minute discovery call. We&#39;ll assess your automation opportunities and recommend next steps - no obligation.</p>
