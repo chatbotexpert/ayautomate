@@ -946,13 +946,16 @@ export default function ModelsPage() {
                           <div className="flex items-start justify-between w-full pl-10 pr-2 z-10 gap-1 sm:gap-2 absolute bottom-0 h-[120px]">
                             <div className="flex flex-col items-center w-full mt-3 relative">
                               <div className="flex items-center justify-center mb-1">
-                                <svg
-                                  viewBox="0 0 24 24"
-                                  width="14"
-                                  height="14"
-                                  fill="#ff5a5f"
-                                >
-                                  <path d="M12 2l2.4 7.6H22l-6.2 4.5 2.4 7.6-6.2-4.5-6.2 4.5 2.4-7.6-6.2-4.5h7.6z" />
+                                <svg viewBox="0 0 24 24" width="14" height="14">
+                                  <circle
+                                    cx="12"
+                                    cy="12"
+                                    r="9"
+                                    fill="none"
+                                    stroke="#E74C3C"
+                                    strokeWidth="2.5"
+                                  />
+                                  <path d="M16 12l6-4v8z" fill="#E74C3C" />
                                 </svg>
                               </div>
                               <span
@@ -960,7 +963,7 @@ export default function ModelsPage() {
                                 style={{
                                   transformOrigin: "top right",
                                   transform:
-                                    "rotate(-50deg) translate(-8px, -5px)",
+                                    "rotate(-55deg) translate(-8px, -5px)",
                                   letterSpacing: "0.2px",
                                   fontWeight: "400",
                                 }}
@@ -970,13 +973,19 @@ export default function ModelsPage() {
                             </div>
                             <div className="flex flex-col items-center w-full mt-3 relative">
                               <div className="flex items-center justify-center mb-1">
-                                <svg
-                                  viewBox="0 0 24 24"
-                                  width="14"
-                                  height="14"
-                                  fill="#ff8a65"
-                                >
-                                  <path d="M12 2l2.4 7.6H22l-6.2 4.5 2.4 7.6-6.2-4.5-6.2 4.5 2.4-7.6-6.2-4.5h7.6z" />
+                                <svg viewBox="0 0 24 24" width="12" height="12">
+                                  <rect
+                                    width="24"
+                                    height="24"
+                                    rx="4"
+                                    fill="#E67E22"
+                                  />
+                                  <path
+                                    d="M12 5v14M5 12h14M7.5 7.5l9 9M16.5 7.5l-9 9"
+                                    stroke="#fff"
+                                    strokeWidth="2.5"
+                                    strokeLinecap="round"
+                                  />
                                 </svg>
                               </div>
                               <span
@@ -984,7 +993,7 @@ export default function ModelsPage() {
                                 style={{
                                   transformOrigin: "top right",
                                   transform:
-                                    "rotate(-50deg) translate(-8px, -5px)",
+                                    "rotate(-55deg) translate(-8px, -5px)",
                                   letterSpacing: "0.2px",
                                   fontWeight: "400",
                                 }}
@@ -1008,7 +1017,7 @@ export default function ModelsPage() {
                                 style={{
                                   transformOrigin: "top right",
                                   transform:
-                                    "rotate(-50deg) translate(-8px, -5px)",
+                                    "rotate(-55deg) translate(-8px, -5px)",
                                   letterSpacing: "0.2px",
                                   fontWeight: "400",
                                 }}
@@ -1018,18 +1027,24 @@ export default function ModelsPage() {
                             </div>
                             <div className="flex flex-col items-center w-full mt-3 relative">
                               <div className="flex items-center justify-center mb-1">
-                                <svg viewBox="0 0 24 24" width="14" height="14">
+                                <svg viewBox="0 0 24 24" width="13" height="13">
                                   <rect
-                                    width="24"
-                                    height="24"
-                                    rx="4"
-                                    fill="#ffffff"
+                                    x="1"
+                                    y="1"
+                                    width="22"
+                                    height="22"
+                                    rx="3"
+                                    fill="transparent"
+                                    stroke="#fff"
+                                    strokeWidth="1.5"
                                   />
                                   <path
-                                    d="M7 7h10l-6 10h6"
-                                    stroke="#5c6bc0"
-                                    strokeWidth="2.5"
+                                    d="M6 7h12l-10 10h12"
+                                    stroke="#fff"
+                                    strokeWidth="2"
                                     fill="none"
+                                    strokeLinejoin="round"
+                                    strokeLinecap="round"
                                   />
                                 </svg>
                               </div>
@@ -1038,7 +1053,7 @@ export default function ModelsPage() {
                                 style={{
                                   transformOrigin: "top right",
                                   transform:
-                                    "rotate(-50deg) translate(-8px, -5px)",
+                                    "rotate(-55deg) translate(-8px, -5px)",
                                   letterSpacing: "0.2px",
                                   fontWeight: "400",
                                 }}
@@ -1048,14 +1063,20 @@ export default function ModelsPage() {
                             </div>
                             <div className="flex flex-col items-center w-full mt-3 relative">
                               <div className="flex items-center justify-center mb-1">
-                                <svg
-                                  viewBox="0 0 24 24"
-                                  width="14"
-                                  height="14"
-                                  fill="#2196f3"
-                                >
-                                  <circle cx="12" cy="12" r="10" />
-                                  <circle cx="12" cy="12" r="4" fill="#fff" />
+                                <svg viewBox="0 0 24 24" width="14" height="14">
+                                  <circle
+                                    cx="12"
+                                    cy="12"
+                                    r="12"
+                                    fill="#03A9F4"
+                                  />
+                                  <path
+                                    d="M12 5c-4 0-4 4-2 6 2 2 4 4 0 8"
+                                    stroke="#fff"
+                                    strokeWidth="2.5"
+                                    fill="none"
+                                    strokeLinecap="round"
+                                  />
                                 </svg>
                               </div>
                               <span
@@ -1063,7 +1084,7 @@ export default function ModelsPage() {
                                 style={{
                                   transformOrigin: "top right",
                                   transform:
-                                    "rotate(-50deg) translate(-8px, -5px)",
+                                    "rotate(-55deg) translate(-8px, -5px)",
                                   letterSpacing: "0.2px",
                                   fontWeight: "400",
                                 }}
@@ -1073,17 +1094,21 @@ export default function ModelsPage() {
                             </div>
                             <div className="flex flex-col items-center w-full mt-3 relative">
                               <div className="flex items-center justify-center mb-1">
-                                <svg
-                                  viewBox="0 0 24 24"
-                                  width="14"
-                                  height="14"
-                                  fill="#1976d2"
-                                >
-                                  <circle cx="12" cy="12" r="10" />
-                                  <path
-                                    d="M12 6v12M8 10l8 4M8 14l8-4"
-                                    stroke="#fff"
+                                <svg viewBox="0 0 24 24" width="14" height="14">
+                                  <circle
+                                    cx="12"
+                                    cy="12"
+                                    r="11"
+                                    fill="none"
+                                    stroke="#2196F3"
                                     strokeWidth="2"
+                                  />
+                                  <path
+                                    d="M7 12c2-3 4-3 5 0s3 3 5 0"
+                                    stroke="#2196F3"
+                                    strokeWidth="2"
+                                    strokeLinecap="round"
+                                    fill="none"
                                   />
                                 </svg>
                               </div>
@@ -1092,7 +1117,7 @@ export default function ModelsPage() {
                                 style={{
                                   transformOrigin: "top right",
                                   transform:
-                                    "rotate(-50deg) translate(-8px, -5px)",
+                                    "rotate(-55deg) translate(-8px, -5px)",
                                   letterSpacing: "0.2px",
                                   fontWeight: "400",
                                 }}
@@ -1102,13 +1127,19 @@ export default function ModelsPage() {
                             </div>
                             <div className="flex flex-col items-center w-full mt-3 relative">
                               <div className="flex items-center justify-center mb-1">
-                                <svg
-                                  viewBox="0 0 24 24"
-                                  width="14"
-                                  height="14"
-                                  fill="#ff7043"
-                                >
-                                  <path d="M12 2l2.4 7.6H22l-6.2 4.5 2.4 7.6-6.2-4.5-6.2 4.5 2.4-7.6-6.2-4.5h7.6z" />
+                                <svg viewBox="0 0 24 24" width="12" height="12">
+                                  <rect
+                                    width="24"
+                                    height="24"
+                                    rx="4"
+                                    fill="#E67E22"
+                                  />
+                                  <path
+                                    d="M12 5v14M5 12h14M7.5 7.5l9 9M16.5 7.5l-9 9"
+                                    stroke="#fff"
+                                    strokeWidth="2.5"
+                                    strokeLinecap="round"
+                                  />
                                 </svg>
                               </div>
                               <span
@@ -1116,7 +1147,7 @@ export default function ModelsPage() {
                                 style={{
                                   transformOrigin: "top right",
                                   transform:
-                                    "rotate(-50deg) translate(-8px, -5px)",
+                                    "rotate(-55deg) translate(-8px, -5px)",
                                   letterSpacing: "0.2px",
                                   fontWeight: "400",
                                 }}
@@ -1140,7 +1171,7 @@ export default function ModelsPage() {
                                 style={{
                                   transformOrigin: "top right",
                                   transform:
-                                    "rotate(-50deg) translate(-8px, -5px)",
+                                    "rotate(-55deg) translate(-8px, -5px)",
                                   letterSpacing: "0.2px",
                                   fontWeight: "400",
                                 }}
@@ -1150,17 +1181,21 @@ export default function ModelsPage() {
                             </div>
                             <div className="flex flex-col items-center w-full mt-3 relative">
                               <div className="flex items-center justify-center mb-1">
-                                <svg
-                                  viewBox="0 0 24 24"
-                                  width="14"
-                                  height="14"
-                                  fill="#1976d2"
-                                >
-                                  <circle cx="12" cy="12" r="10" />
-                                  <path
-                                    d="M12 6v12M8 10l8 4M8 14l8-4"
-                                    stroke="#fff"
+                                <svg viewBox="0 0 24 24" width="14" height="14">
+                                  <circle
+                                    cx="12"
+                                    cy="12"
+                                    r="11"
+                                    fill="none"
+                                    stroke="#2196F3"
                                     strokeWidth="2"
+                                  />
+                                  <path
+                                    d="M7 12c2-3 4-3 5 0s3 3 5 0"
+                                    stroke="#2196F3"
+                                    strokeWidth="2"
+                                    strokeLinecap="round"
+                                    fill="none"
                                   />
                                 </svg>
                               </div>
@@ -1169,7 +1204,7 @@ export default function ModelsPage() {
                                 style={{
                                   transformOrigin: "top right",
                                   transform:
-                                    "rotate(-50deg) translate(-8px, -5px)",
+                                    "rotate(-55deg) translate(-8px, -5px)",
                                   letterSpacing: "0.2px",
                                   fontWeight: "400",
                                 }}
@@ -1193,7 +1228,7 @@ export default function ModelsPage() {
                                 style={{
                                   transformOrigin: "top right",
                                   transform:
-                                    "rotate(-50deg) translate(-8px, -5px)",
+                                    "rotate(-55deg) translate(-8px, -5px)",
                                   letterSpacing: "0.2px",
                                   fontWeight: "400",
                                 }}
@@ -1203,16 +1238,20 @@ export default function ModelsPage() {
                             </div>
                             <div className="flex flex-col items-center w-full mt-3 relative">
                               <div className="flex items-center justify-center mb-1">
-                                <svg
-                                  viewBox="0 0 24 24"
-                                  width="14"
-                                  height="14"
-                                  fill="#ffffff"
-                                >
-                                  <path
-                                    d="M4 4l16 16M4 20L20 4"
+                                <svg viewBox="0 0 24 24" width="13" height="13">
+                                  <circle
+                                    cx="12"
+                                    cy="12"
+                                    r="10"
                                     stroke="#fff"
-                                    strokeWidth="3"
+                                    strokeWidth="2"
+                                    fill="none"
+                                  />
+                                  <path
+                                    d="M7 7l10 10M17 7L7 17"
+                                    stroke="#fff"
+                                    strokeWidth="2"
+                                    strokeLinecap="round"
                                   />
                                 </svg>
                               </div>
@@ -1221,23 +1260,26 @@ export default function ModelsPage() {
                                 style={{
                                   transformOrigin: "top right",
                                   transform:
-                                    "rotate(-50deg) translate(-8px, -5px)",
+                                    "rotate(-55deg) translate(-8px, -5px)",
                                   letterSpacing: "0.2px",
                                   fontWeight: "400",
                                 }}
                               >
-                                Grok 5
+                                Grok 3
                               </span>
                             </div>
                             <div className="flex flex-col items-center w-full mt-3 relative">
                               <div className="flex items-center justify-center mb-1">
-                                <svg
-                                  viewBox="0 0 24 24"
-                                  width="14"
-                                  height="14"
-                                  fill="#64b5f6"
-                                >
-                                  <path d="M12 2l1.5 6.5L20 10l-6.5 1.5L12 18l-1.5-6.5L4 10l6.5-1.5L12 2z" />
+                                <svg viewBox="0 0 24 24" width="14" height="14">
+                                  <path
+                                    d="M12 0C12 6.6 6.6 12 0 12C6.6 12 12 17.4 12 24C12 17.4 17.4 12 24 12C17.4 12 12 6.6 12 0z"
+                                    fill="#4285F4"
+                                  />
+                                  <path
+                                    d="M12 0C12 6.6 17.4 12 24 12C17.4 12 12 17.4 12 24C12 17.4 6.6 12 0 12C6.6 12 12 6.6 12 0z"
+                                    fill="#FBBC04"
+                                    opacity="0.5"
+                                  />
                                 </svg>
                               </div>
                               <span
@@ -1245,7 +1287,7 @@ export default function ModelsPage() {
                                 style={{
                                   transformOrigin: "top right",
                                   transform:
-                                    "rotate(-50deg) translate(-8px, -5px)",
+                                    "rotate(-55deg) translate(-8px, -5px)",
                                   letterSpacing: "0.2px",
                                   fontWeight: "400",
                                 }}
@@ -1255,13 +1297,16 @@ export default function ModelsPage() {
                             </div>
                             <div className="flex flex-col items-center w-full mt-3 relative">
                               <div className="flex items-center justify-center mb-1">
-                                <svg
-                                  viewBox="0 0 24 24"
-                                  width="14"
-                                  height="14"
-                                  fill="#64b5f6"
-                                >
-                                  <path d="M12 2l1.5 6.5L20 10l-6.5 1.5L12 18l-1.5-6.5L4 10l6.5-1.5L12 2z" />
+                                <svg viewBox="0 0 24 24" width="14" height="14">
+                                  <path
+                                    d="M12 0C12 6.6 6.6 12 0 12C6.6 12 12 17.4 12 24C12 17.4 17.4 12 24 12C17.4 12 12 6.6 12 0z"
+                                    fill="#4285F4"
+                                  />
+                                  <path
+                                    d="M12 0C12 6.6 17.4 12 24 12C17.4 12 12 17.4 12 24C12 17.4 6.6 12 0 12C6.6 12 12 6.6 12 0z"
+                                    fill="#FBBC04"
+                                    opacity="0.5"
+                                  />
                                 </svg>
                               </div>
                               <span
@@ -1269,7 +1314,7 @@ export default function ModelsPage() {
                                 style={{
                                   transformOrigin: "top right",
                                   transform:
-                                    "rotate(-50deg) translate(-8px, -5px)",
+                                    "rotate(-55deg) translate(-8px, -5px)",
                                   letterSpacing: "0.2px",
                                   fontWeight: "400",
                                 }}
@@ -1293,7 +1338,7 @@ export default function ModelsPage() {
                                 style={{
                                   transformOrigin: "top right",
                                   transform:
-                                    "rotate(-50deg) translate(-8px, -5px)",
+                                    "rotate(-55deg) translate(-8px, -5px)",
                                   letterSpacing: "0.2px",
                                   fontWeight: "400",
                                 }}
@@ -1303,13 +1348,22 @@ export default function ModelsPage() {
                             </div>
                             <div className="flex flex-col items-center w-full mt-3 relative">
                               <div className="flex items-center justify-center mb-1">
-                                <svg
-                                  viewBox="0 0 24 24"
-                                  width="14"
-                                  height="14"
-                                  fill="#ff9800"
-                                >
-                                  <polygon points="12 2 15 9 22 9 16 14 18 21 12 17 6 21 8 14 2 9 9 9" />
+                                <svg viewBox="0 0 24 24" width="12" height="12">
+                                  <rect
+                                    x="0"
+                                    y="0"
+                                    width="24"
+                                    height="24"
+                                    rx="4"
+                                    fill="#9C27B0"
+                                  />
+                                  <circle cx="12" cy="12" r="5" fill="#fff" />
+                                  <path
+                                    d="M12 2v20M2 12h20M5 5l14 14M19 5L5 19"
+                                    stroke="#fff"
+                                    strokeWidth="2"
+                                    strokeLinecap="round"
+                                  />
                                 </svg>
                               </div>
                               <span
@@ -1317,12 +1371,12 @@ export default function ModelsPage() {
                                 style={{
                                   transformOrigin: "top right",
                                   transform:
-                                    "rotate(-50deg) translate(-8px, -5px)",
+                                    "rotate(-55deg) translate(-8px, -5px)",
                                   letterSpacing: "0.2px",
                                   fontWeight: "400",
                                 }}
                               >
-                                Qwen2.5 Max
+                                Qwen3.7 Max
                               </span>
                             </div>
                           </div>
@@ -2566,7 +2620,7 @@ export default function ModelsPage() {
                               </svg>
                             </div>
                             <span className="text-[11px] font-medium text-gray-200 truncate pr-2">
-                              Qwen2.5 Max
+                              Qwen3.7 Max
                             </span>
                           </div>
                           <div
