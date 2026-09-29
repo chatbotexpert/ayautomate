@@ -37,7 +37,7 @@ export default function ConsultationPage() {
           <div className="inline-flex items-center gap-3 mb-8">
             <div className="flex -space-x-2">
               <img
-                src="/images/clients/faces/face1.jpg"
+                src="/images/clients/faces/connor-miller.jpg"
                 alt="Client"
                 className="w-8 h-8 rounded-full border-2 border-[#0d0d12] object-cover bg-gray-800"
                 onError={(e) => {
@@ -46,7 +46,7 @@ export default function ConsultationPage() {
                 }}
               />
               <img
-                src="/images/clients/faces/face2.jpg"
+                src="/images/clients/faces/elie-salame.png"
                 alt="Client"
                 className="w-8 h-8 rounded-full border-2 border-[#0d0d12] object-cover bg-gray-700"
                 onError={(e) => {
@@ -55,7 +55,7 @@ export default function ConsultationPage() {
                 }}
               />
               <img
-                src="/images/clients/faces/face3.jpg"
+                src="/images/clients/faces/othmane-khadri.jpg"
                 alt="Client"
                 className="w-8 h-8 rounded-full border-2 border-[#0d0d12] object-cover bg-gray-800"
                 onError={(e) => {
@@ -161,14 +161,14 @@ export default function ConsultationPage() {
             {/* These would be actual video components in reality */}
             <div className="aspect-[9/16] bg-gray-800 rounded-lg overflow-hidden relative group">
               <img
-                src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=400&q=80"
+                src="https://cdn.ayautomate.com/storage/v1/object/public/video-testimonials/poster-adstronaut-elie-salame-coo.jpg"
                 className="w-full h-full object-cover"
                 alt="Review 1"
               />
             </div>
             <div className="aspect-[9/16] bg-gray-800 rounded-lg overflow-hidden relative group">
               <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80"
+                src="https://cdn.ayautomate.com/storage/v1/object/public/video-testimonials/poster-earleads-othmane-khadri-founder.webp"
                 className="w-full h-full object-cover"
                 alt="Review 2"
               />
@@ -176,7 +176,7 @@ export default function ConsultationPage() {
             {/* Center video is larger */}
             <div className="aspect-[9/16] bg-gray-800 rounded-lg overflow-hidden relative group transform scale-110 z-10 shadow-2xl border-2 border-[#2a2a35]">
               <img
-                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80"
+                src="https://cdn.ayautomate.com/storage/v1/object/public/video-testimonials/poster-untaylored-roald-larsen-ceo.jpg"
                 className="w-full h-full object-cover"
                 alt="Review 3"
               />
@@ -188,7 +188,7 @@ export default function ConsultationPage() {
             </div>
             <div className="aspect-[9/16] bg-gray-800 rounded-lg overflow-hidden relative group">
               <img
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80"
+                src="https://cdn.ayautomate.com/storage/v1/object/public/video-testimonials/poster-easyclick-ana-maria-martinez-ceo.webp"
                 className="w-full h-full object-cover"
                 alt="Review 4"
               />
@@ -270,7 +270,7 @@ export default function ConsultationPage() {
                   <>
                     <div className="flex items-center gap-4 mb-6">
                       <img
-                        src="https://ui-avatars.com/api/?name=W+B&background=random"
+                        src="/images/downloaded/team-walid.webp"
                         className="w-12 h-12 rounded-full border border-white/10"
                         alt="Walid"
                       />
