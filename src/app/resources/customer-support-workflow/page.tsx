@@ -88,33 +88,27 @@ export default function CustomerSupportWorkflowPage() {
                   <p>Plug into your existing helpdesk via webhook. Three specialized agents take over.</p>
                 </div>
                 
-                <ul className="mt-8 grid gap-4">
-                  <li className="flex items-start gap-4 rounded-xl border border-border bg-card p-5 hover:border-primary-purple/40 transition-all">
-                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary-purple/10 border border-primary-purple/20">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-git-merge h-5 w-5 text-primary-purple"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M6 21V9a9 9 0 0 0 9 9"/></svg>
+                <ul className="mt-8 grid gap-4 sm:grid-cols-2">
+                  <li className="flex flex-col gap-2 rounded-xl border border-border bg-card p-5 hover:border-primary-purple/40 transition-all">
+                    <div className="flex items-center gap-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-check-square h-4 w-4 text-muted-foreground"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+                      <h3 className="text-sm font-bold text-foreground">Triage agent</h3>
                     </div>
-                    <div>
-                      <h3 className="text-base font-bold text-foreground mb-1">Triage agent</h3>
-                      <p className="text-sm text-muted-foreground leading-relaxed">Tags + routes to the right queue in &lt;2s.</p>
-                    </div>
+                    <p className="text-xs text-muted-foreground leading-relaxed">Tags + routes to the right queue in &lt;2s.</p>
                   </li>
-                  <li className="flex items-start gap-4 rounded-xl border border-border bg-card p-5 hover:border-primary-purple/40 transition-all">
-                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary-purple/10 border border-primary-purple/20">
-                      <FileText className="h-5 w-5 text-primary-purple" />
+                  <li className="flex flex-col gap-2 rounded-xl border border-border bg-card p-5 hover:border-primary-purple/40 transition-all">
+                    <div className="flex items-center gap-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-mail h-4 w-4 text-muted-foreground"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                      <h3 className="text-sm font-bold text-foreground">Draft agent</h3>
                     </div>
-                    <div>
-                      <h3 className="text-base font-bold text-foreground mb-1">Draft agent</h3>
-                      <p className="text-sm text-muted-foreground leading-relaxed">Writes a reply in your brand voice with citations from your docs.</p>
-                    </div>
+                    <p className="text-xs text-muted-foreground leading-relaxed">Writes a reply in your brand voice with citations from your docs.</p>
                   </li>
-                  <li className="flex items-start gap-4 rounded-xl border border-border bg-card p-5 hover:border-primary-purple/40 transition-all">
-                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary-purple/10 border border-primary-purple/20">
-                      <ShieldCheck className="h-5 w-5 text-primary-purple" />
+                  <li className="flex flex-col gap-2 rounded-xl border border-border bg-card p-5 hover:border-primary-purple/40 transition-all">
+                    <div className="flex items-center gap-2">
+                      <ShieldCheck className="h-4 w-4 text-muted-foreground" />
+                      <h3 className="text-sm font-bold text-foreground">Approval agent</h3>
                     </div>
-                    <div>
-                      <h3 className="text-base font-bold text-foreground mb-1">Approval agent</h3>
-                      <p className="text-sm text-muted-foreground leading-relaxed">Auto-sends low-risk replies. Holds high-risk ones for human review.</p>
-                    </div>
+                    <p className="text-xs text-muted-foreground leading-relaxed">Auto-sends low-risk replies. Holds high-risk ones for human review.</p>
                   </li>
                 </ul>
               </article>
@@ -128,14 +122,14 @@ export default function CustomerSupportWorkflowPage() {
                   <p>We use Claude's tool calling + a vector index of your help docs. Each ticket runs through this pipeline.</p>
                 </div>
                 
-                <pre className="mt-8 overflow-x-auto rounded-2xl border border-[#ffffff14] bg-[#0c0c12] p-6 text-[13px] sm:text-sm font-mono leading-[2]"><code><span className="text-[#a89db0] italic">// pseudo-flow</span>{"\n"}
-<span className="text-[#61afef]">onTicket</span><span className="text-foreground">(ticket) {"{"}</span>{"\n"}
-<span className="text-foreground">  </span><span className="text-[#c678dd]">const</span><span className="text-foreground"> tags = </span><span className="text-[#c678dd]">await</span><span className="text-foreground"> </span><span className="text-[#61afef]">triage</span><span className="text-foreground">(ticket)</span>{"\n"}
-<span className="text-foreground">  </span><span className="text-[#c678dd]">if</span><span className="text-foreground"> (tags.</span><span className="text-[#61afef]">includes</span><span className="text-[#e5c07b]">('billing')</span><span className="text-foreground">) </span><span className="text-[#c678dd]">return</span><span className="text-foreground"> </span><span className="text-[#61afef]">route</span><span className="text-[#e5c07b]">('billing-queue')</span>{"\n"}
-<span className="text-foreground">  </span><span className="text-[#c678dd]">const</span><span className="text-foreground"> draft = </span><span className="text-[#c678dd]">await</span><span className="text-foreground"> </span><span className="text-[#61afef]">drafter</span><span className="text-foreground">(ticket, kb.</span><span className="text-[#61afef]">search</span><span className="text-foreground">(ticket))</span>{"\n"}
-<span className="text-foreground">  </span><span className="text-[#c678dd]">if</span><span className="text-foreground"> (</span><span className="text-[#61afef]">confidence</span><span className="text-foreground">(draft) &gt; </span><span className="text-[#d19a66]">0.8</span><span className="text-foreground">) </span><span className="text-[#c678dd]">return</span><span className="text-foreground"> </span><span className="text-[#61afef]">autoSend</span><span className="text-foreground">(draft)</span>{"\n"}
-<span className="text-foreground">  </span><span className="text-[#c678dd]">return</span><span className="text-foreground"> </span><span className="text-[#61afef]">holdForReview</span><span className="text-foreground">(draft)</span>{"\n"}
-<span className="text-foreground">{"}"}</span></code></pre>
+                <pre className="mt-8 overflow-x-auto rounded-2xl border border-border bg-card p-6 text-[13px] sm:text-sm font-mono leading-[2] text-foreground"><code>// pseudo-flow{"\n"}
+onTicket(ticket) {"{"}{"\n"}
+  const tags = await triage(ticket){"\n"}
+  if (tags.includes('billing')) return route('billing-queue'){"\n"}
+  const draft = await drafter(ticket, kb.search(ticket)){"\n"}
+  if (confidence(draft) &gt; 0.8) return autoSend(draft){"\n"}
+  return holdForReview(draft){"\n"}
+{"}"}</code></pre>
               </article>
             </div>
             
