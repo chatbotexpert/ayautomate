@@ -1499,4809 +1499,1362 @@ export default function ModelsPage() {
                     Best-in-class per task type, ranked by publicly reported
                     benchmark scores. Rows with no verified score are omitted.
                   </p>
-                  <div
-                    style={{
-                      display: "grid",
-                      gridTemplateColumns:
-                        "repeat(auto-fill, minmax(280px, 1fr))",
-                      gap: "14px",
-                    }}
-                  >
-                    <div
-                      style={{
-                        padding: "16px",
-                        borderRadius: "6px",
-                        border: "1px solid #ffffff1a",
-                        background: "var(--card)",
-                        display: "flex",
-                        flexDirection: "column",
-                        gap: "8px",
-                        transition: "border-color 0.2s, box-shadow 0.2s",
-                        opacity: "1",
-                        transform: "translateY(0)",
-                      }}
-                    >
-                      <div
-                        style={{
-                          display: "flex",
-                          alignItems: "center",
-                          justifyContent: "space-between",
-                        }}
-                      >
-                        <p
-                          style={{
-                            margin: "0",
-                            fontWeight: "600",
-                            fontSize: "13px",
-                            color: "var(--foreground)",
-                          }}
-                        >
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
+                    {" "}
+                    <div className="bg-[#1c1c28] rounded-xl p-4 sm:p-5 flex flex-col border border-white/5 shadow-md">
+                      <div className="flex items-center justify-between mb-4 gap-2">
+                        <h3 className="text-[13px] font-semibold text-white whitespace-nowrap">
                           Coding
-                        </p>
-                        <span
-                          style={{
-                            fontSize: "11px",
-                            color: "var(--muted-foreground)",
-                            maxWidth: "160px",
-                            textAlign: "right",
-                          }}
-                        >
+                        </h3>
+                        <span className="text-[10px] sm:text-[11px] text-muted-foreground text-right">
                           SWE-bench Pro
                         </span>
                       </div>
-                      <div
-                        data-slot="chart"
-                        data-chart="chart-_R_2hn4a5fiumelb_"
-                        className="[&amp;_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&amp;_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&amp;_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&amp;_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&amp;_.recharts-radial-bar-background-sector]:fill-muted [&amp;_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&amp;_.recharts-reference-line_[stroke='#ccc']]:stroke-border flex aspect-video justify-center text-xs [&amp;_.recharts-dot[stroke='#fff']]:stroke-transparent [&amp;_.recharts-layer]:outline-hidden [&amp;_.recharts-sector]:outline-hidden [&amp;_.recharts-sector[stroke='#fff']]:stroke-transparent [&amp;_.recharts-surface]:outline-hidden w-full"
-                        style={{ height: "200px" }}
-                      >
-                        <div className="w-full bg-[#1c1c28] rounded-xl p-4 sm:p-6 mt-8 mb-4 shadow-xl border border-white/5">
-                          <div
-                            className="flex items-end justify-between w-full h-[320px] relative"
-                            style={{
-                              borderBottom: "1px solid #ffffff1a",
-                              paddingBottom: "1px",
-                            }}
-                          >
-                            <div className="absolute left-0 top-0 h-full flex flex-col justify-between text-[11px] text-muted-foreground pb-[120px] font-mono">
-                              <span>110</span>
-                              <span>60</span>
-                              <span>30</span>
-                              <span>0</span>
+                      <div className="flex flex-col gap-[10px]">
+                        <div className="flex items-center gap-2">
+                          <div className="w-[14px] h-[14px] rounded bg-white/10 flex items-center justify-center text-white shrink-0 shadow-inner border border-white/10">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="10"
+                              height="10"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            >
+                              <path d="M12 2v20" />
+                              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                            </svg>
+                          </div>
+                          <span className="text-[10px] text-gray-300 w-24 sm:w-28 shrink-0 truncate">
+                            Claude Fable 5
+                          </span>
+                          <div className="flex-1 h-[14px] bg-transparent rounded-sm flex items-center">
+                            <div
+                              className="h-full rounded-[2px] flex items-center justify-start min-w-[28px] overflow-hidden"
+                              style={{
+                                width: "80%",
+                                backgroundColor: "#f97316",
+                                border: "none",
+                              }}
+                            >
+                              <span
+                                className="text-[9px] font-bold text-white px-[4px] leading-none"
+                                style={{
+                                  textShadow: "0 1px 2px rgba(0,0,0,0.5)",
+                                }}
+                              >
+                                80%
+                              </span>
                             </div>
-
-                            <div className="absolute left-8 right-0 top-0 h-full flex flex-col justify-between pb-[120px]">
-                              <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
-                              <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
-                              <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
-                              <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <div className="w-[14px] h-[14px] rounded bg-white/10 flex items-center justify-center text-white shrink-0 shadow-inner border border-white/10">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="10"
+                              height="10"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            >
+                              <path d="M12 2v20" />
+                              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                            </svg>
+                          </div>
+                          <span className="text-[10px] text-gray-300 w-24 sm:w-28 shrink-0 truncate">
+                            Claude Opus 4.8
+                          </span>
+                          <div className="flex-1 h-[14px] bg-transparent rounded-sm flex items-center">
+                            <div
+                              className="h-full rounded-[2px] flex items-center justify-start min-w-[28px] overflow-hidden"
+                              style={{
+                                width: "69%",
+                                backgroundColor: "#f97316",
+                                border: "none",
+                              }}
+                            >
+                              <span
+                                className="text-[9px] font-bold text-white px-[4px] leading-none"
+                                style={{
+                                  textShadow: "0 1px 2px rgba(0,0,0,0.5)",
+                                }}
+                              >
+                                69%
+                              </span>
                             </div>
-
-                            <div className="flex items-end justify-between w-full h-[200px] pl-10 pr-2 z-10 gap-1 sm:gap-[6px] md:gap-3 absolute bottom-[120px]">
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#ff5a5f",
-                                    height: "95.5%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    95.5%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#ff8a65",
-                                    height: "93.6%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    93.6%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#13131a",
-                                    height: "93.6%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    93.6%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#5c6bc0",
-                                    height: "91.2%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    91.2%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#2196f3",
-                                    height: "90.4%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    90.4%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#1976d2",
-                                    height: "90.1%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    90.1%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#ff7043",
-                                    height: "89.9%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    89.9%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#13131a",
-                                    height: "88.4%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    88.4%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#3f51b5",
-                                    height: "88.1%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    88.1%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#13131a",
-                                    height: "87.7%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    87.7%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#13131a",
-                                    height: "84.6%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    84.6%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#64b5f6",
-                                    height: "84%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    84%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#42a5f5",
-                                    height: "82.8%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    82.8%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#13131a",
-                                    height: "81.4%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    81.4%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#ff9800",
-                                    height: "77.2%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    77.2%
-                                  </span>
-                                </div>
-                              </div>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <div className="w-[14px] h-[14px] rounded bg-white/10 flex items-center justify-center text-white shrink-0 shadow-inner border border-white/10">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="10"
+                              height="10"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            >
+                              <path d="M12 2v20" />
+                              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                            </svg>
+                          </div>
+                          <span className="text-[10px] text-gray-300 w-24 sm:w-28 shrink-0 truncate">
+                            Claude Sonnet 5
+                          </span>
+                          <div className="flex-1 h-[14px] bg-transparent rounded-sm flex items-center">
+                            <div
+                              className="h-full rounded-[2px] flex items-center justify-start min-w-[28px] overflow-hidden"
+                              style={{
+                                width: "63%",
+                                backgroundColor: "#f97316",
+                                border: "none",
+                              }}
+                            >
+                              <span
+                                className="text-[9px] font-bold text-white px-[4px] leading-none"
+                                style={{
+                                  textShadow: "0 1px 2px rgba(0,0,0,0.5)",
+                                }}
+                              >
+                                63%
+                              </span>
                             </div>
-
-                            <div className="flex items-start justify-between w-full pl-10 pr-2 z-10 gap-1 sm:gap-[6px] md:gap-3 absolute bottom-0 h-[110px]">
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  Sakana Fugu Ultra
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  Claude Opus 4.0
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  GPT-5.5
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  GLM-5.2
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  Tencent Hy3
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  DeepSeek V4 Pro
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  Claude Sonnet 4.0
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  GPT-5
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  DeepSeek V4 Flash
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  o3
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  Grok 5
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  Gemini 2.5 Pro
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  Gemini 2.5 Flash
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  o4-mini
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  Qwen2.5 Max
-                                </span>
-                              </div>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <div className="w-[14px] h-[14px] rounded bg-white/10 flex items-center justify-center text-white shrink-0 shadow-inner border border-white/10">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="10"
+                              height="10"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            >
+                              <path d="M12 2v20" />
+                              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                            </svg>
+                          </div>
+                          <span className="text-[10px] text-gray-300 w-24 sm:w-28 shrink-0 truncate">
+                            GLM-5.2
+                          </span>
+                          <div className="flex-1 h-[14px] bg-transparent rounded-sm flex items-center">
+                            <div
+                              className="h-full rounded-[2px] flex items-center justify-start min-w-[28px] overflow-hidden"
+                              style={{
+                                width: "62%",
+                                backgroundColor: "#6366f1",
+                                border: "none",
+                              }}
+                            >
+                              <span
+                                className="text-[9px] font-bold text-white px-[4px] leading-none"
+                                style={{
+                                  textShadow: "0 1px 2px rgba(0,0,0,0.5)",
+                                }}
+                              >
+                                62%
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <div className="w-[14px] h-[14px] rounded bg-white/10 flex items-center justify-center text-white shrink-0 shadow-inner border border-white/10">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="10"
+                              height="10"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            >
+                              <path d="M12 2v20" />
+                              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                            </svg>
+                          </div>
+                          <span className="text-[10px] text-gray-300 w-24 sm:w-28 shrink-0 truncate">
+                            GPT-5.5
+                          </span>
+                          <div className="flex-1 h-[14px] bg-transparent rounded-sm flex items-center">
+                            <div
+                              className="h-full rounded-[2px] flex items-center justify-start min-w-[28px] overflow-hidden"
+                              style={{
+                                width: "59%",
+                                backgroundColor: "#18181b",
+                                border: "1px solid rgba(255,255,255,0.1)",
+                              }}
+                            >
+                              <span
+                                className="text-[9px] font-bold text-white px-[4px] leading-none"
+                                style={{
+                                  textShadow: "0 1px 2px rgba(0,0,0,0.5)",
+                                }}
+                              >
+                                59%
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <div className="w-[14px] h-[14px] rounded bg-white/10 flex items-center justify-center text-white shrink-0 shadow-inner border border-white/10">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="10"
+                              height="10"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            >
+                              <path d="M12 2v20" />
+                              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                            </svg>
+                          </div>
+                          <span className="text-[10px] text-gray-300 w-24 sm:w-28 shrink-0 truncate">
+                            Claude Sonnet 4.6
+                          </span>
+                          <div className="flex-1 h-[14px] bg-transparent rounded-sm flex items-center">
+                            <div
+                              className="h-full rounded-[2px] flex items-center justify-start min-w-[28px] overflow-hidden"
+                              style={{
+                                width: "58%",
+                                backgroundColor: "#f97316",
+                                border: "none",
+                              }}
+                            >
+                              <span
+                                className="text-[9px] font-bold text-white px-[4px] leading-none"
+                                style={{
+                                  textShadow: "0 1px 2px rgba(0,0,0,0.5)",
+                                }}
+                              >
+                                58%
+                              </span>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div
-                      style={{
-                        padding: "16px",
-                        borderRadius: "6px",
-                        border: "1px solid #ffffff1a",
-                        background: "var(--card)",
-                        display: "flex",
-                        flexDirection: "column",
-                        gap: "8px",
-                        transition: "border-color 0.2s, box-shadow 0.2s",
-                        opacity: "1",
-                        transform: "translateY(0)",
-                      }}
-                    >
-                      <div
-                        style={{
-                          display: "flex",
-                          alignItems: "center",
-                          justifyContent: "space-between",
-                        }}
-                      >
-                        <p
-                          style={{
-                            margin: "0",
-                            fontWeight: "600",
-                            fontSize: "13px",
-                            color: "var(--foreground)",
-                          }}
-                        >
+                    <div className="bg-[#1c1c28] rounded-xl p-4 sm:p-5 flex flex-col border border-white/5 shadow-md">
+                      <div className="flex items-center justify-between mb-4 gap-2">
+                        <h3 className="text-[13px] font-semibold text-white whitespace-nowrap">
                           Reasoning
-                        </p>
-                        <span
-                          style={{
-                            fontSize: "11px",
-                            color: "var(--muted-foreground)",
-                            maxWidth: "160px",
-                            textAlign: "right",
-                          }}
-                        >
+                        </h3>
+                        <span className="text-[10px] sm:text-[11px] text-muted-foreground text-right">
                           GPQA Diamond
                         </span>
                       </div>
-                      <div
-                        data-slot="chart"
-                        data-chart="chart-_R_2in4a5fiumelb_"
-                        className="[&amp;_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&amp;_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&amp;_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&amp;_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&amp;_.recharts-radial-bar-background-sector]:fill-muted [&amp;_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&amp;_.recharts-reference-line_[stroke='#ccc']]:stroke-border flex aspect-video justify-center text-xs [&amp;_.recharts-dot[stroke='#fff']]:stroke-transparent [&amp;_.recharts-layer]:outline-hidden [&amp;_.recharts-sector]:outline-hidden [&amp;_.recharts-sector[stroke='#fff']]:stroke-transparent [&amp;_.recharts-surface]:outline-hidden w-full"
-                        style={{ height: "200px" }}
-                      >
-                        <div className="w-full bg-[#1c1c28] rounded-xl p-4 sm:p-6 mt-8 mb-4 shadow-xl border border-white/5">
-                          <div
-                            className="flex items-end justify-between w-full h-[320px] relative"
-                            style={{
-                              borderBottom: "1px solid #ffffff1a",
-                              paddingBottom: "1px",
-                            }}
-                          >
-                            <div className="absolute left-0 top-0 h-full flex flex-col justify-between text-[11px] text-muted-foreground pb-[120px] font-mono">
-                              <span>110</span>
-                              <span>60</span>
-                              <span>30</span>
-                              <span>0</span>
+                      <div className="flex flex-col gap-[10px]">
+                        <div className="flex items-center gap-2">
+                          <div className="w-[14px] h-[14px] rounded bg-white/10 flex items-center justify-center text-white shrink-0 shadow-inner border border-white/10">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="10"
+                              height="10"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            >
+                              <path d="M12 2v20" />
+                              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                            </svg>
+                          </div>
+                          <span className="text-[10px] text-gray-300 w-24 sm:w-28 shrink-0 truncate">
+                            Sakana Fugu Ultra
+                          </span>
+                          <div className="flex-1 h-[14px] bg-transparent rounded-sm flex items-center">
+                            <div
+                              className="h-full rounded-[2px] flex items-center justify-start min-w-[28px] overflow-hidden"
+                              style={{
+                                width: "96%",
+                                backgroundColor: "#ef4444",
+                                border: "none",
+                              }}
+                            >
+                              <span
+                                className="text-[9px] font-bold text-white px-[4px] leading-none"
+                                style={{
+                                  textShadow: "0 1px 2px rgba(0,0,0,0.5)",
+                                }}
+                              >
+                                96%
+                              </span>
                             </div>
-
-                            <div className="absolute left-8 right-0 top-0 h-full flex flex-col justify-between pb-[120px]">
-                              <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
-                              <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
-                              <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
-                              <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <div className="w-[14px] h-[14px] rounded bg-white/10 flex items-center justify-center text-white shrink-0 shadow-inner border border-white/10">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="10"
+                              height="10"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            >
+                              <path d="M12 2v20" />
+                              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                            </svg>
+                          </div>
+                          <span className="text-[10px] text-gray-300 w-24 sm:w-28 shrink-0 truncate">
+                            Claude Opus 4.8
+                          </span>
+                          <div className="flex-1 h-[14px] bg-transparent rounded-sm flex items-center">
+                            <div
+                              className="h-full rounded-[2px] flex items-center justify-start min-w-[28px] overflow-hidden"
+                              style={{
+                                width: "94%",
+                                backgroundColor: "#f97316",
+                                border: "none",
+                              }}
+                            >
+                              <span
+                                className="text-[9px] font-bold text-white px-[4px] leading-none"
+                                style={{
+                                  textShadow: "0 1px 2px rgba(0,0,0,0.5)",
+                                }}
+                              >
+                                94%
+                              </span>
                             </div>
-
-                            <div className="flex items-end justify-between w-full h-[200px] pl-10 pr-2 z-10 gap-1 sm:gap-[6px] md:gap-3 absolute bottom-[120px]">
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#ff5a5f",
-                                    height: "95.5%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    95.5%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#ff8a65",
-                                    height: "93.6%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    93.6%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#13131a",
-                                    height: "93.6%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    93.6%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#5c6bc0",
-                                    height: "91.2%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    91.2%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#2196f3",
-                                    height: "90.4%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    90.4%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#1976d2",
-                                    height: "90.1%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    90.1%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#ff7043",
-                                    height: "89.9%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    89.9%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#13131a",
-                                    height: "88.4%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    88.4%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#3f51b5",
-                                    height: "88.1%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    88.1%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#13131a",
-                                    height: "87.7%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    87.7%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#13131a",
-                                    height: "84.6%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    84.6%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#64b5f6",
-                                    height: "84%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    84%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#42a5f5",
-                                    height: "82.8%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    82.8%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#13131a",
-                                    height: "81.4%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    81.4%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#ff9800",
-                                    height: "77.2%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    77.2%
-                                  </span>
-                                </div>
-                              </div>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <div className="w-[14px] h-[14px] rounded bg-white/10 flex items-center justify-center text-white shrink-0 shadow-inner border border-white/10">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="10"
+                              height="10"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            >
+                              <path d="M12 2v20" />
+                              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                            </svg>
+                          </div>
+                          <span className="text-[10px] text-gray-300 w-24 sm:w-28 shrink-0 truncate">
+                            GPT-5.5
+                          </span>
+                          <div className="flex-1 h-[14px] bg-transparent rounded-sm flex items-center">
+                            <div
+                              className="h-full rounded-[2px] flex items-center justify-start min-w-[28px] overflow-hidden"
+                              style={{
+                                width: "94%",
+                                backgroundColor: "#18181b",
+                                border: "1px solid rgba(255,255,255,0.1)",
+                              }}
+                            >
+                              <span
+                                className="text-[9px] font-bold text-white px-[4px] leading-none"
+                                style={{
+                                  textShadow: "0 1px 2px rgba(0,0,0,0.5)",
+                                }}
+                              >
+                                94%
+                              </span>
                             </div>
-
-                            <div className="flex items-start justify-between w-full pl-10 pr-2 z-10 gap-1 sm:gap-[6px] md:gap-3 absolute bottom-0 h-[110px]">
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  Sakana Fugu Ultra
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  Claude Opus 4.0
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  GPT-5.5
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  GLM-5.2
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  Tencent Hy3
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  DeepSeek V4 Pro
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  Claude Sonnet 4.0
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  GPT-5
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  DeepSeek V4 Flash
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  o3
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  Grok 5
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  Gemini 2.5 Pro
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  Gemini 2.5 Flash
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  o4-mini
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  Qwen2.5 Max
-                                </span>
-                              </div>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <div className="w-[14px] h-[14px] rounded bg-white/10 flex items-center justify-center text-white shrink-0 shadow-inner border border-white/10">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="10"
+                              height="10"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            >
+                              <path d="M12 2v20" />
+                              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                            </svg>
+                          </div>
+                          <span className="text-[10px] text-gray-300 w-24 sm:w-28 shrink-0 truncate">
+                            GLM-5.2
+                          </span>
+                          <div className="flex-1 h-[14px] bg-transparent rounded-sm flex items-center">
+                            <div
+                              className="h-full rounded-[2px] flex items-center justify-start min-w-[28px] overflow-hidden"
+                              style={{
+                                width: "91%",
+                                backgroundColor: "#6366f1",
+                                border: "none",
+                              }}
+                            >
+                              <span
+                                className="text-[9px] font-bold text-white px-[4px] leading-none"
+                                style={{
+                                  textShadow: "0 1px 2px rgba(0,0,0,0.5)",
+                                }}
+                              >
+                                91%
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <div className="w-[14px] h-[14px] rounded bg-white/10 flex items-center justify-center text-white shrink-0 shadow-inner border border-white/10">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="10"
+                              height="10"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            >
+                              <path d="M12 2v20" />
+                              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                            </svg>
+                          </div>
+                          <span className="text-[10px] text-gray-300 w-24 sm:w-28 shrink-0 truncate">
+                            DeepSeek V4 Pro
+                          </span>
+                          <div className="flex-1 h-[14px] bg-transparent rounded-sm flex items-center">
+                            <div
+                              className="h-full rounded-[2px] flex items-center justify-start min-w-[28px] overflow-hidden"
+                              style={{
+                                width: "90%",
+                                backgroundColor: "#3b82f6",
+                                border: "none",
+                              }}
+                            >
+                              <span
+                                className="text-[9px] font-bold text-white px-[4px] leading-none"
+                                style={{
+                                  textShadow: "0 1px 2px rgba(0,0,0,0.5)",
+                                }}
+                              >
+                                90%
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <div className="w-[14px] h-[14px] rounded bg-white/10 flex items-center justify-center text-white shrink-0 shadow-inner border border-white/10">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="10"
+                              height="10"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            >
+                              <path d="M12 2v20" />
+                              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                            </svg>
+                          </div>
+                          <span className="text-[10px] text-gray-300 w-24 sm:w-28 shrink-0 truncate">
+                            Tencent Hy3
+                          </span>
+                          <div className="flex-1 h-[14px] bg-transparent rounded-sm flex items-center">
+                            <div
+                              className="h-full rounded-[2px] flex items-center justify-start min-w-[28px] overflow-hidden"
+                              style={{
+                                width: "90%",
+                                backgroundColor: "#2563eb",
+                                border: "none",
+                              }}
+                            >
+                              <span
+                                className="text-[9px] font-bold text-white px-[4px] leading-none"
+                                style={{
+                                  textShadow: "0 1px 2px rgba(0,0,0,0.5)",
+                                }}
+                              >
+                                90%
+                              </span>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div
-                      style={{
-                        padding: "16px",
-                        borderRadius: "6px",
-                        border: "1px solid #ffffff1a",
-                        background: "var(--card)",
-                        display: "flex",
-                        flexDirection: "column",
-                        gap: "8px",
-                        transition: "border-color 0.2s, box-shadow 0.2s",
-                        opacity: "1",
-                        transform: "translateY(0)",
-                      }}
-                    >
-                      <div
-                        style={{
-                          display: "flex",
-                          alignItems: "center",
-                          justifyContent: "space-between",
-                        }}
-                      >
-                        <p
-                          style={{
-                            margin: "0",
-                            fontWeight: "600",
-                            fontSize: "13px",
-                            color: "var(--foreground)",
-                          }}
-                        >
+                    <div className="bg-[#1c1c28] rounded-xl p-4 sm:p-5 flex flex-col border border-white/5 shadow-md">
+                      <div className="flex items-center justify-between mb-4 gap-2">
+                        <h3 className="text-[13px] font-semibold text-white whitespace-nowrap">
                           Agents
-                        </p>
-                        <span
-                          style={{
-                            fontSize: "11px",
-                            color: "var(--muted-foreground)",
-                            maxWidth: "160px",
-                            textAlign: "right",
-                          }}
-                        >
+                        </h3>
+                        <span className="text-[10px] sm:text-[11px] text-muted-foreground text-right">
                           OSWorld
                         </span>
                       </div>
-                      <div
-                        data-slot="chart"
-                        data-chart="chart-_R_2jn4a5fiumelb_"
-                        className="[&amp;_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&amp;_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&amp;_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&amp;_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&amp;_.recharts-radial-bar-background-sector]:fill-muted [&amp;_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&amp;_.recharts-reference-line_[stroke='#ccc']]:stroke-border flex aspect-video justify-center text-xs [&amp;_.recharts-dot[stroke='#fff']]:stroke-transparent [&amp;_.recharts-layer]:outline-hidden [&amp;_.recharts-sector]:outline-hidden [&amp;_.recharts-sector[stroke='#fff']]:stroke-transparent [&amp;_.recharts-surface]:outline-hidden w-full"
-                        style={{ height: "200px" }}
-                      >
-                        <div className="w-full bg-[#1c1c28] rounded-xl p-4 sm:p-6 mt-8 mb-4 shadow-xl border border-white/5">
-                          <div
-                            className="flex items-end justify-between w-full h-[320px] relative"
-                            style={{
-                              borderBottom: "1px solid #ffffff1a",
-                              paddingBottom: "1px",
-                            }}
-                          >
-                            <div className="absolute left-0 top-0 h-full flex flex-col justify-between text-[11px] text-muted-foreground pb-[120px] font-mono">
-                              <span>110</span>
-                              <span>60</span>
-                              <span>30</span>
-                              <span>0</span>
+                      <div className="flex flex-col gap-[10px]">
+                        <div className="flex items-center gap-2">
+                          <div className="w-[14px] h-[14px] rounded bg-white/10 flex items-center justify-center text-white shrink-0 shadow-inner border border-white/10">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="10"
+                              height="10"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            >
+                              <path d="M12 2v20" />
+                              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                            </svg>
+                          </div>
+                          <span className="text-[10px] text-gray-300 w-24 sm:w-28 shrink-0 truncate">
+                            Claude Fable 5
+                          </span>
+                          <div className="flex-1 h-[14px] bg-transparent rounded-sm flex items-center">
+                            <div
+                              className="h-full rounded-[2px] flex items-center justify-start min-w-[28px] overflow-hidden"
+                              style={{
+                                width: "85%",
+                                backgroundColor: "#f97316",
+                                border: "none",
+                              }}
+                            >
+                              <span
+                                className="text-[9px] font-bold text-white px-[4px] leading-none"
+                                style={{
+                                  textShadow: "0 1px 2px rgba(0,0,0,0.5)",
+                                }}
+                              >
+                                85%
+                              </span>
                             </div>
-
-                            <div className="absolute left-8 right-0 top-0 h-full flex flex-col justify-between pb-[120px]">
-                              <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
-                              <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
-                              <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
-                              <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <div className="w-[14px] h-[14px] rounded bg-white/10 flex items-center justify-center text-white shrink-0 shadow-inner border border-white/10">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="10"
+                              height="10"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            >
+                              <path d="M12 2v20" />
+                              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                            </svg>
+                          </div>
+                          <span className="text-[10px] text-gray-300 w-24 sm:w-28 shrink-0 truncate">
+                            Claude Opus 4.8
+                          </span>
+                          <div className="flex-1 h-[14px] bg-transparent rounded-sm flex items-center">
+                            <div
+                              className="h-full rounded-[2px] flex items-center justify-start min-w-[28px] overflow-hidden"
+                              style={{
+                                width: "83%",
+                                backgroundColor: "#f97316",
+                                border: "none",
+                              }}
+                            >
+                              <span
+                                className="text-[9px] font-bold text-white px-[4px] leading-none"
+                                style={{
+                                  textShadow: "0 1px 2px rgba(0,0,0,0.5)",
+                                }}
+                              >
+                                83%
+                              </span>
                             </div>
-
-                            <div className="flex items-end justify-between w-full h-[200px] pl-10 pr-2 z-10 gap-1 sm:gap-[6px] md:gap-3 absolute bottom-[120px]">
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#ff5a5f",
-                                    height: "95.5%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    95.5%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#ff8a65",
-                                    height: "93.6%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    93.6%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#13131a",
-                                    height: "93.6%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    93.6%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#5c6bc0",
-                                    height: "91.2%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    91.2%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#2196f3",
-                                    height: "90.4%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    90.4%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#1976d2",
-                                    height: "90.1%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    90.1%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#ff7043",
-                                    height: "89.9%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    89.9%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#13131a",
-                                    height: "88.4%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    88.4%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#3f51b5",
-                                    height: "88.1%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    88.1%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#13131a",
-                                    height: "87.7%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    87.7%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#13131a",
-                                    height: "84.6%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    84.6%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#64b5f6",
-                                    height: "84%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    84%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#42a5f5",
-                                    height: "82.8%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    82.8%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#13131a",
-                                    height: "81.4%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    81.4%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#ff9800",
-                                    height: "77.2%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    77.2%
-                                  </span>
-                                </div>
-                              </div>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <div className="w-[14px] h-[14px] rounded bg-white/10 flex items-center justify-center text-white shrink-0 shadow-inner border border-white/10">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="10"
+                              height="10"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            >
+                              <path d="M12 2v20" />
+                              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                            </svg>
+                          </div>
+                          <span className="text-[10px] text-gray-300 w-24 sm:w-28 shrink-0 truncate">
+                            Claude Sonnet 5
+                          </span>
+                          <div className="flex-1 h-[14px] bg-transparent rounded-sm flex items-center">
+                            <div
+                              className="h-full rounded-[2px] flex items-center justify-start min-w-[28px] overflow-hidden"
+                              style={{
+                                width: "81%",
+                                backgroundColor: "#f97316",
+                                border: "none",
+                              }}
+                            >
+                              <span
+                                className="text-[9px] font-bold text-white px-[4px] leading-none"
+                                style={{
+                                  textShadow: "0 1px 2px rgba(0,0,0,0.5)",
+                                }}
+                              >
+                                81%
+                              </span>
                             </div>
-
-                            <div className="flex items-start justify-between w-full pl-10 pr-2 z-10 gap-1 sm:gap-[6px] md:gap-3 absolute bottom-0 h-[110px]">
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  Sakana Fugu Ultra
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  Claude Opus 4.0
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  GPT-5.5
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  GLM-5.2
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  Tencent Hy3
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  DeepSeek V4 Pro
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  Claude Sonnet 4.0
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  GPT-5
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  DeepSeek V4 Flash
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  o3
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  Grok 5
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  Gemini 2.5 Pro
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  Gemini 2.5 Flash
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  o4-mini
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  Qwen2.5 Max
-                                </span>
-                              </div>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <div className="w-[14px] h-[14px] rounded bg-white/10 flex items-center justify-center text-white shrink-0 shadow-inner border border-white/10">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="10"
+                              height="10"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            >
+                              <path d="M12 2v20" />
+                              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                            </svg>
+                          </div>
+                          <span className="text-[10px] text-gray-300 w-24 sm:w-28 shrink-0 truncate">
+                            GPT-5.5
+                          </span>
+                          <div className="flex-1 h-[14px] bg-transparent rounded-sm flex items-center">
+                            <div
+                              className="h-full rounded-[2px] flex items-center justify-start min-w-[28px] overflow-hidden"
+                              style={{
+                                width: "79%",
+                                backgroundColor: "#18181b",
+                                border: "1px solid rgba(255,255,255,0.1)",
+                              }}
+                            >
+                              <span
+                                className="text-[9px] font-bold text-white px-[4px] leading-none"
+                                style={{
+                                  textShadow: "0 1px 2px rgba(0,0,0,0.5)",
+                                }}
+                              >
+                                79%
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <div className="w-[14px] h-[14px] rounded bg-white/10 flex items-center justify-center text-white shrink-0 shadow-inner border border-white/10">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="10"
+                              height="10"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            >
+                              <path d="M12 2v20" />
+                              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                            </svg>
+                          </div>
+                          <span className="text-[10px] text-gray-300 w-24 sm:w-28 shrink-0 truncate">
+                            Gemini 2.5 Flash
+                          </span>
+                          <div className="flex-1 h-[14px] bg-transparent rounded-sm flex items-center">
+                            <div
+                              className="h-full rounded-[2px] flex items-center justify-start min-w-[28px] overflow-hidden"
+                              style={{
+                                width: "78%",
+                                backgroundColor: "#0ea5e9",
+                                border: "none",
+                              }}
+                            >
+                              <span
+                                className="text-[9px] font-bold text-white px-[4px] leading-none"
+                                style={{
+                                  textShadow: "0 1px 2px rgba(0,0,0,0.5)",
+                                }}
+                              >
+                                78%
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <div className="w-[14px] h-[14px] rounded bg-white/10 flex items-center justify-center text-white shrink-0 shadow-inner border border-white/10">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="10"
+                              height="10"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            >
+                              <path d="M12 2v20" />
+                              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                            </svg>
+                          </div>
+                          <span className="text-[10px] text-gray-300 w-24 sm:w-28 shrink-0 truncate">
+                            Claude Sonnet 4.6
+                          </span>
+                          <div className="flex-1 h-[14px] bg-transparent rounded-sm flex items-center">
+                            <div
+                              className="h-full rounded-[2px] flex items-center justify-start min-w-[28px] overflow-hidden"
+                              style={{
+                                width: "73%",
+                                backgroundColor: "#f97316",
+                                border: "none",
+                              }}
+                            >
+                              <span
+                                className="text-[9px] font-bold text-white px-[4px] leading-none"
+                                style={{
+                                  textShadow: "0 1px 2px rgba(0,0,0,0.5)",
+                                }}
+                              >
+                                73%
+                              </span>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div
-                      style={{
-                        padding: "16px",
-                        borderRadius: "6px",
-                        border: "1px solid #ffffff1a",
-                        background: "var(--card)",
-                        display: "flex",
-                        flexDirection: "column",
-                        gap: "8px",
-                        transition: "border-color 0.2s, box-shadow 0.2s",
-                        opacity: "1",
-                        transform: "translateY(0)",
-                      }}
-                    >
-                      <div
-                        style={{
-                          display: "flex",
-                          alignItems: "center",
-                          justifyContent: "space-between",
-                        }}
-                      >
-                        <p
-                          style={{
-                            margin: "0",
-                            fontWeight: "600",
-                            fontSize: "13px",
-                            color: "var(--foreground)",
-                          }}
-                        >
+                    <div className="bg-[#1c1c28] rounded-xl p-4 sm:p-5 flex flex-col border border-white/5 shadow-md">
+                      <div className="flex items-center justify-between mb-4 gap-2">
+                        <h3 className="text-[13px] font-semibold text-white whitespace-nowrap">
                           Vision
-                        </p>
-                        <span
-                          style={{
-                            fontSize: "11px",
-                            color: "var(--muted-foreground)",
-                            maxWidth: "160px",
-                            textAlign: "right",
-                          }}
-                        >
+                        </h3>
+                        <span className="text-[10px] sm:text-[11px] text-muted-foreground text-right">
                           MMMU
                         </span>
                       </div>
-                      <div
-                        data-slot="chart"
-                        data-chart="chart-_R_2kn4a5fiumelb_"
-                        className="[&amp;_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&amp;_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&amp;_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&amp;_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&amp;_.recharts-radial-bar-background-sector]:fill-muted [&amp;_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&amp;_.recharts-reference-line_[stroke='#ccc']]:stroke-border flex aspect-video justify-center text-xs [&amp;_.recharts-dot[stroke='#fff']]:stroke-transparent [&amp;_.recharts-layer]:outline-hidden [&amp;_.recharts-sector]:outline-hidden [&amp;_.recharts-sector[stroke='#fff']]:stroke-transparent [&amp;_.recharts-surface]:outline-hidden w-full"
-                        style={{ height: "136px" }}
-                      >
-                        <div className="w-full bg-[#1c1c28] rounded-xl p-4 sm:p-6 mt-8 mb-4 shadow-xl border border-white/5">
-                          <div
-                            className="flex items-end justify-between w-full h-[320px] relative"
-                            style={{
-                              borderBottom: "1px solid #ffffff1a",
-                              paddingBottom: "1px",
-                            }}
-                          >
-                            <div className="absolute left-0 top-0 h-full flex flex-col justify-between text-[11px] text-muted-foreground pb-[120px] font-mono">
-                              <span>110</span>
-                              <span>60</span>
-                              <span>30</span>
-                              <span>0</span>
+                      <div className="flex flex-col gap-[10px]">
+                        <div className="flex items-center gap-2">
+                          <div className="w-[14px] h-[14px] rounded bg-white/10 flex items-center justify-center text-white shrink-0 shadow-inner border border-white/10">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="10"
+                              height="10"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            >
+                              <path d="M12 2v20" />
+                              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                            </svg>
+                          </div>
+                          <span className="text-[10px] text-gray-300 w-24 sm:w-28 shrink-0 truncate">
+                            Gemini 2.5 Pro
+                          </span>
+                          <div className="flex-1 h-[14px] bg-transparent rounded-sm flex items-center">
+                            <div
+                              className="h-full rounded-[2px] flex items-center justify-start min-w-[28px] overflow-hidden"
+                              style={{
+                                width: "82%",
+                                backgroundColor: "#38bdf8",
+                                border: "none",
+                              }}
+                            >
+                              <span
+                                className="text-[9px] font-bold text-white px-[4px] leading-none"
+                                style={{
+                                  textShadow: "0 1px 2px rgba(0,0,0,0.5)",
+                                }}
+                              >
+                                82%
+                              </span>
                             </div>
-
-                            <div className="absolute left-8 right-0 top-0 h-full flex flex-col justify-between pb-[120px]">
-                              <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
-                              <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
-                              <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
-                              <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <div className="w-[14px] h-[14px] rounded bg-white/10 flex items-center justify-center text-white shrink-0 shadow-inner border border-white/10">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="10"
+                              height="10"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            >
+                              <path d="M12 2v20" />
+                              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                            </svg>
+                          </div>
+                          <span className="text-[10px] text-gray-300 w-24 sm:w-28 shrink-0 truncate">
+                            Claude Sonnet 4.6
+                          </span>
+                          <div className="flex-1 h-[14px] bg-transparent rounded-sm flex items-center">
+                            <div
+                              className="h-full rounded-[2px] flex items-center justify-start min-w-[28px] overflow-hidden"
+                              style={{
+                                width: "75%",
+                                backgroundColor: "#f97316",
+                                border: "none",
+                              }}
+                            >
+                              <span
+                                className="text-[9px] font-bold text-white px-[4px] leading-none"
+                                style={{
+                                  textShadow: "0 1px 2px rgba(0,0,0,0.5)",
+                                }}
+                              >
+                                75%
+                              </span>
                             </div>
-
-                            <div className="flex items-end justify-between w-full h-[200px] pl-10 pr-2 z-10 gap-1 sm:gap-[6px] md:gap-3 absolute bottom-[120px]">
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#ff5a5f",
-                                    height: "95.5%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    95.5%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#ff8a65",
-                                    height: "93.6%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    93.6%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#13131a",
-                                    height: "93.6%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    93.6%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#5c6bc0",
-                                    height: "91.2%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    91.2%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#2196f3",
-                                    height: "90.4%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    90.4%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#1976d2",
-                                    height: "90.1%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    90.1%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#ff7043",
-                                    height: "89.9%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    89.9%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#13131a",
-                                    height: "88.4%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    88.4%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#3f51b5",
-                                    height: "88.1%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    88.1%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#13131a",
-                                    height: "87.7%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    87.7%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#13131a",
-                                    height: "84.6%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    84.6%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#64b5f6",
-                                    height: "84%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    84%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#42a5f5",
-                                    height: "82.8%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    82.8%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#13131a",
-                                    height: "81.4%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    81.4%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#ff9800",
-                                    height: "77.2%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    77.2%
-                                  </span>
-                                </div>
-                              </div>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <div className="w-[14px] h-[14px] rounded bg-white/10 flex items-center justify-center text-white shrink-0 shadow-inner border border-white/10">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="10"
+                              height="10"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            >
+                              <path d="M12 2v20" />
+                              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                            </svg>
+                          </div>
+                          <span className="text-[10px] text-gray-300 w-24 sm:w-28 shrink-0 truncate">
+                            Llama 4 Maverick
+                          </span>
+                          <div className="flex-1 h-[14px] bg-transparent rounded-sm flex items-center">
+                            <div
+                              className="h-full rounded-[2px] flex items-center justify-start min-w-[28px] overflow-hidden"
+                              style={{
+                                width: "73%",
+                                backgroundColor: "#0ea5e9",
+                                border: "none",
+                              }}
+                            >
+                              <span
+                                className="text-[9px] font-bold text-white px-[4px] leading-none"
+                                style={{
+                                  textShadow: "0 1px 2px rgba(0,0,0,0.5)",
+                                }}
+                              >
+                                73%
+                              </span>
                             </div>
-
-                            <div className="flex items-start justify-between w-full pl-10 pr-2 z-10 gap-1 sm:gap-[6px] md:gap-3 absolute bottom-0 h-[110px]">
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  Sakana Fugu Ultra
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  Claude Opus 4.0
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  GPT-5.5
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  GLM-5.2
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  Tencent Hy3
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  DeepSeek V4 Pro
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  Claude Sonnet 4.0
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  GPT-5
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  DeepSeek V4 Flash
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  o3
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  Grok 5
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  Gemini 2.5 Pro
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  Gemini 2.5 Flash
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  o4-mini
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  Qwen2.5 Max
-                                </span>
-                              </div>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <div className="w-[14px] h-[14px] rounded bg-white/10 flex items-center justify-center text-white shrink-0 shadow-inner border border-white/10">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="10"
+                              height="10"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            >
+                              <path d="M12 2v20" />
+                              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                            </svg>
+                          </div>
+                          <span className="text-[10px] text-gray-300 w-24 sm:w-28 shrink-0 truncate">
+                            Llama 4 Scout
+                          </span>
+                          <div className="flex-1 h-[14px] bg-transparent rounded-sm flex items-center">
+                            <div
+                              className="h-full rounded-[2px] flex items-center justify-start min-w-[28px] overflow-hidden"
+                              style={{
+                                width: "69%",
+                                backgroundColor: "#0ea5e9",
+                                border: "none",
+                              }}
+                            >
+                              <span
+                                className="text-[9px] font-bold text-white px-[4px] leading-none"
+                                style={{
+                                  textShadow: "0 1px 2px rgba(0,0,0,0.5)",
+                                }}
+                              >
+                                69%
+                              </span>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div
-                      style={{
-                        padding: "16px",
-                        borderRadius: "6px",
-                        border: "1px solid #ffffff1a",
-                        background: "var(--card)",
-                        display: "flex",
-                        flexDirection: "column",
-                        gap: "8px",
-                        transition: "border-color 0.2s, box-shadow 0.2s",
-                        opacity: "1",
-                        transform: "translateY(0)",
-                      }}
-                    >
-                      <div
-                        style={{
-                          display: "flex",
-                          alignItems: "center",
-                          justifyContent: "space-between",
-                        }}
-                      >
-                        <p
-                          style={{
-                            margin: "0",
-                            fontWeight: "600",
-                            fontSize: "13px",
-                            color: "var(--foreground)",
-                          }}
-                        >
+                    <div className="bg-[#1c1c28] rounded-xl p-4 sm:p-5 flex flex-col border border-white/5 shadow-md">
+                      <div className="flex items-center justify-between mb-4 gap-2">
+                        <h3 className="text-[13px] font-semibold text-white whitespace-nowrap">
                           Long Context
-                        </p>
-                        <span
-                          style={{
-                            fontSize: "11px",
-                            color: "var(--muted-foreground)",
-                            maxWidth: "160px",
-                            textAlign: "right",
-                          }}
-                        >
+                        </h3>
+                        <span className="text-[10px] sm:text-[11px] text-muted-foreground text-right">
                           Context window
                         </span>
                       </div>
-                      <div
-                        data-slot="chart"
-                        data-chart="chart-_R_2ln4a5fiumelb_"
-                        className="[&amp;_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&amp;_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&amp;_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&amp;_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&amp;_.recharts-radial-bar-background-sector]:fill-muted [&amp;_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&amp;_.recharts-reference-line_[stroke='#ccc']]:stroke-border flex aspect-video justify-center text-xs [&amp;_.recharts-dot[stroke='#fff']]:stroke-transparent [&amp;_.recharts-layer]:outline-hidden [&amp;_.recharts-sector]:outline-hidden [&amp;_.recharts-sector[stroke='#fff']]:stroke-transparent [&amp;_.recharts-surface]:outline-hidden w-full"
-                        style={{ height: "168px" }}
-                      >
-                        <div className="w-full bg-[#1c1c28] rounded-xl p-4 sm:p-6 mt-8 mb-4 shadow-xl border border-white/5">
-                          <div
-                            className="flex items-end justify-between w-full h-[320px] relative"
-                            style={{
-                              borderBottom: "1px solid #ffffff1a",
-                              paddingBottom: "1px",
-                            }}
-                          >
-                            <div className="absolute left-0 top-0 h-full flex flex-col justify-between text-[11px] text-muted-foreground pb-[120px] font-mono">
-                              <span>110</span>
-                              <span>60</span>
-                              <span>30</span>
-                              <span>0</span>
+                      <div className="flex flex-col gap-[10px]">
+                        <div className="flex items-center gap-2">
+                          <div className="w-[14px] h-[14px] rounded bg-white/10 flex items-center justify-center text-white shrink-0 shadow-inner border border-white/10">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="10"
+                              height="10"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            >
+                              <path d="M12 2v20" />
+                              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                            </svg>
+                          </div>
+                          <span className="text-[10px] text-gray-300 w-24 sm:w-28 shrink-0 truncate">
+                            Llama 4 Scout
+                          </span>
+                          <div className="flex-1 h-[14px] bg-transparent rounded-sm flex items-center">
+                            <div
+                              className="h-full rounded-[2px] flex items-center justify-start min-w-[28px] overflow-hidden"
+                              style={{
+                                width: "100%",
+                                backgroundColor: "#0ea5e9",
+                                border: "none",
+                              }}
+                            >
+                              <span
+                                className="text-[9px] font-bold text-white px-[4px] leading-none"
+                                style={{
+                                  textShadow: "0 1px 2px rgba(0,0,0,0.5)",
+                                }}
+                              >
+                                10M
+                              </span>
                             </div>
-
-                            <div className="absolute left-8 right-0 top-0 h-full flex flex-col justify-between pb-[120px]">
-                              <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
-                              <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
-                              <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
-                              <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <div className="w-[14px] h-[14px] rounded bg-white/10 flex items-center justify-center text-white shrink-0 shadow-inner border border-white/10">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="10"
+                              height="10"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            >
+                              <path d="M12 2v20" />
+                              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                            </svg>
+                          </div>
+                          <span className="text-[10px] text-gray-300 w-24 sm:w-28 shrink-0 truncate">
+                            Gemini 2.5 Pro
+                          </span>
+                          <div className="flex-1 h-[14px] bg-transparent rounded-sm flex items-center">
+                            <div
+                              className="h-full rounded-[2px] flex items-center justify-start min-w-[28px] overflow-hidden"
+                              style={{
+                                width: "21%",
+                                backgroundColor: "#38bdf8",
+                                border: "none",
+                              }}
+                            >
+                              <span
+                                className="text-[9px] font-bold text-white px-[4px] leading-none"
+                                style={{
+                                  textShadow: "0 1px 2px rgba(0,0,0,0.5)",
+                                }}
+                              >
+                                2.1M
+                              </span>
                             </div>
-
-                            <div className="flex items-end justify-between w-full h-[200px] pl-10 pr-2 z-10 gap-1 sm:gap-[6px] md:gap-3 absolute bottom-[120px]">
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#ff5a5f",
-                                    height: "95.5%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    95.5%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#ff8a65",
-                                    height: "93.6%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    93.6%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#13131a",
-                                    height: "93.6%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    93.6%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#5c6bc0",
-                                    height: "91.2%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    91.2%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#2196f3",
-                                    height: "90.4%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    90.4%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#1976d2",
-                                    height: "90.1%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    90.1%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#ff7043",
-                                    height: "89.9%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    89.9%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#13131a",
-                                    height: "88.4%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    88.4%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#3f51b5",
-                                    height: "88.1%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    88.1%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#13131a",
-                                    height: "87.7%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    87.7%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#13131a",
-                                    height: "84.6%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    84.6%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#64b5f6",
-                                    height: "84%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    84%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#42a5f5",
-                                    height: "82.8%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    82.8%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#13131a",
-                                    height: "81.4%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    81.4%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#ff9800",
-                                    height: "77.2%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    77.2%
-                                  </span>
-                                </div>
-                              </div>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <div className="w-[14px] h-[14px] rounded bg-white/10 flex items-center justify-center text-white shrink-0 shadow-inner border border-white/10">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="10"
+                              height="10"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            >
+                              <path d="M12 2v20" />
+                              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                            </svg>
+                          </div>
+                          <span className="text-[10px] text-gray-300 w-24 sm:w-28 shrink-0 truncate">
+                            Grok 4.20
+                          </span>
+                          <div className="flex-1 h-[14px] bg-transparent rounded-sm flex items-center">
+                            <div
+                              className="h-full rounded-[2px] flex items-center justify-start min-w-[28px] overflow-hidden"
+                              style={{
+                                width: "20%",
+                                backgroundColor: "#18181b",
+                                border: "1px solid rgba(255,255,255,0.1)",
+                              }}
+                            >
+                              <span
+                                className="text-[9px] font-bold text-white px-[4px] leading-none"
+                                style={{
+                                  textShadow: "0 1px 2px rgba(0,0,0,0.5)",
+                                }}
+                              >
+                                2M
+                              </span>
                             </div>
-
-                            <div className="flex items-start justify-between w-full pl-10 pr-2 z-10 gap-1 sm:gap-[6px] md:gap-3 absolute bottom-0 h-[110px]">
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  Sakana Fugu Ultra
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  Claude Opus 4.0
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  GPT-5.5
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  GLM-5.2
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  Tencent Hy3
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  DeepSeek V4 Pro
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  Claude Sonnet 4.0
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  GPT-5
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  DeepSeek V4 Flash
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  o3
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  Grok 5
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  Gemini 2.5 Pro
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  Gemini 2.5 Flash
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  o4-mini
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  Qwen2.5 Max
-                                </span>
-                              </div>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <div className="w-[14px] h-[14px] rounded bg-white/10 flex items-center justify-center text-white shrink-0 shadow-inner border border-white/10">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="10"
+                              height="10"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            >
+                              <path d="M12 2v20" />
+                              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                            </svg>
+                          </div>
+                          <span className="text-[10px] text-gray-300 w-24 sm:w-28 shrink-0 truncate">
+                            Gemini 2.5 Pro
+                          </span>
+                          <div className="flex-1 h-[14px] bg-transparent rounded-sm flex items-center">
+                            <div
+                              className="h-full rounded-[2px] flex items-center justify-start min-w-[28px] overflow-hidden"
+                              style={{
+                                width: "10%",
+                                backgroundColor: "#38bdf8",
+                                border: "none",
+                              }}
+                            >
+                              <span
+                                className="text-[9px] font-bold text-white px-[4px] leading-none"
+                                style={{
+                                  textShadow: "0 1px 2px rgba(0,0,0,0.5)",
+                                }}
+                              >
+                                1.0M
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <div className="w-[14px] h-[14px] rounded bg-white/10 flex items-center justify-center text-white shrink-0 shadow-inner border border-white/10">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="10"
+                              height="10"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            >
+                              <path d="M12 2v20" />
+                              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                            </svg>
+                          </div>
+                          <span className="text-[10px] text-gray-300 w-24 sm:w-28 shrink-0 truncate">
+                            Qwen2.5 Max
+                          </span>
+                          <div className="flex-1 h-[14px] bg-transparent rounded-sm flex items-center">
+                            <div
+                              className="h-full rounded-[2px] flex items-center justify-start min-w-[28px] overflow-hidden"
+                              style={{
+                                width: "10%",
+                                backgroundColor: "#f59e0b",
+                                border: "none",
+                              }}
+                            >
+                              <span
+                                className="text-[9px] font-bold text-white px-[4px] leading-none"
+                                style={{
+                                  textShadow: "0 1px 2px rgba(0,0,0,0.5)",
+                                }}
+                              >
+                                1M
+                              </span>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div
-                      style={{
-                        padding: "16px",
-                        borderRadius: "6px",
-                        border: "1px solid #ffffff1a",
-                        background: "var(--card)",
-                        display: "flex",
-                        flexDirection: "column",
-                        gap: "8px",
-                        transition: "border-color 0.2s, box-shadow 0.2s",
-                        opacity: "1",
-                        transform: "translateY(0)",
-                      }}
-                    >
-                      <div
-                        style={{
-                          display: "flex",
-                          alignItems: "center",
-                          justifyContent: "space-between",
-                        }}
-                      >
-                        <p
-                          style={{
-                            margin: "0",
-                            fontWeight: "600",
-                            fontSize: "13px",
-                            color: "var(--foreground)",
-                          }}
-                        >
+                    <div className="bg-[#1c1c28] rounded-xl p-4 sm:p-5 flex flex-col border border-white/5 shadow-md">
+                      <div className="flex items-center justify-between mb-4 gap-2">
+                        <h3 className="text-[13px] font-semibold text-white whitespace-nowrap">
                           Budget
-                        </p>
-                        <span
-                          style={{
-                            fontSize: "11px",
-                            color: "var(--muted-foreground)",
-                            maxWidth: "160px",
-                            textAlign: "right",
-                          }}
-                        >
+                        </h3>
+                        <span className="text-[10px] sm:text-[11px] text-muted-foreground text-right">
                           Blended price per MTok, lower is better
                         </span>
                       </div>
-                      <div
-                        data-slot="chart"
-                        data-chart="chart-_R_2mn4a5fiumelb_"
-                        className="[&amp;_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&amp;_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&amp;_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&amp;_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&amp;_.recharts-radial-bar-background-sector]:fill-muted [&amp;_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&amp;_.recharts-reference-line_[stroke='#ccc']]:stroke-border flex aspect-video justify-center text-xs [&amp;_.recharts-dot[stroke='#fff']]:stroke-transparent [&amp;_.recharts-layer]:outline-hidden [&amp;_.recharts-sector]:outline-hidden [&amp;_.recharts-sector[stroke='#fff']]:stroke-transparent [&amp;_.recharts-surface]:outline-hidden w-full"
-                        style={{ height: "168px" }}
-                      >
-                        <div className="w-full bg-[#1c1c28] rounded-xl p-4 sm:p-6 mt-8 mb-4 shadow-xl border border-white/5">
-                          <div
-                            className="flex items-end justify-between w-full h-[320px] relative"
-                            style={{
-                              borderBottom: "1px solid #ffffff1a",
-                              paddingBottom: "1px",
-                            }}
-                          >
-                            <div className="absolute left-0 top-0 h-full flex flex-col justify-between text-[11px] text-muted-foreground pb-[120px] font-mono">
-                              <span>110</span>
-                              <span>60</span>
-                              <span>30</span>
-                              <span>0</span>
+                      <div className="flex flex-col gap-[10px]">
+                        <div className="flex items-center gap-2">
+                          <div className="w-[14px] h-[14px] rounded bg-white/10 flex items-center justify-center text-white shrink-0 shadow-inner border border-white/10">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="10"
+                              height="10"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            >
+                              <path d="M12 2v20" />
+                              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                            </svg>
+                          </div>
+                          <span className="text-[10px] text-gray-300 w-24 sm:w-28 shrink-0 truncate">
+                            DeepSeek V4 Flash
+                          </span>
+                          <div className="flex-1 h-[14px] bg-transparent rounded-sm flex items-center">
+                            <div
+                              className="h-full rounded-[2px] flex items-center justify-start min-w-[28px] overflow-hidden"
+                              style={{
+                                width: "32%",
+                                backgroundColor: "#4f46e5",
+                                border: "none",
+                              }}
+                            >
+                              <span
+                                className="text-[9px] font-bold text-white px-[4px] leading-none"
+                                style={{
+                                  textShadow: "0 1px 2px rgba(0,0,0,0.5)",
+                                }}
+                              >
+                                $0.158/MTok
+                              </span>
                             </div>
-
-                            <div className="absolute left-8 right-0 top-0 h-full flex flex-col justify-between pb-[120px]">
-                              <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
-                              <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
-                              <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
-                              <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <div className="w-[14px] h-[14px] rounded bg-white/10 flex items-center justify-center text-white shrink-0 shadow-inner border border-white/10">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="10"
+                              height="10"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            >
+                              <path d="M12 2v20" />
+                              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                            </svg>
+                          </div>
+                          <span className="text-[10px] text-gray-300 w-24 sm:w-28 shrink-0 truncate">
+                            Llama 4 Scout
+                          </span>
+                          <div className="flex-1 h-[14px] bg-transparent rounded-sm flex items-center">
+                            <div
+                              className="h-full rounded-[2px] flex items-center justify-start min-w-[28px] overflow-hidden"
+                              style={{
+                                width: "49%",
+                                backgroundColor: "#0ea5e9",
+                                border: "none",
+                              }}
+                            >
+                              <span
+                                className="text-[9px] font-bold text-white px-[4px] leading-none"
+                                style={{
+                                  textShadow: "0 1px 2px rgba(0,0,0,0.5)",
+                                }}
+                              >
+                                $0.245/MTok
+                              </span>
                             </div>
-
-                            <div className="flex items-end justify-between w-full h-[200px] pl-10 pr-2 z-10 gap-1 sm:gap-[6px] md:gap-3 absolute bottom-[120px]">
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#ff5a5f",
-                                    height: "95.5%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    95.5%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#ff8a65",
-                                    height: "93.6%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    93.6%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#13131a",
-                                    height: "93.6%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    93.6%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#5c6bc0",
-                                    height: "91.2%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    91.2%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#2196f3",
-                                    height: "90.4%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    90.4%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#1976d2",
-                                    height: "90.1%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    90.1%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#ff7043",
-                                    height: "89.9%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    89.9%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#13131a",
-                                    height: "88.4%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    88.4%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#3f51b5",
-                                    height: "88.1%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    88.1%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#13131a",
-                                    height: "87.7%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    87.7%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#13131a",
-                                    height: "84.6%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    84.6%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#64b5f6",
-                                    height: "84%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    84%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#42a5f5",
-                                    height: "82.8%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    82.8%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#13131a",
-                                    height: "81.4%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    81.4%
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="relative flex flex-col items-center justify-end w-full group h-full">
-                                <div
-                                  className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2"
-                                  style={{
-                                    backgroundColor: "#ff9800",
-                                    height: "77.2%",
-                                  }}
-                                >
-                                  <span
-                                    className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter"
-                                    style={{
-                                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
-                                    }}
-                                  >
-                                    77.2%
-                                  </span>
-                                </div>
-                              </div>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <div className="w-[14px] h-[14px] rounded bg-white/10 flex items-center justify-center text-white shrink-0 shadow-inner border border-white/10">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="10"
+                              height="10"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            >
+                              <path d="M12 2v20" />
+                              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                            </svg>
+                          </div>
+                          <span className="text-[10px] text-gray-300 w-24 sm:w-28 shrink-0 truncate">
+                            Mistral Small 3
+                          </span>
+                          <div className="flex-1 h-[14px] bg-transparent rounded-sm flex items-center">
+                            <div
+                              className="h-full rounded-[2px] flex items-center justify-start min-w-[28px] overflow-hidden"
+                              style={{
+                                width: "50%",
+                                backgroundColor: "#f97316",
+                                border: "none",
+                              }}
+                            >
+                              <span
+                                className="text-[9px] font-bold text-white px-[4px] leading-none"
+                                style={{
+                                  textShadow: "0 1px 2px rgba(0,0,0,0.5)",
+                                }}
+                              >
+                                $0.250/MTok
+                              </span>
                             </div>
-
-                            <div className="flex items-start justify-between w-full pl-10 pr-2 z-10 gap-1 sm:gap-[6px] md:gap-3 absolute bottom-0 h-[110px]">
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  Sakana Fugu Ultra
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  Claude Opus 4.0
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  GPT-5.5
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  GLM-5.2
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  Tencent Hy3
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  DeepSeek V4 Pro
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  Claude Sonnet 4.0
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  GPT-5
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  DeepSeek V4 Flash
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  o3
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  Grok 5
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  Gemini 2.5 Pro
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  Gemini 2.5 Flash
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  o4-mini
-                                </span>
-                              </div>
-                              <div className="flex flex-col items-center w-full mt-3">
-                                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="12"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="opacity-70"
-                                  >
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                  </svg>
-                                </div>
-                                <span
-                                  className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight"
-                                  style={{
-                                    writingMode: "vertical-rl",
-                                    transform: "rotate(210deg)",
-                                    textAlign: "left",
-                                    height: "80px",
-                                  }}
-                                >
-                                  Qwen2.5 Max
-                                </span>
-                              </div>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <div className="w-[14px] h-[14px] rounded bg-white/10 flex items-center justify-center text-white shrink-0 shadow-inner border border-white/10">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="10"
+                              height="10"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            >
+                              <path d="M12 2v20" />
+                              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                            </svg>
+                          </div>
+                          <span className="text-[10px] text-gray-300 w-24 sm:w-28 shrink-0 truncate">
+                            GPT-6 Luna
+                          </span>
+                          <div className="flex-1 h-[14px] bg-transparent rounded-sm flex items-center">
+                            <div
+                              className="h-full rounded-[2px] flex items-center justify-start min-w-[28px] overflow-hidden"
+                              style={{
+                                width: "80%",
+                                backgroundColor: "#18181b",
+                                border: "1px solid rgba(255,255,255,0.1)",
+                              }}
+                            >
+                              <span
+                                className="text-[9px] font-bold text-white px-[4px] leading-none"
+                                style={{
+                                  textShadow: "0 1px 2px rgba(0,0,0,0.5)",
+                                }}
+                              >
+                                $0.400/MTok
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <div className="w-[14px] h-[14px] rounded bg-white/10 flex items-center justify-center text-white shrink-0 shadow-inner border border-white/10">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="10"
+                              height="10"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            >
+                              <path d="M12 2v20" />
+                              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                            </svg>
+                          </div>
+                          <span className="text-[10px] text-gray-300 w-24 sm:w-28 shrink-0 truncate">
+                            Llama 4 Maverick
+                          </span>
+                          <div className="flex-1 h-[14px] bg-transparent rounded-sm flex items-center">
+                            <div
+                              className="h-full rounded-[2px] flex items-center justify-start min-w-[28px] overflow-hidden"
+                              style={{
+                                width: "97%",
+                                backgroundColor: "#0ea5e9",
+                                border: "none",
+                              }}
+                            >
+                              <span
+                                className="text-[9px] font-bold text-white px-[4px] leading-none"
+                                style={{
+                                  textShadow: "0 1px 2px rgba(0,0,0,0.5)",
+                                }}
+                              >
+                                $0.487/MTok
+                              </span>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
+                  \n
                 </section>
               </div>
               <div style={{ opacity: "1", transform: "translateY(0)" }}>
