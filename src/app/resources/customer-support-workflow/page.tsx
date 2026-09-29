@@ -52,11 +52,11 @@ export default function CustomerSupportWorkflowPage() {
                 </dl>
               </div>
               
-              <div>
+              <div className="flex justify-center lg:justify-end">
                 {/* Visual block instead of image */}
-                <div className="aspect-[4/5] sm:aspect-square w-full rounded-3xl bg-card flex flex-col items-center justify-center border border-border p-8 text-center shadow-xl shadow-primary-purple/5">
+                <div className="aspect-[4/5] w-full max-w-[420px] rounded-[2rem] bg-card flex flex-col items-center justify-center border border-border p-8 text-center shadow-xl shadow-primary-purple/5">
                   <p className="text-[10px] font-semibold uppercase tracking-widest text-[#8082c1] mb-4">AY.WORKFLOW</p>
-                  <h3 className="text-2xl sm:text-3xl font-bold text-white leading-tight">Customer Support Workflow</h3>
+                  <h3 className="text-2xl sm:text-3xl font-bold text-white leading-tight px-4">Customer Support Workflow</h3>
                 </div>
               </div>
             </div>
