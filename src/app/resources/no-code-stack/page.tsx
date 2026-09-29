@@ -3967,7 +3967,7 @@ export default function NoCodeStackPage() {
                         <div className="flex items-start gap-4">
                           <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-muted/30">
                             <img
-                              src="https://www.remove.bg/favicon.ico"
+                              src="https://logo.clearbit.com/remove.bg"
                               alt="remove.bg"
                               width="28"
                               height="28"
@@ -4022,3 +4022,4 @@ export default function NoCodeStackPage() {
     </div>
   );
 }
+
