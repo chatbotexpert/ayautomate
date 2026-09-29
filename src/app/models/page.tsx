@@ -723,45 +723,194 @@ export default function ModelsPage() {
                     }}
                   >
                     <div style={{ minWidth: "1012px", height: "572px" }}>
-                      <div
-                        className="flex items-end justify-between w-full h-[300px] mt-8 relative"
-                        style={{
-                          borderBottom: "1px solid #ffffff1a",
-                          paddingBottom: "1px",
-                        }}
-                      >
-                        {/* Y-Axis labels */}
-                        <div className="absolute left-0 top-0 h-full flex flex-col justify-between text-[11px] text-muted-foreground pb-8">
-                          <span>100</span>
-                          <span>60</span>
-                          <span>30</span>
-                        </div>
-                        <div className="absolute left-8 right-0 top-0 h-full flex flex-col justify-between pb-8">
-                          <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
-                          <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
-                          <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
-                        </div>
-
-                        <div className="flex items-end justify-between w-full h-[280px] pl-10 pr-2 pb-6 z-10 gap-1 sm:gap-2">
-                          <div
-                            className="relative flex flex-col items-center justify-end w-full group"
-                            style={{ height: "95.5%" }}
-                          >
-                            <div
-                              className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
-                              style={{
-                                backgroundColor: "#ff4b4b",
-                                height: "100%",
-                              }}
-                            >
-                              <span
-                                className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
-                                style={{ writingMode: "horizontal-tb" }}
-                              >
-                                95.5%
-                              </span>
-                            </div>
-                          </div>
+                      <div className="w-full bg-[#1c1c28] rounded-xl p-4 sm:p-6 mt-8 mb-4 shadow-xl border border-white/5">
+  <div className="flex items-end justify-between w-full h-[320px] relative" style={{borderBottom: "1px solid #ffffff1a", paddingBottom: "1px"}}>
+    <div className="absolute left-0 top-0 h-full flex flex-col justify-between text-[11px] text-muted-foreground pb-[120px] font-mono">
+      <span>110</span>
+      <span>60</span>
+      <span>30</span>
+      <span>0</span>
+    </div>
+    
+    <div className="absolute left-8 right-0 top-0 h-full flex flex-col justify-between pb-[120px]">
+      <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
+      <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
+      <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
+      <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
+    </div>
+    
+    <div className="flex items-end justify-between w-full h-[200px] pl-10 pr-2 z-10 gap-1 sm:gap-[6px] md:gap-3 absolute bottom-[120px]">
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#ff5a5f", height: "95.5%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>95.5%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#ff8a65", height: "93.6%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>93.6%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#13131a", height: "93.6%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>93.6%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#5c6bc0", height: "91.2%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>91.2%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#2196f3", height: "90.4%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>90.4%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#1976d2", height: "90.1%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>90.1%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#ff7043", height: "89.9%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>89.9%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#13131a", height: "88.4%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>88.4%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#3f51b5", height: "88.1%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>88.1%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#13131a", height: "87.7%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>87.7%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#13131a", height: "84.6%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>84.6%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#64b5f6", height: "84%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>84%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#42a5f5", height: "82.8%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>82.8%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#13131a", height: "81.4%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>81.4%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#ff9800", height: "77.2%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>77.2%</span>
+        </div>
+      </div>
+    </div>
+    
+    <div className="flex items-start justify-between w-full pl-10 pr-2 z-10 gap-1 sm:gap-[6px] md:gap-3 absolute bottom-0 h-[110px]">
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>Sakana Fugu Ultra</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>Claude Opus 4.0</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>GPT-5.5</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>GLM-5.2</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>Tencent Hy3</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>DeepSeek V4 Pro</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>Claude Sonnet 4.0</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>GPT-5</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>DeepSeek V4 Flash</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>o3</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>Grok 5</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>Gemini 2.5 Pro</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>Gemini 2.5 Flash</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>o4-mini</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>Qwen2.5 Max</span>
+      </div>
+    </div>
+  </div>
+</div>
                           <div
                             className="relative flex flex-col items-center justify-end w-full group"
                             style={{ height: "93.6%" }}
@@ -1113,45 +1262,194 @@ export default function ModelsPage() {
                         className="[&amp;_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&amp;_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&amp;_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&amp;_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&amp;_.recharts-radial-bar-background-sector]:fill-muted [&amp;_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&amp;_.recharts-reference-line_[stroke='#ccc']]:stroke-border flex aspect-video justify-center text-xs [&amp;_.recharts-dot[stroke='#fff']]:stroke-transparent [&amp;_.recharts-layer]:outline-hidden [&amp;_.recharts-sector]:outline-hidden [&amp;_.recharts-sector[stroke='#fff']]:stroke-transparent [&amp;_.recharts-surface]:outline-hidden w-full"
                         style={{ height: "200px" }}
                       >
-                        <div
-                          className="flex items-end justify-between w-full h-[300px] mt-8 relative"
-                          style={{
-                            borderBottom: "1px solid #ffffff1a",
-                            paddingBottom: "1px",
-                          }}
-                        >
-                          {/* Y-Axis labels */}
-                          <div className="absolute left-0 top-0 h-full flex flex-col justify-between text-[11px] text-muted-foreground pb-8">
-                            <span>100</span>
-                            <span>60</span>
-                            <span>30</span>
-                          </div>
-                          <div className="absolute left-8 right-0 top-0 h-full flex flex-col justify-between pb-8">
-                            <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
-                            <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
-                            <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
-                          </div>
-
-                          <div className="flex items-end justify-between w-full h-[280px] pl-10 pr-2 pb-6 z-10 gap-1 sm:gap-2">
-                            <div
-                              className="relative flex flex-col items-center justify-end w-full group"
-                              style={{ height: "95.5%" }}
-                            >
-                              <div
-                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
-                                style={{
-                                  backgroundColor: "#ff4b4b",
-                                  height: "100%",
-                                }}
-                              >
-                                <span
-                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
-                                  style={{ writingMode: "horizontal-tb" }}
-                                >
-                                  95.5%
-                                </span>
-                              </div>
-                            </div>
+                        <div className="w-full bg-[#1c1c28] rounded-xl p-4 sm:p-6 mt-8 mb-4 shadow-xl border border-white/5">
+  <div className="flex items-end justify-between w-full h-[320px] relative" style={{borderBottom: "1px solid #ffffff1a", paddingBottom: "1px"}}>
+    <div className="absolute left-0 top-0 h-full flex flex-col justify-between text-[11px] text-muted-foreground pb-[120px] font-mono">
+      <span>110</span>
+      <span>60</span>
+      <span>30</span>
+      <span>0</span>
+    </div>
+    
+    <div className="absolute left-8 right-0 top-0 h-full flex flex-col justify-between pb-[120px]">
+      <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
+      <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
+      <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
+      <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
+    </div>
+    
+    <div className="flex items-end justify-between w-full h-[200px] pl-10 pr-2 z-10 gap-1 sm:gap-[6px] md:gap-3 absolute bottom-[120px]">
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#ff5a5f", height: "95.5%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>95.5%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#ff8a65", height: "93.6%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>93.6%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#13131a", height: "93.6%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>93.6%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#5c6bc0", height: "91.2%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>91.2%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#2196f3", height: "90.4%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>90.4%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#1976d2", height: "90.1%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>90.1%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#ff7043", height: "89.9%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>89.9%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#13131a", height: "88.4%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>88.4%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#3f51b5", height: "88.1%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>88.1%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#13131a", height: "87.7%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>87.7%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#13131a", height: "84.6%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>84.6%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#64b5f6", height: "84%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>84%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#42a5f5", height: "82.8%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>82.8%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#13131a", height: "81.4%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>81.4%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#ff9800", height: "77.2%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>77.2%</span>
+        </div>
+      </div>
+    </div>
+    
+    <div className="flex items-start justify-between w-full pl-10 pr-2 z-10 gap-1 sm:gap-[6px] md:gap-3 absolute bottom-0 h-[110px]">
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>Sakana Fugu Ultra</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>Claude Opus 4.0</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>GPT-5.5</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>GLM-5.2</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>Tencent Hy3</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>DeepSeek V4 Pro</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>Claude Sonnet 4.0</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>GPT-5</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>DeepSeek V4 Flash</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>o3</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>Grok 5</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>Gemini 2.5 Pro</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>Gemini 2.5 Flash</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>o4-mini</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>Qwen2.5 Max</span>
+      </div>
+    </div>
+  </div>
+</div>
                             <div
                               className="relative flex flex-col items-center justify-end w-full group"
                               style={{ height: "93.6%" }}
@@ -1470,45 +1768,194 @@ export default function ModelsPage() {
                         className="[&amp;_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&amp;_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&amp;_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&amp;_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&amp;_.recharts-radial-bar-background-sector]:fill-muted [&amp;_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&amp;_.recharts-reference-line_[stroke='#ccc']]:stroke-border flex aspect-video justify-center text-xs [&amp;_.recharts-dot[stroke='#fff']]:stroke-transparent [&amp;_.recharts-layer]:outline-hidden [&amp;_.recharts-sector]:outline-hidden [&amp;_.recharts-sector[stroke='#fff']]:stroke-transparent [&amp;_.recharts-surface]:outline-hidden w-full"
                         style={{ height: "200px" }}
                       >
-                        <div
-                          className="flex items-end justify-between w-full h-[300px] mt-8 relative"
-                          style={{
-                            borderBottom: "1px solid #ffffff1a",
-                            paddingBottom: "1px",
-                          }}
-                        >
-                          {/* Y-Axis labels */}
-                          <div className="absolute left-0 top-0 h-full flex flex-col justify-between text-[11px] text-muted-foreground pb-8">
-                            <span>100</span>
-                            <span>60</span>
-                            <span>30</span>
-                          </div>
-                          <div className="absolute left-8 right-0 top-0 h-full flex flex-col justify-between pb-8">
-                            <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
-                            <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
-                            <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
-                          </div>
-
-                          <div className="flex items-end justify-between w-full h-[280px] pl-10 pr-2 pb-6 z-10 gap-1 sm:gap-2">
-                            <div
-                              className="relative flex flex-col items-center justify-end w-full group"
-                              style={{ height: "95.5%" }}
-                            >
-                              <div
-                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
-                                style={{
-                                  backgroundColor: "#ff4b4b",
-                                  height: "100%",
-                                }}
-                              >
-                                <span
-                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
-                                  style={{ writingMode: "horizontal-tb" }}
-                                >
-                                  95.5%
-                                </span>
-                              </div>
-                            </div>
+                        <div className="w-full bg-[#1c1c28] rounded-xl p-4 sm:p-6 mt-8 mb-4 shadow-xl border border-white/5">
+  <div className="flex items-end justify-between w-full h-[320px] relative" style={{borderBottom: "1px solid #ffffff1a", paddingBottom: "1px"}}>
+    <div className="absolute left-0 top-0 h-full flex flex-col justify-between text-[11px] text-muted-foreground pb-[120px] font-mono">
+      <span>110</span>
+      <span>60</span>
+      <span>30</span>
+      <span>0</span>
+    </div>
+    
+    <div className="absolute left-8 right-0 top-0 h-full flex flex-col justify-between pb-[120px]">
+      <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
+      <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
+      <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
+      <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
+    </div>
+    
+    <div className="flex items-end justify-between w-full h-[200px] pl-10 pr-2 z-10 gap-1 sm:gap-[6px] md:gap-3 absolute bottom-[120px]">
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#ff5a5f", height: "95.5%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>95.5%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#ff8a65", height: "93.6%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>93.6%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#13131a", height: "93.6%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>93.6%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#5c6bc0", height: "91.2%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>91.2%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#2196f3", height: "90.4%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>90.4%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#1976d2", height: "90.1%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>90.1%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#ff7043", height: "89.9%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>89.9%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#13131a", height: "88.4%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>88.4%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#3f51b5", height: "88.1%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>88.1%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#13131a", height: "87.7%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>87.7%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#13131a", height: "84.6%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>84.6%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#64b5f6", height: "84%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>84%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#42a5f5", height: "82.8%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>82.8%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#13131a", height: "81.4%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>81.4%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#ff9800", height: "77.2%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>77.2%</span>
+        </div>
+      </div>
+    </div>
+    
+    <div className="flex items-start justify-between w-full pl-10 pr-2 z-10 gap-1 sm:gap-[6px] md:gap-3 absolute bottom-0 h-[110px]">
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>Sakana Fugu Ultra</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>Claude Opus 4.0</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>GPT-5.5</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>GLM-5.2</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>Tencent Hy3</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>DeepSeek V4 Pro</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>Claude Sonnet 4.0</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>GPT-5</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>DeepSeek V4 Flash</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>o3</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>Grok 5</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>Gemini 2.5 Pro</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>Gemini 2.5 Flash</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>o4-mini</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>Qwen2.5 Max</span>
+      </div>
+    </div>
+  </div>
+</div>
                             <div
                               className="relative flex flex-col items-center justify-end w-full group"
                               style={{ height: "93.6%" }}
@@ -1827,45 +2274,194 @@ export default function ModelsPage() {
                         className="[&amp;_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&amp;_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&amp;_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&amp;_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&amp;_.recharts-radial-bar-background-sector]:fill-muted [&amp;_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&amp;_.recharts-reference-line_[stroke='#ccc']]:stroke-border flex aspect-video justify-center text-xs [&amp;_.recharts-dot[stroke='#fff']]:stroke-transparent [&amp;_.recharts-layer]:outline-hidden [&amp;_.recharts-sector]:outline-hidden [&amp;_.recharts-sector[stroke='#fff']]:stroke-transparent [&amp;_.recharts-surface]:outline-hidden w-full"
                         style={{ height: "200px" }}
                       >
-                        <div
-                          className="flex items-end justify-between w-full h-[300px] mt-8 relative"
-                          style={{
-                            borderBottom: "1px solid #ffffff1a",
-                            paddingBottom: "1px",
-                          }}
-                        >
-                          {/* Y-Axis labels */}
-                          <div className="absolute left-0 top-0 h-full flex flex-col justify-between text-[11px] text-muted-foreground pb-8">
-                            <span>100</span>
-                            <span>60</span>
-                            <span>30</span>
-                          </div>
-                          <div className="absolute left-8 right-0 top-0 h-full flex flex-col justify-between pb-8">
-                            <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
-                            <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
-                            <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
-                          </div>
-
-                          <div className="flex items-end justify-between w-full h-[280px] pl-10 pr-2 pb-6 z-10 gap-1 sm:gap-2">
-                            <div
-                              className="relative flex flex-col items-center justify-end w-full group"
-                              style={{ height: "95.5%" }}
-                            >
-                              <div
-                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
-                                style={{
-                                  backgroundColor: "#ff4b4b",
-                                  height: "100%",
-                                }}
-                              >
-                                <span
-                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
-                                  style={{ writingMode: "horizontal-tb" }}
-                                >
-                                  95.5%
-                                </span>
-                              </div>
-                            </div>
+                        <div className="w-full bg-[#1c1c28] rounded-xl p-4 sm:p-6 mt-8 mb-4 shadow-xl border border-white/5">
+  <div className="flex items-end justify-between w-full h-[320px] relative" style={{borderBottom: "1px solid #ffffff1a", paddingBottom: "1px"}}>
+    <div className="absolute left-0 top-0 h-full flex flex-col justify-between text-[11px] text-muted-foreground pb-[120px] font-mono">
+      <span>110</span>
+      <span>60</span>
+      <span>30</span>
+      <span>0</span>
+    </div>
+    
+    <div className="absolute left-8 right-0 top-0 h-full flex flex-col justify-between pb-[120px]">
+      <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
+      <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
+      <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
+      <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
+    </div>
+    
+    <div className="flex items-end justify-between w-full h-[200px] pl-10 pr-2 z-10 gap-1 sm:gap-[6px] md:gap-3 absolute bottom-[120px]">
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#ff5a5f", height: "95.5%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>95.5%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#ff8a65", height: "93.6%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>93.6%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#13131a", height: "93.6%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>93.6%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#5c6bc0", height: "91.2%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>91.2%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#2196f3", height: "90.4%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>90.4%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#1976d2", height: "90.1%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>90.1%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#ff7043", height: "89.9%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>89.9%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#13131a", height: "88.4%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>88.4%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#3f51b5", height: "88.1%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>88.1%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#13131a", height: "87.7%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>87.7%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#13131a", height: "84.6%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>84.6%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#64b5f6", height: "84%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>84%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#42a5f5", height: "82.8%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>82.8%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#13131a", height: "81.4%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>81.4%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#ff9800", height: "77.2%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>77.2%</span>
+        </div>
+      </div>
+    </div>
+    
+    <div className="flex items-start justify-between w-full pl-10 pr-2 z-10 gap-1 sm:gap-[6px] md:gap-3 absolute bottom-0 h-[110px]">
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>Sakana Fugu Ultra</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>Claude Opus 4.0</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>GPT-5.5</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>GLM-5.2</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>Tencent Hy3</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>DeepSeek V4 Pro</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>Claude Sonnet 4.0</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>GPT-5</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>DeepSeek V4 Flash</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>o3</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>Grok 5</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>Gemini 2.5 Pro</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>Gemini 2.5 Flash</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>o4-mini</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>Qwen2.5 Max</span>
+      </div>
+    </div>
+  </div>
+</div>
                             <div
                               className="relative flex flex-col items-center justify-end w-full group"
                               style={{ height: "93.6%" }}
@@ -2184,45 +2780,194 @@ export default function ModelsPage() {
                         className="[&amp;_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&amp;_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&amp;_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&amp;_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&amp;_.recharts-radial-bar-background-sector]:fill-muted [&amp;_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&amp;_.recharts-reference-line_[stroke='#ccc']]:stroke-border flex aspect-video justify-center text-xs [&amp;_.recharts-dot[stroke='#fff']]:stroke-transparent [&amp;_.recharts-layer]:outline-hidden [&amp;_.recharts-sector]:outline-hidden [&amp;_.recharts-sector[stroke='#fff']]:stroke-transparent [&amp;_.recharts-surface]:outline-hidden w-full"
                         style={{ height: "136px" }}
                       >
-                        <div
-                          className="flex items-end justify-between w-full h-[300px] mt-8 relative"
-                          style={{
-                            borderBottom: "1px solid #ffffff1a",
-                            paddingBottom: "1px",
-                          }}
-                        >
-                          {/* Y-Axis labels */}
-                          <div className="absolute left-0 top-0 h-full flex flex-col justify-between text-[11px] text-muted-foreground pb-8">
-                            <span>100</span>
-                            <span>60</span>
-                            <span>30</span>
-                          </div>
-                          <div className="absolute left-8 right-0 top-0 h-full flex flex-col justify-between pb-8">
-                            <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
-                            <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
-                            <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
-                          </div>
-
-                          <div className="flex items-end justify-between w-full h-[280px] pl-10 pr-2 pb-6 z-10 gap-1 sm:gap-2">
-                            <div
-                              className="relative flex flex-col items-center justify-end w-full group"
-                              style={{ height: "95.5%" }}
-                            >
-                              <div
-                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
-                                style={{
-                                  backgroundColor: "#ff4b4b",
-                                  height: "100%",
-                                }}
-                              >
-                                <span
-                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
-                                  style={{ writingMode: "horizontal-tb" }}
-                                >
-                                  95.5%
-                                </span>
-                              </div>
-                            </div>
+                        <div className="w-full bg-[#1c1c28] rounded-xl p-4 sm:p-6 mt-8 mb-4 shadow-xl border border-white/5">
+  <div className="flex items-end justify-between w-full h-[320px] relative" style={{borderBottom: "1px solid #ffffff1a", paddingBottom: "1px"}}>
+    <div className="absolute left-0 top-0 h-full flex flex-col justify-between text-[11px] text-muted-foreground pb-[120px] font-mono">
+      <span>110</span>
+      <span>60</span>
+      <span>30</span>
+      <span>0</span>
+    </div>
+    
+    <div className="absolute left-8 right-0 top-0 h-full flex flex-col justify-between pb-[120px]">
+      <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
+      <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
+      <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
+      <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
+    </div>
+    
+    <div className="flex items-end justify-between w-full h-[200px] pl-10 pr-2 z-10 gap-1 sm:gap-[6px] md:gap-3 absolute bottom-[120px]">
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#ff5a5f", height: "95.5%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>95.5%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#ff8a65", height: "93.6%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>93.6%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#13131a", height: "93.6%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>93.6%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#5c6bc0", height: "91.2%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>91.2%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#2196f3", height: "90.4%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>90.4%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#1976d2", height: "90.1%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>90.1%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#ff7043", height: "89.9%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>89.9%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#13131a", height: "88.4%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>88.4%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#3f51b5", height: "88.1%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>88.1%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#13131a", height: "87.7%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>87.7%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#13131a", height: "84.6%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>84.6%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#64b5f6", height: "84%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>84%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#42a5f5", height: "82.8%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>82.8%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#13131a", height: "81.4%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>81.4%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#ff9800", height: "77.2%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>77.2%</span>
+        </div>
+      </div>
+    </div>
+    
+    <div className="flex items-start justify-between w-full pl-10 pr-2 z-10 gap-1 sm:gap-[6px] md:gap-3 absolute bottom-0 h-[110px]">
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>Sakana Fugu Ultra</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>Claude Opus 4.0</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>GPT-5.5</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>GLM-5.2</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>Tencent Hy3</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>DeepSeek V4 Pro</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>Claude Sonnet 4.0</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>GPT-5</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>DeepSeek V4 Flash</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>o3</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>Grok 5</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>Gemini 2.5 Pro</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>Gemini 2.5 Flash</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>o4-mini</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>Qwen2.5 Max</span>
+      </div>
+    </div>
+  </div>
+</div>
                             <div
                               className="relative flex flex-col items-center justify-end w-full group"
                               style={{ height: "93.6%" }}
@@ -2541,45 +3286,194 @@ export default function ModelsPage() {
                         className="[&amp;_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&amp;_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&amp;_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&amp;_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&amp;_.recharts-radial-bar-background-sector]:fill-muted [&amp;_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&amp;_.recharts-reference-line_[stroke='#ccc']]:stroke-border flex aspect-video justify-center text-xs [&amp;_.recharts-dot[stroke='#fff']]:stroke-transparent [&amp;_.recharts-layer]:outline-hidden [&amp;_.recharts-sector]:outline-hidden [&amp;_.recharts-sector[stroke='#fff']]:stroke-transparent [&amp;_.recharts-surface]:outline-hidden w-full"
                         style={{ height: "168px" }}
                       >
-                        <div
-                          className="flex items-end justify-between w-full h-[300px] mt-8 relative"
-                          style={{
-                            borderBottom: "1px solid #ffffff1a",
-                            paddingBottom: "1px",
-                          }}
-                        >
-                          {/* Y-Axis labels */}
-                          <div className="absolute left-0 top-0 h-full flex flex-col justify-between text-[11px] text-muted-foreground pb-8">
-                            <span>100</span>
-                            <span>60</span>
-                            <span>30</span>
-                          </div>
-                          <div className="absolute left-8 right-0 top-0 h-full flex flex-col justify-between pb-8">
-                            <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
-                            <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
-                            <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
-                          </div>
-
-                          <div className="flex items-end justify-between w-full h-[280px] pl-10 pr-2 pb-6 z-10 gap-1 sm:gap-2">
-                            <div
-                              className="relative flex flex-col items-center justify-end w-full group"
-                              style={{ height: "95.5%" }}
-                            >
-                              <div
-                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
-                                style={{
-                                  backgroundColor: "#ff4b4b",
-                                  height: "100%",
-                                }}
-                              >
-                                <span
-                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
-                                  style={{ writingMode: "horizontal-tb" }}
-                                >
-                                  95.5%
-                                </span>
-                              </div>
-                            </div>
+                        <div className="w-full bg-[#1c1c28] rounded-xl p-4 sm:p-6 mt-8 mb-4 shadow-xl border border-white/5">
+  <div className="flex items-end justify-between w-full h-[320px] relative" style={{borderBottom: "1px solid #ffffff1a", paddingBottom: "1px"}}>
+    <div className="absolute left-0 top-0 h-full flex flex-col justify-between text-[11px] text-muted-foreground pb-[120px] font-mono">
+      <span>110</span>
+      <span>60</span>
+      <span>30</span>
+      <span>0</span>
+    </div>
+    
+    <div className="absolute left-8 right-0 top-0 h-full flex flex-col justify-between pb-[120px]">
+      <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
+      <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
+      <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
+      <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
+    </div>
+    
+    <div className="flex items-end justify-between w-full h-[200px] pl-10 pr-2 z-10 gap-1 sm:gap-[6px] md:gap-3 absolute bottom-[120px]">
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#ff5a5f", height: "95.5%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>95.5%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#ff8a65", height: "93.6%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>93.6%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#13131a", height: "93.6%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>93.6%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#5c6bc0", height: "91.2%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>91.2%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#2196f3", height: "90.4%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>90.4%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#1976d2", height: "90.1%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>90.1%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#ff7043", height: "89.9%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>89.9%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#13131a", height: "88.4%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>88.4%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#3f51b5", height: "88.1%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>88.1%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#13131a", height: "87.7%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>87.7%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#13131a", height: "84.6%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>84.6%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#64b5f6", height: "84%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>84%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#42a5f5", height: "82.8%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>82.8%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#13131a", height: "81.4%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>81.4%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#ff9800", height: "77.2%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>77.2%</span>
+        </div>
+      </div>
+    </div>
+    
+    <div className="flex items-start justify-between w-full pl-10 pr-2 z-10 gap-1 sm:gap-[6px] md:gap-3 absolute bottom-0 h-[110px]">
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>Sakana Fugu Ultra</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>Claude Opus 4.0</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>GPT-5.5</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>GLM-5.2</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>Tencent Hy3</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>DeepSeek V4 Pro</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>Claude Sonnet 4.0</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>GPT-5</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>DeepSeek V4 Flash</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>o3</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>Grok 5</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>Gemini 2.5 Pro</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>Gemini 2.5 Flash</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>o4-mini</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>Qwen2.5 Max</span>
+      </div>
+    </div>
+  </div>
+</div>
                             <div
                               className="relative flex flex-col items-center justify-end w-full group"
                               style={{ height: "93.6%" }}
@@ -2898,45 +3792,194 @@ export default function ModelsPage() {
                         className="[&amp;_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&amp;_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&amp;_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&amp;_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&amp;_.recharts-radial-bar-background-sector]:fill-muted [&amp;_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&amp;_.recharts-reference-line_[stroke='#ccc']]:stroke-border flex aspect-video justify-center text-xs [&amp;_.recharts-dot[stroke='#fff']]:stroke-transparent [&amp;_.recharts-layer]:outline-hidden [&amp;_.recharts-sector]:outline-hidden [&amp;_.recharts-sector[stroke='#fff']]:stroke-transparent [&amp;_.recharts-surface]:outline-hidden w-full"
                         style={{ height: "168px" }}
                       >
-                        <div
-                          className="flex items-end justify-between w-full h-[300px] mt-8 relative"
-                          style={{
-                            borderBottom: "1px solid #ffffff1a",
-                            paddingBottom: "1px",
-                          }}
-                        >
-                          {/* Y-Axis labels */}
-                          <div className="absolute left-0 top-0 h-full flex flex-col justify-between text-[11px] text-muted-foreground pb-8">
-                            <span>100</span>
-                            <span>60</span>
-                            <span>30</span>
-                          </div>
-                          <div className="absolute left-8 right-0 top-0 h-full flex flex-col justify-between pb-8">
-                            <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
-                            <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
-                            <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
-                          </div>
-
-                          <div className="flex items-end justify-between w-full h-[280px] pl-10 pr-2 pb-6 z-10 gap-1 sm:gap-2">
-                            <div
-                              className="relative flex flex-col items-center justify-end w-full group"
-                              style={{ height: "95.5%" }}
-                            >
-                              <div
-                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
-                                style={{
-                                  backgroundColor: "#ff4b4b",
-                                  height: "100%",
-                                }}
-                              >
-                                <span
-                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
-                                  style={{ writingMode: "horizontal-tb" }}
-                                >
-                                  95.5%
-                                </span>
-                              </div>
-                            </div>
+                        <div className="w-full bg-[#1c1c28] rounded-xl p-4 sm:p-6 mt-8 mb-4 shadow-xl border border-white/5">
+  <div className="flex items-end justify-between w-full h-[320px] relative" style={{borderBottom: "1px solid #ffffff1a", paddingBottom: "1px"}}>
+    <div className="absolute left-0 top-0 h-full flex flex-col justify-between text-[11px] text-muted-foreground pb-[120px] font-mono">
+      <span>110</span>
+      <span>60</span>
+      <span>30</span>
+      <span>0</span>
+    </div>
+    
+    <div className="absolute left-8 right-0 top-0 h-full flex flex-col justify-between pb-[120px]">
+      <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
+      <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
+      <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
+      <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
+    </div>
+    
+    <div className="flex items-end justify-between w-full h-[200px] pl-10 pr-2 z-10 gap-1 sm:gap-[6px] md:gap-3 absolute bottom-[120px]">
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#ff5a5f", height: "95.5%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>95.5%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#ff8a65", height: "93.6%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>93.6%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#13131a", height: "93.6%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>93.6%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#5c6bc0", height: "91.2%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>91.2%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#2196f3", height: "90.4%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>90.4%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#1976d2", height: "90.1%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>90.1%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#ff7043", height: "89.9%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>89.9%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#13131a", height: "88.4%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>88.4%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#3f51b5", height: "88.1%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>88.1%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#13131a", height: "87.7%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>87.7%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#13131a", height: "84.6%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>84.6%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#64b5f6", height: "84%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>84%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#42a5f5", height: "82.8%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>82.8%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#13131a", height: "81.4%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>81.4%</span>
+        </div>
+      </div>
+      <div className="relative flex flex-col items-center justify-end w-full group h-full">
+        <div className="w-full rounded-t-[3px] transition-all hover:opacity-80 flex flex-col items-center justify-start pt-2" style={{backgroundColor: "#ff9800", height: "77.2%"}}>
+          <span className="text-[9px] sm:text-[10px] font-bold text-white leading-none tracking-tighter" style={{textShadow: "0 1px 2px rgba(0,0,0,0.5)"}}>77.2%</span>
+        </div>
+      </div>
+    </div>
+    
+    <div className="flex items-start justify-between w-full pl-10 pr-2 z-10 gap-1 sm:gap-[6px] md:gap-3 absolute bottom-0 h-[110px]">
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>Sakana Fugu Ultra</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>Claude Opus 4.0</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>GPT-5.5</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>GLM-5.2</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>Tencent Hy3</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>DeepSeek V4 Pro</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>Claude Sonnet 4.0</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>GPT-5</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>DeepSeek V4 Flash</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>o3</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>Grok 5</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>Gemini 2.5 Pro</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>Gemini 2.5 Flash</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>o4-mini</span>
+      </div>
+      <div className="flex flex-col items-center w-full mt-3">
+        <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/10 flex items-center justify-center mb-2 text-white shadow-inner border border-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-70"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span className="text-[9px] sm:text-[10px] text-muted-foreground whitespace-nowrap transform origin-top-left -ml-3 sm:-ml-4 mt-2 font-medium tracking-tight" style={{writingMode: "vertical-rl", transform: "rotate(210deg)", textAlign: "left", height: "80px"}}>Qwen2.5 Max</span>
+      </div>
+    </div>
+  </div>
+</div>
                             <div
                               className="relative flex flex-col items-center justify-end w-full group"
                               style={{ height: "93.6%" }}
