@@ -215,6 +215,7 @@ onTicket(ticket) {"{"}{"\n"}
           </div>
         </section>
 
+        <DeployAutomationSection />
       </main>
       <FooterSection />
     </div>

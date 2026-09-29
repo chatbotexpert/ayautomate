@@ -1,5 +1,5 @@
 import React from 'react';
-import { Zap, ArrowUpRight, Calendar } from 'lucide-react';
+import { Zap, ArrowUpRight, Calendar, Share2, Asterisk, Box, Aperture } from 'lucide-react';
 
 const DeployAutomationSection = () => {
   return (
@@ -17,6 +17,25 @@ const DeployAutomationSection = () => {
       </div>
 
       <div className="relative z-10 max-w-5xl mx-auto px-4 w-full">
+        {/* Tool Logos */}
+        <div className="flex items-center justify-center gap-4 sm:gap-6 mb-12">
+          <div className="flex h-12 w-12 items-center justify-center rounded-xl border border-[#ffffff14] bg-[#161622]">
+            <Share2 className="h-5 w-5 text-muted-foreground opacity-60" />
+          </div>
+          <div className="flex h-12 w-12 items-center justify-center rounded-xl border border-[#ffffff14] bg-[#161622]">
+            <Asterisk className="h-5 w-5 text-muted-foreground opacity-60" />
+          </div>
+          <div className="flex h-12 w-12 items-center justify-center rounded-xl border border-[#ffffff14] bg-[#161622] bg-white/5">
+            <Box className="h-6 w-6 text-white opacity-90" />
+          </div>
+          <div className="flex h-12 w-12 items-center justify-center rounded-xl border border-[#ffffff14] bg-[#161622]">
+            <span className="text-xl font-black text-muted-foreground opacity-60 italic tracking-tighter pr-1">M</span>
+          </div>
+          <div className="flex h-12 w-12 items-center justify-center rounded-xl border border-[#ffffff14] bg-[#161622]">
+            <Aperture className="h-5 w-5 text-muted-foreground opacity-60" />
+          </div>
+        </div>
+
         {/* Gateway Badge */}
         <div className="mb-12">
           <span className="inline-flex items-center gap-2 px-3 py-1 border border-[#8082C1]/30 bg-[#8082C1]/10">
