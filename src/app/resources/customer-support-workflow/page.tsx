@@ -202,15 +202,15 @@ onTicket(ticket) {"{"}{"\n"}
 
         {/* KEEP READING */}
         <section className="w-full border-t border-border">
-          <div className="mx-auto max-w-5xl px-4 md:px-6 lg:px-8 xl:px-4 py-16 sm:py-20">
+          <div className="mx-auto max-w-4xl px-4 md:px-6 lg:px-8 xl:px-4 py-16 sm:py-20">
             <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#8082c1] mb-5">KEEP READING</p>
             <div className="grid gap-4 sm:grid-cols-2">
-              <Link className="group flex items-center justify-between rounded-xl border border-[#ffffff14] bg-[#161622] px-6 py-5 hover:bg-[#1a1a24] transition-all" href="/resources/ai-automation-playbook">
-                <span className="text-[14px] font-bold text-foreground">The AI Automation Playbook</span>
+              <Link className="group flex items-center justify-between rounded-xl border border-[#ffffff14] bg-[#1a1a24] px-6 py-5 hover:bg-[#1e1e2d] transition-all" href="/resources/ai-automation-playbook">
+                <span className="text-[13px] font-bold text-white">The AI Automation Playbook</span>
                 <ArrowUpRight className="h-3.5 w-3.5 text-muted-foreground group-hover:text-white transition-colors" aria-hidden="true" />
               </Link>
-              <Link className="group flex items-center justify-between rounded-xl border border-[#ffffff14] bg-[#161622] px-6 py-5 hover:bg-[#1a1a24] transition-all" href="/resources/lead-qualification-playbook">
-                <span className="text-[14px] font-bold text-foreground">Lead Qualification Playbook</span>
+              <Link className="group flex items-center justify-between rounded-xl border border-[#ffffff14] bg-[#1a1a24] px-6 py-5 hover:bg-[#1e1e2d] transition-all" href="/resources/lead-qualification-playbook">
+                <span className="text-[13px] font-bold text-white">Lead Qualification Playbook</span>
                 <ArrowUpRight className="h-3.5 w-3.5 text-muted-foreground group-hover:text-white transition-colors" aria-hidden="true" />
               </Link>
             </div>
