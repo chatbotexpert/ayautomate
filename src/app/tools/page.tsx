@@ -58,7 +58,7 @@ export default function ToolsPage() {
                 type="email"
                 inputmode="email"
                 autocomplete="email"
-                required=""
+                required={true}
                 placeholder="you@company.com"
                 aria-label="Email address"
                 className="min-w-0 flex-1 border border-border bg-background px-3 py-2.5 text-base sm:text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary-purple/30 focus:border-primary-purple"
@@ -93,7 +93,7 @@ export default function ToolsPage() {
               role="tablist"
               aria-orientation="horizontal"
               className="inline-flex items-center p-1 text-muted-foreground w-full justify-start mb-8 bg-muted/50 rounded-none h-auto flex-wrap"
-              tabindex="-1"
+              tabIndex="-1"
               data-orientation="horizontal"
               style={{ outline: "none" }}
             >
@@ -105,7 +105,7 @@ export default function ToolsPage() {
                 data-state="active"
                 id="radix-_R_75fiumelb_-trigger-All"
                 className="inline-flex items-center justify-center whitespace-nowrap font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:shadow-sm rounded-none data-[state=active]:bg-primary-purple data-[state=active]:text-white text-xs uppercase tracking-widest px-4 py-2"
-                tabindex="-1"
+                tabIndex="-1"
                 data-orientation="horizontal"
                 data-radix-collection-item=""
               >
@@ -119,7 +119,7 @@ export default function ToolsPage() {
                 data-state="inactive"
                 id="radix-_R_75fiumelb_-trigger-Calculators"
                 className="inline-flex items-center justify-center whitespace-nowrap font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:shadow-sm rounded-none data-[state=active]:bg-primary-purple data-[state=active]:text-white text-xs uppercase tracking-widest px-4 py-2"
-                tabindex="-1"
+                tabIndex="-1"
                 data-orientation="horizontal"
                 data-radix-collection-item=""
               >
@@ -134,7 +134,7 @@ export default function ToolsPage() {
                 data-state="inactive"
                 id="radix-_R_75fiumelb_-trigger-Assessments"
                 className="inline-flex items-center justify-center whitespace-nowrap font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:shadow-sm rounded-none data-[state=active]:bg-primary-purple data-[state=active]:text-white text-xs uppercase tracking-widest px-4 py-2"
-                tabindex="-1"
+                tabIndex="-1"
                 data-orientation="horizontal"
                 data-radix-collection-item=""
               >
@@ -149,7 +149,7 @@ export default function ToolsPage() {
                 data-state="inactive"
                 id="radix-_R_75fiumelb_-trigger-Generators"
                 className="inline-flex items-center justify-center whitespace-nowrap font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:shadow-sm rounded-none data-[state=active]:bg-primary-purple data-[state=active]:text-white text-xs uppercase tracking-widest px-4 py-2"
-                tabindex="-1"
+                tabIndex="-1"
                 data-orientation="horizontal"
                 data-radix-collection-item=""
               >
@@ -163,7 +163,7 @@ export default function ToolsPage() {
               role="tabpanel"
               aria-labelledby="radix-_R_75fiumelb_-trigger-All"
               id="radix-_R_75fiumelb_-content-All"
-              tabindex="0"
+              tabIndex="0"
               className="mt-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
               style={{ animationDuration: "0s" }}
             >
@@ -2796,7 +2796,7 @@ export default function ToolsPage() {
               aria-labelledby="radix-_R_75fiumelb_-trigger-Calculators"
               hidden=""
               id="radix-_R_75fiumelb_-content-Calculators"
-              tabindex="0"
+              tabIndex="0"
               className="mt-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
             ></div>
             <div
@@ -2806,7 +2806,7 @@ export default function ToolsPage() {
               aria-labelledby="radix-_R_75fiumelb_-trigger-Assessments"
               hidden=""
               id="radix-_R_75fiumelb_-content-Assessments"
-              tabindex="0"
+              tabIndex="0"
               className="mt-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
             ></div>
             <div
@@ -2816,7 +2816,7 @@ export default function ToolsPage() {
               aria-labelledby="radix-_R_75fiumelb_-trigger-Generators"
               hidden=""
               id="radix-_R_75fiumelb_-content-Generators"
-              tabindex="0"
+              tabIndex="0"
               className="mt-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
             ></div>
           </div>
