@@ -724,228 +724,765 @@ export default function ModelsPage() {
                   >
                     <div style={{ minWidth: "1012px", height: "572px" }}>
                       <div className="w-full bg-[#1c1c28] rounded-[6px] p-6 sm:p-8 mt-6 mb-4 border-0">
+                        {/* Y-axis labels + horizontal grid lines */}
                         <div
-                          className="flex items-end justify-between w-full h-[320px] relative"
                           style={{
-                            borderBottom: "1px solid #ffffff15",
-                            paddingBottom: "1px",
+                            position: "relative",
+                            height: "360px",
+                            marginBottom: "0",
                           }}
                         >
-                          <div className="absolute left-0 top-0 h-full flex flex-col justify-between text-[11px] text-muted-foreground pb-[120px] font-sans">
-                            <span>110</span>
-                            <span>60</span>
-                            <span>30</span>
-                            <span>0</span>
+                          {/* Y-axis labels */}
+                          <div
+                            style={{
+                              position: "absolute",
+                              left: "0",
+                              top: "0",
+                              bottom: "120px",
+                              display: "flex",
+                              flexDirection: "column",
+                              justifyContent: "space-between",
+                            }}
+                          >
+                            <span className="text-[11px] text-muted-foreground font-sans">
+                              110
+                            </span>
+                            <span className="text-[11px] text-muted-foreground font-sans">
+                              60
+                            </span>
+                            <span className="text-[11px] text-muted-foreground font-sans">
+                              30
+                            </span>
+                            <span className="text-[11px] text-muted-foreground font-sans">
+                              0
+                            </span>
                           </div>
 
-                          <div className="absolute left-10 right-0 top-0 h-full flex flex-col justify-between pb-[120px]">
-                            <div className="w-full h-[1px] border-t border-dashed border-[#ffffff15]"></div>
-                            <div className="w-full h-[1px] border-t border-dashed border-[#ffffff15]"></div>
-                            <div className="w-full h-[1px] border-t border-dashed border-[#ffffff15]"></div>
-                            <div className="w-full h-[1px] border-t border-dashed border-transparent"></div>
+                          {/* Grid lines */}
+                          <div
+                            style={{
+                              position: "absolute",
+                              left: "30px",
+                              right: "0",
+                              top: "0",
+                              bottom: "120px",
+                              display: "flex",
+                              flexDirection: "column",
+                              justifyContent: "space-between",
+                            }}
+                          >
+                            <div
+                              style={{
+                                width: "100%",
+                                height: "1px",
+                                borderTop: "1px dashed rgba(255,255,255,0.08)",
+                              }}
+                            ></div>
+                            <div
+                              style={{
+                                width: "100%",
+                                height: "1px",
+                                borderTop: "1px dashed rgba(255,255,255,0.08)",
+                              }}
+                            ></div>
+                            <div
+                              style={{
+                                width: "100%",
+                                height: "1px",
+                                borderTop: "1px dashed rgba(255,255,255,0.08)",
+                              }}
+                            ></div>
+                            <div
+                              style={{
+                                width: "100%",
+                                height: "1px",
+                                borderTop: "1px dashed transparent",
+                              }}
+                            ></div>
                           </div>
 
-                          <div className="flex items-end justify-between w-full h-[200px] pl-10 pr-2 z-10 gap-1 sm:gap-2 absolute bottom-[120px]">
-                            <div className="relative flex flex-col items-center justify-end w-full group h-full">
+                          {/* Bars container - holds percentage pills + bars + baseline + logos + names */}
+                          <div
+                            style={{
+                              position: "absolute",
+                              left: "30px",
+                              right: "0",
+                              top: "0",
+                              bottom: "0",
+                              display: "flex",
+                              flexDirection: "column",
+                            }}
+                          >
+                            {/* Top section: bars with floating percentage labels */}
+                            <div
+                              style={{
+                                flex: "1",
+                                display: "flex",
+                                alignItems: "flex-end",
+                                gap: "6px",
+                                paddingBottom: "0",
+                                position: "relative",
+                                marginBottom: "0",
+                              }}
+                            >
                               <div
-                                className="w-full rounded-[2px] transition-all flex flex-col items-center justify-start pt-2"
                                 style={{
-                                  backgroundColor: "#ff5a5f",
-                                  height: "95.5%",
+                                  flex: "1",
+                                  display: "flex",
+                                  flexDirection: "column",
+                                  alignItems: "center",
+                                  height: "100%",
+                                  justifyContent: "flex-end",
                                 }}
                               >
-                                <span className="text-[10px] font-bold text-white leading-none">
-                                  95.5%
-                                </span>
+                                {/* Percentage pill ABOVE bar */}
+                                <div
+                                  style={{
+                                    marginBottom: "4px",
+                                    padding: "2px 6px",
+                                    borderRadius: "4px",
+                                    backgroundColor: "rgba(0,0,0,0.7)",
+                                    border: "1px solid rgba(255,255,255,0.15)",
+                                  }}
+                                >
+                                  <span
+                                    style={{
+                                      fontSize: "10px",
+                                      fontWeight: "700",
+                                      color: "#fff",
+                                      whiteSpace: "nowrap",
+                                    }}
+                                  >
+                                    95.5%
+                                  </span>
+                                </div>
+                                {/* Bar */}
+                                <div
+                                  style={{
+                                    width: "100%",
+                                    height: "87%",
+                                    backgroundColor: "#ff5a5f",
+                                    borderRadius: "2px 2px 0 0",
+                                  }}
+                                ></div>
                               </div>
-                            </div>
-                            <div className="relative flex flex-col items-center justify-end w-full group h-full">
                               <div
-                                className="w-full rounded-[2px] transition-all flex flex-col items-center justify-start pt-2"
                                 style={{
-                                  backgroundColor: "#ff8a65",
-                                  height: "93.6%",
+                                  flex: "1",
+                                  display: "flex",
+                                  flexDirection: "column",
+                                  alignItems: "center",
+                                  height: "100%",
+                                  justifyContent: "flex-end",
                                 }}
                               >
-                                <span className="text-[10px] font-bold text-white leading-none">
-                                  93.6%
-                                </span>
+                                {/* Percentage pill ABOVE bar */}
+                                <div
+                                  style={{
+                                    marginBottom: "4px",
+                                    padding: "2px 6px",
+                                    borderRadius: "4px",
+                                    backgroundColor: "rgba(0,0,0,0.7)",
+                                    border: "1px solid rgba(255,255,255,0.15)",
+                                  }}
+                                >
+                                  <span
+                                    style={{
+                                      fontSize: "10px",
+                                      fontWeight: "700",
+                                      color: "#fff",
+                                      whiteSpace: "nowrap",
+                                    }}
+                                  >
+                                    93.6%
+                                  </span>
+                                </div>
+                                {/* Bar */}
+                                <div
+                                  style={{
+                                    width: "100%",
+                                    height: "85%",
+                                    backgroundColor: "#ff8a65",
+                                    borderRadius: "2px 2px 0 0",
+                                  }}
+                                ></div>
                               </div>
-                            </div>
-                            <div className="relative flex flex-col items-center justify-end w-full group h-full">
                               <div
-                                className="w-full rounded-[2px] transition-all flex flex-col items-center justify-start pt-2"
                                 style={{
-                                  backgroundColor: "#1a1a24",
-                                  height: "93.6%",
+                                  flex: "1",
+                                  display: "flex",
+                                  flexDirection: "column",
+                                  alignItems: "center",
+                                  height: "100%",
+                                  justifyContent: "flex-end",
                                 }}
                               >
-                                <span className="text-[10px] font-bold text-white leading-none">
-                                  93.6%
-                                </span>
+                                {/* Percentage pill ABOVE bar */}
+                                <div
+                                  style={{
+                                    marginBottom: "4px",
+                                    padding: "2px 6px",
+                                    borderRadius: "4px",
+                                    backgroundColor: "rgba(0,0,0,0.7)",
+                                    border: "1px solid rgba(255,255,255,0.15)",
+                                  }}
+                                >
+                                  <span
+                                    style={{
+                                      fontSize: "10px",
+                                      fontWeight: "700",
+                                      color: "#fff",
+                                      whiteSpace: "nowrap",
+                                    }}
+                                  >
+                                    93.6%
+                                  </span>
+                                </div>
+                                {/* Bar */}
+                                <div
+                                  style={{
+                                    width: "100%",
+                                    height: "85%",
+                                    backgroundColor: "#1a1a2e",
+                                    borderRadius: "2px 2px 0 0",
+                                    boxShadow:
+                                      "inset 0 0 0 1px rgba(255,255,255,0.08)",
+                                  }}
+                                ></div>
                               </div>
-                            </div>
-                            <div className="relative flex flex-col items-center justify-end w-full group h-full">
                               <div
-                                className="w-full rounded-[2px] transition-all flex flex-col items-center justify-start pt-2"
                                 style={{
-                                  backgroundColor: "#5c6bc0",
-                                  height: "91.2%",
+                                  flex: "1",
+                                  display: "flex",
+                                  flexDirection: "column",
+                                  alignItems: "center",
+                                  height: "100%",
+                                  justifyContent: "flex-end",
                                 }}
                               >
-                                <span className="text-[10px] font-bold text-white leading-none">
-                                  91.2%
-                                </span>
+                                {/* Percentage pill ABOVE bar */}
+                                <div
+                                  style={{
+                                    marginBottom: "4px",
+                                    padding: "2px 6px",
+                                    borderRadius: "4px",
+                                    backgroundColor: "rgba(0,0,0,0.7)",
+                                    border: "1px solid rgba(255,255,255,0.15)",
+                                  }}
+                                >
+                                  <span
+                                    style={{
+                                      fontSize: "10px",
+                                      fontWeight: "700",
+                                      color: "#fff",
+                                      whiteSpace: "nowrap",
+                                    }}
+                                  >
+                                    91.2%
+                                  </span>
+                                </div>
+                                {/* Bar */}
+                                <div
+                                  style={{
+                                    width: "100%",
+                                    height: "83%",
+                                    backgroundColor: "#5c6bc0",
+                                    borderRadius: "2px 2px 0 0",
+                                  }}
+                                ></div>
                               </div>
-                            </div>
-                            <div className="relative flex flex-col items-center justify-end w-full group h-full">
                               <div
-                                className="w-full rounded-[2px] transition-all flex flex-col items-center justify-start pt-2"
                                 style={{
-                                  backgroundColor: "#2196f3",
-                                  height: "90.4%",
+                                  flex: "1",
+                                  display: "flex",
+                                  flexDirection: "column",
+                                  alignItems: "center",
+                                  height: "100%",
+                                  justifyContent: "flex-end",
                                 }}
                               >
-                                <span className="text-[10px] font-bold text-white leading-none">
-                                  90.4%
-                                </span>
+                                {/* Percentage pill ABOVE bar */}
+                                <div
+                                  style={{
+                                    marginBottom: "4px",
+                                    padding: "2px 6px",
+                                    borderRadius: "4px",
+                                    backgroundColor: "rgba(0,0,0,0.7)",
+                                    border: "1px solid rgba(255,255,255,0.15)",
+                                  }}
+                                >
+                                  <span
+                                    style={{
+                                      fontSize: "10px",
+                                      fontWeight: "700",
+                                      color: "#fff",
+                                      whiteSpace: "nowrap",
+                                    }}
+                                  >
+                                    90.4%
+                                  </span>
+                                </div>
+                                {/* Bar */}
+                                <div
+                                  style={{
+                                    width: "100%",
+                                    height: "82%",
+                                    backgroundColor: "#2196f3",
+                                    borderRadius: "2px 2px 0 0",
+                                  }}
+                                ></div>
                               </div>
-                            </div>
-                            <div className="relative flex flex-col items-center justify-end w-full group h-full">
                               <div
-                                className="w-full rounded-[2px] transition-all flex flex-col items-center justify-start pt-2"
                                 style={{
-                                  backgroundColor: "#1976d2",
-                                  height: "90.1%",
+                                  flex: "1",
+                                  display: "flex",
+                                  flexDirection: "column",
+                                  alignItems: "center",
+                                  height: "100%",
+                                  justifyContent: "flex-end",
                                 }}
                               >
-                                <span className="text-[10px] font-bold text-white leading-none">
-                                  90.1%
-                                </span>
+                                {/* Percentage pill ABOVE bar */}
+                                <div
+                                  style={{
+                                    marginBottom: "4px",
+                                    padding: "2px 6px",
+                                    borderRadius: "4px",
+                                    backgroundColor: "rgba(0,0,0,0.7)",
+                                    border: "1px solid rgba(255,255,255,0.15)",
+                                  }}
+                                >
+                                  <span
+                                    style={{
+                                      fontSize: "10px",
+                                      fontWeight: "700",
+                                      color: "#fff",
+                                      whiteSpace: "nowrap",
+                                    }}
+                                  >
+                                    90.1%
+                                  </span>
+                                </div>
+                                {/* Bar */}
+                                <div
+                                  style={{
+                                    width: "100%",
+                                    height: "82%",
+                                    backgroundColor: "#1976d2",
+                                    borderRadius: "2px 2px 0 0",
+                                  }}
+                                ></div>
                               </div>
-                            </div>
-                            <div className="relative flex flex-col items-center justify-end w-full group h-full">
                               <div
-                                className="w-full rounded-[2px] transition-all flex flex-col items-center justify-start pt-2"
                                 style={{
-                                  backgroundColor: "#ff7043",
-                                  height: "89.9%",
+                                  flex: "1",
+                                  display: "flex",
+                                  flexDirection: "column",
+                                  alignItems: "center",
+                                  height: "100%",
+                                  justifyContent: "flex-end",
                                 }}
                               >
-                                <span className="text-[10px] font-bold text-white leading-none">
-                                  89.9%
-                                </span>
+                                {/* Percentage pill ABOVE bar */}
+                                <div
+                                  style={{
+                                    marginBottom: "4px",
+                                    padding: "2px 6px",
+                                    borderRadius: "4px",
+                                    backgroundColor: "rgba(0,0,0,0.7)",
+                                    border: "1px solid rgba(255,255,255,0.15)",
+                                  }}
+                                >
+                                  <span
+                                    style={{
+                                      fontSize: "10px",
+                                      fontWeight: "700",
+                                      color: "#fff",
+                                      whiteSpace: "nowrap",
+                                    }}
+                                  >
+                                    89.9%
+                                  </span>
+                                </div>
+                                {/* Bar */}
+                                <div
+                                  style={{
+                                    width: "100%",
+                                    height: "82%",
+                                    backgroundColor: "#ff7043",
+                                    borderRadius: "2px 2px 0 0",
+                                  }}
+                                ></div>
                               </div>
-                            </div>
-                            <div className="relative flex flex-col items-center justify-end w-full group h-full">
                               <div
-                                className="w-full rounded-[2px] transition-all flex flex-col items-center justify-start pt-2"
                                 style={{
-                                  backgroundColor: "#1a1a24",
-                                  height: "88.4%",
+                                  flex: "1",
+                                  display: "flex",
+                                  flexDirection: "column",
+                                  alignItems: "center",
+                                  height: "100%",
+                                  justifyContent: "flex-end",
                                 }}
                               >
-                                <span className="text-[10px] font-bold text-white leading-none">
-                                  88.4%
-                                </span>
+                                {/* Percentage pill ABOVE bar */}
+                                <div
+                                  style={{
+                                    marginBottom: "4px",
+                                    padding: "2px 6px",
+                                    borderRadius: "4px",
+                                    backgroundColor: "rgba(0,0,0,0.7)",
+                                    border: "1px solid rgba(255,255,255,0.15)",
+                                  }}
+                                >
+                                  <span
+                                    style={{
+                                      fontSize: "10px",
+                                      fontWeight: "700",
+                                      color: "#fff",
+                                      whiteSpace: "nowrap",
+                                    }}
+                                  >
+                                    88.4%
+                                  </span>
+                                </div>
+                                {/* Bar */}
+                                <div
+                                  style={{
+                                    width: "100%",
+                                    height: "80%",
+                                    backgroundColor: "#1a1a2e",
+                                    borderRadius: "2px 2px 0 0",
+                                    boxShadow:
+                                      "inset 0 0 0 1px rgba(255,255,255,0.08)",
+                                  }}
+                                ></div>
                               </div>
-                            </div>
-                            <div className="relative flex flex-col items-center justify-end w-full group h-full">
                               <div
-                                className="w-full rounded-[2px] transition-all flex flex-col items-center justify-start pt-2"
                                 style={{
-                                  backgroundColor: "#3f51b5",
-                                  height: "88.1%",
+                                  flex: "1",
+                                  display: "flex",
+                                  flexDirection: "column",
+                                  alignItems: "center",
+                                  height: "100%",
+                                  justifyContent: "flex-end",
                                 }}
                               >
-                                <span className="text-[10px] font-bold text-white leading-none">
-                                  88.1%
-                                </span>
+                                {/* Percentage pill ABOVE bar */}
+                                <div
+                                  style={{
+                                    marginBottom: "4px",
+                                    padding: "2px 6px",
+                                    borderRadius: "4px",
+                                    backgroundColor: "rgba(0,0,0,0.7)",
+                                    border: "1px solid rgba(255,255,255,0.15)",
+                                  }}
+                                >
+                                  <span
+                                    style={{
+                                      fontSize: "10px",
+                                      fontWeight: "700",
+                                      color: "#fff",
+                                      whiteSpace: "nowrap",
+                                    }}
+                                  >
+                                    88.1%
+                                  </span>
+                                </div>
+                                {/* Bar */}
+                                <div
+                                  style={{
+                                    width: "100%",
+                                    height: "80%",
+                                    backgroundColor: "#3f51b5",
+                                    borderRadius: "2px 2px 0 0",
+                                  }}
+                                ></div>
                               </div>
-                            </div>
-                            <div className="relative flex flex-col items-center justify-end w-full group h-full">
                               <div
-                                className="w-full rounded-[2px] transition-all flex flex-col items-center justify-start pt-2"
                                 style={{
-                                  backgroundColor: "#1a1a24",
-                                  height: "87.7%",
+                                  flex: "1",
+                                  display: "flex",
+                                  flexDirection: "column",
+                                  alignItems: "center",
+                                  height: "100%",
+                                  justifyContent: "flex-end",
                                 }}
                               >
-                                <span className="text-[10px] font-bold text-white leading-none">
-                                  87.7%
-                                </span>
+                                {/* Percentage pill ABOVE bar */}
+                                <div
+                                  style={{
+                                    marginBottom: "4px",
+                                    padding: "2px 6px",
+                                    borderRadius: "4px",
+                                    backgroundColor: "rgba(0,0,0,0.7)",
+                                    border: "1px solid rgba(255,255,255,0.15)",
+                                  }}
+                                >
+                                  <span
+                                    style={{
+                                      fontSize: "10px",
+                                      fontWeight: "700",
+                                      color: "#fff",
+                                      whiteSpace: "nowrap",
+                                    }}
+                                  >
+                                    87.7%
+                                  </span>
+                                </div>
+                                {/* Bar */}
+                                <div
+                                  style={{
+                                    width: "100%",
+                                    height: "80%",
+                                    backgroundColor: "#1a1a2e",
+                                    borderRadius: "2px 2px 0 0",
+                                    boxShadow:
+                                      "inset 0 0 0 1px rgba(255,255,255,0.08)",
+                                  }}
+                                ></div>
                               </div>
-                            </div>
-                            <div className="relative flex flex-col items-center justify-end w-full group h-full">
                               <div
-                                className="w-full rounded-[2px] transition-all flex flex-col items-center justify-start pt-2"
                                 style={{
-                                  backgroundColor: "#1a1a24",
-                                  height: "84.6%",
+                                  flex: "1",
+                                  display: "flex",
+                                  flexDirection: "column",
+                                  alignItems: "center",
+                                  height: "100%",
+                                  justifyContent: "flex-end",
                                 }}
                               >
-                                <span className="text-[10px] font-bold text-white leading-none">
-                                  84.6%
-                                </span>
+                                {/* Percentage pill ABOVE bar */}
+                                <div
+                                  style={{
+                                    marginBottom: "4px",
+                                    padding: "2px 6px",
+                                    borderRadius: "4px",
+                                    backgroundColor: "rgba(0,0,0,0.7)",
+                                    border: "1px solid rgba(255,255,255,0.15)",
+                                  }}
+                                >
+                                  <span
+                                    style={{
+                                      fontSize: "10px",
+                                      fontWeight: "700",
+                                      color: "#fff",
+                                      whiteSpace: "nowrap",
+                                    }}
+                                  >
+                                    84.6%
+                                  </span>
+                                </div>
+                                {/* Bar */}
+                                <div
+                                  style={{
+                                    width: "100%",
+                                    height: "77%",
+                                    backgroundColor: "#1a1a2e",
+                                    borderRadius: "2px 2px 0 0",
+                                    boxShadow:
+                                      "inset 0 0 0 1px rgba(255,255,255,0.08)",
+                                  }}
+                                ></div>
                               </div>
-                            </div>
-                            <div className="relative flex flex-col items-center justify-end w-full group h-full">
                               <div
-                                className="w-full rounded-[2px] transition-all flex flex-col items-center justify-start pt-2"
                                 style={{
-                                  backgroundColor: "#64b5f6",
-                                  height: "84%",
+                                  flex: "1",
+                                  display: "flex",
+                                  flexDirection: "column",
+                                  alignItems: "center",
+                                  height: "100%",
+                                  justifyContent: "flex-end",
                                 }}
                               >
-                                <span className="text-[10px] font-bold text-white leading-none">
-                                  84%
-                                </span>
+                                {/* Percentage pill ABOVE bar */}
+                                <div
+                                  style={{
+                                    marginBottom: "4px",
+                                    padding: "2px 6px",
+                                    borderRadius: "4px",
+                                    backgroundColor: "rgba(0,0,0,0.7)",
+                                    border: "1px solid rgba(255,255,255,0.15)",
+                                  }}
+                                >
+                                  <span
+                                    style={{
+                                      fontSize: "10px",
+                                      fontWeight: "700",
+                                      color: "#fff",
+                                      whiteSpace: "nowrap",
+                                    }}
+                                  >
+                                    84%
+                                  </span>
+                                </div>
+                                {/* Bar */}
+                                <div
+                                  style={{
+                                    width: "100%",
+                                    height: "76%",
+                                    backgroundColor: "#64b5f6",
+                                    borderRadius: "2px 2px 0 0",
+                                  }}
+                                ></div>
                               </div>
-                            </div>
-                            <div className="relative flex flex-col items-center justify-end w-full group h-full">
                               <div
-                                className="w-full rounded-[2px] transition-all flex flex-col items-center justify-start pt-2"
                                 style={{
-                                  backgroundColor: "#42a5f5",
-                                  height: "82.8%",
+                                  flex: "1",
+                                  display: "flex",
+                                  flexDirection: "column",
+                                  alignItems: "center",
+                                  height: "100%",
+                                  justifyContent: "flex-end",
                                 }}
                               >
-                                <span className="text-[10px] font-bold text-white leading-none">
-                                  82.8%
-                                </span>
+                                {/* Percentage pill ABOVE bar */}
+                                <div
+                                  style={{
+                                    marginBottom: "4px",
+                                    padding: "2px 6px",
+                                    borderRadius: "4px",
+                                    backgroundColor: "rgba(0,0,0,0.7)",
+                                    border: "1px solid rgba(255,255,255,0.15)",
+                                  }}
+                                >
+                                  <span
+                                    style={{
+                                      fontSize: "10px",
+                                      fontWeight: "700",
+                                      color: "#fff",
+                                      whiteSpace: "nowrap",
+                                    }}
+                                  >
+                                    82.8%
+                                  </span>
+                                </div>
+                                {/* Bar */}
+                                <div
+                                  style={{
+                                    width: "100%",
+                                    height: "75%",
+                                    backgroundColor: "#42a5f5",
+                                    borderRadius: "2px 2px 0 0",
+                                  }}
+                                ></div>
                               </div>
-                            </div>
-                            <div className="relative flex flex-col items-center justify-end w-full group h-full">
                               <div
-                                className="w-full rounded-[2px] transition-all flex flex-col items-center justify-start pt-2"
                                 style={{
-                                  backgroundColor: "#1a1a24",
-                                  height: "81.4%",
+                                  flex: "1",
+                                  display: "flex",
+                                  flexDirection: "column",
+                                  alignItems: "center",
+                                  height: "100%",
+                                  justifyContent: "flex-end",
                                 }}
                               >
-                                <span className="text-[10px] font-bold text-white leading-none">
-                                  81.4%
-                                </span>
+                                {/* Percentage pill ABOVE bar */}
+                                <div
+                                  style={{
+                                    marginBottom: "4px",
+                                    padding: "2px 6px",
+                                    borderRadius: "4px",
+                                    backgroundColor: "rgba(0,0,0,0.7)",
+                                    border: "1px solid rgba(255,255,255,0.15)",
+                                  }}
+                                >
+                                  <span
+                                    style={{
+                                      fontSize: "10px",
+                                      fontWeight: "700",
+                                      color: "#fff",
+                                      whiteSpace: "nowrap",
+                                    }}
+                                  >
+                                    81.4%
+                                  </span>
+                                </div>
+                                {/* Bar */}
+                                <div
+                                  style={{
+                                    width: "100%",
+                                    height: "74%",
+                                    backgroundColor: "#1a1a2e",
+                                    borderRadius: "2px 2px 0 0",
+                                    boxShadow:
+                                      "inset 0 0 0 1px rgba(255,255,255,0.08)",
+                                  }}
+                                ></div>
                               </div>
-                            </div>
-                            <div className="relative flex flex-col items-center justify-end w-full group h-full">
                               <div
-                                className="w-full rounded-[2px] transition-all flex flex-col items-center justify-start pt-2"
                                 style={{
-                                  backgroundColor: "#ff9800",
-                                  height: "77.2%",
+                                  flex: "1",
+                                  display: "flex",
+                                  flexDirection: "column",
+                                  alignItems: "center",
+                                  height: "100%",
+                                  justifyContent: "flex-end",
                                 }}
                               >
-                                <span className="text-[10px] font-bold text-white leading-none">
-                                  77.2%
-                                </span>
+                                {/* Percentage pill ABOVE bar */}
+                                <div
+                                  style={{
+                                    marginBottom: "4px",
+                                    padding: "2px 6px",
+                                    borderRadius: "4px",
+                                    backgroundColor: "rgba(0,0,0,0.7)",
+                                    border: "1px solid rgba(255,255,255,0.15)",
+                                  }}
+                                >
+                                  <span
+                                    style={{
+                                      fontSize: "10px",
+                                      fontWeight: "700",
+                                      color: "#fff",
+                                      whiteSpace: "nowrap",
+                                    }}
+                                  >
+                                    77.2%
+                                  </span>
+                                </div>
+                                {/* Bar */}
+                                <div
+                                  style={{
+                                    width: "100%",
+                                    height: "70%",
+                                    backgroundColor: "#ff9800",
+                                    borderRadius: "2px 2px 0 0",
+                                  }}
+                                ></div>
                               </div>
                             </div>
-                          </div>
 
-                          <div className="flex items-start justify-between w-full pl-10 pr-2 z-10 gap-1 sm:gap-2 absolute bottom-0 h-[120px]">
-                            <div className="flex flex-col items-center w-full mt-3 relative">
-                              <div className="flex items-center justify-center mb-1">
+                            {/* Baseline */}
+                            <div
+                              style={{
+                                width: "100%",
+                                height: "1px",
+                                backgroundColor: "rgba(255,255,255,0.12)",
+                                flexShrink: "0",
+                              }}
+                            ></div>
+
+                            {/* Bottom section: logos + rotated names */}
+                            <div
+                              style={{
+                                display: "flex",
+                                gap: "6px",
+                                height: "120px",
+                                flexShrink: "0",
+                              }}
+                            >
+                              <div
+                                style={{
+                                  flex: "1",
+                                  display: "flex",
+                                  flexDirection: "column",
+                                  alignItems: "center",
+                                  paddingTop: "8px",
+                                  position: "relative",
+                                  overflow: "visible",
+                                }}
+                              >
+                                {/* Logo */}
                                 <img
                                   src="https://www.google.com/s2/favicons?domain=sakana.ai&sz=128"
                                   width="14"
@@ -956,22 +1493,35 @@ export default function ModelsPage() {
                                     flexShrink: "0",
                                   }}
                                 />
+                                {/* Model name - rotated */}
+                                <span
+                                  style={{
+                                    position: "absolute",
+                                    top: "28px",
+                                    fontSize: "10.5px",
+                                    color: "rgba(255,255,255,0.6)",
+                                    whiteSpace: "nowrap",
+                                    transformOrigin: "top center",
+                                    transform: "rotate(-50deg)",
+                                    fontWeight: "400",
+                                    letterSpacing: "0.2px",
+                                  }}
+                                >
+                                  Sakana Fugu Ultra
+                                </span>
                               </div>
-                              <span
-                                className="text-[10.5px] text-gray-300 whitespace-nowrap absolute top-[22px]"
+                              <div
                                 style={{
-                                  transformOrigin: "top right",
-                                  transform:
-                                    "rotate(-50deg) translate(-8px, -5px)",
-                                  letterSpacing: "0.2px",
-                                  fontWeight: "400",
+                                  flex: "1",
+                                  display: "flex",
+                                  flexDirection: "column",
+                                  alignItems: "center",
+                                  paddingTop: "8px",
+                                  position: "relative",
+                                  overflow: "visible",
                                 }}
                               >
-                                Sakana Fugu Ultra
-                              </span>
-                            </div>
-                            <div className="flex flex-col items-center w-full mt-3 relative">
-                              <div className="flex items-center justify-center mb-1">
+                                {/* Logo */}
                                 <img
                                   src="https://www.google.com/s2/favicons?domain=anthropic.com&sz=128"
                                   width="14"
@@ -982,22 +1532,35 @@ export default function ModelsPage() {
                                     flexShrink: "0",
                                   }}
                                 />
+                                {/* Model name - rotated */}
+                                <span
+                                  style={{
+                                    position: "absolute",
+                                    top: "28px",
+                                    fontSize: "10.5px",
+                                    color: "rgba(255,255,255,0.6)",
+                                    whiteSpace: "nowrap",
+                                    transformOrigin: "top center",
+                                    transform: "rotate(-50deg)",
+                                    fontWeight: "400",
+                                    letterSpacing: "0.2px",
+                                  }}
+                                >
+                                  Claude Opus 4.8
+                                </span>
                               </div>
-                              <span
-                                className="text-[10.5px] text-gray-300 whitespace-nowrap absolute top-[22px]"
+                              <div
                                 style={{
-                                  transformOrigin: "top right",
-                                  transform:
-                                    "rotate(-50deg) translate(-8px, -5px)",
-                                  letterSpacing: "0.2px",
-                                  fontWeight: "400",
+                                  flex: "1",
+                                  display: "flex",
+                                  flexDirection: "column",
+                                  alignItems: "center",
+                                  paddingTop: "8px",
+                                  position: "relative",
+                                  overflow: "visible",
                                 }}
                               >
-                                Claude Opus 4.8
-                              </span>
-                            </div>
-                            <div className="flex flex-col items-center w-full mt-3 relative">
-                              <div className="flex items-center justify-center mb-1">
+                                {/* Logo */}
                                 <img
                                   src="https://www.google.com/s2/favicons?domain=openai.com&sz=128"
                                   width="14"
@@ -1008,22 +1571,35 @@ export default function ModelsPage() {
                                     flexShrink: "0",
                                   }}
                                 />
+                                {/* Model name - rotated */}
+                                <span
+                                  style={{
+                                    position: "absolute",
+                                    top: "28px",
+                                    fontSize: "10.5px",
+                                    color: "rgba(255,255,255,0.6)",
+                                    whiteSpace: "nowrap",
+                                    transformOrigin: "top center",
+                                    transform: "rotate(-50deg)",
+                                    fontWeight: "400",
+                                    letterSpacing: "0.2px",
+                                  }}
+                                >
+                                  GPT-5.5
+                                </span>
                               </div>
-                              <span
-                                className="text-[10.5px] text-gray-300 whitespace-nowrap absolute top-[22px]"
+                              <div
                                 style={{
-                                  transformOrigin: "top right",
-                                  transform:
-                                    "rotate(-50deg) translate(-8px, -5px)",
-                                  letterSpacing: "0.2px",
-                                  fontWeight: "400",
+                                  flex: "1",
+                                  display: "flex",
+                                  flexDirection: "column",
+                                  alignItems: "center",
+                                  paddingTop: "8px",
+                                  position: "relative",
+                                  overflow: "visible",
                                 }}
                               >
-                                GPT-5.5
-                              </span>
-                            </div>
-                            <div className="flex flex-col items-center w-full mt-3 relative">
-                              <div className="flex items-center justify-center mb-1">
+                                {/* Logo */}
                                 <img
                                   src="https://www.google.com/s2/favicons?domain=zhipuai.cn&sz=128"
                                   width="14"
@@ -1034,22 +1610,35 @@ export default function ModelsPage() {
                                     flexShrink: "0",
                                   }}
                                 />
+                                {/* Model name - rotated */}
+                                <span
+                                  style={{
+                                    position: "absolute",
+                                    top: "28px",
+                                    fontSize: "10.5px",
+                                    color: "rgba(255,255,255,0.6)",
+                                    whiteSpace: "nowrap",
+                                    transformOrigin: "top center",
+                                    transform: "rotate(-50deg)",
+                                    fontWeight: "400",
+                                    letterSpacing: "0.2px",
+                                  }}
+                                >
+                                  GLM-5.2
+                                </span>
                               </div>
-                              <span
-                                className="text-[10.5px] text-gray-300 whitespace-nowrap absolute top-[22px]"
+                              <div
                                 style={{
-                                  transformOrigin: "top right",
-                                  transform:
-                                    "rotate(-50deg) translate(-8px, -5px)",
-                                  letterSpacing: "0.2px",
-                                  fontWeight: "400",
+                                  flex: "1",
+                                  display: "flex",
+                                  flexDirection: "column",
+                                  alignItems: "center",
+                                  paddingTop: "8px",
+                                  position: "relative",
+                                  overflow: "visible",
                                 }}
                               >
-                                GLM-5.2
-                              </span>
-                            </div>
-                            <div className="flex flex-col items-center w-full mt-3 relative">
-                              <div className="flex items-center justify-center mb-1">
+                                {/* Logo */}
                                 <img
                                   src="https://www.google.com/s2/favicons?domain=tencent.com&sz=128"
                                   width="14"
@@ -1060,22 +1649,35 @@ export default function ModelsPage() {
                                     flexShrink: "0",
                                   }}
                                 />
+                                {/* Model name - rotated */}
+                                <span
+                                  style={{
+                                    position: "absolute",
+                                    top: "28px",
+                                    fontSize: "10.5px",
+                                    color: "rgba(255,255,255,0.6)",
+                                    whiteSpace: "nowrap",
+                                    transformOrigin: "top center",
+                                    transform: "rotate(-50deg)",
+                                    fontWeight: "400",
+                                    letterSpacing: "0.2px",
+                                  }}
+                                >
+                                  Tencent Hy3
+                                </span>
                               </div>
-                              <span
-                                className="text-[10.5px] text-gray-300 whitespace-nowrap absolute top-[22px]"
+                              <div
                                 style={{
-                                  transformOrigin: "top right",
-                                  transform:
-                                    "rotate(-50deg) translate(-8px, -5px)",
-                                  letterSpacing: "0.2px",
-                                  fontWeight: "400",
+                                  flex: "1",
+                                  display: "flex",
+                                  flexDirection: "column",
+                                  alignItems: "center",
+                                  paddingTop: "8px",
+                                  position: "relative",
+                                  overflow: "visible",
                                 }}
                               >
-                                Tencent Hy3
-                              </span>
-                            </div>
-                            <div className="flex flex-col items-center w-full mt-3 relative">
-                              <div className="flex items-center justify-center mb-1">
+                                {/* Logo */}
                                 <img
                                   src="https://www.google.com/s2/favicons?domain=deepseek.com&sz=128"
                                   width="14"
@@ -1086,22 +1688,35 @@ export default function ModelsPage() {
                                     flexShrink: "0",
                                   }}
                                 />
+                                {/* Model name - rotated */}
+                                <span
+                                  style={{
+                                    position: "absolute",
+                                    top: "28px",
+                                    fontSize: "10.5px",
+                                    color: "rgba(255,255,255,0.6)",
+                                    whiteSpace: "nowrap",
+                                    transformOrigin: "top center",
+                                    transform: "rotate(-50deg)",
+                                    fontWeight: "400",
+                                    letterSpacing: "0.2px",
+                                  }}
+                                >
+                                  DeepSeek V4 Pro
+                                </span>
                               </div>
-                              <span
-                                className="text-[10.5px] text-gray-300 whitespace-nowrap absolute top-[22px]"
+                              <div
                                 style={{
-                                  transformOrigin: "top right",
-                                  transform:
-                                    "rotate(-50deg) translate(-8px, -5px)",
-                                  letterSpacing: "0.2px",
-                                  fontWeight: "400",
+                                  flex: "1",
+                                  display: "flex",
+                                  flexDirection: "column",
+                                  alignItems: "center",
+                                  paddingTop: "8px",
+                                  position: "relative",
+                                  overflow: "visible",
                                 }}
                               >
-                                DeepSeek V4 Pro
-                              </span>
-                            </div>
-                            <div className="flex flex-col items-center w-full mt-3 relative">
-                              <div className="flex items-center justify-center mb-1">
+                                {/* Logo */}
                                 <img
                                   src="https://www.google.com/s2/favicons?domain=anthropic.com&sz=128"
                                   width="14"
@@ -1112,22 +1727,35 @@ export default function ModelsPage() {
                                     flexShrink: "0",
                                   }}
                                 />
+                                {/* Model name - rotated */}
+                                <span
+                                  style={{
+                                    position: "absolute",
+                                    top: "28px",
+                                    fontSize: "10.5px",
+                                    color: "rgba(255,255,255,0.6)",
+                                    whiteSpace: "nowrap",
+                                    transformOrigin: "top center",
+                                    transform: "rotate(-50deg)",
+                                    fontWeight: "400",
+                                    letterSpacing: "0.2px",
+                                  }}
+                                >
+                                  Claude Sonnet 4.6
+                                </span>
                               </div>
-                              <span
-                                className="text-[10.5px] text-gray-300 whitespace-nowrap absolute top-[22px]"
+                              <div
                                 style={{
-                                  transformOrigin: "top right",
-                                  transform:
-                                    "rotate(-50deg) translate(-8px, -5px)",
-                                  letterSpacing: "0.2px",
-                                  fontWeight: "400",
+                                  flex: "1",
+                                  display: "flex",
+                                  flexDirection: "column",
+                                  alignItems: "center",
+                                  paddingTop: "8px",
+                                  position: "relative",
+                                  overflow: "visible",
                                 }}
                               >
-                                Claude Sonnet 4.6
-                              </span>
-                            </div>
-                            <div className="flex flex-col items-center w-full mt-3 relative">
-                              <div className="flex items-center justify-center mb-1">
+                                {/* Logo */}
                                 <img
                                   src="https://www.google.com/s2/favicons?domain=openai.com&sz=128"
                                   width="14"
@@ -1138,22 +1766,35 @@ export default function ModelsPage() {
                                     flexShrink: "0",
                                   }}
                                 />
+                                {/* Model name - rotated */}
+                                <span
+                                  style={{
+                                    position: "absolute",
+                                    top: "28px",
+                                    fontSize: "10.5px",
+                                    color: "rgba(255,255,255,0.6)",
+                                    whiteSpace: "nowrap",
+                                    transformOrigin: "top center",
+                                    transform: "rotate(-50deg)",
+                                    fontWeight: "400",
+                                    letterSpacing: "0.2px",
+                                  }}
+                                >
+                                  GPT-5
+                                </span>
                               </div>
-                              <span
-                                className="text-[10.5px] text-gray-300 whitespace-nowrap absolute top-[22px]"
+                              <div
                                 style={{
-                                  transformOrigin: "top right",
-                                  transform:
-                                    "rotate(-50deg) translate(-8px, -5px)",
-                                  letterSpacing: "0.2px",
-                                  fontWeight: "400",
+                                  flex: "1",
+                                  display: "flex",
+                                  flexDirection: "column",
+                                  alignItems: "center",
+                                  paddingTop: "8px",
+                                  position: "relative",
+                                  overflow: "visible",
                                 }}
                               >
-                                GPT-5
-                              </span>
-                            </div>
-                            <div className="flex flex-col items-center w-full mt-3 relative">
-                              <div className="flex items-center justify-center mb-1">
+                                {/* Logo */}
                                 <img
                                   src="https://www.google.com/s2/favicons?domain=deepseek.com&sz=128"
                                   width="14"
@@ -1164,22 +1805,35 @@ export default function ModelsPage() {
                                     flexShrink: "0",
                                   }}
                                 />
+                                {/* Model name - rotated */}
+                                <span
+                                  style={{
+                                    position: "absolute",
+                                    top: "28px",
+                                    fontSize: "10.5px",
+                                    color: "rgba(255,255,255,0.6)",
+                                    whiteSpace: "nowrap",
+                                    transformOrigin: "top center",
+                                    transform: "rotate(-50deg)",
+                                    fontWeight: "400",
+                                    letterSpacing: "0.2px",
+                                  }}
+                                >
+                                  DeepSeek V4 Flash
+                                </span>
                               </div>
-                              <span
-                                className="text-[10.5px] text-gray-300 whitespace-nowrap absolute top-[22px]"
+                              <div
                                 style={{
-                                  transformOrigin: "top right",
-                                  transform:
-                                    "rotate(-50deg) translate(-8px, -5px)",
-                                  letterSpacing: "0.2px",
-                                  fontWeight: "400",
+                                  flex: "1",
+                                  display: "flex",
+                                  flexDirection: "column",
+                                  alignItems: "center",
+                                  paddingTop: "8px",
+                                  position: "relative",
+                                  overflow: "visible",
                                 }}
                               >
-                                DeepSeek V4 Flash
-                              </span>
-                            </div>
-                            <div className="flex flex-col items-center w-full mt-3 relative">
-                              <div className="flex items-center justify-center mb-1">
+                                {/* Logo */}
                                 <img
                                   src="https://www.google.com/s2/favicons?domain=openai.com&sz=128"
                                   width="14"
@@ -1190,22 +1844,35 @@ export default function ModelsPage() {
                                     flexShrink: "0",
                                   }}
                                 />
+                                {/* Model name - rotated */}
+                                <span
+                                  style={{
+                                    position: "absolute",
+                                    top: "28px",
+                                    fontSize: "10.5px",
+                                    color: "rgba(255,255,255,0.6)",
+                                    whiteSpace: "nowrap",
+                                    transformOrigin: "top center",
+                                    transform: "rotate(-50deg)",
+                                    fontWeight: "400",
+                                    letterSpacing: "0.2px",
+                                  }}
+                                >
+                                  o3
+                                </span>
                               </div>
-                              <span
-                                className="text-[10.5px] text-gray-300 whitespace-nowrap absolute top-[22px]"
+                              <div
                                 style={{
-                                  transformOrigin: "top right",
-                                  transform:
-                                    "rotate(-50deg) translate(-8px, -5px)",
-                                  letterSpacing: "0.2px",
-                                  fontWeight: "400",
+                                  flex: "1",
+                                  display: "flex",
+                                  flexDirection: "column",
+                                  alignItems: "center",
+                                  paddingTop: "8px",
+                                  position: "relative",
+                                  overflow: "visible",
                                 }}
                               >
-                                o3
-                              </span>
-                            </div>
-                            <div className="flex flex-col items-center w-full mt-3 relative">
-                              <div className="flex items-center justify-center mb-1">
+                                {/* Logo */}
                                 <img
                                   src="https://www.google.com/s2/favicons?domain=x.ai&sz=128"
                                   width="14"
@@ -1216,22 +1883,35 @@ export default function ModelsPage() {
                                     flexShrink: "0",
                                   }}
                                 />
+                                {/* Model name - rotated */}
+                                <span
+                                  style={{
+                                    position: "absolute",
+                                    top: "28px",
+                                    fontSize: "10.5px",
+                                    color: "rgba(255,255,255,0.6)",
+                                    whiteSpace: "nowrap",
+                                    transformOrigin: "top center",
+                                    transform: "rotate(-50deg)",
+                                    fontWeight: "400",
+                                    letterSpacing: "0.2px",
+                                  }}
+                                >
+                                  Grok 3
+                                </span>
                               </div>
-                              <span
-                                className="text-[10.5px] text-gray-300 whitespace-nowrap absolute top-[22px]"
+                              <div
                                 style={{
-                                  transformOrigin: "top right",
-                                  transform:
-                                    "rotate(-50deg) translate(-8px, -5px)",
-                                  letterSpacing: "0.2px",
-                                  fontWeight: "400",
+                                  flex: "1",
+                                  display: "flex",
+                                  flexDirection: "column",
+                                  alignItems: "center",
+                                  paddingTop: "8px",
+                                  position: "relative",
+                                  overflow: "visible",
                                 }}
                               >
-                                Grok 3
-                              </span>
-                            </div>
-                            <div className="flex flex-col items-center w-full mt-3 relative">
-                              <div className="flex items-center justify-center mb-1">
+                                {/* Logo */}
                                 <img
                                   src="https://www.google.com/s2/favicons?domain=google.com&sz=128"
                                   width="14"
@@ -1242,22 +1922,35 @@ export default function ModelsPage() {
                                     flexShrink: "0",
                                   }}
                                 />
+                                {/* Model name - rotated */}
+                                <span
+                                  style={{
+                                    position: "absolute",
+                                    top: "28px",
+                                    fontSize: "10.5px",
+                                    color: "rgba(255,255,255,0.6)",
+                                    whiteSpace: "nowrap",
+                                    transformOrigin: "top center",
+                                    transform: "rotate(-50deg)",
+                                    fontWeight: "400",
+                                    letterSpacing: "0.2px",
+                                  }}
+                                >
+                                  Gemini 2.5 Pro
+                                </span>
                               </div>
-                              <span
-                                className="text-[10.5px] text-gray-300 whitespace-nowrap absolute top-[22px]"
+                              <div
                                 style={{
-                                  transformOrigin: "top right",
-                                  transform:
-                                    "rotate(-50deg) translate(-8px, -5px)",
-                                  letterSpacing: "0.2px",
-                                  fontWeight: "400",
+                                  flex: "1",
+                                  display: "flex",
+                                  flexDirection: "column",
+                                  alignItems: "center",
+                                  paddingTop: "8px",
+                                  position: "relative",
+                                  overflow: "visible",
                                 }}
                               >
-                                Gemini 2.5 Pro
-                              </span>
-                            </div>
-                            <div className="flex flex-col items-center w-full mt-3 relative">
-                              <div className="flex items-center justify-center mb-1">
+                                {/* Logo */}
                                 <img
                                   src="https://www.google.com/s2/favicons?domain=google.com&sz=128"
                                   width="14"
@@ -1268,22 +1961,35 @@ export default function ModelsPage() {
                                     flexShrink: "0",
                                   }}
                                 />
+                                {/* Model name - rotated */}
+                                <span
+                                  style={{
+                                    position: "absolute",
+                                    top: "28px",
+                                    fontSize: "10.5px",
+                                    color: "rgba(255,255,255,0.6)",
+                                    whiteSpace: "nowrap",
+                                    transformOrigin: "top center",
+                                    transform: "rotate(-50deg)",
+                                    fontWeight: "400",
+                                    letterSpacing: "0.2px",
+                                  }}
+                                >
+                                  Gemini 2.5 Flash
+                                </span>
                               </div>
-                              <span
-                                className="text-[10.5px] text-gray-300 whitespace-nowrap absolute top-[22px]"
+                              <div
                                 style={{
-                                  transformOrigin: "top right",
-                                  transform:
-                                    "rotate(-50deg) translate(-8px, -5px)",
-                                  letterSpacing: "0.2px",
-                                  fontWeight: "400",
+                                  flex: "1",
+                                  display: "flex",
+                                  flexDirection: "column",
+                                  alignItems: "center",
+                                  paddingTop: "8px",
+                                  position: "relative",
+                                  overflow: "visible",
                                 }}
                               >
-                                Gemini 2.5 Flash
-                              </span>
-                            </div>
-                            <div className="flex flex-col items-center w-full mt-3 relative">
-                              <div className="flex items-center justify-center mb-1">
+                                {/* Logo */}
                                 <img
                                   src="https://www.google.com/s2/favicons?domain=openai.com&sz=128"
                                   width="14"
@@ -1294,22 +2000,35 @@ export default function ModelsPage() {
                                     flexShrink: "0",
                                   }}
                                 />
+                                {/* Model name - rotated */}
+                                <span
+                                  style={{
+                                    position: "absolute",
+                                    top: "28px",
+                                    fontSize: "10.5px",
+                                    color: "rgba(255,255,255,0.6)",
+                                    whiteSpace: "nowrap",
+                                    transformOrigin: "top center",
+                                    transform: "rotate(-50deg)",
+                                    fontWeight: "400",
+                                    letterSpacing: "0.2px",
+                                  }}
+                                >
+                                  o4-mini
+                                </span>
                               </div>
-                              <span
-                                className="text-[10.5px] text-gray-300 whitespace-nowrap absolute top-[22px]"
+                              <div
                                 style={{
-                                  transformOrigin: "top right",
-                                  transform:
-                                    "rotate(-50deg) translate(-8px, -5px)",
-                                  letterSpacing: "0.2px",
-                                  fontWeight: "400",
+                                  flex: "1",
+                                  display: "flex",
+                                  flexDirection: "column",
+                                  alignItems: "center",
+                                  paddingTop: "8px",
+                                  position: "relative",
+                                  overflow: "visible",
                                 }}
                               >
-                                o4-mini
-                              </span>
-                            </div>
-                            <div className="flex flex-col items-center w-full mt-3 relative">
-                              <div className="flex items-center justify-center mb-1">
+                                {/* Logo */}
                                 <img
                                   src="https://www.google.com/s2/favicons?domain=qwenlm.github.io&sz=128"
                                   width="14"
@@ -1320,19 +2039,23 @@ export default function ModelsPage() {
                                     flexShrink: "0",
                                   }}
                                 />
+                                {/* Model name - rotated */}
+                                <span
+                                  style={{
+                                    position: "absolute",
+                                    top: "28px",
+                                    fontSize: "10.5px",
+                                    color: "rgba(255,255,255,0.6)",
+                                    whiteSpace: "nowrap",
+                                    transformOrigin: "top center",
+                                    transform: "rotate(-50deg)",
+                                    fontWeight: "400",
+                                    letterSpacing: "0.2px",
+                                  }}
+                                >
+                                  Qwen3.7 Max
+                                </span>
                               </div>
-                              <span
-                                className="text-[10.5px] text-gray-300 whitespace-nowrap absolute top-[22px]"
-                                style={{
-                                  transformOrigin: "top right",
-                                  transform:
-                                    "rotate(-50deg) translate(-8px, -5px)",
-                                  letterSpacing: "0.2px",
-                                  fontWeight: "400",
-                                }}
-                              >
-                                Qwen3.7 Max
-                              </span>
                             </div>
                           </div>
                         </div>
