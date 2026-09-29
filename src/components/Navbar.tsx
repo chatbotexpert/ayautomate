@@ -228,7 +228,7 @@ export default function Navbar() {
               )}
             </button>
             
-            <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm transition-all border border-gray-200 dark:border-white/10 bg-white dark:bg-transparent shadow-xs hover:bg-gray-100 dark:hover:bg-white/5 text-black dark:text-[#f0edee] h-10 px-4 font-medium rounded-none">
+            <Link href="/book-a-call" className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm transition-all border border-gray-200 dark:border-white/10 bg-white dark:bg-transparent shadow-xs hover:bg-gray-100 dark:hover:bg-white/5 text-black dark:text-[#f0edee] h-10 px-4 font-medium rounded-none">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-calendar h-4 w-4">
                 <path d="M8 2v4"></path>
                 <path d="M16 2v4"></path>
@@ -236,7 +236,7 @@ export default function Navbar() {
                 <path d="M3 10h18"></path>
               </svg>
               Book a Call
-            </button>
+            </Link>
             
             <Link href="/golden-offer" className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm bg-[#f4f1f2] dark:bg-[#161a26] text-black dark:text-white font-medium relative overflow-hidden border-2 border-yellow-400 hover:border-yellow-300 transition-all duration-300 hover:scale-105 rounded-none h-10 px-6" style={{ boxShadow: '0 0 20px rgba(255, 215, 0, 0.2), 0 0 40px rgba(255, 215, 0, 0.1)' }}>
               <div className="absolute inset-0 bg-gradient-to-r from-yellow-400/10 via-transparent to-yellow-400/10 animate-pulse"></div>
