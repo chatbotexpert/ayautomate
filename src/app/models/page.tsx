@@ -306,7 +306,7 @@ export default function ModelsPage() {
                           cursor: "pointer",
                           letterSpacing: "0.02em",
                           transition: "all 0.15s",
-                          borderRadius: "0",
+                          borderRadius: "6px",
                         }}
                       >
                         GPQA Diamond
@@ -314,7 +314,7 @@ export default function ModelsPage() {
                       <button
                         style={{
                           padding: "5px 13px",
-                          border: "1px solid var(--border-subtle)",
+                          border: "1px solid #ffffff1a",
                           background: "transparent",
                           color: "var(--muted-foreground)",
                           fontSize: "12px",
@@ -322,7 +322,7 @@ export default function ModelsPage() {
                           cursor: "pointer",
                           letterSpacing: "0.02em",
                           transition: "all 0.15s",
-                          borderRadius: "0",
+                          borderRadius: "6px",
                         }}
                       >
                         SWE-bench Verified
@@ -330,7 +330,7 @@ export default function ModelsPage() {
                       <button
                         style={{
                           padding: "5px 13px",
-                          border: "1px solid var(--border-subtle)",
+                          border: "1px solid #ffffff1a",
                           background: "transparent",
                           color: "var(--muted-foreground)",
                           fontSize: "12px",
@@ -338,7 +338,7 @@ export default function ModelsPage() {
                           cursor: "pointer",
                           letterSpacing: "0.02em",
                           transition: "all 0.15s",
-                          borderRadius: "0",
+                          borderRadius: "6px",
                         }}
                       >
                         AIME 2025
@@ -346,7 +346,7 @@ export default function ModelsPage() {
                       <button
                         style={{
                           padding: "5px 13px",
-                          border: "1px solid var(--border-subtle)",
+                          border: "1px solid #ffffff1a",
                           background: "transparent",
                           color: "var(--muted-foreground)",
                           fontSize: "12px",
@@ -354,7 +354,7 @@ export default function ModelsPage() {
                           cursor: "pointer",
                           letterSpacing: "0.02em",
                           transition: "all 0.15s",
-                          borderRadius: "0",
+                          borderRadius: "6px",
                         }}
                       >
                         SWE-bench Pro
@@ -362,7 +362,7 @@ export default function ModelsPage() {
                       <button
                         style={{
                           padding: "5px 13px",
-                          border: "1px solid var(--border-subtle)",
+                          border: "1px solid #ffffff1a",
                           background: "transparent",
                           color: "var(--muted-foreground)",
                           fontSize: "12px",
@@ -370,7 +370,7 @@ export default function ModelsPage() {
                           cursor: "pointer",
                           letterSpacing: "0.02em",
                           transition: "all 0.15s",
-                          borderRadius: "0",
+                          borderRadius: "6px",
                         }}
                       >
                         OSWorld
@@ -378,7 +378,7 @@ export default function ModelsPage() {
                       <button
                         style={{
                           padding: "5px 13px",
-                          border: "1px solid var(--border-subtle)",
+                          border: "1px solid #ffffff1a",
                           background: "transparent",
                           color: "var(--muted-foreground)",
                           fontSize: "12px",
@@ -386,7 +386,7 @@ export default function ModelsPage() {
                           cursor: "pointer",
                           letterSpacing: "0.02em",
                           transition: "all 0.15s",
-                          borderRadius: "0",
+                          borderRadius: "6px",
                         }}
                       >
                         MMMU
@@ -394,7 +394,7 @@ export default function ModelsPage() {
                       <button
                         style={{
                           padding: "5px 13px",
-                          border: "1px solid var(--border-subtle)",
+                          border: "1px solid #ffffff1a",
                           background: "transparent",
                           color: "var(--muted-foreground)",
                           fontSize: "12px",
@@ -402,7 +402,7 @@ export default function ModelsPage() {
                           cursor: "pointer",
                           letterSpacing: "0.02em",
                           transition: "all 0.15s",
-                          borderRadius: "0",
+                          borderRadius: "6px",
                         }}
                       >
                         LiveCodeBench
@@ -410,7 +410,7 @@ export default function ModelsPage() {
                       <button
                         style={{
                           padding: "5px 13px",
-                          border: "1px solid var(--border-subtle)",
+                          border: "1px solid #ffffff1a",
                           background: "transparent",
                           color: "var(--muted-foreground)",
                           fontSize: "12px",
@@ -418,7 +418,7 @@ export default function ModelsPage() {
                           cursor: "pointer",
                           letterSpacing: "0.02em",
                           transition: "all 0.15s",
-                          borderRadius: "0",
+                          borderRadius: "6px",
                         }}
                       >
                         MRCR
@@ -426,7 +426,7 @@ export default function ModelsPage() {
                       <button
                         style={{
                           padding: "5px 13px",
-                          border: "1px solid var(--border-subtle)",
+                          border: "1px solid #ffffff1a",
                           background: "transparent",
                           color: "var(--muted-foreground)",
                           fontSize: "12px",
@@ -434,7 +434,7 @@ export default function ModelsPage() {
                           cursor: "pointer",
                           letterSpacing: "0.02em",
                           transition: "all 0.15s",
-                          borderRadius: "0",
+                          borderRadius: "6px",
                         }}
                       >
                         Terminal-Bench 4.0
@@ -442,7 +442,7 @@ export default function ModelsPage() {
                       <button
                         style={{
                           padding: "5px 13px",
-                          border: "1px solid var(--border-subtle)",
+                          border: "1px solid #ffffff1a",
                           background: "transparent",
                           color: "var(--muted-foreground)",
                           fontSize: "12px",
@@ -450,7 +450,7 @@ export default function ModelsPage() {
                           cursor: "pointer",
                           letterSpacing: "0.02em",
                           transition: "all 0.15s",
-                          borderRadius: "0",
+                          borderRadius: "6px",
                         }}
                       >
                         ExploitBench (cybersecurity)
@@ -458,7 +458,7 @@ export default function ModelsPage() {
                       <button
                         style={{
                           padding: "5px 13px",
-                          border: "1px solid var(--border-subtle)",
+                          border: "1px solid #ffffff1a",
                           background: "transparent",
                           color: "var(--muted-foreground)",
                           fontSize: "12px",
@@ -466,7 +466,7 @@ export default function ModelsPage() {
                           cursor: "pointer",
                           letterSpacing: "0.02em",
                           transition: "all 0.15s",
-                          borderRadius: "0",
+                          borderRadius: "6px",
                         }}
                       >
                         ScreenSpot-Pro (desktop automation)
@@ -474,7 +474,7 @@ export default function ModelsPage() {
                       <button
                         style={{
                           padding: "5px 13px",
-                          border: "1px solid var(--border-subtle)",
+                          border: "1px solid #ffffff1a",
                           background: "transparent",
                           color: "var(--muted-foreground)",
                           fontSize: "12px",
@@ -482,7 +482,7 @@ export default function ModelsPage() {
                           cursor: "pointer",
                           letterSpacing: "0.02em",
                           transition: "all 0.15s",
-                          borderRadius: "0",
+                          borderRadius: "6px",
                         }}
                       >
                         Terminal-Bench-Science 0.1
@@ -490,7 +490,7 @@ export default function ModelsPage() {
                       <button
                         style={{
                           padding: "5px 13px",
-                          border: "1px solid var(--border-subtle)",
+                          border: "1px solid #ffffff1a",
                           background: "transparent",
                           color: "var(--muted-foreground)",
                           fontSize: "12px",
@@ -498,7 +498,7 @@ export default function ModelsPage() {
                           cursor: "pointer",
                           letterSpacing: "0.02em",
                           transition: "all 0.15s",
-                          borderRadius: "0",
+                          borderRadius: "6px",
                         }}
                       >
                         Humanity's Last Exam (no tools)
@@ -506,7 +506,7 @@ export default function ModelsPage() {
                       <button
                         style={{
                           padding: "5px 13px",
-                          border: "1px solid var(--border-subtle)",
+                          border: "1px solid #ffffff1a",
                           background: "transparent",
                           color: "var(--muted-foreground)",
                           fontSize: "12px",
@@ -514,7 +514,7 @@ export default function ModelsPage() {
                           cursor: "pointer",
                           letterSpacing: "0.02em",
                           transition: "all 0.15s",
-                          borderRadius: "0",
+                          borderRadius: "6px",
                         }}
                       >
                         CursorBench 3.2.0
@@ -522,7 +522,7 @@ export default function ModelsPage() {
                       <button
                         style={{
                           padding: "5px 13px",
-                          border: "1px solid var(--border-subtle)",
+                          border: "1px solid #ffffff1a",
                           background: "transparent",
                           color: "var(--muted-foreground)",
                           fontSize: "12px",
@@ -530,7 +530,7 @@ export default function ModelsPage() {
                           cursor: "pointer",
                           letterSpacing: "0.02em",
                           transition: "all 0.15s",
-                          borderRadius: "0",
+                          borderRadius: "6px",
                         }}
                       >
                         OSWorld 2.0 (partial)
@@ -538,7 +538,7 @@ export default function ModelsPage() {
                       <button
                         style={{
                           padding: "5px 13px",
-                          border: "1px solid var(--border-subtle)",
+                          border: "1px solid #ffffff1a",
                           background: "transparent",
                           color: "var(--muted-foreground)",
                           fontSize: "12px",
@@ -546,7 +546,7 @@ export default function ModelsPage() {
                           cursor: "pointer",
                           letterSpacing: "0.02em",
                           transition: "all 0.15s",
-                          borderRadius: "0",
+                          borderRadius: "6px",
                         }}
                       >
                         ARC-AGI-3 (abstract reasoning)
@@ -554,7 +554,7 @@ export default function ModelsPage() {
                       <button
                         style={{
                           padding: "5px 13px",
-                          border: "1px solid var(--border-subtle)",
+                          border: "1px solid #ffffff1a",
                           background: "transparent",
                           color: "var(--muted-foreground)",
                           fontSize: "12px",
@@ -562,7 +562,7 @@ export default function ModelsPage() {
                           cursor: "pointer",
                           letterSpacing: "0.02em",
                           transition: "all 0.15s",
-                          borderRadius: "0",
+                          borderRadius: "6px",
                         }}
                       >
                         FrontierMath Tier 4 v2
@@ -570,7 +570,7 @@ export default function ModelsPage() {
                       <button
                         style={{
                           padding: "5px 13px",
-                          border: "1px solid var(--border-subtle)",
+                          border: "1px solid #ffffff1a",
                           background: "transparent",
                           color: "var(--muted-foreground)",
                           fontSize: "12px",
@@ -578,7 +578,7 @@ export default function ModelsPage() {
                           cursor: "pointer",
                           letterSpacing: "0.02em",
                           transition: "all 0.15s",
-                          borderRadius: "0",
+                          borderRadius: "6px",
                         }}
                       >
                         Humanity's Last Exam (with tools)
@@ -586,7 +586,7 @@ export default function ModelsPage() {
                       <button
                         style={{
                           padding: "5px 13px",
-                          border: "1px solid var(--border-subtle)",
+                          border: "1px solid #ffffff1a",
                           background: "transparent",
                           color: "var(--muted-foreground)",
                           fontSize: "12px",
@@ -594,7 +594,7 @@ export default function ModelsPage() {
                           cursor: "pointer",
                           letterSpacing: "0.02em",
                           transition: "all 0.15s",
-                          borderRadius: "0",
+                          borderRadius: "6px",
                         }}
                       >
                         Artificial Analysis Intelligence Index
@@ -602,7 +602,7 @@ export default function ModelsPage() {
                       <button
                         style={{
                           padding: "5px 13px",
-                          border: "1px solid var(--border-subtle)",
+                          border: "1px solid #ffffff1a",
                           background: "transparent",
                           color: "var(--muted-foreground)",
                           fontSize: "12px",
@@ -610,7 +610,7 @@ export default function ModelsPage() {
                           cursor: "pointer",
                           letterSpacing: "0.02em",
                           transition: "all 0.15s",
-                          borderRadius: "0",
+                          borderRadius: "6px",
                         }}
                       >
                         DeepSWE v1.1
@@ -618,7 +618,7 @@ export default function ModelsPage() {
                       <button
                         style={{
                           padding: "5px 13px",
-                          border: "1px solid var(--border-subtle)",
+                          border: "1px solid #ffffff1a",
                           background: "transparent",
                           color: "var(--muted-foreground)",
                           fontSize: "12px",
@@ -626,7 +626,7 @@ export default function ModelsPage() {
                           cursor: "pointer",
                           letterSpacing: "0.02em",
                           transition: "all 0.15s",
-                          borderRadius: "0",
+                          borderRadius: "6px",
                         }}
                       >
                         Terminal-bench 2.1
@@ -634,7 +634,7 @@ export default function ModelsPage() {
                       <button
                         style={{
                           padding: "5px 13px",
-                          border: "1px solid var(--border-subtle)",
+                          border: "1px solid #ffffff1a",
                           background: "transparent",
                           color: "var(--muted-foreground)",
                           fontSize: "12px",
@@ -642,7 +642,7 @@ export default function ModelsPage() {
                           cursor: "pointer",
                           letterSpacing: "0.02em",
                           transition: "all 0.15s",
-                          borderRadius: "0",
+                          borderRadius: "6px",
                         }}
                       >
                         OSWorld-2.0
@@ -650,7 +650,7 @@ export default function ModelsPage() {
                       <button
                         style={{
                           padding: "5px 13px",
-                          border: "1px solid var(--border-subtle)",
+                          border: "1px solid #ffffff1a",
                           background: "transparent",
                           color: "var(--muted-foreground)",
                           fontSize: "12px",
@@ -658,7 +658,7 @@ export default function ModelsPage() {
                           cursor: "pointer",
                           letterSpacing: "0.02em",
                           transition: "all 0.15s",
-                          borderRadius: "0",
+                          borderRadius: "6px",
                         }}
                       >
                         Vals Finance Agent v2
@@ -666,7 +666,7 @@ export default function ModelsPage() {
                       <button
                         style={{
                           padding: "5px 13px",
-                          border: "1px solid var(--border-subtle)",
+                          border: "1px solid #ffffff1a",
                           background: "transparent",
                           color: "var(--muted-foreground)",
                           fontSize: "12px",
@@ -674,7 +674,7 @@ export default function ModelsPage() {
                           cursor: "pointer",
                           letterSpacing: "0.02em",
                           transition: "all 0.15s",
-                          borderRadius: "0",
+                          borderRadius: "6px",
                         }}
                       >
                         HLE-Verified
@@ -682,7 +682,7 @@ export default function ModelsPage() {
                       <button
                         style={{
                           padding: "5px 13px",
-                          border: "1px solid var(--border-subtle)",
+                          border: "1px solid #ffffff1a",
                           background: "transparent",
                           color: "var(--muted-foreground)",
                           fontSize: "12px",
@@ -690,7 +690,7 @@ export default function ModelsPage() {
                           cursor: "pointer",
                           letterSpacing: "0.02em",
                           transition: "all 0.15s",
-                          borderRadius: "0",
+                          borderRadius: "6px",
                         }}
                       >
                         MATH-500
@@ -698,7 +698,7 @@ export default function ModelsPage() {
                       <button
                         style={{
                           padding: "5px 13px",
-                          border: "1px solid var(--border-subtle)",
+                          border: "1px solid #ffffff1a",
                           background: "transparent",
                           color: "var(--muted-foreground)",
                           fontSize: "12px",
@@ -706,7 +706,7 @@ export default function ModelsPage() {
                           cursor: "pointer",
                           letterSpacing: "0.02em",
                           transition: "all 0.15s",
-                          borderRadius: "0",
+                          borderRadius: "6px",
                         }}
                       >
                         AIME 2026
@@ -715,7 +715,7 @@ export default function ModelsPage() {
                   </div>
                   <div
                     style={{
-                      border: "1px solid var(--border-subtle)",
+                      border: "1px solid #ffffff1a",
                       background: "var(--card)",
                       overflowX: "auto",
                       overflowY: "hidden",
@@ -724,13 +724,312 @@ export default function ModelsPage() {
                   >
                     <div style={{ minWidth: "1012px", height: "572px" }}>
                       <div
-                        className="recharts-responsive-container"
+                        className="flex items-end justify-between w-full h-[300px] mt-8 relative"
                         style={{
-                          width: "100%",
-                          height: "572px",
-                          minWidth: "0",
+                          borderBottom: "1px solid #ffffff1a",
+                          paddingBottom: "1px",
                         }}
-                      ></div>
+                      >
+                        {/* Y-Axis labels */}
+                        <div className="absolute left-0 top-0 h-full flex flex-col justify-between text-[11px] text-muted-foreground pb-8">
+                          <span>100</span>
+                          <span>60</span>
+                          <span>30</span>
+                        </div>
+                        <div className="absolute left-8 right-0 top-0 h-full flex flex-col justify-between pb-8">
+                          <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
+                          <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
+                          <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
+                        </div>
+
+                        <div className="flex items-end justify-between w-full h-[280px] pl-10 pr-2 pb-6 z-10 gap-1 sm:gap-2">
+                          <div
+                            className="relative flex flex-col items-center justify-end w-full group"
+                            style={{ height: "95.5%" }}
+                          >
+                            <div
+                              className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                              style={{
+                                backgroundColor: "#ff4b4b",
+                                height: "100%",
+                              }}
+                            >
+                              <span
+                                className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                style={{ writingMode: "horizontal-tb" }}
+                              >
+                                95.5%
+                              </span>
+                            </div>
+                          </div>
+                          <div
+                            className="relative flex flex-col items-center justify-end w-full group"
+                            style={{ height: "93.6%" }}
+                          >
+                            <div
+                              className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                              style={{
+                                backgroundColor: "#ff8a00",
+                                height: "100%",
+                              }}
+                            >
+                              <span
+                                className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                style={{ writingMode: "horizontal-tb" }}
+                              >
+                                93.6%
+                              </span>
+                            </div>
+                          </div>
+                          <div
+                            className="relative flex flex-col items-center justify-end w-full group"
+                            style={{ height: "93.6%" }}
+                          >
+                            <div
+                              className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                              style={{
+                                backgroundColor: "#1a1a24",
+                                height: "100%",
+                              }}
+                            >
+                              <span
+                                className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                style={{ writingMode: "horizontal-tb" }}
+                              >
+                                93.6%
+                              </span>
+                            </div>
+                          </div>
+                          <div
+                            className="relative flex flex-col items-center justify-end w-full group"
+                            style={{ height: "91.2%" }}
+                          >
+                            <div
+                              className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                              style={{
+                                backgroundColor: "#5b61ff",
+                                height: "100%",
+                              }}
+                            >
+                              <span
+                                className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                style={{ writingMode: "horizontal-tb" }}
+                              >
+                                91.2%
+                              </span>
+                            </div>
+                          </div>
+                          <div
+                            className="relative flex flex-col items-center justify-end w-full group"
+                            style={{ height: "90.4%" }}
+                          >
+                            <div
+                              className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                              style={{
+                                backgroundColor: "#3b82f6",
+                                height: "100%",
+                              }}
+                            >
+                              <span
+                                className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                style={{ writingMode: "horizontal-tb" }}
+                              >
+                                90.4%
+                              </span>
+                            </div>
+                          </div>
+                          <div
+                            className="relative flex flex-col items-center justify-end w-full group"
+                            style={{ height: "90.1%" }}
+                          >
+                            <div
+                              className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                              style={{
+                                backgroundColor: "#3b82f6",
+                                height: "100%",
+                              }}
+                            >
+                              <span
+                                className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                style={{ writingMode: "horizontal-tb" }}
+                              >
+                                90.1%
+                              </span>
+                            </div>
+                          </div>
+                          <div
+                            className="relative flex flex-col items-center justify-end w-full group"
+                            style={{ height: "89.9%" }}
+                          >
+                            <div
+                              className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                              style={{
+                                backgroundColor: "#d97706",
+                                height: "100%",
+                              }}
+                            >
+                              <span
+                                className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                style={{ writingMode: "horizontal-tb" }}
+                              >
+                                89.9%
+                              </span>
+                            </div>
+                          </div>
+                          <div
+                            className="relative flex flex-col items-center justify-end w-full group"
+                            style={{ height: "88.4%" }}
+                          >
+                            <div
+                              className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                              style={{
+                                backgroundColor: "#1a1a24",
+                                height: "100%",
+                              }}
+                            >
+                              <span
+                                className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                style={{ writingMode: "horizontal-tb" }}
+                              >
+                                88.4%
+                              </span>
+                            </div>
+                          </div>
+                          <div
+                            className="relative flex flex-col items-center justify-end w-full group"
+                            style={{ height: "88.1%" }}
+                          >
+                            <div
+                              className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                              style={{
+                                backgroundColor: "#8b5cf6",
+                                height: "100%",
+                              }}
+                            >
+                              <span
+                                className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                style={{ writingMode: "horizontal-tb" }}
+                              >
+                                88.1%
+                              </span>
+                            </div>
+                          </div>
+                          <div
+                            className="relative flex flex-col items-center justify-end w-full group"
+                            style={{ height: "87.7%" }}
+                          >
+                            <div
+                              className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                              style={{
+                                backgroundColor: "#1a1a24",
+                                height: "100%",
+                              }}
+                            >
+                              <span
+                                className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                style={{ writingMode: "horizontal-tb" }}
+                              >
+                                87.7%
+                              </span>
+                            </div>
+                          </div>
+                          <div
+                            className="relative flex flex-col items-center justify-end w-full group"
+                            style={{ height: "84.6%" }}
+                          >
+                            <div
+                              className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                              style={{
+                                backgroundColor: "#1a1a24",
+                                height: "100%",
+                              }}
+                            >
+                              <span
+                                className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                style={{ writingMode: "horizontal-tb" }}
+                              >
+                                84.6%
+                              </span>
+                            </div>
+                          </div>
+                          <div
+                            className="relative flex flex-col items-center justify-end w-full group"
+                            style={{ height: "84%" }}
+                          >
+                            <div
+                              className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                              style={{
+                                backgroundColor: "#60a5fa",
+                                height: "100%",
+                              }}
+                            >
+                              <span
+                                className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                style={{ writingMode: "horizontal-tb" }}
+                              >
+                                84%
+                              </span>
+                            </div>
+                          </div>
+                          <div
+                            className="relative flex flex-col items-center justify-end w-full group"
+                            style={{ height: "82.8%" }}
+                          >
+                            <div
+                              className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                              style={{
+                                backgroundColor: "#60a5fa",
+                                height: "100%",
+                              }}
+                            >
+                              <span
+                                className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                style={{ writingMode: "horizontal-tb" }}
+                              >
+                                82.8%
+                              </span>
+                            </div>
+                          </div>
+                          <div
+                            className="relative flex flex-col items-center justify-end w-full group"
+                            style={{ height: "81.4%" }}
+                          >
+                            <div
+                              className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                              style={{
+                                backgroundColor: "#1a1a24",
+                                height: "100%",
+                              }}
+                            >
+                              <span
+                                className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                style={{ writingMode: "horizontal-tb" }}
+                              >
+                                81.4%
+                              </span>
+                            </div>
+                          </div>
+                          <div
+                            className="relative flex flex-col items-center justify-end w-full group"
+                            style={{ height: "77.2%" }}
+                          >
+                            <div
+                              className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                              style={{
+                                backgroundColor: "#f97316",
+                                height: "100%",
+                              }}
+                            >
+                              <span
+                                className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                style={{ writingMode: "horizontal-tb" }}
+                              >
+                                77.2%
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </section>
@@ -769,8 +1068,8 @@ export default function ModelsPage() {
                     <div
                       style={{
                         padding: "16px",
-                        borderRadius: "0",
-                        border: "1px solid var(--border-subtle)",
+                        borderRadius: "6px",
+                        border: "1px solid #ffffff1a",
                         background: "var(--card)",
                         display: "flex",
                         flexDirection: "column",
@@ -815,20 +1114,319 @@ export default function ModelsPage() {
                         style={{ height: "200px" }}
                       >
                         <div
-                          className="recharts-responsive-container"
+                          className="flex items-end justify-between w-full h-[300px] mt-8 relative"
                           style={{
-                            width: "100%",
-                            height: "100%",
-                            minWidth: "0",
+                            borderBottom: "1px solid #ffffff1a",
+                            paddingBottom: "1px",
                           }}
-                        ></div>
+                        >
+                          {/* Y-Axis labels */}
+                          <div className="absolute left-0 top-0 h-full flex flex-col justify-between text-[11px] text-muted-foreground pb-8">
+                            <span>100</span>
+                            <span>60</span>
+                            <span>30</span>
+                          </div>
+                          <div className="absolute left-8 right-0 top-0 h-full flex flex-col justify-between pb-8">
+                            <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
+                            <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
+                            <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
+                          </div>
+
+                          <div className="flex items-end justify-between w-full h-[280px] pl-10 pr-2 pb-6 z-10 gap-1 sm:gap-2">
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "95.5%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#ff4b4b",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  95.5%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "93.6%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#ff8a00",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  93.6%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "93.6%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#1a1a24",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  93.6%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "91.2%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#5b61ff",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  91.2%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "90.4%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#3b82f6",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  90.4%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "90.1%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#3b82f6",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  90.1%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "89.9%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#d97706",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  89.9%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "88.4%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#1a1a24",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  88.4%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "88.1%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#8b5cf6",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  88.1%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "87.7%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#1a1a24",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  87.7%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "84.6%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#1a1a24",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  84.6%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "84%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#60a5fa",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  84%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "82.8%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#60a5fa",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  82.8%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "81.4%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#1a1a24",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  81.4%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "77.2%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#f97316",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  77.2%
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                     <div
                       style={{
                         padding: "16px",
-                        borderRadius: "0",
-                        border: "1px solid var(--border-subtle)",
+                        borderRadius: "6px",
+                        border: "1px solid #ffffff1a",
                         background: "var(--card)",
                         display: "flex",
                         flexDirection: "column",
@@ -873,20 +1471,319 @@ export default function ModelsPage() {
                         style={{ height: "200px" }}
                       >
                         <div
-                          className="recharts-responsive-container"
+                          className="flex items-end justify-between w-full h-[300px] mt-8 relative"
                           style={{
-                            width: "100%",
-                            height: "100%",
-                            minWidth: "0",
+                            borderBottom: "1px solid #ffffff1a",
+                            paddingBottom: "1px",
                           }}
-                        ></div>
+                        >
+                          {/* Y-Axis labels */}
+                          <div className="absolute left-0 top-0 h-full flex flex-col justify-between text-[11px] text-muted-foreground pb-8">
+                            <span>100</span>
+                            <span>60</span>
+                            <span>30</span>
+                          </div>
+                          <div className="absolute left-8 right-0 top-0 h-full flex flex-col justify-between pb-8">
+                            <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
+                            <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
+                            <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
+                          </div>
+
+                          <div className="flex items-end justify-between w-full h-[280px] pl-10 pr-2 pb-6 z-10 gap-1 sm:gap-2">
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "95.5%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#ff4b4b",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  95.5%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "93.6%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#ff8a00",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  93.6%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "93.6%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#1a1a24",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  93.6%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "91.2%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#5b61ff",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  91.2%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "90.4%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#3b82f6",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  90.4%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "90.1%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#3b82f6",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  90.1%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "89.9%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#d97706",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  89.9%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "88.4%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#1a1a24",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  88.4%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "88.1%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#8b5cf6",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  88.1%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "87.7%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#1a1a24",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  87.7%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "84.6%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#1a1a24",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  84.6%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "84%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#60a5fa",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  84%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "82.8%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#60a5fa",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  82.8%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "81.4%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#1a1a24",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  81.4%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "77.2%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#f97316",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  77.2%
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                     <div
                       style={{
                         padding: "16px",
-                        borderRadius: "0",
-                        border: "1px solid var(--border-subtle)",
+                        borderRadius: "6px",
+                        border: "1px solid #ffffff1a",
                         background: "var(--card)",
                         display: "flex",
                         flexDirection: "column",
@@ -931,20 +1828,319 @@ export default function ModelsPage() {
                         style={{ height: "200px" }}
                       >
                         <div
-                          className="recharts-responsive-container"
+                          className="flex items-end justify-between w-full h-[300px] mt-8 relative"
                           style={{
-                            width: "100%",
-                            height: "100%",
-                            minWidth: "0",
+                            borderBottom: "1px solid #ffffff1a",
+                            paddingBottom: "1px",
                           }}
-                        ></div>
+                        >
+                          {/* Y-Axis labels */}
+                          <div className="absolute left-0 top-0 h-full flex flex-col justify-between text-[11px] text-muted-foreground pb-8">
+                            <span>100</span>
+                            <span>60</span>
+                            <span>30</span>
+                          </div>
+                          <div className="absolute left-8 right-0 top-0 h-full flex flex-col justify-between pb-8">
+                            <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
+                            <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
+                            <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
+                          </div>
+
+                          <div className="flex items-end justify-between w-full h-[280px] pl-10 pr-2 pb-6 z-10 gap-1 sm:gap-2">
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "95.5%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#ff4b4b",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  95.5%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "93.6%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#ff8a00",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  93.6%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "93.6%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#1a1a24",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  93.6%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "91.2%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#5b61ff",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  91.2%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "90.4%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#3b82f6",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  90.4%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "90.1%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#3b82f6",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  90.1%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "89.9%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#d97706",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  89.9%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "88.4%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#1a1a24",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  88.4%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "88.1%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#8b5cf6",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  88.1%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "87.7%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#1a1a24",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  87.7%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "84.6%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#1a1a24",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  84.6%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "84%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#60a5fa",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  84%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "82.8%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#60a5fa",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  82.8%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "81.4%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#1a1a24",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  81.4%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "77.2%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#f97316",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  77.2%
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                     <div
                       style={{
                         padding: "16px",
-                        borderRadius: "0",
-                        border: "1px solid var(--border-subtle)",
+                        borderRadius: "6px",
+                        border: "1px solid #ffffff1a",
                         background: "var(--card)",
                         display: "flex",
                         flexDirection: "column",
@@ -989,20 +2185,319 @@ export default function ModelsPage() {
                         style={{ height: "136px" }}
                       >
                         <div
-                          className="recharts-responsive-container"
+                          className="flex items-end justify-between w-full h-[300px] mt-8 relative"
                           style={{
-                            width: "100%",
-                            height: "100%",
-                            minWidth: "0",
+                            borderBottom: "1px solid #ffffff1a",
+                            paddingBottom: "1px",
                           }}
-                        ></div>
+                        >
+                          {/* Y-Axis labels */}
+                          <div className="absolute left-0 top-0 h-full flex flex-col justify-between text-[11px] text-muted-foreground pb-8">
+                            <span>100</span>
+                            <span>60</span>
+                            <span>30</span>
+                          </div>
+                          <div className="absolute left-8 right-0 top-0 h-full flex flex-col justify-between pb-8">
+                            <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
+                            <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
+                            <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
+                          </div>
+
+                          <div className="flex items-end justify-between w-full h-[280px] pl-10 pr-2 pb-6 z-10 gap-1 sm:gap-2">
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "95.5%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#ff4b4b",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  95.5%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "93.6%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#ff8a00",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  93.6%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "93.6%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#1a1a24",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  93.6%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "91.2%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#5b61ff",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  91.2%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "90.4%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#3b82f6",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  90.4%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "90.1%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#3b82f6",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  90.1%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "89.9%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#d97706",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  89.9%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "88.4%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#1a1a24",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  88.4%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "88.1%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#8b5cf6",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  88.1%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "87.7%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#1a1a24",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  87.7%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "84.6%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#1a1a24",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  84.6%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "84%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#60a5fa",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  84%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "82.8%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#60a5fa",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  82.8%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "81.4%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#1a1a24",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  81.4%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "77.2%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#f97316",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  77.2%
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                     <div
                       style={{
                         padding: "16px",
-                        borderRadius: "0",
-                        border: "1px solid var(--border-subtle)",
+                        borderRadius: "6px",
+                        border: "1px solid #ffffff1a",
                         background: "var(--card)",
                         display: "flex",
                         flexDirection: "column",
@@ -1047,20 +2542,319 @@ export default function ModelsPage() {
                         style={{ height: "168px" }}
                       >
                         <div
-                          className="recharts-responsive-container"
+                          className="flex items-end justify-between w-full h-[300px] mt-8 relative"
                           style={{
-                            width: "100%",
-                            height: "100%",
-                            minWidth: "0",
+                            borderBottom: "1px solid #ffffff1a",
+                            paddingBottom: "1px",
                           }}
-                        ></div>
+                        >
+                          {/* Y-Axis labels */}
+                          <div className="absolute left-0 top-0 h-full flex flex-col justify-between text-[11px] text-muted-foreground pb-8">
+                            <span>100</span>
+                            <span>60</span>
+                            <span>30</span>
+                          </div>
+                          <div className="absolute left-8 right-0 top-0 h-full flex flex-col justify-between pb-8">
+                            <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
+                            <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
+                            <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
+                          </div>
+
+                          <div className="flex items-end justify-between w-full h-[280px] pl-10 pr-2 pb-6 z-10 gap-1 sm:gap-2">
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "95.5%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#ff4b4b",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  95.5%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "93.6%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#ff8a00",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  93.6%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "93.6%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#1a1a24",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  93.6%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "91.2%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#5b61ff",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  91.2%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "90.4%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#3b82f6",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  90.4%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "90.1%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#3b82f6",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  90.1%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "89.9%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#d97706",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  89.9%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "88.4%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#1a1a24",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  88.4%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "88.1%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#8b5cf6",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  88.1%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "87.7%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#1a1a24",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  87.7%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "84.6%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#1a1a24",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  84.6%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "84%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#60a5fa",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  84%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "82.8%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#60a5fa",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  82.8%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "81.4%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#1a1a24",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  81.4%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "77.2%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#f97316",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  77.2%
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                     <div
                       style={{
                         padding: "16px",
-                        borderRadius: "0",
-                        border: "1px solid var(--border-subtle)",
+                        borderRadius: "6px",
+                        border: "1px solid #ffffff1a",
                         background: "var(--card)",
                         display: "flex",
                         flexDirection: "column",
@@ -1105,13 +2899,312 @@ export default function ModelsPage() {
                         style={{ height: "168px" }}
                       >
                         <div
-                          className="recharts-responsive-container"
+                          className="flex items-end justify-between w-full h-[300px] mt-8 relative"
                           style={{
-                            width: "100%",
-                            height: "100%",
-                            minWidth: "0",
+                            borderBottom: "1px solid #ffffff1a",
+                            paddingBottom: "1px",
                           }}
-                        ></div>
+                        >
+                          {/* Y-Axis labels */}
+                          <div className="absolute left-0 top-0 h-full flex flex-col justify-between text-[11px] text-muted-foreground pb-8">
+                            <span>100</span>
+                            <span>60</span>
+                            <span>30</span>
+                          </div>
+                          <div className="absolute left-8 right-0 top-0 h-full flex flex-col justify-between pb-8">
+                            <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
+                            <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
+                            <div className="w-full h-[1px] border-t border-dashed border-[#ffffff1a]"></div>
+                          </div>
+
+                          <div className="flex items-end justify-between w-full h-[280px] pl-10 pr-2 pb-6 z-10 gap-1 sm:gap-2">
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "95.5%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#ff4b4b",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  95.5%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "93.6%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#ff8a00",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  93.6%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "93.6%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#1a1a24",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  93.6%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "91.2%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#5b61ff",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  91.2%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "90.4%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#3b82f6",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  90.4%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "90.1%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#3b82f6",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  90.1%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "89.9%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#d97706",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  89.9%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "88.4%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#1a1a24",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  88.4%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "88.1%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#8b5cf6",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  88.1%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "87.7%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#1a1a24",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  87.7%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "84.6%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#1a1a24",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  84.6%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "84%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#60a5fa",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  84%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "82.8%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#60a5fa",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  82.8%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "81.4%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#1a1a24",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  81.4%
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="relative flex flex-col items-center justify-end w-full group"
+                              style={{ height: "77.2%" }}
+                            >
+                              <div
+                                className="w-full rounded-t-sm transition-all hover:opacity-80 flex flex-col items-center"
+                                style={{
+                                  backgroundColor: "#f97316",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  className="text-[9px] sm:text-[10px] font-bold text-white mt-2 mb-1 px-0.5 leading-none group-hover:text-white"
+                                  style={{ writingMode: "horizontal-tb" }}
+                                >
+                                  77.2%
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -1150,7 +3243,7 @@ export default function ModelsPage() {
                   >
                     <div
                       style={{
-                        border: "1px solid var(--border-subtle)",
+                        border: "1px solid #ffffff1a",
                         background: "var(--card)",
                         overflow: "hidden",
                       }}
@@ -1824,7 +3917,7 @@ export default function ModelsPage() {
                     </div>
                     <div
                       style={{
-                        border: "1px solid var(--border-subtle)",
+                        border: "1px solid #ffffff1a",
                         background: "var(--card)",
                         overflow: "hidden",
                       }}
@@ -2498,7 +4591,7 @@ export default function ModelsPage() {
                     </div>
                     <div
                       style={{
-                        border: "1px solid var(--border-subtle)",
+                        border: "1px solid #ffffff1a",
                         background: "var(--card)",
                         overflow: "hidden",
                       }}
@@ -3172,7 +5265,7 @@ export default function ModelsPage() {
                     </div>
                     <div
                       style={{
-                        border: "1px solid var(--border-subtle)",
+                        border: "1px solid #ffffff1a",
                         background: "var(--card)",
                         overflow: "hidden",
                       }}
@@ -3846,7 +5939,7 @@ export default function ModelsPage() {
                     </div>
                     <div
                       style={{
-                        border: "1px solid var(--border-subtle)",
+                        border: "1px solid #ffffff1a",
                         background: "var(--card)",
                         overflow: "hidden",
                       }}
@@ -4520,7 +6613,7 @@ export default function ModelsPage() {
                     </div>
                     <div
                       style={{
-                        border: "1px solid var(--border-subtle)",
+                        border: "1px solid #ffffff1a",
                         background: "var(--card)",
                         overflow: "hidden",
                       }}
@@ -5194,7 +7287,7 @@ export default function ModelsPage() {
                     </div>
                     <div
                       style={{
-                        border: "1px solid var(--border-subtle)",
+                        border: "1px solid #ffffff1a",
                         background: "var(--card)",
                         overflow: "hidden",
                       }}
@@ -5868,7 +7961,7 @@ export default function ModelsPage() {
                     </div>
                     <div
                       style={{
-                        border: "1px solid var(--border-subtle)",
+                        border: "1px solid #ffffff1a",
                         background: "var(--card)",
                         overflow: "hidden",
                       }}
@@ -6299,7 +8392,7 @@ export default function ModelsPage() {
                     </div>
                     <div
                       style={{
-                        border: "1px solid var(--border-subtle)",
+                        border: "1px solid #ffffff1a",
                         background: "var(--card)",
                         overflow: "hidden",
                       }}
@@ -6487,7 +8580,7 @@ export default function ModelsPage() {
                     </div>
                     <div
                       style={{
-                        border: "1px solid var(--border-subtle)",
+                        border: "1px solid #ffffff1a",
                         background: "var(--card)",
                         overflow: "hidden",
                       }}
@@ -6675,7 +8768,7 @@ export default function ModelsPage() {
                     </div>
                     <div
                       style={{
-                        border: "1px solid var(--border-subtle)",
+                        border: "1px solid #ffffff1a",
                         background: "var(--card)",
                         overflow: "hidden",
                       }}
@@ -6901,8 +8994,8 @@ export default function ModelsPage() {
                       style={{
                         flex: "1",
                         minWidth: "0",
-                        border: "1px solid var(--border-subtle)",
-                        borderRadius: "0",
+                        border: "1px solid #ffffff1a",
+                        borderRadius: "6px",
                         overflow: "hidden",
                         background: "var(--card)",
                       }}
@@ -7436,8 +9529,8 @@ export default function ModelsPage() {
                       style={{
                         flex: "1",
                         minWidth: "0",
-                        border: "1px solid var(--border-subtle)",
-                        borderRadius: "0",
+                        border: "1px solid #ffffff1a",
+                        borderRadius: "6px",
                         overflow: "hidden",
                         background: "var(--card)",
                       }}
@@ -8015,7 +10108,7 @@ export default function ModelsPage() {
                       style={{
                         padding: "6px 12px",
                         borderRadius: "6px",
-                        border: "1px solid var(--border-subtle)",
+                        border: "1px solid #ffffff1a",
                         background: "var(--card)",
                         color: "var(--foreground)",
                         fontSize: "13px",
@@ -8027,7 +10120,7 @@ export default function ModelsPage() {
                       style={{
                         padding: "6px 10px",
                         borderRadius: "6px",
-                        border: "1px solid var(--border-subtle)",
+                        border: "1px solid #ffffff1a",
                         background: "var(--card)",
                         color: "var(--foreground)",
                         fontSize: "13px",
@@ -8066,7 +10159,7 @@ export default function ModelsPage() {
                       style={{
                         padding: "5px 12px",
                         borderRadius: "20px",
-                        border: "1px solid var(--border-subtle)",
+                        border: "1px solid #ffffff1a",
                         background: "transparent",
                         color: "var(--muted-foreground)",
                         fontSize: "12px",
@@ -8080,7 +10173,7 @@ export default function ModelsPage() {
                       style={{
                         padding: "5px 12px",
                         borderRadius: "20px",
-                        border: "1px solid var(--border-subtle)",
+                        border: "1px solid #ffffff1a",
                         background: "transparent",
                         color: "var(--muted-foreground)",
                         fontSize: "12px",
@@ -8108,7 +10201,7 @@ export default function ModelsPage() {
                       style={{
                         padding: "5px 12px",
                         borderRadius: "20px",
-                        border: "1px solid var(--border-subtle)",
+                        border: "1px solid #ffffff1a",
                         background: "transparent",
                         color: "var(--muted-foreground)",
                         fontSize: "12px",
@@ -8122,7 +10215,7 @@ export default function ModelsPage() {
                       style={{
                         padding: "5px 12px",
                         borderRadius: "20px",
-                        border: "1px solid var(--border-subtle)",
+                        border: "1px solid #ffffff1a",
                         background: "transparent",
                         color: "var(--muted-foreground)",
                         fontSize: "12px",
@@ -8136,7 +10229,7 @@ export default function ModelsPage() {
                       style={{
                         padding: "5px 12px",
                         borderRadius: "20px",
-                        border: "1px solid var(--border-subtle)",
+                        border: "1px solid #ffffff1a",
                         background: "transparent",
                         color: "var(--muted-foreground)",
                         fontSize: "12px",
@@ -8150,7 +10243,7 @@ export default function ModelsPage() {
                       style={{
                         padding: "5px 12px",
                         borderRadius: "20px",
-                        border: "1px solid var(--border-subtle)",
+                        border: "1px solid #ffffff1a",
                         background: "transparent",
                         color: "var(--muted-foreground)",
                         fontSize: "12px",
@@ -8164,7 +10257,7 @@ export default function ModelsPage() {
                       style={{
                         padding: "5px 12px",
                         borderRadius: "20px",
-                        border: "1px solid var(--border-subtle)",
+                        border: "1px solid #ffffff1a",
                         background: "transparent",
                         color: "var(--muted-foreground)",
                         fontSize: "12px",
@@ -8178,7 +10271,7 @@ export default function ModelsPage() {
                       style={{
                         padding: "5px 12px",
                         borderRadius: "20px",
-                        border: "1px solid var(--border-subtle)",
+                        border: "1px solid #ffffff1a",
                         background: "transparent",
                         color: "var(--muted-foreground)",
                         fontSize: "12px",
@@ -8192,7 +10285,7 @@ export default function ModelsPage() {
                   <div
                     style={{
                       overflowX: "auto",
-                      border: "1px solid var(--border-subtle)",
+                      border: "1px solid #ffffff1a",
                       borderRadius: "10px",
                     }}
                   >
@@ -14684,8 +16777,8 @@ export default function ModelsPage() {
                   <div
                     style={{
                       overflowX: "auto",
-                      border: "1px solid var(--border-subtle)",
-                      borderRadius: "0",
+                      border: "1px solid #ffffff1a",
+                      borderRadius: "6px",
                     }}
                   >
                     <table
@@ -14878,7 +16971,7 @@ export default function ModelsPage() {
                                 width="14"
                                 height="14"
                                 alt=""
-                                style={{ borderRadius: "0", flexShrink: "0" }}
+                                style={{ borderRadius: "6px", flexShrink: "0" }}
                               />
                               Llama 4 Scout
                             </span>
@@ -14982,7 +17075,7 @@ export default function ModelsPage() {
                                 width="14"
                                 height="14"
                                 alt=""
-                                style={{ borderRadius: "0", flexShrink: "0" }}
+                                style={{ borderRadius: "6px", flexShrink: "0" }}
                               />
                               Gemini 3.5 Pro
                             </span>
@@ -15086,7 +17179,7 @@ export default function ModelsPage() {
                                 width="14"
                                 height="14"
                                 alt=""
-                                style={{ borderRadius: "0", flexShrink: "0" }}
+                                style={{ borderRadius: "6px", flexShrink: "0" }}
                               />
                               Grok 4.20
                             </span>
@@ -15187,7 +17280,7 @@ export default function ModelsPage() {
                                 width="14"
                                 height="14"
                                 alt=""
-                                style={{ borderRadius: "0", flexShrink: "0" }}
+                                style={{ borderRadius: "6px", flexShrink: "0" }}
                               />
                               GPT-6 Astra
                             </span>
@@ -15293,7 +17386,7 @@ export default function ModelsPage() {
                                 width="14"
                                 height="14"
                                 alt=""
-                                style={{ borderRadius: "0", flexShrink: "0" }}
+                                style={{ borderRadius: "6px", flexShrink: "0" }}
                               />
                               GPT-6 Sol
                             </span>
@@ -15400,7 +17493,7 @@ export default function ModelsPage() {
                                 width="14"
                                 height="14"
                                 alt=""
-                                style={{ borderRadius: "0", flexShrink: "0" }}
+                                style={{ borderRadius: "6px", flexShrink: "0" }}
                               />
                               GPT-6 Luna
                             </span>
@@ -15507,7 +17600,7 @@ export default function ModelsPage() {
                                 width="14"
                                 height="14"
                                 alt=""
-                                style={{ borderRadius: "0", flexShrink: "0" }}
+                                style={{ borderRadius: "6px", flexShrink: "0" }}
                               />
                               GPT-5.6 Sol
                             </span>
@@ -15616,7 +17709,7 @@ export default function ModelsPage() {
                                 width="14"
                                 height="14"
                                 alt=""
-                                style={{ borderRadius: "0", flexShrink: "0" }}
+                                style={{ borderRadius: "6px", flexShrink: "0" }}
                               />
                               Claude Fable 5.1
                             </span>
@@ -15725,7 +17818,7 @@ export default function ModelsPage() {
                                 width="14"
                                 height="14"
                                 alt=""
-                                style={{ borderRadius: "0", flexShrink: "0" }}
+                                style={{ borderRadius: "6px", flexShrink: "0" }}
                               />
                               Claude Mythos 5.1
                             </span>
@@ -15831,7 +17924,7 @@ export default function ModelsPage() {
                                 width="14"
                                 height="14"
                                 alt=""
-                                style={{ borderRadius: "0", flexShrink: "0" }}
+                                style={{ borderRadius: "6px", flexShrink: "0" }}
                               />
                               Claude Opus 5.5
                             </span>
@@ -15937,7 +18030,7 @@ export default function ModelsPage() {
                                 width="14"
                                 height="14"
                                 alt=""
-                                style={{ borderRadius: "0", flexShrink: "0" }}
+                                style={{ borderRadius: "6px", flexShrink: "0" }}
                               />
                               Claude Opus 5
                             </span>
@@ -16038,7 +18131,7 @@ export default function ModelsPage() {
                                 width="14"
                                 height="14"
                                 alt=""
-                                style={{ borderRadius: "0", flexShrink: "0" }}
+                                style={{ borderRadius: "6px", flexShrink: "0" }}
                               />
                               Claude Fable 5
                             </span>
@@ -16139,7 +18232,7 @@ export default function ModelsPage() {
                                 width="14"
                                 height="14"
                                 alt=""
-                                style={{ borderRadius: "0", flexShrink: "0" }}
+                                style={{ borderRadius: "6px", flexShrink: "0" }}
                               />
                               Claude Sonnet 5
                             </span>
@@ -16246,7 +18339,7 @@ export default function ModelsPage() {
                                 width="14"
                                 height="14"
                                 alt=""
-                                style={{ borderRadius: "0", flexShrink: "0" }}
+                                style={{ borderRadius: "6px", flexShrink: "0" }}
                               />
                               Claude Opus 4.8
                             </span>
@@ -16347,7 +18440,7 @@ export default function ModelsPage() {
                                 width="14"
                                 height="14"
                                 alt=""
-                                style={{ borderRadius: "0", flexShrink: "0" }}
+                                style={{ borderRadius: "6px", flexShrink: "0" }}
                               />
                               Claude Sonnet 4.6
                             </span>
@@ -16448,7 +18541,7 @@ export default function ModelsPage() {
                                 width="14"
                                 height="14"
                                 alt=""
-                                style={{ borderRadius: "0", flexShrink: "0" }}
+                                style={{ borderRadius: "6px", flexShrink: "0" }}
                               />
                               GPT-5.5
                             </span>
@@ -16549,7 +18642,7 @@ export default function ModelsPage() {
                                 width="14"
                                 height="14"
                                 alt=""
-                                style={{ borderRadius: "0", flexShrink: "0" }}
+                                style={{ borderRadius: "6px", flexShrink: "0" }}
                               />
                               GPT-5.4
                             </span>
@@ -16650,7 +18743,7 @@ export default function ModelsPage() {
                                 width="14"
                                 height="14"
                                 alt=""
-                                style={{ borderRadius: "0", flexShrink: "0" }}
+                                style={{ borderRadius: "6px", flexShrink: "0" }}
                               />
                               Gemini 3.5 Flash
                             </span>
@@ -16751,7 +18844,7 @@ export default function ModelsPage() {
                                 width="14"
                                 height="14"
                                 alt=""
-                                style={{ borderRadius: "0", flexShrink: "0" }}
+                                style={{ borderRadius: "6px", flexShrink: "0" }}
                               />
                               Gemini 3.8 Flash
                             </span>
@@ -16857,7 +18950,7 @@ export default function ModelsPage() {
                                 width="14"
                                 height="14"
                                 alt=""
-                                style={{ borderRadius: "0", flexShrink: "0" }}
+                                style={{ borderRadius: "6px", flexShrink: "0" }}
                               />
                               Gemini 2.5 Pro
                             </span>
@@ -16960,7 +19053,7 @@ export default function ModelsPage() {
                                 width="14"
                                 height="14"
                                 alt=""
-                                style={{ borderRadius: "0", flexShrink: "0" }}
+                                style={{ borderRadius: "6px", flexShrink: "0" }}
                               />
                               Gemini 2.5 Flash
                             </span>
@@ -17061,7 +19154,7 @@ export default function ModelsPage() {
                                 width="14"
                                 height="14"
                                 alt=""
-                                style={{ borderRadius: "0", flexShrink: "0" }}
+                                style={{ borderRadius: "6px", flexShrink: "0" }}
                               />
                               GLM-5.2
                             </span>
@@ -17165,7 +19258,7 @@ export default function ModelsPage() {
                                 width="14"
                                 height="14"
                                 alt=""
-                                style={{ borderRadius: "0", flexShrink: "0" }}
+                                style={{ borderRadius: "6px", flexShrink: "0" }}
                               />
                               Llama 4 Maverick
                             </span>
@@ -17269,7 +19362,7 @@ export default function ModelsPage() {
                                 width="14"
                                 height="14"
                                 alt=""
-                                style={{ borderRadius: "0", flexShrink: "0" }}
+                                style={{ borderRadius: "6px", flexShrink: "0" }}
                               />
                               DeepSeek V4 Pro
                             </span>
@@ -17374,7 +19467,7 @@ export default function ModelsPage() {
                                 width="14"
                                 height="14"
                                 alt=""
-                                style={{ borderRadius: "0", flexShrink: "0" }}
+                                style={{ borderRadius: "6px", flexShrink: "0" }}
                               />
                               DeepSeek V4 Flash
                             </span>
@@ -17477,7 +19570,7 @@ export default function ModelsPage() {
                                 width="14"
                                 height="14"
                                 alt=""
-                                style={{ borderRadius: "0", flexShrink: "0" }}
+                                style={{ borderRadius: "6px", flexShrink: "0" }}
                               />
                               Qwen3.7 Max
                             </span>
@@ -17578,7 +19671,7 @@ export default function ModelsPage() {
                                 width="14"
                                 height="14"
                                 alt=""
-                                style={{ borderRadius: "0", flexShrink: "0" }}
+                                style={{ borderRadius: "6px", flexShrink: "0" }}
                               />
                               Sakana Fugu Ultra
                             </span>
@@ -17683,7 +19776,7 @@ export default function ModelsPage() {
                                 width="14"
                                 height="14"
                                 alt=""
-                                style={{ borderRadius: "0", flexShrink: "0" }}
+                                style={{ borderRadius: "6px", flexShrink: "0" }}
                               />
                               GPT-5
                             </span>
@@ -17787,7 +19880,7 @@ export default function ModelsPage() {
                                 width="14"
                                 height="14"
                                 alt=""
-                                style={{ borderRadius: "0", flexShrink: "0" }}
+                                style={{ borderRadius: "6px", flexShrink: "0" }}
                               />
                               Qwen3 Max
                             </span>
@@ -17888,7 +19981,7 @@ export default function ModelsPage() {
                                 width="14"
                                 height="14"
                                 alt=""
-                                style={{ borderRadius: "0", flexShrink: "0" }}
+                                style={{ borderRadius: "6px", flexShrink: "0" }}
                               />
                               <a
                                 href="/free-models/tencent-hy3"
@@ -18001,7 +20094,7 @@ export default function ModelsPage() {
                                 width="14"
                                 height="14"
                                 alt=""
-                                style={{ borderRadius: "0", flexShrink: "0" }}
+                                style={{ borderRadius: "6px", flexShrink: "0" }}
                               />
                               Claude Haiku 4.5
                             </span>
@@ -18102,7 +20195,7 @@ export default function ModelsPage() {
                                 width="14"
                                 height="14"
                                 alt=""
-                                style={{ borderRadius: "0", flexShrink: "0" }}
+                                style={{ borderRadius: "6px", flexShrink: "0" }}
                               />
                               o4-mini
                             </span>
@@ -18203,7 +20296,7 @@ export default function ModelsPage() {
                                 width="14"
                                 height="14"
                                 alt=""
-                                style={{ borderRadius: "0", flexShrink: "0" }}
+                                style={{ borderRadius: "6px", flexShrink: "0" }}
                               />
                               o3
                             </span>
@@ -18304,7 +20397,7 @@ export default function ModelsPage() {
                                 width="14"
                                 height="14"
                                 alt=""
-                                style={{ borderRadius: "0", flexShrink: "0" }}
+                                style={{ borderRadius: "6px", flexShrink: "0" }}
                               />
                               Grok 3
                             </span>
@@ -18405,7 +20498,7 @@ export default function ModelsPage() {
                                 width="14"
                                 height="14"
                                 alt=""
-                                style={{ borderRadius: "0", flexShrink: "0" }}
+                                style={{ borderRadius: "6px", flexShrink: "0" }}
                               />
                               DeepSeek R1
                             </span>
@@ -18509,7 +20602,7 @@ export default function ModelsPage() {
                                 width="14"
                                 height="14"
                                 alt=""
-                                style={{ borderRadius: "0", flexShrink: "0" }}
+                                style={{ borderRadius: "6px", flexShrink: "0" }}
                               />
                               Mistral Large 2
                             </span>
@@ -18610,7 +20703,7 @@ export default function ModelsPage() {
                                 width="14"
                                 height="14"
                                 alt=""
-                                style={{ borderRadius: "0", flexShrink: "0" }}
+                                style={{ borderRadius: "6px", flexShrink: "0" }}
                               />
                               Mistral Small 3
                             </span>
@@ -18728,7 +20821,7 @@ export default function ModelsPage() {
                       style={{
                         padding: "14px 16px",
                         borderRadius: "10px",
-                        border: "1px solid var(--border-subtle)",
+                        border: "1px solid #ffffff1a",
                         background: "var(--card)",
                         transition: "border-color 0.2s",
                         opacity: "1",
@@ -18775,7 +20868,7 @@ export default function ModelsPage() {
                       style={{
                         padding: "14px 16px",
                         borderRadius: "10px",
-                        border: "1px solid var(--border-subtle)",
+                        border: "1px solid #ffffff1a",
                         background: "var(--card)",
                         transition: "border-color 0.2s",
                         opacity: "1",
@@ -18822,7 +20915,7 @@ export default function ModelsPage() {
                       style={{
                         padding: "14px 16px",
                         borderRadius: "10px",
-                        border: "1px solid var(--border-subtle)",
+                        border: "1px solid #ffffff1a",
                         background: "var(--card)",
                         transition: "border-color 0.2s",
                         opacity: "1",
@@ -18868,7 +20961,7 @@ export default function ModelsPage() {
                       style={{
                         padding: "14px 16px",
                         borderRadius: "10px",
-                        border: "1px solid var(--border-subtle)",
+                        border: "1px solid #ffffff1a",
                         background: "var(--card)",
                         transition: "border-color 0.2s",
                         opacity: "1",
@@ -18915,7 +21008,7 @@ export default function ModelsPage() {
                       style={{
                         padding: "14px 16px",
                         borderRadius: "10px",
-                        border: "1px solid var(--border-subtle)",
+                        border: "1px solid #ffffff1a",
                         background: "var(--card)",
                         transition: "border-color 0.2s",
                         opacity: "1",
@@ -18962,7 +21055,7 @@ export default function ModelsPage() {
                       style={{
                         padding: "14px 16px",
                         borderRadius: "10px",
-                        border: "1px solid var(--border-subtle)",
+                        border: "1px solid #ffffff1a",
                         background: "var(--card)",
                         transition: "border-color 0.2s",
                         opacity: "1",
@@ -19009,7 +21102,7 @@ export default function ModelsPage() {
                       style={{
                         padding: "14px 16px",
                         borderRadius: "10px",
-                        border: "1px solid var(--border-subtle)",
+                        border: "1px solid #ffffff1a",
                         background: "var(--card)",
                         transition: "border-color 0.2s",
                         opacity: "1",
@@ -19058,7 +21151,7 @@ export default function ModelsPage() {
               <div style={{ opacity: "1", transform: "translateY(0)" }}>
                 <section
                   style={{
-                    borderRadius: "0",
+                    borderRadius: "6px",
                     border: "1px solid rgba(128,130,193,0.2)",
                     background:
                       "linear-gradient(135deg, rgba(128,130,193,0.06) 0%, var(--card) 60%)",
@@ -19101,7 +21194,7 @@ export default function ModelsPage() {
                       style={{
                         display: "inline-block",
                         padding: "9px 22px",
-                        borderRadius: "0",
+                        borderRadius: "6px",
                         background: "var(--primary-purple)",
                         color: "#fff",
                         fontWeight: "700",
@@ -19117,7 +21210,7 @@ export default function ModelsPage() {
                       style={{
                         display: "inline-block",
                         padding: "9px 22px",
-                        borderRadius: "0",
+                        borderRadius: "6px",
                         border: "1px solid var(--border-strong)",
                         background: "transparent",
                         color: "var(--foreground)",
@@ -19377,4 +21470,3 @@ export default function ModelsPage() {
     </div>
   );
 }
-
