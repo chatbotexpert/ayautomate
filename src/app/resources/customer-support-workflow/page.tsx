@@ -26,7 +26,7 @@ export default function CustomerSupportWorkflowPage() {
             <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr] lg:items-start">
               <div>
                 <span className="inline-flex items-center gap-2 rounded-full bg-primary-purple/10 border border-primary-purple/20 px-3 py-1 text-[11px] font-semibold uppercase tracking-widest text-primary-purple">
-                  <Settings2 className="h-3 w-3" aria-hidden="true" />
+                  <BookOpen className="h-3 w-3" aria-hidden="true" />
                   Workflow
                 </span>
                 <h1 className="mt-5 text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-foreground leading-[1.05]">
@@ -54,32 +54,9 @@ export default function CustomerSupportWorkflowPage() {
               
               <div>
                 {/* Visual block instead of image */}
-                <div className="rounded-2xl border border-border bg-card shadow-xl shadow-primary-purple/5 overflow-hidden">
-                  <div 
-                    className="aspect-[4/5] w-full flex items-center justify-center p-8"
-                    style={{ background: 'radial-gradient(ellipse at 50% 40%, color-mix(in srgb, var(--primary-purple) 22%, transparent), transparent 65%), linear-gradient(135deg, color-mix(in srgb, var(--primary-purple) 8%, var(--card)), var(--card))' }}
-                  >
-                    <div className="w-full h-full rounded-xl border border-[#ffffff14] bg-[#0c0c12] p-8 flex flex-col justify-between shadow-2xl relative overflow-hidden">
-                      <div className="absolute -top-10 -right-10 w-32 h-32 bg-primary-purple/20 blur-3xl rounded-full"></div>
-                      <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-primary-purple/10 blur-3xl rounded-full"></div>
-                      
-                      <div className="relative z-10">
-                        <div className="w-10 h-10 rounded-lg bg-primary-purple/20 flex items-center justify-center border border-primary-purple/30 mb-6">
-                          <Workflow className="h-5 w-5 text-primary-purple" />
-                        </div>
-                        <p className="text-[10px] font-semibold uppercase tracking-widest text-primary-purple/80 mb-2">AY.Workflow</p>
-                        <h3 className="text-2xl font-bold text-white leading-tight">Customer<br/>Support<br/>Workflow</h3>
-                      </div>
-                      
-                      <div className="relative z-10 w-full bg-[#1a1a24] border border-[#ffffff14] rounded-lg p-3">
-                        <div className="flex items-center gap-2 mb-2">
-                          <div className="w-2 h-2 rounded-full bg-green-500"></div>
-                          <p className="text-xs font-mono text-muted-foreground">system.status</p>
-                        </div>
-                        <p className="text-xs font-mono text-white">active: <span className="text-primary-purple">triage_agent</span></p>
-                      </div>
-                    </div>
-                  </div>
+                <div className="aspect-[4/5] sm:aspect-square w-full rounded-3xl bg-card flex flex-col items-center justify-center border border-border p-8 text-center shadow-xl shadow-primary-purple/5">
+                  <p className="text-[10px] font-semibold uppercase tracking-widest text-[#8082c1] mb-4">AY.WORKFLOW</p>
+                  <h3 className="text-2xl sm:text-3xl font-bold text-white leading-tight">Customer Support Workflow</h3>
                 </div>
               </div>
             </div>
@@ -209,34 +186,28 @@ export default function CustomerSupportWorkflowPage() {
         </section>
 
         {/* CUSTOM CTA SECTION */}
-        <section className="border-y border-border bg-primary-purple/[0.03]">
-          <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8 xl:px-4 py-16 sm:py-20">
-            <section className="relative w-full overflow-hidden rounded-3xl bg-primary-purple/10 px-6 py-12 sm:px-10 sm:py-16 border border-primary-purple/20">
-              <div className="mx-auto flex max-w-2xl flex-col items-center gap-8 text-center">
-                <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-                  Want this in your stack?
-                </h2>
-                <p className="text-lg leading-relaxed text-muted-foreground max-w-xl">
-                  We deploy this for support teams in under a week. Refund guaranteed if month one doesn't land.
-                </p>
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-2">
-                  <Link href="/contact?topic=customer-support" className="inline-flex w-full sm:w-auto items-center justify-center gap-1.5 rounded-lg bg-primary-purple px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-primary-purple/90">
-                    Talk to us
-                    <ArrowRight className="h-4 w-4" />
-                  </Link>
-                  <Link href="/case-studies" className="inline-flex w-full sm:w-auto items-center justify-center gap-1.5 rounded-lg border border-border bg-card px-6 py-3 text-sm font-semibold text-foreground transition-all hover:border-primary-purple/40">
-                    See the agent in action
-                  </Link>
-                </div>
-              </div>
-            </section>
+        <section className="mx-auto max-w-3xl px-4 md:px-6 lg:px-8 py-20 sm:py-32 text-center">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-foreground mb-6">
+            Want this in your stack?
+          </h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed">
+            We deploy this for support teams in under a week. Refund guaranteed if month one doesn't land.
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <Link href="/contact?topic=customer-support" className="inline-flex w-full sm:w-auto items-center justify-center gap-2 rounded-full bg-primary-purple px-8 py-3.5 text-sm font-semibold text-white transition-all hover:bg-primary-purple/90">
+              Talk to us
+              <ArrowUpRight className="h-4 w-4" />
+            </Link>
+            <Link href="/case-studies" className="inline-flex w-full sm:w-auto items-center justify-center gap-2 rounded-full border border-border bg-[#1d1d29] px-8 py-3.5 text-sm font-semibold text-foreground transition-all hover:bg-[#1a1a24]">
+              See the agent in action
+            </Link>
           </div>
         </section>
 
         {/* KEEP READING */}
-        <section className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8 xl:px-4 py-16">
+        <section className="mx-auto max-w-5xl px-4 md:px-6 lg:px-8 xl:px-4 pb-24 border-t border-border pt-16">
           <p className="text-[11px] font-semibold uppercase tracking-widest text-primary-purple mb-6">Keep reading</p>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-4 sm:grid-cols-2">
             <Link className="group flex items-center justify-between rounded-xl border border-border bg-card p-5 hover:border-primary-purple/40 transition-all" href="/resources/ai-automation-playbook">
               <span className="text-sm font-semibold text-foreground group-hover:text-primary-purple transition-colors">The AI Automation Playbook</span>
               <ArrowUpRight className="h-4 w-4 text-muted-foreground group-hover:text-primary-purple group-hover:translate-x-0.5 transition-all" aria-hidden="true" />
