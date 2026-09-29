@@ -13,6 +13,9 @@
   --color-border-subtle: #ffffff14;
   --color-border-strong: #ffffff26; /* Slightly stronger than subtle for cards */
   --color-card: #1D1D29;
+  --color-muted: #1a1525;
+  --color-background: #0f0f15;
+  --color-foreground: #f0edee;
   --color-border: #ffffff1a; /* Background for cards */
 }
 
