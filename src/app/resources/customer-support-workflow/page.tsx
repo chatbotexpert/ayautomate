@@ -180,20 +180,20 @@ onTicket(ticket) {"{"}{"\n"}
         </section>
 
         {/* CUSTOM CTA SECTION */}
-        <section className="border-t border-border py-20 sm:py-32 text-center">
+        <section className="border-t border-border py-24 sm:py-32 text-center">
           <div className="mx-auto max-w-3xl px-4 md:px-6 lg:px-8">
-            <h2 className="text-3xl sm:text-[2.5rem] font-bold tracking-tight text-foreground mb-6">
+            <h2 className="text-3xl sm:text-[2.5rem] font-bold tracking-tight text-white mb-6">
               Want this in your stack?
             </h2>
-            <p className="text-base sm:text-[17px] text-muted-foreground max-w-[640px] mx-auto mb-10 leading-[1.6]">
+            <p className="text-base sm:text-[17px] text-muted-foreground max-w-[620px] mx-auto mb-10 leading-[1.6]">
               We deploy this for support teams in under a week. Refund guaranteed if<br className="hidden sm:block" /> month one doesn't land.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link href="/contact?topic=customer-support" className="inline-flex w-full sm:w-auto items-center justify-center gap-2 rounded-full bg-primary-purple px-6 py-2.5 text-[13px] sm:text-sm font-semibold text-white transition-all hover:bg-primary-purple/90">
+              <Link href="/contact?topic=customer-support" className="inline-flex w-full sm:w-auto items-center justify-center gap-2 rounded-full bg-[#8082C1] px-6 py-2.5 text-[13px] sm:text-sm font-semibold text-white transition-all hover:bg-[#8082C1]/90">
                 Talk to us
                 <ArrowUpRight className="h-3.5 w-3.5" />
               </Link>
-              <Link href="/case-studies" className="inline-flex w-full sm:w-auto items-center justify-center gap-2 rounded-full border border-[#ffffff14] bg-[#1a1a24] px-6 py-2.5 text-[13px] sm:text-sm font-semibold text-foreground transition-all hover:bg-[#232330]">
+              <Link href="/case-studies" className="inline-flex w-full sm:w-auto items-center justify-center gap-2 rounded-full border border-[#ffffff1a] bg-[#13131a] px-6 py-2.5 text-[13px] sm:text-sm font-semibold text-white transition-all hover:bg-[#1c1c28]">
                 See the agent in action
               </Link>
             </div>
@@ -201,17 +201,19 @@ onTicket(ticket) {"{"}{"\n"}
         </section>
 
         {/* KEEP READING */}
-        <section className="mx-auto max-w-5xl px-4 md:px-6 lg:px-8 xl:px-4 pb-24">
-          <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#8082c1] mb-6">KEEP READING</p>
-          <div className="grid gap-4 sm:grid-cols-2">
-            <Link className="group flex items-center justify-between rounded-2xl border border-[#ffffff14] bg-[#161622] px-6 py-5 hover:bg-[#1a1a24] transition-all" href="/resources/ai-automation-playbook">
-              <span className="text-[14px] font-bold text-foreground">The AI Automation Playbook</span>
-              <ArrowUpRight className="h-4 w-4 text-muted-foreground group-hover:text-white transition-colors" aria-hidden="true" />
-            </Link>
-            <Link className="group flex items-center justify-between rounded-2xl border border-[#ffffff14] bg-[#161622] px-6 py-5 hover:bg-[#1a1a24] transition-all" href="/resources/lead-qualification-playbook">
-              <span className="text-[14px] font-bold text-foreground">Lead Qualification Playbook</span>
-              <ArrowUpRight className="h-4 w-4 text-muted-foreground group-hover:text-white transition-colors" aria-hidden="true" />
-            </Link>
+        <section className="w-full border-t border-border">
+          <div className="mx-auto max-w-5xl px-4 md:px-6 lg:px-8 xl:px-4 py-16 sm:py-20">
+            <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#8082c1] mb-5">KEEP READING</p>
+            <div className="grid gap-4 sm:grid-cols-2">
+              <Link className="group flex items-center justify-between rounded-xl border border-[#ffffff14] bg-[#161622] px-6 py-5 hover:bg-[#1a1a24] transition-all" href="/resources/ai-automation-playbook">
+                <span className="text-[14px] font-bold text-foreground">The AI Automation Playbook</span>
+                <ArrowUpRight className="h-3.5 w-3.5 text-muted-foreground group-hover:text-white transition-colors" aria-hidden="true" />
+              </Link>
+              <Link className="group flex items-center justify-between rounded-xl border border-[#ffffff14] bg-[#161622] px-6 py-5 hover:bg-[#1a1a24] transition-all" href="/resources/lead-qualification-playbook">
+                <span className="text-[14px] font-bold text-foreground">Lead Qualification Playbook</span>
+                <ArrowUpRight className="h-3.5 w-3.5 text-muted-foreground group-hover:text-white transition-colors" aria-hidden="true" />
+              </Link>
+            </div>
           </div>
         </section>
 
