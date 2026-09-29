@@ -946,24 +946,23 @@ export default function ModelsPage() {
                           <div className="flex items-start justify-between w-full pl-10 pr-2 z-10 gap-1 sm:gap-2 absolute bottom-0 h-[120px]">
                             <div className="flex flex-col items-center w-full mt-3 relative">
                               <div className="flex items-center justify-center mb-1">
-                                <svg viewBox="0 0 24 24" width="14" height="14">
-                                  <circle
-                                    cx="12"
-                                    cy="12"
-                                    r="9"
-                                    fill="none"
-                                    stroke="#E74C3C"
-                                    strokeWidth="2.5"
-                                  />
-                                  <path d="M16 12l6-4v8z" fill="#E74C3C" />
-                                </svg>
+                                <img
+                                  src="https://www.google.com/s2/favicons?domain=sakana.ai&sz=128"
+                                  width="14"
+                                  height="14"
+                                  alt=""
+                                  style={{
+                                    borderRadius: "2px",
+                                    flexShrink: "0",
+                                  }}
+                                />
                               </div>
                               <span
                                 className="text-[10.5px] text-gray-300 whitespace-nowrap absolute top-[22px]"
                                 style={{
                                   transformOrigin: "top right",
                                   transform:
-                                    "rotate(-55deg) translate(-8px, -5px)",
+                                    "rotate(-50deg) translate(-8px, -5px)",
                                   letterSpacing: "0.2px",
                                   fontWeight: "400",
                                 }}
@@ -973,27 +972,23 @@ export default function ModelsPage() {
                             </div>
                             <div className="flex flex-col items-center w-full mt-3 relative">
                               <div className="flex items-center justify-center mb-1">
-                                <svg viewBox="0 0 24 24" width="12" height="12">
-                                  <rect
-                                    width="24"
-                                    height="24"
-                                    rx="4"
-                                    fill="#E67E22"
-                                  />
-                                  <path
-                                    d="M12 5v14M5 12h14M7.5 7.5l9 9M16.5 7.5l-9 9"
-                                    stroke="#fff"
-                                    strokeWidth="2.5"
-                                    strokeLinecap="round"
-                                  />
-                                </svg>
+                                <img
+                                  src="https://www.google.com/s2/favicons?domain=anthropic.com&sz=128"
+                                  width="14"
+                                  height="14"
+                                  alt=""
+                                  style={{
+                                    borderRadius: "2px",
+                                    flexShrink: "0",
+                                  }}
+                                />
                               </div>
                               <span
                                 className="text-[10.5px] text-gray-300 whitespace-nowrap absolute top-[22px]"
                                 style={{
                                   transformOrigin: "top right",
                                   transform:
-                                    "rotate(-55deg) translate(-8px, -5px)",
+                                    "rotate(-50deg) translate(-8px, -5px)",
                                   letterSpacing: "0.2px",
                                   fontWeight: "400",
                                 }}
@@ -1003,21 +998,23 @@ export default function ModelsPage() {
                             </div>
                             <div className="flex flex-col items-center w-full mt-3 relative">
                               <div className="flex items-center justify-center mb-1">
-                                <svg
-                                  viewBox="0 0 24 24"
+                                <img
+                                  src="https://www.google.com/s2/favicons?domain=openai.com&sz=128"
                                   width="14"
                                   height="14"
-                                  fill="#ffffff"
-                                >
-                                  <path d="M22.28 11.23a10.36 10.36 0 00-1.8-8.54 10.15 10.15 0 00-8.6-4.56c-4.22 0-7.85 2.57-9.35 6.35a10.37 10.37 0 00.35 9.17 10.2 10.2 0 008.28 4.7 10.4 10.4 0 009.12-6.12zM12 20.3a8.25 8.25 0 01-6.84-3.56L9.6 14.1l4.5 2.6v5.2c-1.34.25-2.75.14-4.08-.24M3.73 15.3c-.62-2.33-.24-4.87 1.05-6.9L9 11.02v5.22L4.5 18.8c-.85-1-1.34-2.3-1.44-3.6zM6.55 6c2-1.4 4.57-1.83 6.9-.92L11 9.4 6.5 6.8V1.62a8.34 8.34 0 00-4 4.14L6.55 6zm10.9-1.5c.87.97 1.4 2.27 1.5 3.65a8.2 8.2 0 01-1.1 4.56L15 10v-5.2l4.5-2.6c1.33-.24 2.74-.12 4.07.25M20.26 18c-2 1.4-4.58 1.83-6.9.92L13 14.6l4.5 2.6v5.18c2-.9 3.55-2.4 4.5-4.13L20.26 18z" />
-                                </svg>
+                                  alt=""
+                                  style={{
+                                    borderRadius: "2px",
+                                    flexShrink: "0",
+                                  }}
+                                />
                               </div>
                               <span
                                 className="text-[10.5px] text-gray-300 whitespace-nowrap absolute top-[22px]"
                                 style={{
                                   transformOrigin: "top right",
                                   transform:
-                                    "rotate(-55deg) translate(-8px, -5px)",
+                                    "rotate(-50deg) translate(-8px, -5px)",
                                   letterSpacing: "0.2px",
                                   fontWeight: "400",
                                 }}
@@ -1027,33 +1024,23 @@ export default function ModelsPage() {
                             </div>
                             <div className="flex flex-col items-center w-full mt-3 relative">
                               <div className="flex items-center justify-center mb-1">
-                                <svg viewBox="0 0 24 24" width="13" height="13">
-                                  <rect
-                                    x="1"
-                                    y="1"
-                                    width="22"
-                                    height="22"
-                                    rx="3"
-                                    fill="transparent"
-                                    stroke="#fff"
-                                    strokeWidth="1.5"
-                                  />
-                                  <path
-                                    d="M6 7h12l-10 10h12"
-                                    stroke="#fff"
-                                    strokeWidth="2"
-                                    fill="none"
-                                    strokeLinejoin="round"
-                                    strokeLinecap="round"
-                                  />
-                                </svg>
+                                <img
+                                  src="https://www.google.com/s2/favicons?domain=zhipuai.cn&sz=128"
+                                  width="14"
+                                  height="14"
+                                  alt=""
+                                  style={{
+                                    borderRadius: "2px",
+                                    flexShrink: "0",
+                                  }}
+                                />
                               </div>
                               <span
                                 className="text-[10.5px] text-gray-300 whitespace-nowrap absolute top-[22px]"
                                 style={{
                                   transformOrigin: "top right",
                                   transform:
-                                    "rotate(-55deg) translate(-8px, -5px)",
+                                    "rotate(-50deg) translate(-8px, -5px)",
                                   letterSpacing: "0.2px",
                                   fontWeight: "400",
                                 }}
@@ -1063,28 +1050,23 @@ export default function ModelsPage() {
                             </div>
                             <div className="flex flex-col items-center w-full mt-3 relative">
                               <div className="flex items-center justify-center mb-1">
-                                <svg viewBox="0 0 24 24" width="14" height="14">
-                                  <circle
-                                    cx="12"
-                                    cy="12"
-                                    r="12"
-                                    fill="#03A9F4"
-                                  />
-                                  <path
-                                    d="M12 5c-4 0-4 4-2 6 2 2 4 4 0 8"
-                                    stroke="#fff"
-                                    strokeWidth="2.5"
-                                    fill="none"
-                                    strokeLinecap="round"
-                                  />
-                                </svg>
+                                <img
+                                  src="https://www.google.com/s2/favicons?domain=tencent.com&sz=128"
+                                  width="14"
+                                  height="14"
+                                  alt=""
+                                  style={{
+                                    borderRadius: "2px",
+                                    flexShrink: "0",
+                                  }}
+                                />
                               </div>
                               <span
                                 className="text-[10.5px] text-gray-300 whitespace-nowrap absolute top-[22px]"
                                 style={{
                                   transformOrigin: "top right",
                                   transform:
-                                    "rotate(-55deg) translate(-8px, -5px)",
+                                    "rotate(-50deg) translate(-8px, -5px)",
                                   letterSpacing: "0.2px",
                                   fontWeight: "400",
                                 }}
@@ -1094,30 +1076,23 @@ export default function ModelsPage() {
                             </div>
                             <div className="flex flex-col items-center w-full mt-3 relative">
                               <div className="flex items-center justify-center mb-1">
-                                <svg viewBox="0 0 24 24" width="14" height="14">
-                                  <circle
-                                    cx="12"
-                                    cy="12"
-                                    r="11"
-                                    fill="none"
-                                    stroke="#2196F3"
-                                    strokeWidth="2"
-                                  />
-                                  <path
-                                    d="M7 12c2-3 4-3 5 0s3 3 5 0"
-                                    stroke="#2196F3"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    fill="none"
-                                  />
-                                </svg>
+                                <img
+                                  src="https://www.google.com/s2/favicons?domain=deepseek.com&sz=128"
+                                  width="14"
+                                  height="14"
+                                  alt=""
+                                  style={{
+                                    borderRadius: "2px",
+                                    flexShrink: "0",
+                                  }}
+                                />
                               </div>
                               <span
                                 className="text-[10.5px] text-gray-300 whitespace-nowrap absolute top-[22px]"
                                 style={{
                                   transformOrigin: "top right",
                                   transform:
-                                    "rotate(-55deg) translate(-8px, -5px)",
+                                    "rotate(-50deg) translate(-8px, -5px)",
                                   letterSpacing: "0.2px",
                                   fontWeight: "400",
                                 }}
@@ -1127,27 +1102,23 @@ export default function ModelsPage() {
                             </div>
                             <div className="flex flex-col items-center w-full mt-3 relative">
                               <div className="flex items-center justify-center mb-1">
-                                <svg viewBox="0 0 24 24" width="12" height="12">
-                                  <rect
-                                    width="24"
-                                    height="24"
-                                    rx="4"
-                                    fill="#E67E22"
-                                  />
-                                  <path
-                                    d="M12 5v14M5 12h14M7.5 7.5l9 9M16.5 7.5l-9 9"
-                                    stroke="#fff"
-                                    strokeWidth="2.5"
-                                    strokeLinecap="round"
-                                  />
-                                </svg>
+                                <img
+                                  src="https://www.google.com/s2/favicons?domain=anthropic.com&sz=128"
+                                  width="14"
+                                  height="14"
+                                  alt=""
+                                  style={{
+                                    borderRadius: "2px",
+                                    flexShrink: "0",
+                                  }}
+                                />
                               </div>
                               <span
                                 className="text-[10.5px] text-gray-300 whitespace-nowrap absolute top-[22px]"
                                 style={{
                                   transformOrigin: "top right",
                                   transform:
-                                    "rotate(-55deg) translate(-8px, -5px)",
+                                    "rotate(-50deg) translate(-8px, -5px)",
                                   letterSpacing: "0.2px",
                                   fontWeight: "400",
                                 }}
@@ -1157,21 +1128,23 @@ export default function ModelsPage() {
                             </div>
                             <div className="flex flex-col items-center w-full mt-3 relative">
                               <div className="flex items-center justify-center mb-1">
-                                <svg
-                                  viewBox="0 0 24 24"
+                                <img
+                                  src="https://www.google.com/s2/favicons?domain=openai.com&sz=128"
                                   width="14"
                                   height="14"
-                                  fill="#ffffff"
-                                >
-                                  <path d="M22.28 11.23a10.36 10.36 0 00-1.8-8.54 10.15 10.15 0 00-8.6-4.56c-4.22 0-7.85 2.57-9.35 6.35a10.37 10.37 0 00.35 9.17 10.2 10.2 0 008.28 4.7 10.4 10.4 0 009.12-6.12zM12 20.3a8.25 8.25 0 01-6.84-3.56L9.6 14.1l4.5 2.6v5.2c-1.34.25-2.75.14-4.08-.24M3.73 15.3c-.62-2.33-.24-4.87 1.05-6.9L9 11.02v5.22L4.5 18.8c-.85-1-1.34-2.3-1.44-3.6zM6.55 6c2-1.4 4.57-1.83 6.9-.92L11 9.4 6.5 6.8V1.62a8.34 8.34 0 00-4 4.14L6.55 6zm10.9-1.5c.87.97 1.4 2.27 1.5 3.65a8.2 8.2 0 01-1.1 4.56L15 10v-5.2l4.5-2.6c1.33-.24 2.74-.12 4.07.25M20.26 18c-2 1.4-4.58 1.83-6.9.92L13 14.6l4.5 2.6v5.18c2-.9 3.55-2.4 4.5-4.13L20.26 18z" />
-                                </svg>
+                                  alt=""
+                                  style={{
+                                    borderRadius: "2px",
+                                    flexShrink: "0",
+                                  }}
+                                />
                               </div>
                               <span
                                 className="text-[10.5px] text-gray-300 whitespace-nowrap absolute top-[22px]"
                                 style={{
                                   transformOrigin: "top right",
                                   transform:
-                                    "rotate(-55deg) translate(-8px, -5px)",
+                                    "rotate(-50deg) translate(-8px, -5px)",
                                   letterSpacing: "0.2px",
                                   fontWeight: "400",
                                 }}
@@ -1181,30 +1154,23 @@ export default function ModelsPage() {
                             </div>
                             <div className="flex flex-col items-center w-full mt-3 relative">
                               <div className="flex items-center justify-center mb-1">
-                                <svg viewBox="0 0 24 24" width="14" height="14">
-                                  <circle
-                                    cx="12"
-                                    cy="12"
-                                    r="11"
-                                    fill="none"
-                                    stroke="#2196F3"
-                                    strokeWidth="2"
-                                  />
-                                  <path
-                                    d="M7 12c2-3 4-3 5 0s3 3 5 0"
-                                    stroke="#2196F3"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    fill="none"
-                                  />
-                                </svg>
+                                <img
+                                  src="https://www.google.com/s2/favicons?domain=deepseek.com&sz=128"
+                                  width="14"
+                                  height="14"
+                                  alt=""
+                                  style={{
+                                    borderRadius: "2px",
+                                    flexShrink: "0",
+                                  }}
+                                />
                               </div>
                               <span
                                 className="text-[10.5px] text-gray-300 whitespace-nowrap absolute top-[22px]"
                                 style={{
                                   transformOrigin: "top right",
                                   transform:
-                                    "rotate(-55deg) translate(-8px, -5px)",
+                                    "rotate(-50deg) translate(-8px, -5px)",
                                   letterSpacing: "0.2px",
                                   fontWeight: "400",
                                 }}
@@ -1214,21 +1180,23 @@ export default function ModelsPage() {
                             </div>
                             <div className="flex flex-col items-center w-full mt-3 relative">
                               <div className="flex items-center justify-center mb-1">
-                                <svg
-                                  viewBox="0 0 24 24"
+                                <img
+                                  src="https://www.google.com/s2/favicons?domain=openai.com&sz=128"
                                   width="14"
                                   height="14"
-                                  fill="#ffffff"
-                                >
-                                  <path d="M22.28 11.23a10.36 10.36 0 00-1.8-8.54 10.15 10.15 0 00-8.6-4.56c-4.22 0-7.85 2.57-9.35 6.35a10.37 10.37 0 00.35 9.17 10.2 10.2 0 008.28 4.7 10.4 10.4 0 009.12-6.12zM12 20.3a8.25 8.25 0 01-6.84-3.56L9.6 14.1l4.5 2.6v5.2c-1.34.25-2.75.14-4.08-.24M3.73 15.3c-.62-2.33-.24-4.87 1.05-6.9L9 11.02v5.22L4.5 18.8c-.85-1-1.34-2.3-1.44-3.6zM6.55 6c2-1.4 4.57-1.83 6.9-.92L11 9.4 6.5 6.8V1.62a8.34 8.34 0 00-4 4.14L6.55 6zm10.9-1.5c.87.97 1.4 2.27 1.5 3.65a8.2 8.2 0 01-1.1 4.56L15 10v-5.2l4.5-2.6c1.33-.24 2.74-.12 4.07.25M20.26 18c-2 1.4-4.58 1.83-6.9.92L13 14.6l4.5 2.6v5.18c2-.9 3.55-2.4 4.5-4.13L20.26 18z" />
-                                </svg>
+                                  alt=""
+                                  style={{
+                                    borderRadius: "2px",
+                                    flexShrink: "0",
+                                  }}
+                                />
                               </div>
                               <span
                                 className="text-[10.5px] text-gray-300 whitespace-nowrap absolute top-[22px]"
                                 style={{
                                   transformOrigin: "top right",
                                   transform:
-                                    "rotate(-55deg) translate(-8px, -5px)",
+                                    "rotate(-50deg) translate(-8px, -5px)",
                                   letterSpacing: "0.2px",
                                   fontWeight: "400",
                                 }}
@@ -1238,29 +1206,23 @@ export default function ModelsPage() {
                             </div>
                             <div className="flex flex-col items-center w-full mt-3 relative">
                               <div className="flex items-center justify-center mb-1">
-                                <svg viewBox="0 0 24 24" width="13" height="13">
-                                  <circle
-                                    cx="12"
-                                    cy="12"
-                                    r="10"
-                                    stroke="#fff"
-                                    strokeWidth="2"
-                                    fill="none"
-                                  />
-                                  <path
-                                    d="M7 7l10 10M17 7L7 17"
-                                    stroke="#fff"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                  />
-                                </svg>
+                                <img
+                                  src="https://www.google.com/s2/favicons?domain=x.ai&sz=128"
+                                  width="14"
+                                  height="14"
+                                  alt=""
+                                  style={{
+                                    borderRadius: "2px",
+                                    flexShrink: "0",
+                                  }}
+                                />
                               </div>
                               <span
                                 className="text-[10.5px] text-gray-300 whitespace-nowrap absolute top-[22px]"
                                 style={{
                                   transformOrigin: "top right",
                                   transform:
-                                    "rotate(-55deg) translate(-8px, -5px)",
+                                    "rotate(-50deg) translate(-8px, -5px)",
                                   letterSpacing: "0.2px",
                                   fontWeight: "400",
                                 }}
@@ -1270,24 +1232,23 @@ export default function ModelsPage() {
                             </div>
                             <div className="flex flex-col items-center w-full mt-3 relative">
                               <div className="flex items-center justify-center mb-1">
-                                <svg viewBox="0 0 24 24" width="14" height="14">
-                                  <path
-                                    d="M12 0C12 6.6 6.6 12 0 12C6.6 12 12 17.4 12 24C12 17.4 17.4 12 24 12C17.4 12 12 6.6 12 0z"
-                                    fill="#4285F4"
-                                  />
-                                  <path
-                                    d="M12 0C12 6.6 17.4 12 24 12C17.4 12 12 17.4 12 24C12 17.4 6.6 12 0 12C6.6 12 12 6.6 12 0z"
-                                    fill="#FBBC04"
-                                    opacity="0.5"
-                                  />
-                                </svg>
+                                <img
+                                  src="https://www.google.com/s2/favicons?domain=google.com&sz=128"
+                                  width="14"
+                                  height="14"
+                                  alt=""
+                                  style={{
+                                    borderRadius: "2px",
+                                    flexShrink: "0",
+                                  }}
+                                />
                               </div>
                               <span
                                 className="text-[10.5px] text-gray-300 whitespace-nowrap absolute top-[22px]"
                                 style={{
                                   transformOrigin: "top right",
                                   transform:
-                                    "rotate(-55deg) translate(-8px, -5px)",
+                                    "rotate(-50deg) translate(-8px, -5px)",
                                   letterSpacing: "0.2px",
                                   fontWeight: "400",
                                 }}
@@ -1297,24 +1258,23 @@ export default function ModelsPage() {
                             </div>
                             <div className="flex flex-col items-center w-full mt-3 relative">
                               <div className="flex items-center justify-center mb-1">
-                                <svg viewBox="0 0 24 24" width="14" height="14">
-                                  <path
-                                    d="M12 0C12 6.6 6.6 12 0 12C6.6 12 12 17.4 12 24C12 17.4 17.4 12 24 12C17.4 12 12 6.6 12 0z"
-                                    fill="#4285F4"
-                                  />
-                                  <path
-                                    d="M12 0C12 6.6 17.4 12 24 12C17.4 12 12 17.4 12 24C12 17.4 6.6 12 0 12C6.6 12 12 6.6 12 0z"
-                                    fill="#FBBC04"
-                                    opacity="0.5"
-                                  />
-                                </svg>
+                                <img
+                                  src="https://www.google.com/s2/favicons?domain=google.com&sz=128"
+                                  width="14"
+                                  height="14"
+                                  alt=""
+                                  style={{
+                                    borderRadius: "2px",
+                                    flexShrink: "0",
+                                  }}
+                                />
                               </div>
                               <span
                                 className="text-[10.5px] text-gray-300 whitespace-nowrap absolute top-[22px]"
                                 style={{
                                   transformOrigin: "top right",
                                   transform:
-                                    "rotate(-55deg) translate(-8px, -5px)",
+                                    "rotate(-50deg) translate(-8px, -5px)",
                                   letterSpacing: "0.2px",
                                   fontWeight: "400",
                                 }}
@@ -1324,21 +1284,23 @@ export default function ModelsPage() {
                             </div>
                             <div className="flex flex-col items-center w-full mt-3 relative">
                               <div className="flex items-center justify-center mb-1">
-                                <svg
-                                  viewBox="0 0 24 24"
+                                <img
+                                  src="https://www.google.com/s2/favicons?domain=openai.com&sz=128"
                                   width="14"
                                   height="14"
-                                  fill="#ffffff"
-                                >
-                                  <path d="M22.28 11.23a10.36 10.36 0 00-1.8-8.54 10.15 10.15 0 00-8.6-4.56c-4.22 0-7.85 2.57-9.35 6.35a10.37 10.37 0 00.35 9.17 10.2 10.2 0 008.28 4.7 10.4 10.4 0 009.12-6.12zM12 20.3a8.25 8.25 0 01-6.84-3.56L9.6 14.1l4.5 2.6v5.2c-1.34.25-2.75.14-4.08-.24M3.73 15.3c-.62-2.33-.24-4.87 1.05-6.9L9 11.02v5.22L4.5 18.8c-.85-1-1.34-2.3-1.44-3.6zM6.55 6c2-1.4 4.57-1.83 6.9-.92L11 9.4 6.5 6.8V1.62a8.34 8.34 0 00-4 4.14L6.55 6zm10.9-1.5c.87.97 1.4 2.27 1.5 3.65a8.2 8.2 0 01-1.1 4.56L15 10v-5.2l4.5-2.6c1.33-.24 2.74-.12 4.07.25M20.26 18c-2 1.4-4.58 1.83-6.9.92L13 14.6l4.5 2.6v5.18c2-.9 3.55-2.4 4.5-4.13L20.26 18z" />
-                                </svg>
+                                  alt=""
+                                  style={{
+                                    borderRadius: "2px",
+                                    flexShrink: "0",
+                                  }}
+                                />
                               </div>
                               <span
                                 className="text-[10.5px] text-gray-300 whitespace-nowrap absolute top-[22px]"
                                 style={{
                                   transformOrigin: "top right",
                                   transform:
-                                    "rotate(-55deg) translate(-8px, -5px)",
+                                    "rotate(-50deg) translate(-8px, -5px)",
                                   letterSpacing: "0.2px",
                                   fontWeight: "400",
                                 }}
@@ -1348,30 +1310,23 @@ export default function ModelsPage() {
                             </div>
                             <div className="flex flex-col items-center w-full mt-3 relative">
                               <div className="flex items-center justify-center mb-1">
-                                <svg viewBox="0 0 24 24" width="12" height="12">
-                                  <rect
-                                    x="0"
-                                    y="0"
-                                    width="24"
-                                    height="24"
-                                    rx="4"
-                                    fill="#9C27B0"
-                                  />
-                                  <circle cx="12" cy="12" r="5" fill="#fff" />
-                                  <path
-                                    d="M12 2v20M2 12h20M5 5l14 14M19 5L5 19"
-                                    stroke="#fff"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                  />
-                                </svg>
+                                <img
+                                  src="https://www.google.com/s2/favicons?domain=qwenlm.github.io&sz=128"
+                                  width="14"
+                                  height="14"
+                                  alt=""
+                                  style={{
+                                    borderRadius: "2px",
+                                    flexShrink: "0",
+                                  }}
+                                />
                               </div>
                               <span
                                 className="text-[10.5px] text-gray-300 whitespace-nowrap absolute top-[22px]"
                                 style={{
                                   transformOrigin: "top right",
                                   transform:
-                                    "rotate(-55deg) translate(-8px, -5px)",
+                                    "rotate(-50deg) translate(-8px, -5px)",
                                   letterSpacing: "0.2px",
                                   fontWeight: "400",
                                 }}
@@ -1430,22 +1385,13 @@ export default function ModelsPage() {
                             style={{ width: "50%" }}
                           >
                             <div className="flex items-center justify-center shrink-0 w-3 h-3">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="10"
-                                height="10"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="#ff7043"
-                                strokeWidth="2.5"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                              >
-                                <path d="M12 5v14" />
-                                <path d="M5 12h14" />
-                                <path d="m7.05 7.05 9.9 9.9" />
-                                <path d="m16.95 7.05-9.9 9.9" />
-                              </svg>
+                              <img
+                                src="https://www.google.com/s2/favicons?domain=anthropic.com&sz=128"
+                                width="14"
+                                height="14"
+                                alt=""
+                                style={{ borderRadius: "2px", flexShrink: "0" }}
+                              />
                             </div>
                             <span className="text-[11px] font-medium text-gray-200 truncate pr-2">
                               Claude Fable 5
@@ -1475,22 +1421,13 @@ export default function ModelsPage() {
                             style={{ width: "50%" }}
                           >
                             <div className="flex items-center justify-center shrink-0 w-3 h-3">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="10"
-                                height="10"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="#ff7043"
-                                strokeWidth="2.5"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                              >
-                                <path d="M12 5v14" />
-                                <path d="M5 12h14" />
-                                <path d="m7.05 7.05 9.9 9.9" />
-                                <path d="m16.95 7.05-9.9 9.9" />
-                              </svg>
+                              <img
+                                src="https://www.google.com/s2/favicons?domain=anthropic.com&sz=128"
+                                width="14"
+                                height="14"
+                                alt=""
+                                style={{ borderRadius: "2px", flexShrink: "0" }}
+                              />
                             </div>
                             <span className="text-[11px] font-medium text-gray-200 truncate pr-2">
                               Claude Opus 4.8
@@ -1520,22 +1457,13 @@ export default function ModelsPage() {
                             style={{ width: "50%" }}
                           >
                             <div className="flex items-center justify-center shrink-0 w-3 h-3">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="10"
-                                height="10"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="#ff7043"
-                                strokeWidth="2.5"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                              >
-                                <path d="M12 5v14" />
-                                <path d="M5 12h14" />
-                                <path d="m7.05 7.05 9.9 9.9" />
-                                <path d="m16.95 7.05-9.9 9.9" />
-                              </svg>
+                              <img
+                                src="https://www.google.com/s2/favicons?domain=anthropic.com&sz=128"
+                                width="14"
+                                height="14"
+                                alt=""
+                                style={{ borderRadius: "2px", flexShrink: "0" }}
+                              />
                             </div>
                             <span className="text-[11px] font-medium text-gray-200 truncate pr-2">
                               Claude Sonnet 5
@@ -1565,19 +1493,13 @@ export default function ModelsPage() {
                             style={{ width: "50%" }}
                           >
                             <div className="flex items-center justify-center shrink-0 w-3 h-3">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="10"
-                                height="10"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="#7986cb"
-                                strokeWidth="2.5"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                              >
-                                <path d="M4 6h16l-10 12H22" />
-                              </svg>
+                              <img
+                                src="https://www.google.com/s2/favicons?domain=zhipuai.cn&sz=128"
+                                width="14"
+                                height="14"
+                                alt=""
+                                style={{ borderRadius: "2px", flexShrink: "0" }}
+                              />
                             </div>
                             <span className="text-[11px] font-medium text-gray-200 truncate pr-2">
                               GLM-5.2
@@ -1607,19 +1529,13 @@ export default function ModelsPage() {
                             style={{ width: "50%" }}
                           >
                             <div className="flex items-center justify-center shrink-0 w-3 h-3">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="10"
-                                height="10"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="#ffffff"
-                                strokeWidth="2.5"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                              >
-                                <path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5" />
-                              </svg>
+                              <img
+                                src="https://www.google.com/s2/favicons?domain=openai.com&sz=128"
+                                width="14"
+                                height="14"
+                                alt=""
+                                style={{ borderRadius: "2px", flexShrink: "0" }}
+                              />
                             </div>
                             <span className="text-[11px] font-medium text-gray-200 truncate pr-2">
                               GPT-5.5
@@ -1650,22 +1566,13 @@ export default function ModelsPage() {
                             style={{ width: "50%" }}
                           >
                             <div className="flex items-center justify-center shrink-0 w-3 h-3">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="10"
-                                height="10"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="#ff7043"
-                                strokeWidth="2.5"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                              >
-                                <path d="M12 5v14" />
-                                <path d="M5 12h14" />
-                                <path d="m7.05 7.05 9.9 9.9" />
-                                <path d="m16.95 7.05-9.9 9.9" />
-                              </svg>
+                              <img
+                                src="https://www.google.com/s2/favicons?domain=anthropic.com&sz=128"
+                                width="14"
+                                height="14"
+                                alt=""
+                                style={{ borderRadius: "2px", flexShrink: "0" }}
+                              />
                             </div>
                             <span className="text-[11px] font-medium text-gray-200 truncate pr-2">
                               Claude Sonnet 4.6
@@ -1710,22 +1617,13 @@ export default function ModelsPage() {
                             style={{ width: "50%" }}
                           >
                             <div className="flex items-center justify-center shrink-0 w-3 h-3">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="10"
-                                height="10"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="#ff5a5f"
-                                strokeWidth="2.5"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                              >
-                                <path d="M12 5v14" />
-                                <path d="M5 12h14" />
-                                <path d="m7.05 7.05 9.9 9.9" />
-                                <path d="m16.95 7.05-9.9 9.9" />
-                              </svg>
+                              <img
+                                src="https://www.google.com/s2/favicons?domain=sakana.ai&sz=128"
+                                width="14"
+                                height="14"
+                                alt=""
+                                style={{ borderRadius: "2px", flexShrink: "0" }}
+                              />
                             </div>
                             <span className="text-[11px] font-medium text-gray-200 truncate pr-2">
                               Sakana Fugu Ultra
@@ -1755,22 +1653,13 @@ export default function ModelsPage() {
                             style={{ width: "50%" }}
                           >
                             <div className="flex items-center justify-center shrink-0 w-3 h-3">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="10"
-                                height="10"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="#ff8a65"
-                                strokeWidth="2.5"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                              >
-                                <path d="M12 5v14" />
-                                <path d="M5 12h14" />
-                                <path d="m7.05 7.05 9.9 9.9" />
-                                <path d="m16.95 7.05-9.9 9.9" />
-                              </svg>
+                              <img
+                                src="https://www.google.com/s2/favicons?domain=anthropic.com&sz=128"
+                                width="14"
+                                height="14"
+                                alt=""
+                                style={{ borderRadius: "2px", flexShrink: "0" }}
+                              />
                             </div>
                             <span className="text-[11px] font-medium text-gray-200 truncate pr-2">
                               Claude Opus 4.8
@@ -1800,19 +1689,13 @@ export default function ModelsPage() {
                             style={{ width: "50%" }}
                           >
                             <div className="flex items-center justify-center shrink-0 w-3 h-3">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="10"
-                                height="10"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="#ffffff"
-                                strokeWidth="2.5"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                              >
-                                <path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5" />
-                              </svg>
+                              <img
+                                src="https://www.google.com/s2/favicons?domain=openai.com&sz=128"
+                                width="14"
+                                height="14"
+                                alt=""
+                                style={{ borderRadius: "2px", flexShrink: "0" }}
+                              />
                             </div>
                             <span className="text-[11px] font-medium text-gray-200 truncate pr-2">
                               GPT-5.5
@@ -1843,19 +1726,13 @@ export default function ModelsPage() {
                             style={{ width: "50%" }}
                           >
                             <div className="flex items-center justify-center shrink-0 w-3 h-3">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="10"
-                                height="10"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="#5c6bc0"
-                                strokeWidth="2.5"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                              >
-                                <path d="M4 6h16l-10 12H22" />
-                              </svg>
+                              <img
+                                src="https://www.google.com/s2/favicons?domain=zhipuai.cn&sz=128"
+                                width="14"
+                                height="14"
+                                alt=""
+                                style={{ borderRadius: "2px", flexShrink: "0" }}
+                              />
                             </div>
                             <span className="text-[11px] font-medium text-gray-200 truncate pr-2">
                               GLM-5.2
@@ -1885,19 +1762,13 @@ export default function ModelsPage() {
                             style={{ width: "50%" }}
                           >
                             <div className="flex items-center justify-center shrink-0 w-3 h-3">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="10"
-                                height="10"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="#1976d2"
-                                strokeWidth="2.5"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                              >
-                                <circle cx="12" cy="12" r="10" />
-                              </svg>
+                              <img
+                                src="https://www.google.com/s2/favicons?domain=deepseek.com&sz=128"
+                                width="14"
+                                height="14"
+                                alt=""
+                                style={{ borderRadius: "2px", flexShrink: "0" }}
+                              />
                             </div>
                             <span className="text-[11px] font-medium text-gray-200 truncate pr-2">
                               DeepSeek V4 Pro
@@ -1927,19 +1798,13 @@ export default function ModelsPage() {
                             style={{ width: "50%" }}
                           >
                             <div className="flex items-center justify-center shrink-0 w-3 h-3">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="10"
-                                height="10"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="#2196f3"
-                                strokeWidth="2.5"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                              >
-                                <circle cx="12" cy="12" r="10" />
-                              </svg>
+                              <img
+                                src="https://www.google.com/s2/favicons?domain=tencent.com&sz=128"
+                                width="14"
+                                height="14"
+                                alt=""
+                                style={{ borderRadius: "2px", flexShrink: "0" }}
+                              />
                             </div>
                             <span className="text-[11px] font-medium text-gray-200 truncate pr-2">
                               Tencent Hy3
@@ -1984,22 +1849,13 @@ export default function ModelsPage() {
                             style={{ width: "50%" }}
                           >
                             <div className="flex items-center justify-center shrink-0 w-3 h-3">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="10"
-                                height="10"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="#ff7043"
-                                strokeWidth="2.5"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                              >
-                                <path d="M12 5v14" />
-                                <path d="M5 12h14" />
-                                <path d="m7.05 7.05 9.9 9.9" />
-                                <path d="m16.95 7.05-9.9 9.9" />
-                              </svg>
+                              <img
+                                src="https://www.google.com/s2/favicons?domain=anthropic.com&sz=128"
+                                width="14"
+                                height="14"
+                                alt=""
+                                style={{ borderRadius: "2px", flexShrink: "0" }}
+                              />
                             </div>
                             <span className="text-[11px] font-medium text-gray-200 truncate pr-2">
                               Claude Fable 5
@@ -2029,22 +1885,13 @@ export default function ModelsPage() {
                             style={{ width: "50%" }}
                           >
                             <div className="flex items-center justify-center shrink-0 w-3 h-3">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="10"
-                                height="10"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="#ff7043"
-                                strokeWidth="2.5"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                              >
-                                <path d="M12 5v14" />
-                                <path d="M5 12h14" />
-                                <path d="m7.05 7.05 9.9 9.9" />
-                                <path d="m16.95 7.05-9.9 9.9" />
-                              </svg>
+                              <img
+                                src="https://www.google.com/s2/favicons?domain=anthropic.com&sz=128"
+                                width="14"
+                                height="14"
+                                alt=""
+                                style={{ borderRadius: "2px", flexShrink: "0" }}
+                              />
                             </div>
                             <span className="text-[11px] font-medium text-gray-200 truncate pr-2">
                               Claude Opus 4.8
@@ -2074,22 +1921,13 @@ export default function ModelsPage() {
                             style={{ width: "50%" }}
                           >
                             <div className="flex items-center justify-center shrink-0 w-3 h-3">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="10"
-                                height="10"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="#ff7043"
-                                strokeWidth="2.5"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                              >
-                                <path d="M12 5v14" />
-                                <path d="M5 12h14" />
-                                <path d="m7.05 7.05 9.9 9.9" />
-                                <path d="m16.95 7.05-9.9 9.9" />
-                              </svg>
+                              <img
+                                src="https://www.google.com/s2/favicons?domain=anthropic.com&sz=128"
+                                width="14"
+                                height="14"
+                                alt=""
+                                style={{ borderRadius: "2px", flexShrink: "0" }}
+                              />
                             </div>
                             <span className="text-[11px] font-medium text-gray-200 truncate pr-2">
                               Claude Sonnet 5
@@ -2119,19 +1957,13 @@ export default function ModelsPage() {
                             style={{ width: "50%" }}
                           >
                             <div className="flex items-center justify-center shrink-0 w-3 h-3">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="10"
-                                height="10"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="#ffffff"
-                                strokeWidth="2.5"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                              >
-                                <path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5" />
-                              </svg>
+                              <img
+                                src="https://www.google.com/s2/favicons?domain=openai.com&sz=128"
+                                width="14"
+                                height="14"
+                                alt=""
+                                style={{ borderRadius: "2px", flexShrink: "0" }}
+                              />
                             </div>
                             <span className="text-[11px] font-medium text-gray-200 truncate pr-2">
                               GPT-5.5
@@ -2162,16 +1994,13 @@ export default function ModelsPage() {
                             style={{ width: "50%" }}
                           >
                             <div className="flex items-center justify-center shrink-0 w-3 h-3">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="10"
-                                height="10"
-                                viewBox="0 0 24 24"
-                                fill="#42a5f5"
-                                stroke="none"
-                              >
-                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                              </svg>
+                              <img
+                                src="https://www.google.com/s2/favicons?domain=google.com&sz=128"
+                                width="14"
+                                height="14"
+                                alt=""
+                                style={{ borderRadius: "2px", flexShrink: "0" }}
+                              />
                             </div>
                             <span className="text-[11px] font-medium text-gray-200 truncate pr-2">
                               Gemini 2.5 Flash
@@ -2201,22 +2030,13 @@ export default function ModelsPage() {
                             style={{ width: "50%" }}
                           >
                             <div className="flex items-center justify-center shrink-0 w-3 h-3">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="10"
-                                height="10"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="#ff7043"
-                                strokeWidth="2.5"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                              >
-                                <path d="M12 5v14" />
-                                <path d="M5 12h14" />
-                                <path d="m7.05 7.05 9.9 9.9" />
-                                <path d="m16.95 7.05-9.9 9.9" />
-                              </svg>
+                              <img
+                                src="https://www.google.com/s2/favicons?domain=anthropic.com&sz=128"
+                                width="14"
+                                height="14"
+                                alt=""
+                                style={{ borderRadius: "2px", flexShrink: "0" }}
+                              />
                             </div>
                             <span className="text-[11px] font-medium text-gray-200 truncate pr-2">
                               Claude Sonnet 4.6
@@ -2261,16 +2081,13 @@ export default function ModelsPage() {
                             style={{ width: "50%" }}
                           >
                             <div className="flex items-center justify-center shrink-0 w-3 h-3">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="10"
-                                height="10"
-                                viewBox="0 0 24 24"
-                                fill="#2196f3"
-                                stroke="none"
-                              >
-                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                              </svg>
+                              <img
+                                src="https://www.google.com/s2/favicons?domain=google.com&sz=128"
+                                width="14"
+                                height="14"
+                                alt=""
+                                style={{ borderRadius: "2px", flexShrink: "0" }}
+                              />
                             </div>
                             <span className="text-[11px] font-medium text-gray-200 truncate pr-2">
                               Gemini 2.5 Pro
@@ -2300,22 +2117,13 @@ export default function ModelsPage() {
                             style={{ width: "50%" }}
                           >
                             <div className="flex items-center justify-center shrink-0 w-3 h-3">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="10"
-                                height="10"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="#ff7043"
-                                strokeWidth="2.5"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                              >
-                                <path d="M12 5v14" />
-                                <path d="M5 12h14" />
-                                <path d="m7.05 7.05 9.9 9.9" />
-                                <path d="m16.95 7.05-9.9 9.9" />
-                              </svg>
+                              <img
+                                src="https://www.google.com/s2/favicons?domain=anthropic.com&sz=128"
+                                width="14"
+                                height="14"
+                                alt=""
+                                style={{ borderRadius: "2px", flexShrink: "0" }}
+                              />
                             </div>
                             <span className="text-[11px] font-medium text-gray-200 truncate pr-2">
                               Claude Sonnet 4.6
@@ -2345,19 +2153,13 @@ export default function ModelsPage() {
                             style={{ width: "50%" }}
                           >
                             <div className="flex items-center justify-center shrink-0 w-3 h-3">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="10"
-                                height="10"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="#ffffff"
-                                strokeWidth="2.5"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                              >
-                                <circle cx="12" cy="12" r="10" />
-                              </svg>
+                              <img
+                                src="https://www.google.com/s2/favicons?domain=openai.com&sz=128"
+                                width="14"
+                                height="14"
+                                alt=""
+                                style={{ borderRadius: "2px", flexShrink: "0" }}
+                              />
                             </div>
                             <span className="text-[11px] font-medium text-gray-200 truncate pr-2">
                               Llama 4 Maverick
@@ -2387,19 +2189,13 @@ export default function ModelsPage() {
                             style={{ width: "50%" }}
                           >
                             <div className="flex items-center justify-center shrink-0 w-3 h-3">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="10"
-                                height="10"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="#ffffff"
-                                strokeWidth="2.5"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                              >
-                                <circle cx="12" cy="12" r="10" />
-                              </svg>
+                              <img
+                                src="https://www.google.com/s2/favicons?domain=openai.com&sz=128"
+                                width="14"
+                                height="14"
+                                alt=""
+                                style={{ borderRadius: "2px", flexShrink: "0" }}
+                              />
                             </div>
                             <span className="text-[11px] font-medium text-gray-200 truncate pr-2">
                               Llama 4 Scout
@@ -2444,19 +2240,13 @@ export default function ModelsPage() {
                             style={{ width: "50%" }}
                           >
                             <div className="flex items-center justify-center shrink-0 w-3 h-3">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="10"
-                                height="10"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="#ffffff"
-                                strokeWidth="2.5"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                              >
-                                <circle cx="12" cy="12" r="10" />
-                              </svg>
+                              <img
+                                src="https://www.google.com/s2/favicons?domain=openai.com&sz=128"
+                                width="14"
+                                height="14"
+                                alt=""
+                                style={{ borderRadius: "2px", flexShrink: "0" }}
+                              />
                             </div>
                             <span className="text-[11px] font-medium text-gray-200 truncate pr-2">
                               Llama 4 Scout
@@ -2486,16 +2276,13 @@ export default function ModelsPage() {
                             style={{ width: "50%" }}
                           >
                             <div className="flex items-center justify-center shrink-0 w-3 h-3">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="10"
-                                height="10"
-                                viewBox="0 0 24 24"
-                                fill="#2196f3"
-                                stroke="none"
-                              >
-                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                              </svg>
+                              <img
+                                src="https://www.google.com/s2/favicons?domain=google.com&sz=128"
+                                width="14"
+                                height="14"
+                                alt=""
+                                style={{ borderRadius: "2px", flexShrink: "0" }}
+                              />
                             </div>
                             <span className="text-[11px] font-medium text-gray-200 truncate pr-2">
                               Gemini 2.5 Pro
@@ -2525,23 +2312,16 @@ export default function ModelsPage() {
                             style={{ width: "50%" }}
                           >
                             <div className="flex items-center justify-center shrink-0 w-3 h-3">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="10"
-                                height="10"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="#ffffff"
-                                strokeWidth="2.5"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                              >
-                                <path d="M18 6 6 18" />
-                                <path d="m6 6 12 12" />
-                              </svg>
+                              <img
+                                src="https://www.google.com/s2/favicons?domain=x.ai&sz=128"
+                                width="14"
+                                height="14"
+                                alt=""
+                                style={{ borderRadius: "2px", flexShrink: "0" }}
+                              />
                             </div>
                             <span className="text-[11px] font-medium text-gray-200 truncate pr-2">
-                              Grok 4.20
+                              Grok 3
                             </span>
                           </div>
                           <div
@@ -2569,16 +2349,13 @@ export default function ModelsPage() {
                             style={{ width: "50%" }}
                           >
                             <div className="flex items-center justify-center shrink-0 w-3 h-3">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="10"
-                                height="10"
-                                viewBox="0 0 24 24"
-                                fill="#2196f3"
-                                stroke="none"
-                              >
-                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                              </svg>
+                              <img
+                                src="https://www.google.com/s2/favicons?domain=google.com&sz=128"
+                                width="14"
+                                height="14"
+                                alt=""
+                                style={{ borderRadius: "2px", flexShrink: "0" }}
+                              />
                             </div>
                             <span className="text-[11px] font-medium text-gray-200 truncate pr-2">
                               Gemini 2.5 Pro
@@ -2608,16 +2385,13 @@ export default function ModelsPage() {
                             style={{ width: "50%" }}
                           >
                             <div className="flex items-center justify-center shrink-0 w-3 h-3">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="10"
-                                height="10"
-                                viewBox="0 0 24 24"
-                                fill="#ff9800"
-                                stroke="none"
-                              >
-                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                              </svg>
+                              <img
+                                src="https://www.google.com/s2/favicons?domain=qwenlm.github.io&sz=128"
+                                width="14"
+                                height="14"
+                                alt=""
+                                style={{ borderRadius: "2px", flexShrink: "0" }}
+                              />
                             </div>
                             <span className="text-[11px] font-medium text-gray-200 truncate pr-2">
                               Qwen3.7 Max
@@ -2662,19 +2436,13 @@ export default function ModelsPage() {
                             style={{ width: "50%" }}
                           >
                             <div className="flex items-center justify-center shrink-0 w-3 h-3">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="10"
-                                height="10"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="#3f51b5"
-                                strokeWidth="2.5"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                              >
-                                <circle cx="12" cy="12" r="10" />
-                              </svg>
+                              <img
+                                src="https://www.google.com/s2/favicons?domain=deepseek.com&sz=128"
+                                width="14"
+                                height="14"
+                                alt=""
+                                style={{ borderRadius: "2px", flexShrink: "0" }}
+                              />
                             </div>
                             <span className="text-[11px] font-medium text-gray-200 truncate pr-2">
                               DeepSeek V4 Flash
@@ -2704,19 +2472,13 @@ export default function ModelsPage() {
                             style={{ width: "50%" }}
                           >
                             <div className="flex items-center justify-center shrink-0 w-3 h-3">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="10"
-                                height="10"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="#ffffff"
-                                strokeWidth="2.5"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                              >
-                                <circle cx="12" cy="12" r="10" />
-                              </svg>
+                              <img
+                                src="https://www.google.com/s2/favicons?domain=openai.com&sz=128"
+                                width="14"
+                                height="14"
+                                alt=""
+                                style={{ borderRadius: "2px", flexShrink: "0" }}
+                              />
                             </div>
                             <span className="text-[11px] font-medium text-gray-200 truncate pr-2">
                               Llama 4 Scout
@@ -2746,19 +2508,13 @@ export default function ModelsPage() {
                             style={{ width: "50%" }}
                           >
                             <div className="flex items-center justify-center shrink-0 w-3 h-3">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="10"
-                                height="10"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="#ff9800"
-                                strokeWidth="2.5"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                              >
-                                <path d="M4 6h16l-10 12H22" />
-                              </svg>
+                              <img
+                                src="https://www.google.com/s2/favicons?domain=zhipuai.cn&sz=128"
+                                width="14"
+                                height="14"
+                                alt=""
+                                style={{ borderRadius: "2px", flexShrink: "0" }}
+                              />
                             </div>
                             <span className="text-[11px] font-medium text-gray-200 truncate pr-2">
                               Mistral Small 3
@@ -2788,19 +2544,13 @@ export default function ModelsPage() {
                             style={{ width: "50%" }}
                           >
                             <div className="flex items-center justify-center shrink-0 w-3 h-3">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="10"
-                                height="10"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="#ffffff"
-                                strokeWidth="2.5"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                              >
-                                <path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5" />
-                              </svg>
+                              <img
+                                src="https://www.google.com/s2/favicons?domain=openai.com&sz=128"
+                                width="14"
+                                height="14"
+                                alt=""
+                                style={{ borderRadius: "2px", flexShrink: "0" }}
+                              />
                             </div>
                             <span className="text-[11px] font-medium text-gray-200 truncate pr-2">
                               GPT-6 Luna
@@ -2831,19 +2581,13 @@ export default function ModelsPage() {
                             style={{ width: "50%" }}
                           >
                             <div className="flex items-center justify-center shrink-0 w-3 h-3">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="10"
-                                height="10"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="#ffffff"
-                                strokeWidth="2.5"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                              >
-                                <circle cx="12" cy="12" r="10" />
-                              </svg>
+                              <img
+                                src="https://www.google.com/s2/favicons?domain=openai.com&sz=128"
+                                width="14"
+                                height="14"
+                                alt=""
+                                style={{ borderRadius: "2px", flexShrink: "0" }}
+                              />
                             </div>
                             <span className="text-[11px] font-medium text-gray-200 truncate pr-2">
                               Llama 4 Maverick
