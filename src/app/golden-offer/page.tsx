@@ -96,7 +96,7 @@ export default function GoldenOfferPage() {
                             bottom: "0",
                             color: "transparent",
                           }}
-                          src="/_next/image?url=https%3A%2F%2Fwww.ayautomate.com%2Fclients%2Fibm.svg&amp;w=3840&amp;q=75"
+                          src="https://www.ayautomate.com/clients/ibm.svg"
                         />
                       </div>
                       <div className="relative h-10 md:h-12 w-full opacity-70 grayscale transition-all duration-300 hover:opacity-100 hover:grayscale-0">
@@ -221,7 +221,7 @@ export default function GoldenOfferPage() {
                             bottom: "0",
                             color: "transparent",
                           }}
-                          src="/_next/image?url=https%3A%2F%2Fwww.ayautomate.com%2Fclients%2Fargil.svg&amp;w=3840&amp;q=75"
+                          src="https://www.ayautomate.com/clients/argil.svg"
                         />
                       </div>
                       <div className="relative h-10 md:h-12 w-full opacity-70 grayscale transition-all duration-300 hover:opacity-100 hover:grayscale-0">
@@ -262,7 +262,7 @@ export default function GoldenOfferPage() {
                             bottom: "0",
                             color: "transparent",
                           }}
-                          src="/_next/image?url=https%3A%2F%2Fwww.ayautomate.com%2Fclients%2Fjustrussel.svg&amp;w=3840&amp;q=75"
+                          src="https://www.ayautomate.com/clients/justrussel.svg"
                         />
                       </div>
                     </div>
