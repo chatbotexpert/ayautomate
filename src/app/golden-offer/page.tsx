@@ -96,7 +96,7 @@ export default function GoldenOfferPage() {
                             bottom: "0",
                             color: "transparent",
                           }}
-                          src="/clients/ibm.svg"
+                          src="/_next/image?url=https%3A%2F%2Fwww.ayautomate.com%2Fclients%2Fibm.svg&amp;w=3840&amp;q=75"
                         />
                       </div>
                       <div className="relative h-10 md:h-12 w-full opacity-70 grayscale transition-all duration-300 hover:opacity-100 hover:grayscale-0">
@@ -116,9 +116,8 @@ export default function GoldenOfferPage() {
                             bottom: "0",
                             color: "transparent",
                           }}
-                          sizes="(min-width: 640px) 160px, 120px"
 
-                          src="/clients/sage.png"
+                          src="/_next/image?url=https%3A%2F%2Fwww.ayautomate.com%2Fclients%2Fsage.png&amp;w=3840&amp;q=75"
                         />
                       </div>
                       <div className="relative h-10 md:h-12 w-full opacity-70 grayscale transition-all duration-300 hover:opacity-100 hover:grayscale-0">
@@ -138,9 +137,8 @@ export default function GoldenOfferPage() {
                             bottom: "0",
                             color: "transparent",
                           }}
-                          sizes="(min-width: 640px) 160px, 120px"
 
-                          src="/clients/wonderbox.png"
+                          src="/_next/image?url=https%3A%2F%2Fwww.ayautomate.com%2Fclients%2Fwonderbox.png&amp;w=3840&amp;q=75"
                         />
                       </div>
                       <div className="relative h-10 md:h-12 w-full opacity-70 grayscale transition-all duration-300 hover:opacity-100 hover:grayscale-0">
@@ -160,9 +158,8 @@ export default function GoldenOfferPage() {
                             bottom: "0",
                             color: "transparent",
                           }}
-                          sizes="(min-width: 640px) 160px, 120px"
 
-                          src="/clients/neoday.png"
+                          src="/_next/image?url=https%3A%2F%2Fwww.ayautomate.com%2Fclients%2Fneoday.png&amp;w=3840&amp;q=75"
                         />
                       </div>
                       <div className="relative h-10 md:h-12 w-full opacity-70 grayscale transition-all duration-300 hover:opacity-100 hover:grayscale-0">
@@ -182,9 +179,8 @@ export default function GoldenOfferPage() {
                             bottom: "0",
                             color: "transparent",
                           }}
-                          sizes="(min-width: 640px) 160px, 120px"
 
-                          src="/clients/xgrowth.png"
+                          src="/_next/image?url=https%3A%2F%2Fwww.ayautomate.com%2Fclients%2Fxgrowth.png&amp;w=3840&amp;q=75"
                         />
                       </div>
                       <div className="relative h-10 md:h-12 w-full opacity-70 grayscale transition-all duration-300 hover:opacity-100 hover:grayscale-0">
@@ -204,9 +200,8 @@ export default function GoldenOfferPage() {
                             bottom: "0",
                             color: "transparent",
                           }}
-                          sizes="(min-width: 640px) 160px, 120px"
 
-                          src="/clients/arcads.png"
+                          src="/_next/image?url=https%3A%2F%2Fwww.ayautomate.com%2Fclients%2Farcads.png&amp;w=3840&amp;q=75"
                         />
                       </div>
                       <div className="relative h-10 md:h-12 w-full opacity-70 grayscale transition-all duration-300 hover:opacity-100 hover:grayscale-0">
@@ -226,7 +221,7 @@ export default function GoldenOfferPage() {
                             bottom: "0",
                             color: "transparent",
                           }}
-                          src="/clients/argil.svg"
+                          src="/_next/image?url=https%3A%2F%2Fwww.ayautomate.com%2Fclients%2Fargil.svg&amp;w=3840&amp;q=75"
                         />
                       </div>
                       <div className="relative h-10 md:h-12 w-full opacity-70 grayscale transition-all duration-300 hover:opacity-100 hover:grayscale-0">
@@ -246,9 +241,8 @@ export default function GoldenOfferPage() {
                             bottom: "0",
                             color: "transparent",
                           }}
-                          sizes="(min-width: 640px) 160px, 120px"
 
-                          src="/clients/earleads.png"
+                          src="/_next/image?url=https%3A%2F%2Fwww.ayautomate.com%2Fclients%2Fearleads.png&amp;w=3840&amp;q=75"
                         />
                       </div>
                       <div className="relative h-10 md:h-12 w-full opacity-70 grayscale transition-all duration-300 hover:opacity-100 hover:grayscale-0">
@@ -268,7 +262,7 @@ export default function GoldenOfferPage() {
                             bottom: "0",
                             color: "transparent",
                           }}
-                          src="/clients/justrussel.svg"
+                          src="/_next/image?url=https%3A%2F%2Fwww.ayautomate.com%2Fclients%2Fjustrussel.svg&amp;w=3840&amp;q=75"
                         />
                       </div>
                     </div>
@@ -294,7 +288,7 @@ export default function GoldenOfferPage() {
                       </div>
                       <div className="relative aspect-[4/3] bg-bg-700 overflow-hidden">
                         <video
-                          src="/cursor-agent.webm"
+                          src="https://www.ayautomate.com/cursor-agent.webm"
                           autoPlay
                           muted
                           loop
@@ -322,9 +316,8 @@ export default function GoldenOfferPage() {
                               bottom: "0",
                               color: "transparent",
                             }}
-                            sizes="44px"
 
-                            src="/images/downloaded/team-walid.webp"
+                            src="/_next/image?url=https%3A%2F%2Fwww.ayautomate.com%2Fimages%2Fdownloaded%2Fteam-walid.webp&amp;w=3840&amp;q=75"
                           />
                         </div>
                         <div className="min-w-0">
@@ -354,9 +347,8 @@ export default function GoldenOfferPage() {
                               bottom: "0",
                               color: "transparent",
                             }}
-                            sizes="44px"
 
-                            src="/images/downloaded/team-adel.webp"
+                            src="/_next/image?url=https%3A%2F%2Fwww.ayautomate.com%2Fimages%2Fdownloaded%2Fteam-adel.webp&amp;w=3840&amp;q=75"
                           />
                         </div>
                         <div className="min-w-0">
@@ -733,9 +725,8 @@ export default function GoldenOfferPage() {
                             bottom: "0",
                             color: "transparent",
                           }}
-                          sizes="28px"
 
-                          src="/clients/claude.png"
+                          src="/_next/image?url=https%3A%2F%2Fwww.ayautomate.com%2Fclients%2Fclaude.png&amp;w=3840&amp;q=75"
                         />
                       </div>
                       <span className="text-base md:text-lg font-bold text-foreground">
@@ -766,9 +757,8 @@ export default function GoldenOfferPage() {
                             bottom: "0",
                             color: "transparent",
                           }}
-                          sizes="28px"
 
-                          src="/clients/anthropic.png"
+                          src="/_next/image?url=https%3A%2F%2Fwww.ayautomate.com%2Fclients%2Fanthropic.png&amp;w=3840&amp;q=75"
                         />
                       </div>
                       <span className="text-base md:text-lg font-bold text-foreground">
@@ -799,9 +789,8 @@ export default function GoldenOfferPage() {
                             bottom: "0",
                             color: "transparent",
                           }}
-                          sizes="28px"
 
-                          src="/clients/cursor.png"
+                          src="/_next/image?url=https%3A%2F%2Fwww.ayautomate.com%2Fclients%2Fcursor.png&amp;w=3840&amp;q=75"
                         />
                       </div>
                       <span className="text-base md:text-lg font-bold text-foreground">
@@ -832,9 +821,8 @@ export default function GoldenOfferPage() {
                             bottom: "0",
                             color: "transparent",
                           }}
-                          sizes="28px"
 
-                          src="/clients/n8n.png"
+                          src="/_next/image?url=https%3A%2F%2Fwww.ayautomate.com%2Fclients%2Fn8n.png&amp;w=3840&amp;q=75"
                         />
                       </div>
                       <span className="text-base md:text-lg font-bold text-foreground">
@@ -865,9 +853,8 @@ export default function GoldenOfferPage() {
                             bottom: "0",
                             color: "transparent",
                           }}
-                          sizes="28px"
 
-                          src="/clients/e2b.png"
+                          src="/_next/image?url=https%3A%2F%2Fwww.ayautomate.com%2Fclients%2Fe2b.png&amp;w=3840&amp;q=75"
                         />
                       </div>
                       <span className="text-base md:text-lg font-bold text-foreground">
@@ -899,9 +886,8 @@ export default function GoldenOfferPage() {
                         bottom: "0",
                         color: "transparent",
                       }}
-                      sizes="28px"
 
-                      src="/images/downloaded/team-walid.webp"
+                      src="/_next/image?url=https%3A%2F%2Fwww.ayautomate.com%2Fimages%2Fdownloaded%2Fteam-walid.webp&amp;w=3840&amp;q=75"
                     />
                   </div>
                   <div className="relative size-7 overflow-hidden border-2 border-background bg-bg-700">
@@ -921,9 +907,8 @@ export default function GoldenOfferPage() {
                         bottom: "0",
                         color: "transparent",
                       }}
-                      sizes="28px"
 
-                      src="/images/downloaded/team-adel.webp"
+                      src="/_next/image?url=https%3A%2F%2Fwww.ayautomate.com%2Fimages%2Fdownloaded%2Fteam-adel.webp&amp;w=3840&amp;q=75"
                     />
                   </div>
                   <div className="relative size-7 overflow-hidden border-2 border-background bg-bg-700">
@@ -943,9 +928,8 @@ export default function GoldenOfferPage() {
                         bottom: "0",
                         color: "transparent",
                       }}
-                      sizes="28px"
 
-                      src="/images/downloaded/team-vetted-engineers.webp"
+                      src="/_next/image?url=https%3A%2F%2Fwww.ayautomate.com%2Fimages%2Fdownloaded%2Fteam-vetted-engineers.webp&amp;w=3840&amp;q=75"
                     />
                   </div>
                 </div>
@@ -1293,9 +1277,8 @@ export default function GoldenOfferPage() {
                             bottom: "0",
                             color: "transparent",
                           }}
-                          sizes="28px"
 
-                          src="https://img.logo.dev/anthropic.com?token=pk_fBi0irWDRaSuFNlLgKDnvQ&size=128&format=png&retina=true"
+                          src="/_next/image?url=https%3A%2F%2Fimg.logo.dev%2Fanthropic.com%3Ftoken%3Dpk_fBi0irWDRaSuFNlLgKDnvQ%26size%3D128%26format%3Dpng%26retina%3Dtrue&amp;w=3840&amp;q=75"
                         />
                       </div>
                       <div
@@ -1318,9 +1301,8 @@ export default function GoldenOfferPage() {
                             bottom: "0",
                             color: "transparent",
                           }}
-                          sizes="28px"
 
-                          src="https://img.logo.dev/openai.com?token=pk_fBi0irWDRaSuFNlLgKDnvQ&size=128&format=png&retina=true"
+                          src="/_next/image?url=https%3A%2F%2Fimg.logo.dev%2Fopenai.com%3Ftoken%3Dpk_fBi0irWDRaSuFNlLgKDnvQ%26size%3D128%26format%3Dpng%26retina%3Dtrue&amp;w=3840&amp;q=75"
                         />
                       </div>
                       <div
@@ -1343,9 +1325,8 @@ export default function GoldenOfferPage() {
                             bottom: "0",
                             color: "transparent",
                           }}
-                          sizes="28px"
 
-                          src="https://img.logo.dev/cursor.com?token=pk_fBi0irWDRaSuFNlLgKDnvQ&size=128&format=png&retina=true"
+                          src="/_next/image?url=https%3A%2F%2Fimg.logo.dev%2Fcursor.com%3Ftoken%3Dpk_fBi0irWDRaSuFNlLgKDnvQ%26size%3D128%26format%3Dpng%26retina%3Dtrue&amp;w=3840&amp;q=75"
                         />
                       </div>
                       <div
@@ -1368,9 +1349,8 @@ export default function GoldenOfferPage() {
                             bottom: "0",
                             color: "transparent",
                           }}
-                          sizes="28px"
 
-                          src="https://img.logo.dev/conductor.build?token=pk_fBi0irWDRaSuFNlLgKDnvQ&size=128&format=png&retina=true"
+                          src="/_next/image?url=https%3A%2F%2Fimg.logo.dev%2Fconductor.build%3Ftoken%3Dpk_fBi0irWDRaSuFNlLgKDnvQ%26size%3D128%26format%3Dpng%26retina%3Dtrue&amp;w=3840&amp;q=75"
                         />
                       </div>
                       <div
@@ -1393,9 +1373,8 @@ export default function GoldenOfferPage() {
                             bottom: "0",
                             color: "transparent",
                           }}
-                          sizes="28px"
 
-                          src="https://img.logo.dev/cmux.com?token=pk_fBi0irWDRaSuFNlLgKDnvQ&size=128&format=png&retina=true"
+                          src="/_next/image?url=https%3A%2F%2Fimg.logo.dev%2Fcmux.com%3Ftoken%3Dpk_fBi0irWDRaSuFNlLgKDnvQ%26size%3D128%26format%3Dpng%26retina%3Dtrue&amp;w=3840&amp;q=75"
                         />
                       </div>
                       <div
@@ -1418,9 +1397,8 @@ export default function GoldenOfferPage() {
                             bottom: "0",
                             color: "transparent",
                           }}
-                          sizes="28px"
 
-                          src="https://img.logo.dev/github.com?token=pk_fBi0irWDRaSuFNlLgKDnvQ&size=128&format=png&retina=true"
+                          src="/_next/image?url=https%3A%2F%2Fimg.logo.dev%2Fgithub.com%3Ftoken%3Dpk_fBi0irWDRaSuFNlLgKDnvQ%26size%3D128%26format%3Dpng%26retina%3Dtrue&amp;w=3840&amp;q=75"
                         />
                       </div>
                       <div
@@ -1443,9 +1421,8 @@ export default function GoldenOfferPage() {
                             bottom: "0",
                             color: "transparent",
                           }}
-                          sizes="28px"
 
-                          src="https://img.logo.dev/linear.app?token=pk_fBi0irWDRaSuFNlLgKDnvQ&size=128&format=png&retina=true"
+                          src="/_next/image?url=https%3A%2F%2Fimg.logo.dev%2Flinear.app%3Ftoken%3Dpk_fBi0irWDRaSuFNlLgKDnvQ%26size%3D128%26format%3Dpng%26retina%3Dtrue&amp;w=3840&amp;q=75"
                         />
                       </div>
                       <div
@@ -1468,9 +1445,8 @@ export default function GoldenOfferPage() {
                             bottom: "0",
                             color: "transparent",
                           }}
-                          sizes="28px"
 
-                          src="https://img.logo.dev/supabase.com?token=pk_fBi0irWDRaSuFNlLgKDnvQ&size=128&format=png&retina=true"
+                          src="/_next/image?url=https%3A%2F%2Fimg.logo.dev%2Fsupabase.com%3Ftoken%3Dpk_fBi0irWDRaSuFNlLgKDnvQ%26size%3D128%26format%3Dpng%26retina%3Dtrue&amp;w=3840&amp;q=75"
                         />
                       </div>
                     </div>
@@ -1550,9 +1526,8 @@ export default function GoldenOfferPage() {
                             bottom: "0",
                             color: "transparent",
                           }}
-                          sizes="28px"
 
-                          src="https://img.logo.dev/n8n.io?token=pk_fBi0irWDRaSuFNlLgKDnvQ&size=128&format=png&retina=true"
+                          src="/_next/image?url=https%3A%2F%2Fimg.logo.dev%2Fn8n.io%3Ftoken%3Dpk_fBi0irWDRaSuFNlLgKDnvQ%26size%3D128%26format%3Dpng%26retina%3Dtrue&amp;w=3840&amp;q=75"
                         />
                       </div>
                       <div
@@ -1575,9 +1550,8 @@ export default function GoldenOfferPage() {
                             bottom: "0",
                             color: "transparent",
                           }}
-                          sizes="28px"
 
-                          src="https://img.logo.dev/clay.com?token=pk_fBi0irWDRaSuFNlLgKDnvQ&size=128&format=png&retina=true"
+                          src="/_next/image?url=https%3A%2F%2Fimg.logo.dev%2Fclay.com%3Ftoken%3Dpk_fBi0irWDRaSuFNlLgKDnvQ%26size%3D128%26format%3Dpng%26retina%3Dtrue&amp;w=3840&amp;q=75"
                         />
                       </div>
                       <div
@@ -1600,9 +1574,8 @@ export default function GoldenOfferPage() {
                             bottom: "0",
                             color: "transparent",
                           }}
-                          sizes="28px"
 
-                          src="https://img.logo.dev/hubspot.com?token=pk_fBi0irWDRaSuFNlLgKDnvQ&size=128&format=png&retina=true"
+                          src="/_next/image?url=https%3A%2F%2Fimg.logo.dev%2Fhubspot.com%3Ftoken%3Dpk_fBi0irWDRaSuFNlLgKDnvQ%26size%3D128%26format%3Dpng%26retina%3Dtrue&amp;w=3840&amp;q=75"
                         />
                       </div>
                       <div
@@ -1625,9 +1598,8 @@ export default function GoldenOfferPage() {
                             bottom: "0",
                             color: "transparent",
                           }}
-                          sizes="28px"
 
-                          src="https://img.logo.dev/apollo.io?token=pk_fBi0irWDRaSuFNlLgKDnvQ&size=128&format=png&retina=true"
+                          src="/_next/image?url=https%3A%2F%2Fimg.logo.dev%2Fapollo.io%3Ftoken%3Dpk_fBi0irWDRaSuFNlLgKDnvQ%26size%3D128%26format%3Dpng%26retina%3Dtrue&amp;w=3840&amp;q=75"
                         />
                       </div>
                       <div
@@ -1650,9 +1622,8 @@ export default function GoldenOfferPage() {
                             bottom: "0",
                             color: "transparent",
                           }}
-                          sizes="28px"
 
-                          src="https://img.logo.dev/slack.com?token=pk_fBi0irWDRaSuFNlLgKDnvQ&size=128&format=png&retina=true"
+                          src="/_next/image?url=https%3A%2F%2Fimg.logo.dev%2Fslack.com%3Ftoken%3Dpk_fBi0irWDRaSuFNlLgKDnvQ%26size%3D128%26format%3Dpng%26retina%3Dtrue&amp;w=3840&amp;q=75"
                         />
                       </div>
                       <div
@@ -1675,9 +1646,8 @@ export default function GoldenOfferPage() {
                             bottom: "0",
                             color: "transparent",
                           }}
-                          sizes="28px"
 
-                          src="https://img.logo.dev/make.com?token=pk_fBi0irWDRaSuFNlLgKDnvQ&size=128&format=png&retina=true"
+                          src="/_next/image?url=https%3A%2F%2Fimg.logo.dev%2Fmake.com%3Ftoken%3Dpk_fBi0irWDRaSuFNlLgKDnvQ%26size%3D128%26format%3Dpng%26retina%3Dtrue&amp;w=3840&amp;q=75"
                         />
                       </div>
                       <div
@@ -1700,9 +1670,8 @@ export default function GoldenOfferPage() {
                             bottom: "0",
                             color: "transparent",
                           }}
-                          sizes="28px"
 
-                          src="https://img.logo.dev/zapier.com?token=pk_fBi0irWDRaSuFNlLgKDnvQ&size=128&format=png&retina=true"
+                          src="/_next/image?url=https%3A%2F%2Fimg.logo.dev%2Fzapier.com%3Ftoken%3Dpk_fBi0irWDRaSuFNlLgKDnvQ%26size%3D128%26format%3Dpng%26retina%3Dtrue&amp;w=3840&amp;q=75"
                         />
                       </div>
                     </div>
@@ -1781,9 +1750,8 @@ export default function GoldenOfferPage() {
                             bottom: "0",
                             color: "transparent",
                           }}
-                          sizes="28px"
 
-                          src="https://img.logo.dev/anthropic.com?token=pk_fBi0irWDRaSuFNlLgKDnvQ&size=128&format=png&retina=true"
+                          src="/_next/image?url=https%3A%2F%2Fimg.logo.dev%2Fanthropic.com%3Ftoken%3Dpk_fBi0irWDRaSuFNlLgKDnvQ%26size%3D128%26format%3Dpng%26retina%3Dtrue&amp;w=3840&amp;q=75"
                         />
                       </div>
                       <div
@@ -1806,9 +1774,8 @@ export default function GoldenOfferPage() {
                             bottom: "0",
                             color: "transparent",
                           }}
-                          sizes="28px"
 
-                          src="https://img.logo.dev/openai.com?token=pk_fBi0irWDRaSuFNlLgKDnvQ&size=128&format=png&retina=true"
+                          src="/_next/image?url=https%3A%2F%2Fimg.logo.dev%2Fopenai.com%3Ftoken%3Dpk_fBi0irWDRaSuFNlLgKDnvQ%26size%3D128%26format%3Dpng%26retina%3Dtrue&amp;w=3840&amp;q=75"
                         />
                       </div>
                       <div
@@ -1831,9 +1798,8 @@ export default function GoldenOfferPage() {
                             bottom: "0",
                             color: "transparent",
                           }}
-                          sizes="28px"
 
-                          src="https://img.logo.dev/cursor.com?token=pk_fBi0irWDRaSuFNlLgKDnvQ&size=128&format=png&retina=true"
+                          src="/_next/image?url=https%3A%2F%2Fimg.logo.dev%2Fcursor.com%3Ftoken%3Dpk_fBi0irWDRaSuFNlLgKDnvQ%26size%3D128%26format%3Dpng%26retina%3Dtrue&amp;w=3840&amp;q=75"
                         />
                       </div>
                       <div
@@ -1856,9 +1822,8 @@ export default function GoldenOfferPage() {
                             bottom: "0",
                             color: "transparent",
                           }}
-                          sizes="28px"
 
-                          src="https://img.logo.dev/conductor.build?token=pk_fBi0irWDRaSuFNlLgKDnvQ&size=128&format=png&retina=true"
+                          src="/_next/image?url=https%3A%2F%2Fimg.logo.dev%2Fconductor.build%3Ftoken%3Dpk_fBi0irWDRaSuFNlLgKDnvQ%26size%3D128%26format%3Dpng%26retina%3Dtrue&amp;w=3840&amp;q=75"
                         />
                       </div>
                       <div
@@ -1881,9 +1846,8 @@ export default function GoldenOfferPage() {
                             bottom: "0",
                             color: "transparent",
                           }}
-                          sizes="28px"
 
-                          src="https://img.logo.dev/cmux.com?token=pk_fBi0irWDRaSuFNlLgKDnvQ&size=128&format=png&retina=true"
+                          src="/_next/image?url=https%3A%2F%2Fimg.logo.dev%2Fcmux.com%3Ftoken%3Dpk_fBi0irWDRaSuFNlLgKDnvQ%26size%3D128%26format%3Dpng%26retina%3Dtrue&amp;w=3840&amp;q=75"
                         />
                       </div>
                       <div
@@ -1906,9 +1870,8 @@ export default function GoldenOfferPage() {
                             bottom: "0",
                             color: "transparent",
                           }}
-                          sizes="28px"
 
-                          src="https://img.logo.dev/n8n.io?token=pk_fBi0irWDRaSuFNlLgKDnvQ&size=128&format=png&retina=true"
+                          src="/_next/image?url=https%3A%2F%2Fimg.logo.dev%2Fn8n.io%3Ftoken%3Dpk_fBi0irWDRaSuFNlLgKDnvQ%26size%3D128%26format%3Dpng%26retina%3Dtrue&amp;w=3840&amp;q=75"
                         />
                       </div>
                       <div
@@ -1931,9 +1894,8 @@ export default function GoldenOfferPage() {
                             bottom: "0",
                             color: "transparent",
                           }}
-                          sizes="28px"
 
-                          src="https://img.logo.dev/make.com?token=pk_fBi0irWDRaSuFNlLgKDnvQ&size=128&format=png&retina=true"
+                          src="/_next/image?url=https%3A%2F%2Fimg.logo.dev%2Fmake.com%3Ftoken%3Dpk_fBi0irWDRaSuFNlLgKDnvQ%26size%3D128%26format%3Dpng%26retina%3Dtrue&amp;w=3840&amp;q=75"
                         />
                       </div>
                       <div
@@ -1956,9 +1918,8 @@ export default function GoldenOfferPage() {
                             bottom: "0",
                             color: "transparent",
                           }}
-                          sizes="28px"
 
-                          src="https://img.logo.dev/e2b.dev?token=pk_fBi0irWDRaSuFNlLgKDnvQ&size=128&format=png&retina=true"
+                          src="/_next/image?url=https%3A%2F%2Fimg.logo.dev%2Fe2b.dev%3Ftoken%3Dpk_fBi0irWDRaSuFNlLgKDnvQ%26size%3D128%26format%3Dpng%26retina%3Dtrue&amp;w=3840&amp;q=75"
                         />
                       </div>
                     </div>
@@ -2055,9 +2016,8 @@ export default function GoldenOfferPage() {
                             bottom: "0",
                             color: "transparent",
                           }}
-                          sizes="(max-width: 768px) 90vw, 65vw"
 
-                          src="https://cdn.ayautomate.com/storage/v1/object/public/video-testimonials/poster-adstronaut-elie-salame-coo.jpg"
+                          src="/_next/image?url=https%3A%2F%2Fcdn.ayautomate.com%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fvideo-testimonials%2Fposter-adstronaut-elie-salame-coo.jpg&amp;w=3840&amp;q=75"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                         <button
@@ -2123,9 +2083,8 @@ export default function GoldenOfferPage() {
                             bottom: "0",
                             color: "transparent",
                           }}
-                          sizes="(max-width: 768px) 90vw, 65vw"
 
-                          src="https://cdn.ayautomate.com/storage/v1/object/public/video-testimonials/poster-narrative-wytze-de-haan-cofounder.webp"
+                          src="/_next/image?url=https%3A%2F%2Fcdn.ayautomate.com%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fvideo-testimonials%2Fposter-narrative-wytze-de-haan-cofounder.webp&amp;w=3840&amp;q=75"
                         />
                       </div>
                     </div>
@@ -2160,9 +2119,8 @@ export default function GoldenOfferPage() {
                             bottom: "0",
                             color: "transparent",
                           }}
-                          sizes="(max-width: 768px) 90vw, 65vw"
 
-                          src="https://cdn.ayautomate.com/storage/v1/object/public/video-testimonials/poster-easyclick-ana-maria-martinez-ceo.webp"
+                          src="/_next/image?url=https%3A%2F%2Fcdn.ayautomate.com%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fvideo-testimonials%2Fposter-easyclick-ana-maria-martinez-ceo.webp&amp;w=3840&amp;q=75"
                         />
                       </div>
                     </div>
@@ -2197,9 +2155,8 @@ export default function GoldenOfferPage() {
                             bottom: "0",
                             color: "transparent",
                           }}
-                          sizes="(max-width: 768px) 90vw, 65vw"
 
-                          src="https://cdn.ayautomate.com/storage/v1/object/public/video-testimonials/poster-untaylored-roald-larsen-ceo.jpg"
+                          src="/_next/image?url=https%3A%2F%2Fcdn.ayautomate.com%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fvideo-testimonials%2Fposter-untaylored-roald-larsen-ceo.jpg&amp;w=3840&amp;q=75"
                         />
                       </div>
                     </div>
@@ -2234,9 +2191,8 @@ export default function GoldenOfferPage() {
                             bottom: "0",
                             color: "transparent",
                           }}
-                          sizes="(max-width: 768px) 90vw, 65vw"
 
-                          src="https://cdn.ayautomate.com/storage/v1/object/public/video-testimonials/poster-meetlexi-jim-adams-ceo.jpg"
+                          src="/_next/image?url=https%3A%2F%2Fcdn.ayautomate.com%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fvideo-testimonials%2Fposter-meetlexi-jim-adams-ceo.jpg&amp;w=3840&amp;q=75"
                         />
                       </div>
                     </div>
@@ -2271,9 +2227,8 @@ export default function GoldenOfferPage() {
                             bottom: "0",
                             color: "transparent",
                           }}
-                          sizes="(max-width: 768px) 90vw, 65vw"
 
-                          src="https://cdn.ayautomate.com/storage/v1/object/public/video-testimonials/poster-earleads-othmane-khadri-founder.webp"
+                          src="/_next/image?url=https%3A%2F%2Fcdn.ayautomate.com%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fvideo-testimonials%2Fposter-earleads-othmane-khadri-founder.webp&amp;w=3840&amp;q=75"
                         />
                       </div>
                     </div>
@@ -2308,9 +2263,8 @@ export default function GoldenOfferPage() {
                             bottom: "0",
                             color: "transparent",
                           }}
-                          sizes="(max-width: 768px) 90vw, 65vw"
 
-                          src="https://cdn.ayautomate.com/storage/v1/object/public/video-testimonials/poster-uniworx-connor-miller-technical-director.jpg"
+                          src="/_next/image?url=https%3A%2F%2Fcdn.ayautomate.com%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fvideo-testimonials%2Fposter-uniworx-connor-miller-technical-director.jpg&amp;w=3840&amp;q=75"
                         />
                       </div>
                     </div>
@@ -2415,9 +2369,8 @@ export default function GoldenOfferPage() {
                             bottom: "0",
                             color: "transparent",
                           }}
-                          sizes="(max-width: 768px) 90vw, 65vw"
 
-                          src="https://cdn.ayautomate.com/storage/v1/object/public/video-testimonials/poster-adstronaut-elie-salame-coo.jpg"
+                          src="/_next/image?url=https%3A%2F%2Fcdn.ayautomate.com%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fvideo-testimonials%2Fposter-adstronaut-elie-salame-coo.jpg&amp;w=3840&amp;q=75"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                         <button
@@ -2481,9 +2434,8 @@ export default function GoldenOfferPage() {
                             bottom: "0",
                             color: "transparent",
                           }}
-                          sizes="(max-width: 768px) 90vw, 65vw"
 
-                          src="https://cdn.ayautomate.com/storage/v1/object/public/video-testimonials/poster-narrative-wytze-de-haan-cofounder.webp"
+                          src="/_next/image?url=https%3A%2F%2Fcdn.ayautomate.com%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fvideo-testimonials%2Fposter-narrative-wytze-de-haan-cofounder.webp&amp;w=3840&amp;q=75"
                         />
                       </div>
                     </div>
@@ -2516,9 +2468,8 @@ export default function GoldenOfferPage() {
                             bottom: "0",
                             color: "transparent",
                           }}
-                          sizes="(max-width: 768px) 90vw, 65vw"
 
-                          src="https://cdn.ayautomate.com/storage/v1/object/public/video-testimonials/poster-easyclick-ana-maria-martinez-ceo.webp"
+                          src="/_next/image?url=https%3A%2F%2Fcdn.ayautomate.com%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fvideo-testimonials%2Fposter-easyclick-ana-maria-martinez-ceo.webp&amp;w=3840&amp;q=75"
                         />
                       </div>
                     </div>
@@ -2551,9 +2502,8 @@ export default function GoldenOfferPage() {
                             bottom: "0",
                             color: "transparent",
                           }}
-                          sizes="(max-width: 768px) 90vw, 65vw"
 
-                          src="https://cdn.ayautomate.com/storage/v1/object/public/video-testimonials/poster-earleads-othmane-khadri-founder.webp"
+                          src="/_next/image?url=https%3A%2F%2Fcdn.ayautomate.com%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fvideo-testimonials%2Fposter-earleads-othmane-khadri-founder.webp&amp;w=3840&amp;q=75"
                         />
                       </div>
                     </div>
@@ -2586,9 +2536,8 @@ export default function GoldenOfferPage() {
                             bottom: "0",
                             color: "transparent",
                           }}
-                          sizes="(max-width: 768px) 90vw, 65vw"
 
-                          src="https://cdn.ayautomate.com/storage/v1/object/public/video-testimonials/poster-uniworx-connor-miller-technical-director.jpg"
+                          src="/_next/image?url=https%3A%2F%2Fcdn.ayautomate.com%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fvideo-testimonials%2Fposter-uniworx-connor-miller-technical-director.jpg&amp;w=3840&amp;q=75"
                         />
                       </div>
                     </div>
@@ -2906,7 +2855,7 @@ export default function GoldenOfferPage() {
                         className="relative inline-block h-11 w-11 sm:h-12 sm:w-12 overflow-hidden rounded-full bg-primary-purple/10 ring-2 ring-background shadow-sm"
                       >
                         <img
-                          src="/images/clients/faces/wytze-de-haan.jpg"
+                          src="/_next/image?url=https%3A%2F%2Fwww.ayautomate.com%2Fimages%2Fclients%2Ffaces%2Fwytze-de-haan.jpg&amp;w=3840&amp;q=75"
                           alt="Wytze de Haan - Part of Narrative"
                           width="48"
                           height="48"
@@ -2919,7 +2868,7 @@ export default function GoldenOfferPage() {
                         className="relative inline-block h-11 w-11 sm:h-12 sm:w-12 overflow-hidden rounded-full bg-primary-purple/10 ring-2 ring-background shadow-sm"
                       >
                         <img
-                          src="/images/clients/faces/mohamed-el-hannaoui.jpg"
+                          src="/_next/image?url=https%3A%2F%2Fwww.ayautomate.com%2Fimages%2Fclients%2Ffaces%2Fmohamed-el-hannaoui.jpg&amp;w=3840&amp;q=75"
                           alt="Mohamed El Hannaoui - Kateb.ma"
                           width="48"
                           height="48"
@@ -2932,7 +2881,7 @@ export default function GoldenOfferPage() {
                         className="relative inline-block h-11 w-11 sm:h-12 sm:w-12 overflow-hidden rounded-full bg-primary-purple/10 ring-2 ring-background shadow-sm"
                       >
                         <img
-                          src="/images/clients/faces/connor-miller.jpg"
+                          src="/_next/image?url=https%3A%2F%2Fwww.ayautomate.com%2Fimages%2Fclients%2Ffaces%2Fconnor-miller.jpg&amp;w=3840&amp;q=75"
                           alt="Connor Miller - Uniworx"
                           width="48"
                           height="48"
@@ -2945,7 +2894,7 @@ export default function GoldenOfferPage() {
                         className="relative inline-block h-11 w-11 sm:h-12 sm:w-12 overflow-hidden rounded-full bg-primary-purple/10 ring-2 ring-background shadow-sm"
                       >
                         <img
-                          src="/images/clients/faces/jurgen-swaans.jpg"
+                          src="/_next/image?url=https%3A%2F%2Fwww.ayautomate.com%2Fimages%2Fclients%2Ffaces%2Fjurgen-swaans.jpg&amp;w=3840&amp;q=75"
                           alt="Jurgen Swaans - Neoday &amp; Magneds"
                           width="48"
                           height="48"
@@ -2958,7 +2907,7 @@ export default function GoldenOfferPage() {
                         className="relative inline-block h-11 w-11 sm:h-12 sm:w-12 overflow-hidden rounded-full bg-primary-purple/10 ring-2 ring-background shadow-sm"
                       >
                         <img
-                          src="/images/clients/faces/othmane-khadri.jpg"
+                          src="/_next/image?url=https%3A%2F%2Fwww.ayautomate.com%2Fimages%2Fclients%2Ffaces%2Fothmane-khadri.jpg&amp;w=3840&amp;q=75"
                           alt="Othmane Khadri - Earleads.com"
                           width="48"
                           height="48"
@@ -2971,7 +2920,7 @@ export default function GoldenOfferPage() {
                         className="relative inline-block h-11 w-11 sm:h-12 sm:w-12 overflow-hidden rounded-full bg-primary-purple/10 ring-2 ring-background shadow-sm"
                       >
                         <img
-                          src="/images/clients/faces/ana-maria-martinez.webp"
+                          src="/_next/image?url=https%3A%2F%2Fwww.ayautomate.com%2Fimages%2Fclients%2Ffaces%2Fana-maria-martinez.webp&amp;w=3840&amp;q=75"
                           alt="Ana Maria Martinez - EasyClickWeb"
                           width="48"
                           height="48"
@@ -2984,7 +2933,7 @@ export default function GoldenOfferPage() {
                         className="relative inline-block h-11 w-11 sm:h-12 sm:w-12 overflow-hidden rounded-full bg-primary-purple/10 ring-2 ring-background shadow-sm"
                       >
                         <img
-                          src="/images/clients/faces/pablo-smolders.jpg"
+                          src="/_next/image?url=https%3A%2F%2Fwww.ayautomate.com%2Fimages%2Fclients%2Ffaces%2Fpablo-smolders.jpg&amp;w=3840&amp;q=75"
                           alt="Pablo Smolders - ArtOfYou"
                           width="48"
                           height="48"
@@ -2997,7 +2946,7 @@ export default function GoldenOfferPage() {
                         className="relative inline-block h-11 w-11 sm:h-12 sm:w-12 overflow-hidden rounded-full bg-primary-purple/10 ring-2 ring-background shadow-sm"
                       >
                         <img
-                          src="/images/clients/faces/zyad-mouniri.png"
+                          src="/_next/image?url=https%3A%2F%2Fwww.ayautomate.com%2Fimages%2Fclients%2Ffaces%2Fzyad-mouniri.png&amp;w=3840&amp;q=75"
                           alt="Zyad Mouniri - Addictest"
                           width="48"
                           height="48"
@@ -3010,7 +2959,7 @@ export default function GoldenOfferPage() {
                         className="relative inline-block h-11 w-11 sm:h-12 sm:w-12 overflow-hidden rounded-full bg-primary-purple/10 ring-2 ring-background shadow-sm"
                       >
                         <img
-                          src="/images/clients/faces/elie-salame.png"
+                          src="/_next/image?url=https%3A%2F%2Fwww.ayautomate.com%2Fimages%2Fclients%2Ffaces%2Felie-salame.png&amp;w=3840&amp;q=75"
                           alt="Elie Salame - Adstronaut.io"
                           width="48"
                           height="48"
@@ -3023,7 +2972,7 @@ export default function GoldenOfferPage() {
                         className="relative inline-block h-11 w-11 sm:h-12 sm:w-12 overflow-hidden rounded-full bg-primary-purple/10 ring-2 ring-background shadow-sm"
                       >
                         <img
-                          src="/images/clients/faces/jim-adams.webp"
+                          src="/_next/image?url=https%3A%2F%2Fwww.ayautomate.com%2Fimages%2Fclients%2Ffaces%2Fjim-adams.webp&amp;w=3840&amp;q=75"
                           alt="Jim Adams - MeetLexi"
                           width="48"
                           height="48"
@@ -3090,7 +3039,7 @@ export default function GoldenOfferPage() {
                       <div className="group flex flex-col items-center gap-3 text-center">
                         <div className="relative h-24 w-24 sm:h-28 sm:w-28 transition-transform duration-300 group-hover:scale-105">
                           <img
-                            src="/images/certifications/clay-enterprise-partner.png"
+                            src="/_next/image?url=https%3A%2F%2Fwww.ayautomate.com%2Fimages%2Fcertifications%2Fclay-enterprise-partner.png&amp;w=3840&amp;q=75"
                             alt="Clay Enterprise Partner - Clay"
                             width="112"
                             height="112"
@@ -3112,7 +3061,7 @@ export default function GoldenOfferPage() {
                       <div className="group flex flex-col items-center gap-3 text-center">
                         <div className="relative h-24 w-24 sm:h-28 sm:w-28 transition-transform duration-300 group-hover:scale-105">
                           <img
-                            src="/images/certifications/google-partner.png"
+                            src="/_next/image?url=https%3A%2F%2Fwww.ayautomate.com%2Fimages%2Fcertifications%2Fgoogle-partner.png&amp;w=3840&amp;q=75"
                             alt="Google Partner - Google"
                             width="112"
                             height="112"
@@ -3134,7 +3083,7 @@ export default function GoldenOfferPage() {
                       <div className="group flex flex-col items-center gap-3 text-center">
                         <div className="relative h-24 w-24 sm:h-28 sm:w-28 transition-transform duration-300 group-hover:scale-105">
                           <img
-                            src="/images/certifications/make-certified-partner.webp"
+                            src="/_next/image?url=https%3A%2F%2Fwww.ayautomate.com%2Fimages%2Fcertifications%2Fmake-certified-partner.webp&amp;w=3840&amp;q=75"
                             alt="Make Certified Partner - Make"
                             width="112"
                             height="112"
@@ -3156,7 +3105,7 @@ export default function GoldenOfferPage() {
                       <div className="group flex flex-col items-center gap-3 text-center">
                         <div className="relative h-24 w-24 sm:h-28 sm:w-28 transition-transform duration-300 group-hover:scale-105">
                           <img
-                            src="/images/certifications/n8n-certified-expert-partner.png"
+                            src="/_next/image?url=https%3A%2F%2Fwww.ayautomate.com%2Fimages%2Fcertifications%2Fn8n-certified-expert-partner.png&amp;w=3840&amp;q=75"
                             alt="n8n Certified Expert Partner - n8n"
                             width="112"
                             height="112"
@@ -3178,7 +3127,7 @@ export default function GoldenOfferPage() {
                       <div className="group flex flex-col items-center gap-3 text-center">
                         <div className="relative h-24 w-24 sm:h-28 sm:w-28 transition-transform duration-300 group-hover:scale-105">
                           <img
-                            src="https://img.logo.dev/aws.amazon.com?token=pk_fBi0irWDRaSuFNlLgKDnvQ&size=256&format=png&retina=true"
+                            src="/_next/image?url=https%3A%2F%2Fimg.logo.dev%2Faws.amazon.com%3Ftoken%3Dpk_fBi0irWDRaSuFNlLgKDnvQ%26size%3D256%26format%3Dpng%26retina%3Dtrue&amp;w=3840&amp;q=75"
                             alt="AWS Partner - Amazon Web Services"
                             width="112"
                             height="112"
@@ -3200,7 +3149,7 @@ export default function GoldenOfferPage() {
                       <div className="group flex flex-col items-center gap-3 text-center">
                         <div className="relative h-24 w-24 sm:h-28 sm:w-28 transition-transform duration-300 group-hover:scale-105">
                           <img
-                            src="https://img.logo.dev/azure.microsoft.com?token=pk_fBi0irWDRaSuFNlLgKDnvQ&size=256&format=png&retina=true"
+                            src="/_next/image?url=https%3A%2F%2Fimg.logo.dev%2Fazure.microsoft.com%3Ftoken%3Dpk_fBi0irWDRaSuFNlLgKDnvQ%26size%3D256%26format%3Dpng%26retina%3Dtrue&amp;w=3840&amp;q=75"
                             alt="Azure Partner - Microsoft Azure"
                             width="112"
                             height="112"
@@ -3231,7 +3180,7 @@ export default function GoldenOfferPage() {
                       <div className="group flex flex-col items-center gap-3 text-center">
                         <div className="relative h-20 w-20 sm:h-24 sm:w-24 transition-transform duration-300 group-hover:scale-105">
                           <img
-                            src="/images/certifications/anthropic-claude-certified-architect.png"
+                            src="/_next/image?url=https%3A%2F%2Fwww.ayautomate.com%2Fimages%2Fcertifications%2Fanthropic-claude-certified-architect.png&amp;w=3840&amp;q=75"
                             alt="Claude Certified Architect - Anthropic"
                             width="112"
                             height="112"
@@ -3253,7 +3202,7 @@ export default function GoldenOfferPage() {
                       <div className="group flex flex-col items-center gap-3 text-center">
                         <div className="relative h-20 w-20 sm:h-24 sm:w-24 transition-transform duration-300 group-hover:scale-105">
                           <img
-                            src="/images/certifications/microsoft-ai-industry-leader.png"
+                            src="/_next/image?url=https%3A%2F%2Fwww.ayautomate.com%2Fimages%2Fcertifications%2Fmicrosoft-ai-industry-leader.png&amp;w=3840&amp;q=75"
                             alt="AI Industry Leader Certified - Microsoft"
                             width="112"
                             height="112"
@@ -3275,7 +3224,7 @@ export default function GoldenOfferPage() {
                       <div className="group flex flex-col items-center gap-3 text-center">
                         <div className="relative h-20 w-20 sm:h-24 sm:w-24 transition-transform duration-300 group-hover:scale-105">
                           <img
-                            src="/images/certifications/microsoft-certified-fundamentals.png"
+                            src="/_next/image?url=https%3A%2F%2Fwww.ayautomate.com%2Fimages%2Fcertifications%2Fmicrosoft-certified-fundamentals.png&amp;w=3840&amp;q=75"
                             alt="Certified: Fundamentals - Microsoft"
                             width="112"
                             height="112"

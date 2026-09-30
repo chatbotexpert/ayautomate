@@ -8,6 +8,16 @@ const nextConfig: NextConfig = {
         hostname: "www.ayautomate.com",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "img.logo.dev",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "cdn.ayautomate.com",
+        pathname: "/**",
+      },
     ],
   },
 };
