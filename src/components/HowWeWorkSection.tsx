@@ -35,13 +35,12 @@ export default function HowWeWorkSection() {
 
           {/* Timeline Stepper */}
           <div className="relative mb-8 pt-8">
-            {/* Connecting Line */}
-            <div className="absolute top-[44px] left-[44px] right-[44px] h-[1px] bg-[#1F1F2E] hidden md:block z-0"></div>
+            
             
             <div className="relative w-full mx-auto">
               <div className="hidden lg:block">
                 {/* The horizontal connecting line */}
-                <div className="absolute top-12 left-0 right-0 h-[2px] bg-[#1F1F2E] z-0 overflow-hidden">
+                <div className="absolute top-24 left-0 right-0 h-[2px] bg-[#1F1F2E] z-0 overflow-hidden">
                   <div className="h-full bg-gradient-to-r from-[#8082C1] via-[#F59E0B] to-[#8082C1] relative" style={{ width: '25%' }}>
                     <div className="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-[#8082C1] shadow-[0_0_20px_#8082C1]"></div>
                   </div>
