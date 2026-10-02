@@ -16,13 +16,13 @@ const OurTeamSection = () => {
             </span>
           </div>
 
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 tracking-tight leading-[1.0] text-white">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight leading-[1.1] text-white">
             The Minds Behind the Machines<br/>
             Powering <span className="text-[#8082C1] italic font-semibold">Your Automation</span>
           </h2>
 
-          <p className="text-lg md:text-xl text-[#8F8F99] leading-[1.6] max-w-xl font-normal mt-10">
-            A lean team of builders, strategists, and engineers obsessed with<br/>
+          <p className="text-lg md:text-xl text-[#8F8F99] leading-relaxed max-w-2xl font-medium">
+            A lean team of builders, strategists, and engineers obsessed with
             one thing<br/>
             Making AI work for your business, not the other way around.
           </p>
