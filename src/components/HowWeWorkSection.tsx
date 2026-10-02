@@ -140,8 +140,8 @@ export default function HowWeWorkSection() {
 
                 {/* Detail Card */}
                 <div className="mt-12">
-                  <div className="bg-[#0C0C12] border border-[#1F1F2E] p-8 md:p-12 hover:border-[#8082C1]/50 transition-all duration-300 relative overflow-hidden group">
-                    <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] pointer-events-none opacity-50"></div>
+                  <div className="bg-card border border-[#1F1F2E] p-8 md:p-12 hover:border-[#8082C1]/50 transition-all duration-300 relative overflow-hidden group">
+                    
                     <div className="absolute top-0 left-0 w-[3px] h-[3px] border-t border-l border-[#8082C1]/50 opacity-0 group-hover:opacity-100 transition-opacity z-20"></div>
                     <div className="absolute bottom-0 right-0 w-[3px] h-[3px] border-b border-r border-[#8082C1]/50 opacity-0 group-hover:opacity-100 transition-opacity z-20"></div>
                     
