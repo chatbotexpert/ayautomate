@@ -41,7 +41,7 @@ export default function HowWeWorkSection() {
               <div className="hidden lg:block">
                 {/* The horizontal connecting line */}
                 <div className="absolute top-24 left-0 right-0 h-[2px] bg-[#1F1F2E] z-0 overflow-hidden">
-                  <div className="h-full bg-gradient-to-r from-[#8082C1] via-[#F59E0B] to-[#8082C1] relative" style={{ width: '25%' }}>
+                  <div className="h-full bg-gradient-to-r from-[#8082C1] via-[#F59E0B] to-[#8082C1] relative" style={{ width: '0%' }}>
                     <div className="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-[#8082C1] shadow-[0_0_20px_#8082C1]"></div>
                   </div>
                 </div>
