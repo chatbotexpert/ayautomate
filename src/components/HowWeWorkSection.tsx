@@ -21,15 +21,14 @@ export default function HowWeWorkSection() {
 
       {/* Main How We Work Section */}
       <section id="how-work-container" className="bg-[#0C0C12] border-t border-[#1F1F2E] text-foreground relative py-24 sm:py-32 overflow-hidden transition-colors duration-500">
-        <div className="w-full max-w-[1100px] mx-auto px-4 sm:px-6 relative z-10">
+        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
 
           <div className="text-center mb-20 flex flex-col items-center">
-            <h2 className="text-4xl sm:text-5xl md:text-[64px] font-bold mb-6 tracking-tight leading-[1.1] text-white">
-              Everything You Need to Become an<br/>
-              <span className="text-[#8082C1] italic font-semibold">AI-First Company</span>
+            <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-medium leading-tight mb-6 tracking-tight text-white">
+              Everything You Need to Become an <span className="text-[#8082C1] italic font-semibold">AI-First Company</span>
             </h2>
             
-            <p className="text-[17px] text-[#8F8F99] max-w-2xl mx-auto font-normal leading-relaxed mt-6">
+            <p className="text-lg md:text-xl text-[#8F8F99] max-w-3xl mx-auto font-medium leading-relaxed mt-6">
               Expert guidance, custom AI implementation, and hands-on training to help you adopt AI the right way.
             </p>
           </div>
@@ -39,7 +38,7 @@ export default function HowWeWorkSection() {
             {/* Connecting Line */}
             <div className="absolute top-[44px] left-[44px] right-[44px] h-[1px] bg-[#1F1F2E] hidden md:block z-0"></div>
             
-            <div className="relative max-w-6xl mx-auto">
+            <div className="relative w-full mx-auto">
               <div className="hidden lg:block">
                 {/* The horizontal connecting line */}
                 <div className="absolute top-12 left-0 right-0 h-[2px] bg-[#1F1F2E] z-0 overflow-hidden">
