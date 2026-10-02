@@ -163,7 +163,7 @@ export default function Home() {
                     <img 
                       src={`/${logo}`}
                       alt={`Client logo ${index + 1}`} 
-                      className={`max-h-full max-w-full object-contain transition-all duration-300 opacity-60 group-hover:opacity-100 ${logo.endsWith('.svg') ? '' : ''}`}
+                      className="max-h-full max-w-full object-contain transition-all duration-300 opacity-60 group-hover:opacity-100 brightness-0 invert"
                     />
                   ) : (
                     <span className="text-gray-400 dark:text-gray-600 text-xs italic">Logo Missing</span>
