@@ -93,10 +93,12 @@ export default function TestimonialCarousel() {
       <div className="flex items-center justify-center gap-2 sm:gap-4 md:gap-6">
         {visibleIndices.map((idx, positionIndex) => {
           const videoInfo = videosData[idx];
-          let scaleClass = "scale-75 opacity-40 z-0 hidden md:block";
-          if (positionIndex === 2) scaleClass = "scale-100 opacity-100 z-20";
+          let sizeClass =
+            "w-[140px] lg:w-[160px] opacity-40 z-0 hidden md:block";
+          if (positionIndex === 2)
+            sizeClass = "w-[240px] lg:w-[280px] opacity-100 z-20";
           else if (positionIndex === 1 || positionIndex === 3)
-            scaleClass = "scale-90 opacity-60 z-10";
+            sizeClass = "w-[180px] lg:w-[200px] opacity-60 z-10";
 
           const isActive = positionIndex === 2;
 
@@ -104,7 +106,7 @@ export default function TestimonialCarousel() {
             <div
               key={`${idx}-${positionIndex}`}
               onClick={() => setActiveIndex(idx)}
-              className={`relative cursor-pointer transition-all duration-500 ease-out flex-shrink-0 flex items-center justify-center w-[200px] sm:w-[240px] lg:w-[280px] aspect-[9/16] ${scaleClass}`}
+              className={`relative cursor-pointer transition-all duration-500 ease-out flex-shrink-0 flex items-center justify-center aspect-[9/16] ${sizeClass}`}
             >
               <div
                 className={`relative w-full h-full overflow-hidden transition-all duration-500 border border-gray-800 shadow-2xl ${isActive ? "ring-1 ring-[#8082C1]" : ""}`}
