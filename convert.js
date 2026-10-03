@@ -1,0 +1,15 @@
+const fs = require('fs');
+let html = fs.readFileSync('capabilities.html', 'utf8');
+html = html.replace(/class=/g, 'className=');
+html = html.replace(/stroke-width/g, 'strokeWidth');
+html = html.replace(/stroke-linecap/g, 'strokeLinecap');
+html = html.replace(/stroke-linejoin/g, 'strokeLinejoin');
+html = html.replace(/fill-rule/g, 'fillRule');
+html = html.replace(/clip-rule/g, 'clipRule');
+html = html.replace(/<img([^>]*[^/])>/g, '<img$1/>');
+html = html.replace(/<input([^>]*[^/])>/g, '<input$1/>');
+html = html.replace(/<br([^>]*[^/])?>/g, '<br/>');
+html = html.replace(/style="[^"]*"/g, '');
+html = html.replace(/<!--[\s\S]*?-->/g, '');
+fs.writeFileSync('CapabilitiesSection.tsx.part', html);
+console.log('Done');
