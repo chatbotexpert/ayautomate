@@ -25,7 +25,7 @@ export default function CallToActionSection() {
             <div className="transition-all duration-700 ease-out flex-shrink-0 group-hover:-translate-x-3 sm:group-hover:-translate-x-6 relative z-10">
                 <div className="transition-transform hover:scale-110 duration-300 cursor-pointer filter grayscale hover:grayscale-0 opacity-50 hover:opacity-100">
                     <div className="h-10 w-10 sm:h-12 sm:w-12 flex items-center justify-center bg-background/60 backdrop-blur-sm border border-border rounded-lg p-1.5 hover:border-primary-purple/50 transition-colors">
-                        <img src="https://img.logo.dev/anthropic.com?token=pk_fBi0irWDRaSuFNlLgKDnvQ&size=128&format=png&retina=true" alt="Anthropic logo" loading="lazy" width="48" height="48" className="h-full w-full object-contain" />
+                        <img src="https://img.logo.dev/claude.ai?token=pk_fBi0irWDRaSuFNlLgKDnvQ&size=128&format=png&retina=true" alt="Claude logo" loading="lazy" width="48" height="48" className="h-full w-full object-contain" />
                     </div>
                 </div>
             </div>
