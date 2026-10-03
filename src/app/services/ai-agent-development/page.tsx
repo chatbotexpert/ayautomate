@@ -8,8 +8,6 @@ import Link from "next/link";
 export default function AIAgentDevelopmentPage() {
   return (
     <div className="min-h-screen bg-[#05050A] text-foreground font-sans selection:bg-primary-purple/30">
-      <Navbar />
-
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center pt-24 pb-12 overflow-hidden border-b border-[#1F1F2E]">
         {/* Mountain Background */}
