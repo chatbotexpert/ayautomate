@@ -346,7 +346,8 @@ export default function Home() {
       <HowWeWorkSection />
 
       {/* Our Team — "The Minds Behind the Machines" */}
-      <OurTeamSection />\n
+      <OurTeamSection />
+
       {/* Book a Call Band */}
       <div className="flex justify-center py-12 bg-[#05050A] border-t border-[#1F1F2E] relative z-20">
         <button type="button" className="relative z-20 group inline-flex items-center justify-center gap-3 px-8 sm:px-12 py-4 sm:py-6 font-bold uppercase text-xs transition-all w-full sm:w-auto sm:min-w-[250px] bg-white text-black hover:bg-[#8082C1] hover:text-white">
