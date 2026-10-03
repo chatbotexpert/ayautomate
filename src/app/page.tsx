@@ -363,6 +363,9 @@ export default function Home() {
       {/* FAQ — "Get Your Questions Answered" */}
       <FAQSection />
 
+      {/* DEPLOY AUTOMATION CTA Section */}
+      <CallToActionSection />
+
       {/* Footer Section */}
       <FooterSection />
     </div>
