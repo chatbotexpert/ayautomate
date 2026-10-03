@@ -329,9 +329,6 @@ export default function Home() {
       <ScrollExecutionSection />
       <StackSection />
       <TheModelSection />
-      {/* Call To Action — "Fix what's slowing you down" */}
-      <CallToActionSection />
-
       {/* Capabilities Bento Grid — "5 Ways We Automate Your Business Growth" */}
       <CapabilitiesSection />
 
