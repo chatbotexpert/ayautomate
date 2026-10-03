@@ -1,53 +1,108 @@
-import { ArrowRight, ArrowUpRight } from "lucide-react";
+import React from 'react';
+import { Zap, ArrowUpRight, Mail } from 'lucide-react';
 
 export default function CallToActionSection() {
   return (
-    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-4 pb-24 md:pb-32">
-      {/* The White Box CTA */}
-      <div className="relative overflow-hidden border border-foreground/10 bg-foreground text-background mb-24 md:mb-32">
-        <div
-          aria-hidden={true}
-          className="pointer-events-none absolute inset-0 [background:radial-gradient(700px_350px_at_70%_50%,rgba(128,130,193,0.25),transparent_70%)]"
-        ></div>
-        <div className="relative grid grid-cols-1 lg:grid-cols-12 gap-8 px-7 md:px-12 py-12 md:py-16 items-center">
-          <div className="lg:col-span-8">
-            <h3 className="text-3xl md:text-5xl font-bold leading-[1.05] tracking-[-0.02em]">
-              Fix what&apos;s slowing you down.
-            </h3>
-            <p className="mt-5 text-base md:text-lg text-background/70 max-w-2xl leading-snug">
-              Tell us the workflow that hurts. We embed an engineer, ship a whole
-              product, refund the first month if it does not land.
-            </p>
-          </div>
-          <div className="lg:col-span-4 lg:text-right">
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group relative inline-flex items-center gap-3 bg-primary-purple px-8 py-4 text-base font-bold text-white shadow-[0_14px_40px_-12px_rgba(128,130,193,0.7)] ring-1 ring-inset ring-white/15 transition-all duration-200 hover:bg-primary-700 hover:-translate-y-0.5"
-              href="https://cal.com/walidboulanouar/consultation"
-            >
-              <span
-                aria-hidden={true}
-                className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/60 to-transparent"
-              ></span>
-              Book a 15-min call
-              <ArrowRight className="size-4 transition-transform duration-200 group-hover:translate-x-1" />
-            </a>
-          </div>
+    <section className="relative min-h-[80vh] flex flex-col items-center justify-center py-24 sm:py-32 overflow-hidden text-center bg-background border-t border-border/40">
+      {/* The Grid Background */}
+      <div 
+        className="absolute inset-0 bg-[length:100%_4px] pointer-events-none z-0 opacity-[0.05] dark:opacity-20"
+        style={{ backgroundImage: 'linear-gradient(to bottom, transparent 50%, var(--primary-purple) 50%)' }}
+      ></div>
+      
+      <div className="relative z-10 w-full max-w-5xl mx-auto px-4">
+        
+        {/* Floating Logos - Spread on hover */}
+        <div className="flex justify-center items-center gap-2 sm:gap-4 mb-16 h-20 group perspective-1000 relative">
+            <div className="transition-all duration-700 ease-out flex-shrink-0 group-hover:-translate-x-6 sm:group-hover:-translate-x-12 relative z-0">
+                <div className="transition-transform hover:scale-110 duration-300 cursor-pointer filter grayscale hover:grayscale-0 opacity-40 hover:opacity-100">
+                    <div className="h-10 w-10 sm:h-12 sm:w-12 flex items-center justify-center bg-background/60 backdrop-blur-sm border border-border rounded-lg p-1.5 hover:border-primary-purple/50 transition-colors">
+                        <img src="https://img.logo.dev/n8n.io?token=pk_fBi0irWDRaSuFNlLgKDnvQ&size=128&format=png&retina=true" alt="n8n logo" loading="lazy" width="48" height="48" className="h-full w-full object-contain" />
+                    </div>
+                </div>
+            </div>
+            
+            <div className="transition-all duration-700 ease-out flex-shrink-0 group-hover:-translate-x-3 sm:group-hover:-translate-x-6 relative z-10">
+                <div className="transition-transform hover:scale-110 duration-300 cursor-pointer filter grayscale hover:grayscale-0 opacity-50 hover:opacity-100">
+                    <div className="h-10 w-10 sm:h-12 sm:w-12 flex items-center justify-center bg-background/60 backdrop-blur-sm border border-border rounded-lg p-1.5 hover:border-primary-purple/50 transition-colors">
+                        <img src="https://img.logo.dev/anthropic.com?token=pk_fBi0irWDRaSuFNlLgKDnvQ&size=128&format=png&retina=true" alt="Anthropic logo" loading="lazy" width="48" height="48" className="h-full w-full object-contain" />
+                    </div>
+                </div>
+            </div>
+            
+            <div className="transition-all duration-700 ease-out flex-shrink-0 relative z-20 group-hover:scale-110">
+                <div className="transition-transform hover:scale-110 duration-300 cursor-pointer filter grayscale hover:grayscale-0 opacity-60 hover:opacity-100">
+                    <div className="h-12 w-12 sm:h-14 sm:w-14 flex items-center justify-center bg-background/80 backdrop-blur-md border border-primary-purple/30 rounded-lg p-2 shadow-[0_0_15px_rgba(128,130,193,0.3)] hover:border-primary-purple transition-all">
+                        <img src="https://img.logo.dev/cursor.com?token=pk_fBi0irWDRaSuFNlLgKDnvQ&size=128&format=png&retina=true" alt="Cursor logo" loading="lazy" width="48" height="48" className="h-full w-full object-contain" />
+                    </div>
+                </div>
+            </div>
+            
+            <div className="transition-all duration-700 ease-out flex-shrink-0 group-hover:translate-x-3 sm:group-hover:translate-x-6 relative z-10">
+                <div className="transition-transform hover:scale-110 duration-300 cursor-pointer filter grayscale hover:grayscale-0 opacity-50 hover:opacity-100">
+                    <div className="h-10 w-10 sm:h-12 sm:w-12 flex items-center justify-center bg-background/60 backdrop-blur-sm border border-border rounded-lg p-1.5 hover:border-primary-purple/50 transition-colors">
+                        <img src="https://img.logo.dev/make.com?token=pk_fBi0irWDRaSuFNlLgKDnvQ&size=128&format=png&retina=true" alt="Make logo" loading="lazy" width="48" height="48" className="h-full w-full object-contain" />
+                    </div>
+                </div>
+            </div>
+            
+            <div className="transition-all duration-700 ease-out flex-shrink-0 group-hover:translate-x-6 sm:group-hover:translate-x-12 relative z-0">
+                <div className="transition-transform hover:scale-110 duration-300 cursor-pointer filter grayscale hover:grayscale-0 opacity-40 hover:opacity-100">
+                    <div className="h-10 w-10 sm:h-12 sm:w-12 flex items-center justify-center bg-background/60 backdrop-blur-sm border border-border rounded-lg p-1.5 hover:border-primary-purple/50 transition-colors">
+                        <img src="https://img.logo.dev/openai.com?token=pk_fBi0irWDRaSuFNlLgKDnvQ&size=128&format=png&retina=true" alt="OpenAI logo" loading="lazy" width="48" height="48" className="h-full w-full object-contain" />
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-
-      {/* Standalone Book A Call Button */}
-      <div className="flex justify-center">
-        <a
-          href="https://cal.com/walidboulanouar/consultation"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-3 bg-foreground text-background px-8 py-4 text-sm font-bold uppercase tracking-widest transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg"
-        >
-          BOOK A CALL
-          <ArrowUpRight className="size-4" />
-        </a>
+        
+        {/* AUTOMATION GATEWAY badge */}
+        <div className="mb-12 relative">
+            <div className="absolute inset-x-0 top-1/2 h-px bg-gradient-to-r from-transparent via-primary-purple/20 to-transparent -z-10"></div>
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 border border-primary-purple/30 bg-[#0E0E14] sm:bg-background/80 backdrop-blur-sm">
+                <span className="relative flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full bg-primary-purple opacity-50 rounded-full"></span>
+                    <span className="relative inline-flex h-2 w-2 bg-primary-purple rounded-full"></span>
+                </span>
+                <span className="text-[10px] sm:text-xs font-semibold text-primary-purple uppercase tracking-[0.2em]">AUTOMATION GATEWAY</span>
+            </span>
+        </div>
+        
+        {/* DEPLOY AUTOMATION */}
+        <h2 className="text-5xl sm:text-7xl md:text-[6rem] lg:text-[7rem] font-bold tracking-tighter text-foreground mb-8 leading-[0.95] flex flex-col">
+            <span className="mb-1 sm:mb-2 text-foreground/90 mix-blend-plus-lighter">DEPLOY</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-b from-primary-purple via-[#8A8DF0] to-[#5A5CA8] drop-shadow-sm">AUTOMATION</span>
+        </h2>
+        
+        {/* Subtitle */}
+        <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-16 max-w-xl mx-auto leading-relaxed font-medium">
+            <span className="text-primary-purple">&gt;</span> System status: <span className="text-foreground font-bold tracking-wide">READY_FOR_DEPLOYMENT</span><br/>
+            Transform your business operations today.
+        </p>
+        
+        {/* Buttons */}
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+            <a 
+                href="https://cal.com/walidboulanouar/consultation" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="group relative inline-flex items-center justify-center gap-3 px-8 sm:px-10 py-4 sm:py-5 bg-[#FACC15] text-black font-bold text-sm sm:text-base tracking-widest uppercase transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(251,191,36,0.3)] w-full sm:w-auto"
+                style={{ clipPath: 'polygon(16px 0, 100% 0, 100% calc(100% - 16px), calc(100% - 16px) 100%, 0 100%, 0 16px)' }}
+            >
+                <div className="absolute inset-0 bg-white mix-blend-overlay opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                <Zap className="w-5 h-5 fill-black" />
+                <span>Initialize Automation</span>
+                <ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+            </a>
+            
+            <a 
+                href="mailto:contact@ayautomate.com" 
+                className="group relative inline-flex items-center justify-center gap-2 px-8 sm:px-10 py-4 sm:py-5 border border-border-strong bg-card text-muted-foreground hover:text-foreground hover:border-primary-purple hover:bg-primary-purple/5 transition-all duration-300 uppercase text-xs sm:text-sm font-semibold tracking-widest rounded-none w-full sm:w-auto"
+            >
+                <Mail className="w-4 h-4" />
+                <span>Book Free Call</span>
+                <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
+            </a>
+        </div>
       </div>
     </section>
   );
