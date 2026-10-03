@@ -118,7 +118,18 @@ const OurTeamSection = () => {
         </div>
 
       </div>
-    </section>
+    
+        {/* Book a Call Button Band */}
+        <div className="flex justify-center pt-8 pb-16">
+          <button type="button" className="relative z-20 group inline-flex items-center justify-center gap-3 px-8 sm:px-12 py-4 sm:py-6 font-bold uppercase text-xs transition-all w-full sm:w-auto sm:min-w-[250px] bg-white text-black hover:bg-[#8082C1] hover:text-white">
+            Book a Call
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1">
+              <path d="M7 7h10v10"></path>
+              <path d="M7 17 17 7"></path>
+            </svg>
+          </button>
+        </div>
+</section>
   );
 };
 
