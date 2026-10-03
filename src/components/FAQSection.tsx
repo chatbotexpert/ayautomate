@@ -94,12 +94,12 @@ const FAQSection = () => {
           </div>
 
           {/* Still Have Questions CTA */}
-          <div className="mt-4 bg-card border border-border-strong p-8 hover:border-primary-purple/50 transition-all duration-300">
+          <div className="mt-6 bg-[#16161D] border border-border-strong py-12 px-8 flex flex-col items-center text-center hover:border-primary-purple/50 transition-all duration-300">
             <h3 className="text-foreground text-xl font-bold tracking-tight mb-3">Still Have Questions?</h3>
             <p className="text-muted-foreground mb-6 leading-relaxed font-medium text-sm">Feel free to get in touch with us today!</p>
             <a
               href="mailto:contact@ayautomate.com"
-              className="inline-flex items-center gap-2 bg-background border border-border-strong text-foreground px-6 py-3 text-sm font-semibold hover:border-primary-purple hover:bg-muted transition-all duration-300"
+              className="inline-flex items-center gap-2 bg-[#0E0E14] border border-border-strong text-foreground px-6 py-2.5 text-sm font-semibold hover:border-primary-purple hover:bg-muted transition-all duration-300"
             >
               Ask A Question
               <ArrowUpRight className="w-4 h-4" />
