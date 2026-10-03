@@ -32,7 +32,17 @@ const testimonials = [
   }
 ];
 
-export default function FreeConsultationSection() {
+export default function FreeConsultationSection({ 
+    badgeText = 'Free Consultation', 
+    titlePart1 = 'See What Your Team Can Hand to ', 
+    titlePart2 = 'AI Agents', 
+    subtitle = 'Book a free 30-minute call. One of our senior engineers maps your workflows and shows you exactly what a fleet of AI agents could take off your plate, measured in hours back to your team. You keep the roadmap, whether we work together or not.' 
+}: { 
+    badgeText?: string, 
+    titlePart1?: string, 
+    titlePart2?: string, 
+    subtitle?: string 
+}) {
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
@@ -60,12 +70,12 @@ export default function FreeConsultationSection() {
                 <span className="animate-ping absolute inline-flex h-full w-full bg-primary-purple opacity-50 rounded-full"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-primary-purple"></span>
               </span>
-              <span className="text-xs font-semibold text-primary-purple uppercase tracking-widest">Free Consultation</span>
+              <span className="text-xs font-semibold text-primary-purple uppercase tracking-widest">{badgeText}</span>
             </span>
           </div>
           <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-medium mb-6 tracking-tight bg-clip-text text-transparent bg-gradient-to-br from-foreground to-foreground/50 dark:from-white dark:to-white/20">
-            <span className="text-foreground">See What Your Team Can Hand to </span>
-            <span className="text-primary-purple italic">AI Agents</span>
+            <span className="text-foreground">{titlePart1}</span>
+            <span className="text-primary-purple italic">{titlePart2}</span>
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto font-medium leading-relaxed">
             Book a free 30-minute call. One of our senior engineers maps your workflows and shows you exactly what a fleet of AI agents could take off your plate, measured in hours back to your team. You keep the roadmap, whether we work together or not.
