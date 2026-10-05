@@ -3,6 +3,7 @@
 import React from "react";
 import Navbar from "@/components/Navbar";
 import FooterSection from "@/components/FooterSection";
+import MiniTestimonialSlider from "@/components/MiniTestimonialSlider";
 import Link from "next/link";
 
 export default function AIAgentDevelopmentPage() {
@@ -99,6 +100,7 @@ export default function AIAgentDevelopmentPage() {
         </div>
       </section>
 
+      <MiniTestimonialSlider />
       <FooterSection />
     </div>
   );
