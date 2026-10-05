@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import TestimonialCarousel from "@/components/TestimonialCarousel";
 import FreeConsultationSection from "@/components/FreeConsultationSection";
 import FAQSection from "@/components/FAQSection";
-import DeployAutomationSection from "@/components/DeployAutomationSection";
+import CallToActionSection from "@/components/CallToActionSection";
 import FooterSection from "@/components/FooterSection";
 
 export default function ConsultationPage() {
@@ -17,7 +17,7 @@ export default function ConsultationPage() {
         <FreeConsultationSection />
         <FAQSection />
       </main>
-      <DeployAutomationSection />
+      <CallToActionSection />
       <FooterSection />
     </>
   );
