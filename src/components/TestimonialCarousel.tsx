@@ -91,18 +91,19 @@ export default function TestimonialCarousel() {
     <div className="w-full max-w-[1400px] mx-auto py-16 sm:py-24">
 
       {/* Header Section */}
-      <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-10 md:mb-16 px-4 max-w-5xl mx-auto">
-        <div className="flex-1">
-          <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-muted-foreground mb-4">
-            Don't take it from us
+      <div className="flex flex-col md:flex-row md:items-end justify-between gap-10 mb-10 md:mb-16 px-4 max-w-[1100px] mx-auto">
+        <div className="flex-none">
+          <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-[#8082C1] mb-4">
+            DON'T TAKE IT FROM US
           </p>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-foreground leading-tight">
-            Hear it from the <span className="text-primary-purple italic">operators<br className="hidden md:block"/> we shipped for</span>.
+          <h2 className="text-4xl md:text-5xl lg:text-[52px] font-medium tracking-tight text-white leading-[1.1]">
+            Hear it from the <span className="text-[#8082C1] italic">operators</span><br />
+            <span className="text-[#8082C1] italic">we shipped for.</span>
           </h2>
         </div>
-        <div className="md:max-w-xs xl:max-w-sm">
-          <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-            Real founders. Real cameras. No scripts. Different scales, same agent stack.
+        <div className="max-w-[320px] mb-2">
+          <p className="text-[#8F8F99] text-[15px] leading-relaxed">
+            Real founders. Real cameras. No scripts. Different<br className="hidden md:block" /> scales, same agent stack.
           </p>
         </div>
       </div>
