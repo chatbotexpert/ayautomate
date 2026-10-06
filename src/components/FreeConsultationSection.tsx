@@ -65,19 +65,21 @@ export default function FreeConsultationSection({
         titlePart2 = 'autonomous agent.', 
         subtitle = 'Book a free 30-min call and we will map the agent architecture, tools, data access, and first workflow worth automating.',
         calendarTitle = 'Free Strategy Call',
-        calendarSubtitle
+        calendarSubtitle,
+        sectionId = 'ai-agent-booking'
     }: { 
         badgeText?: string, 
         titlePart1?: string, 
         titlePart2?: string, 
         subtitle?: string,
         calendarTitle?: string,
-        calendarSubtitle?: React.ReactNode
+        calendarSubtitle?: React.ReactNode,
+        sectionId?: string
     }) {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section id="ai-agent-booking" className="bg-background/50 border-t border-border text-foreground relative py-24 sm:py-32 overflow-hidden transition-colors duration-500 "><div aria-hidden={true} className="absolute inset-0 pointer-events-none opacity-60 dark:opacity-40" style={{"backgroundImage": "url('https://www.ayautomate.com/bg-mountain-pixel.webp')","backgroundRepeat":"repeat-x","backgroundPosition":"center bottom","backgroundSize":"auto 100%"}}></div><div aria-hidden={true} className="absolute inset-0 pointer-events-none bg-gradient-to-r from-background/40 via-background/70 to-background/40"></div><div aria-hidden={true} className="absolute inset-x-0 top-0 h-32 pointer-events-none bg-gradient-to-b from-background to-transparent"></div><div className="absolute inset-0  bg-[size:24px_24px] pointer-events-none" style={{"opacity":"var(--grid-opacity)"}}></div><div className="relative z-10 max-w-7xl mx-auto px-4 md:px-6 lg:px-8 xl:px-4 xl:px-4">
+    <section id={sectionId} className="bg-background/50 border-t border-border text-foreground relative py-24 sm:py-32 overflow-hidden transition-colors duration-500 "><div aria-hidden={true} className="absolute inset-0 pointer-events-none opacity-60 dark:opacity-40" style={{"backgroundImage": "url('https://www.ayautomate.com/bg-mountain-pixel.webp')","backgroundRepeat":"repeat-x","backgroundPosition":"center bottom","backgroundSize":"auto 100%"}}></div><div aria-hidden={true} className="absolute inset-0 pointer-events-none bg-gradient-to-r from-background/40 via-background/70 to-background/40"></div><div aria-hidden={true} className="absolute inset-x-0 top-0 h-32 pointer-events-none bg-gradient-to-b from-background to-transparent"></div><div className="absolute inset-0  bg-[size:24px_24px] pointer-events-none" style={{"opacity":"var(--grid-opacity)"}}></div><div className="relative z-10 max-w-7xl mx-auto px-4 md:px-6 lg:px-8 xl:px-4 xl:px-4">
           <div className="flex flex-col items-center justify-center text-center max-w-4xl mx-auto mb-16">
             <div className="inline-flex items-center gap-2 border border-primary-purple/30 bg-primary-purple/10 px-3 py-1 mb-8 rounded-full backdrop-blur-sm">
               <span className="w-1.5 h-1.5 rounded-full bg-primary-purple"></span>
