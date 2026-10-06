@@ -89,12 +89,12 @@ export default function FreeConsultationSection({
             </p>
           </div><div className="group relative flex flex-col lg:flex-row border border-border bg-card transition-all duration-300 overflow-hidden shadow-xl" ><div className="absolute inset-0  bg-[size:24px_24px] pointer-events-none" style={{"opacity":"var(--grid-opacity)"}}></div><div className="absolute top-0 left-0 w-[3px] h-[3px] border-t border-l border-primary-purple/50 opacity-0 group-hover:opacity-100 transition-opacity z-20"></div><div className="absolute bottom-0 right-0 w-[3px] h-[3px] border-b border-r border-primary-purple/50 opacity-0 group-hover:opacity-100 transition-opacity z-20"></div><div className="absolute top-0 right-0 w-40 h-40 bg-primary-purple/5 blur-[80px] pointer-events-none group-hover:bg-primary-purple/10 transition-colors opacity-0 group-hover:opacity-100"></div><div className="relative z-20 flex-1 min-w-0 p-8 lg:p-12">
             <div className="mb-8">
-              <h3 className="mb-4 text-2xl md:text-4xl font-semibold text-foreground tracking-tight">Book a Free 30-Minute Call</h3>
-              <p className="mb-3 text-muted-foreground text-lg leading-relaxed">We'll map your workflows and show you exactly what a fleet of AI agents, run by one senior engineer, could take off your team's plate. No slide deck, no sales pitch. Just a working session, and a plan you can use whether we work together or not.</p>
+              <h3 className="mb-4 text-2xl md:text-4xl font-semibold text-foreground tracking-tight">Book a 30min Free Strategy Call</h3>
+              <p className="mb-3 text-muted-foreground text-lg leading-relaxed">In this call, we'll walk through your project scope, timeline, and goals - so we can both check if we're a fit. No obligation, no slide deck, just a working session.</p>
               <p className="mb-6 text-sm text-muted-foreground">Don't want a call? Email <a href="mailto:walid@ayautomate.com" className="text-primary-purple font-medium hover:underline">walid@ayautomate.com</a></p>
               
               <button data-slot="button" className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive h-9 has-[&gt;svg]:px-3 relative bg-background border border-border text-foreground px-8 py-3 text-lg font-medium transition-all duration-300 hover:border-primary-purple hover:bg-muted overflow-hidden group/btn">
-                <span className="relative z-10 flex items-center gap-2">Book a Free Call<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-arrow-up-right w-5 h-5" aria-hidden={true}><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span>
+                <span className="relative z-10 flex items-center gap-2">Book Now<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-arrow-up-right w-5 h-5" aria-hidden={true}><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span>
                 <span className="absolute inset-0 bg-primary-purple/10 translate-x-[-100%] group-hover/btn:translate-x-0 transition-transform duration-500"></span>
               </button>
             </div>
@@ -104,19 +104,19 @@ export default function FreeConsultationSection({
                 <div className="flex-shrink-0 w-7 h-7 lg:w-8 lg:h-8 bg-muted border border-border flex items-center justify-center">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-users w-3.5 h-3.5 lg:w-4 lg:h-4 text-primary-purple" aria-hidden={true}><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
                 </div>
-                <span className="text-sm font-semibold tracking-wide">Free 30-Minute Strategy Call</span>
+                <span className="text-sm font-semibold tracking-wide">Workflow bottleneck map</span>
               </div>
               <div className="flex items-center gap-2.5 lg:gap-3">
                 <div className="flex-shrink-0 w-7 h-7 lg:w-8 lg:h-8 bg-muted border border-border flex items-center justify-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-check-circle-2 w-3.5 h-3.5 lg:w-4 lg:h-4 text-primary-purple" aria-hidden={true}><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-zap w-3.5 h-3.5 lg:w-4 lg:h-4 text-primary-purple" aria-hidden={true}><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>
                 </div>
-                <span className="text-sm font-semibold tracking-wide">Scoped Automation Roadmap</span>
+                <span className="text-sm font-semibold tracking-wide">n8n + custom code plan</span>
               </div>
               <div className="flex items-center gap-2.5 lg:gap-3">
                 <div className="flex-shrink-0 w-7 h-7 lg:w-8 lg:h-8 bg-muted border border-border flex items-center justify-center">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-clock w-3.5 h-3.5 lg:w-4 lg:h-4 text-primary-purple" aria-hidden={true}><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>
                 </div>
-                <span className="text-sm font-semibold tracking-wide">Same-Day Response</span>
+                <span className="text-sm font-semibold tracking-wide">Fast implementation path</span>
               </div>
             </div>
 
@@ -158,7 +158,7 @@ export default function FreeConsultationSection({
               </span>
             </div>
             <div className="mt-12 overflow-hidden border-t border-border pt-12">
-               <p className="text-[10px] uppercase tracking-[0.22em] text-muted-foreground/70 font-semibold mb-6">PRODUCTS WE'VE BUILT HAVE BEEN FEATURED BY</p>
+               <p className="text-[10px] uppercase tracking-[0.22em] text-muted-foreground/70 font-semibold mb-6">WE'VE CREATED PRODUCTS FEATURED IN</p>
                <div style={{"maskImage":"linear-gradient(to right, rgba(0,0,0,0) 0%, rgb(0,0,0) 8%, rgb(0,0,0) 92%, rgba(0,0,0,0) 100%)","WebkitMaskImage":"linear-gradient(to right, rgba(0,0,0,0) 0%, rgb(0,0,0) 8%, rgb(0,0,0) 92%, rgba(0,0,0,0) 100%)"}} className="relative w-full overflow-hidden">
                   <ul style={{"width":"max-content","animation":"ay-marquee 35s linear infinite"}} className="flex items-center gap-x-8 py-2">
                      <li className="flex h-10 w-[150px] sm:h-12 sm:w-[170px] items-center justify-center"><div aria-hidden={false} title="Y Combinator" className="flex h-full w-full items-center justify-center opacity-90 transition-opacity duration-300 hover:opacity-100"><img src="https://www.ayautomate.com/images/press/ycombinator.png" alt="Y Combinator" width="170" height="48" loading="lazy" className="max-h-full max-w-full object-contain"/></div></li>
