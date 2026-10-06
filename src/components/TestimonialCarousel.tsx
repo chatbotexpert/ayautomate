@@ -88,7 +88,24 @@ export default function TestimonialCarousel() {
   const visibleIndices = getVisibleIndices();
 
   return (
-    <div className="w-full max-w-[1400px] mx-auto py-10">
+    <div className="w-full max-w-[1400px] mx-auto py-16 sm:py-24">
+
+      {/* Header Section */}
+      <div className="flex flex-col items-center justify-center text-center mb-10 md:mb-16 px-4">
+        <div className="inline-flex items-center gap-2 border border-primary-purple/30 bg-background/50 px-3 py-1 mb-6 backdrop-blur-sm">
+          <span className="w-1.5 h-1.5 rounded-full bg-primary-purple animate-pulse"></span>
+          <span className="text-[11px] font-bold tracking-[0.25em] uppercase text-primary-purple">Client Reviews</span>
+        </div>
+        
+        <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-foreground mb-6">
+          Real Results from <span className="text-primary-purple italic font-semibold font-serif">30+ Companies</span>
+        </h2>
+        
+        <p className="text-base sm:text-lg text-muted-foreground max-w-2xl leading-relaxed">
+          Hear directly from the businesses we've transformed with AI automation.
+        </p>
+      </div>
+
       {/* Horizontal Flex Carousel */}
       <div className="flex items-center justify-center gap-2 sm:gap-4 md:gap-6">
         {visibleIndices.map((idx, positionIndex) => {
