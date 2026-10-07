@@ -36,12 +36,12 @@ export default function Navbar() {
             
             {/* Services Mega Menu */}
             <div className="group relative">
-              <button className="text-gray-500 dark:text-[#a89db0] hover:text-black dark:hover:text-[#f0edee] py-2 transition-colors font-medium flex items-center gap-1 cursor-pointer">
+              <a href="/services" className="text-gray-500 dark:text-[#a89db0] hover:text-black dark:hover:text-[#f0edee] py-2 transition-colors font-medium flex items-center gap-1 cursor-pointer">
                 Services
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4 transition-transform group-hover:rotate-180">
                   <path d="m6 9 6 6 6-6"></path>
                 </svg>
-              </button>
+              </a>
               
               <div className="absolute top-[100%] left-1/2 -translate-x-[40%] pt-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-[100]">
                 <div className="w-[1000px] flex border border-gray-200 dark:border-white/10 bg-white dark:bg-[#1a1a24] shadow-xl overflow-hidden">
@@ -203,12 +203,12 @@ export default function Navbar() {
 
             {/* Resources Mega Menu */}
             <div className="group relative">
-              <button className="text-gray-500 dark:text-[#a89db0] hover:text-black dark:hover:text-[#f0edee] py-2 transition-colors font-medium flex items-center gap-1 cursor-pointer">
+              <a href="/resources" className="text-gray-500 dark:text-[#a89db0] hover:text-black dark:hover:text-[#f0edee] py-2 transition-colors font-medium flex items-center gap-1 cursor-pointer">
                 Resources
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4 transition-transform group-hover:rotate-180">
                   <path d="m6 9 6 6 6-6"></path>
                 </svg>
-              </button>
+              </a>
               
               <div className="absolute top-[100%] left-1/2 -translate-x-[50%] pt-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-[100]">
   <div className="w-[1000px] border border-gray-200 dark:border-white/10 bg-white dark:bg-[#1a1a24] shadow-xl overflow-hidden">
