@@ -108,21 +108,21 @@ export default function FreeConsultationSection({
             <div className="space-y-2.5 lg:space-y-4 mb-6 lg:mb-8">
               <div className="flex items-center gap-2.5 lg:gap-3">
                 <div className="flex-shrink-0 w-7 h-7 lg:w-8 lg:h-8 bg-muted border border-border flex items-center justify-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-users w-3.5 h-3.5 lg:w-4 lg:h-4 text-primary-purple" aria-hidden={true}><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-target w-3.5 h-3.5 lg:w-4 lg:h-4 text-primary-purple" aria-hidden={true}><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
                 </div>
-                <span className="text-sm font-semibold tracking-wide">Workflow bottleneck map</span>
+                <span className="text-sm font-semibold tracking-wide">Opportunity Map</span>
               </div>
               <div className="flex items-center gap-2.5 lg:gap-3">
                 <div className="flex-shrink-0 w-7 h-7 lg:w-8 lg:h-8 bg-muted border border-border flex items-center justify-center">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-zap w-3.5 h-3.5 lg:w-4 lg:h-4 text-primary-purple" aria-hidden={true}><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>
                 </div>
-                <span className="text-sm font-semibold tracking-wide">n8n + custom code plan</span>
+                <span className="text-sm font-semibold tracking-wide">Implementation Path</span>
               </div>
               <div className="flex items-center gap-2.5 lg:gap-3">
                 <div className="flex-shrink-0 w-7 h-7 lg:w-8 lg:h-8 bg-muted border border-border flex items-center justify-center">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-clock w-3.5 h-3.5 lg:w-4 lg:h-4 text-primary-purple" aria-hidden={true}><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>
                 </div>
-                <span className="text-sm font-semibold tracking-wide">Fast implementation path</span>
+                <span className="text-sm font-semibold tracking-wide">Fast Follow-Up</span>
               </div>
             </div>
 
