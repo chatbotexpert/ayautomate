@@ -1,0 +1,78 @@
+[
+  {
+    "question": "What does an AI code security audit cover?",
+    "answer": "We review code and configuration produced with AI coding tools such as Claude Code, Copilot and Cursor: exposed secrets, prompt injection paths, MCP server trust, permissive agent settings and dependency risk. You receive a written report and a hardened configuration package."
+  },
+  {
+    "question": "Do you offer AI-generated code audit services for a codebase that is already live?",
+    "answer": "Yes. Send the repo scope and the tools your team used. The free call confirms what we would check and what a fix pass looks like before you commit to anything."
+  },
+  {
+    "question": "Is Claude Code a security risk for enterprise teams?",
+    "answer": "Claude Code is a powerful tool but ships with permissive defaults: it can read any file it can access, execute shell commands, and send your code to Anthropic's API. Without a hardened configuration, sensitive files like .env secrets, private keys, and internal architecture documents can end up in the AI's context window and transmitted externally. With the right setup - .claudeignore, command allowlists, and approval gates - these risks are manageable."
+  },
+  {
+    "question": "What is prompt injection in AI coding agents?",
+    "answer": "Prompt injection is when an attacker embeds hidden instructions inside a file, comment, or README that Claude Code reads. When the agent processes that file, it may execute the attacker's instructions - exfiltrating data, modifying code, or running unauthorized commands - believing them to be legitimate user requests. It is the most critical and underappreciated risk in AI-assisted development."
+  },
+  {
+    "question": "How do I prevent Claude Code from reading my .env files?",
+    "answer": "The most direct fix is adding .env and credential files to your .claudeignore configuration. This explicitly tells Claude Code to skip those files when exploring your codebase. You should also add secrets directories, private key files, and any files containing database connection strings. We configure a properly scoped .claudeignore as part of the hardening engagement."
+  },
+  {
+    "question": "What is YOLO mode and why is it a security concern?",
+    "answer": "YOLO mode (surfaced in the Claude Code source leak as classifyYoloAction()) is an auto-approval mechanism that bypasses human confirmation for tool calls classified as low or medium risk. The problem: that risk classification is based on heuristics, not context. A medium-risk shell command in a dev environment is very different from one running against a production database. We help teams define explicit approval gates that override auto-approval for sensitive operations."
+  },
+  {
+    "question": "How should we vet MCP servers before adding them to Claude Code?",
+    "answer": "MCP (Model Context Protocol) servers extend what Claude Code can do - but a malicious or compromised MCP server can exfiltrate context, execute code, or escalate permissions. Before adding any MCP server you should: verify the source and maintainer, review the server's declared tool definitions, run it in an isolated network environment, and restrict the filesystem and network permissions available to it. We conduct MCP server security reviews as part of our audit."
+  },
+  {
+    "question": "Does Claude Code send my code to Anthropic's servers?",
+    "answer": "Yes. Code, file contents, and terminal output included in the context window are sent to Anthropic's API for inference. This is expected behavior, but it means your intellectual property, internal architecture, and potentially sensitive logic travels over the network. Enterprise teams should configure .claudeignore to exclude proprietary modules, evaluate Anthropic's data handling policies against their compliance requirements, and consider whether on-premise alternatives are needed for the most sensitive workstreams."
+  },
+  {
+    "question": "What exactly is in scope for the Claude Code audit?",
+    "answer": "Our audit reviews: .claudeignore configuration and file access scope, shell command policies and approval gates, MCP server inventory and trust posture, secrets exposure risk in the current workflow, AI-generated code quality and vulnerability patterns, developer practices around context hygiene, and CI/CD integration for automated security scanning of AI-generated output. You receive a written report with prioritized findings and a hardened configuration package."
+  },
+  {
+    "question": "How long does an AI code security engagement take?",
+    "answer": "A focused audit for a team of up to 20 developers typically runs 1-2 weeks from kickoff to final report. Hardening implementation adds 1 week. Training workshops are delivered in a single day. Ongoing monitoring is a retainer that starts after the initial engagement. We can scope a faster 3-day rapid assessment for teams with urgent compliance deadlines."
+  },
+  {
+    "question": "How is this different from Claude Code's built-in /security-review command or a generic penetration test?",
+    "answer": "The built-in /security-review command and its GitHub Action catch code-level issues in a given pull request, things like SQL injection, missing input validation, or an outdated dependency. A generic penetration test targets your application's attack surface: APIs, auth flows, network exposure. Our audit covers a different layer entirely: whether Claude Code itself is configured safely across your team, meaning file access scope, MCP server trust, shell command approval gates, and hook policies. A codebase can pass every pull request review and every pentest and still expose a live prompt injection or credential leak vector through the agent's own configuration. Most teams get the most value running the built-in review on every pull request and our audit on the underlying setup."
+  },
+  {
+    "question": "How is a Claude Code security audit priced?",
+    "answer": "Pricing is scoped to team size and the number of MCP servers and integrations in use, not a fixed rate card. On the free 30-minute call we ask about your current setup and give you a specific quote before any paid work starts, in line with the audit and harden timelines described above."
+  },
+  {
+    "question": "How can I audit code generated by Claude Code or Copilot for compliance?",
+    "answer": "Treat AI-generated code as untrusted input: scan every AI-assisted pull request with SAST in CI, require human review before merge, and keep a record of which agent touched which files. We set up that pipeline, then map the findings to the OWASP Top 10 for Agentic Applications 2026 so your compliance team has a named framework to point to."
+  },
+  {
+    "question": "How do I record or audit what AI coding agents like Claude Code and Cursor do?",
+    "answer": "Log every tool call at the configuration layer. In Claude Code, PreToolUse and PostToolUse hooks can record and block commands before and after they run, and approval gates stop destructive or network-touching actions until a developer confirms. We configure those hooks, add alerting on policy violations, and document how each action traces back to a developer."
+  },
+  {
+    "question": "What can an AI coding agent touch on a developer machine?",
+    "answer": "With default settings, anything the developer account can reach: every readable file including .env and private keys, the shell, the network, and whatever each MCP server exposes. That context can be sent to the model provider with each prompt. The audit maps that access for every developer setup, then the hardening pass cuts it down to what the work actually needs."
+  },
+  {
+    "question": "Do you audit small teams or only enterprise engineering orgs?",
+    "answer": "Both. Pricing is scoped to team size and the number of MCP servers and integrations in use, so a five-person team pays for a smaller scope than a fifty-person one. Tell us how many developers use AI coding tools and which ones on the free call, and you get a specific quote before any paid work starts."
+  },
+  {
+    "question": "Do we have to stop using Claude Code during the audit?",
+    "answer": "No. The audit reads your configuration, hooks, .claudeignore, MCP server inventory and developer practices while your team keeps shipping. Hardening changes are documented and version-controlled, so they roll out like any other config change and can be reviewed before they land. Training is a single day, scheduled around your release calendar."
+  },
+  {
+    "question": "Who is this audit not for?",
+    "answer": "Teams that do not use AI coding agents yet, and teams that only need an application penetration test of their APIs and auth flows. This audit covers how the agent itself is configured and what it can reach. If that is not your risk, a standard pentest or the built-in /security-review command on each pull request is the better fit."
+  },
+  {
+    "question": "Can you review an AI agent before it goes to production, not just coding tools?",
+    "answer": "Yes. We review custom AI coding agents and internally built assistants for the same risks: tool permissions, prompt injection, secrets handling and sandbox isolation. For agents that act on business systems, start with our production readiness checklist, then book the call and we scope which checks your agent needs before launch."
+  }
+]
