@@ -4,6 +4,7 @@ import ScrollExecutionSection from "@/components/ScrollExecutionSection";
 import StackSection from "@/components/StackSection";
 import TheModelSection from "@/components/TheModelSection";
 import CallToActionSection from "@/components/CallToActionSection";
+import DeployAutomationSection from "@/components/DeployAutomationSection";
 import CapabilitiesSection from "@/components/CapabilitiesSection";
 import ToolsMarqueeSection from "@/components/ToolsMarqueeSection";
 import OurSolutionsSection from "@/components/OurSolutionsSection";
@@ -364,7 +365,7 @@ export default function Home() {
       <FAQSection />
 
       {/* DEPLOY AUTOMATION CTA Section */}
-      <CallToActionSection />
+      <DeployAutomationSection />
 
       {/* Footer Section */}
       <FooterSection />
