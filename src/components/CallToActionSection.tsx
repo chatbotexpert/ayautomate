@@ -3,7 +3,7 @@ import { Zap, ArrowUpRight, Mail } from 'lucide-react';
 
 export default function CallToActionSection() {
   return (
-    <section className="relative min-h-[80vh] flex flex-col items-center justify-center py-24 sm:py-32 overflow-hidden text-center bg-background border-t border-border/40">
+    <section id="get-started" className="relative min-h-[80vh] flex flex-col items-center justify-center py-24 sm:py-32 overflow-hidden text-center bg-background border-t border-border/40">
       {/* The Grid Background */}
       <div 
         className="absolute inset-0 bg-[length:100%_4px] pointer-events-none z-0 opacity-[0.05] dark:opacity-20"
