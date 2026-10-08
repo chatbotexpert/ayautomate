@@ -1,0 +1,125 @@
+import React, { useState } from 'react';
+
+const FAQItem = ({ question, answer }: { question: string, answer: string }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div className="bg-[#111118] transition-all duration-200 border-b border-white/5 last:border-b-0">
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="w-full p-5 md:p-6 flex items-start justify-between text-left transition-colors hover:bg-white/5"
+      >
+        <span className={`text-sm sm:text-base font-bold uppercase tracking-wider transition-colors pr-4 flex-1 ${isOpen ? 'text-[#8A8AFF]' : 'text-foreground hover:text-[#8A8AFF]'}`}>
+          {question}
+        </span>
+        <span className="mt-0.5 flex-shrink-0 text-muted-foreground transition-colors">
+          {isOpen ? <span className="text-xl font-light">×</span> : <span className="text-xl font-light">+</span>}
+        </span>
+      </button>
+      <div
+        className={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}
+      >
+        <div className="p-5 md:p-6 pt-0 text-sm md:text-base text-muted-foreground leading-relaxed">
+          {answer}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const faqs = [
+  {
+    question: "WHAT DOES AN AI CODE SECURITY AUDIT COVER?",
+    answer: "We review code and configuration produced with AI coding tools such as Claude Code, Copilot and Cursor: exposed secrets, prompt injection paths, MCP server trust, permissive agent settings and dependency risk. You receive a written report and a hardened configuration package."
+  },
+  {
+    question: "DO YOU OFFER AI-GENERATED CODE AUDIT SERVICES FOR A CODEBASE THAT IS ALREADY LIVE?",
+    answer: "Yes. Send the repo scope and the tools your team used. The free call confirms what we would check and what a fix pass looks like before you commit to anything."
+  },
+  {
+    question: "IS CLAUDE CODE A SECURITY RISK FOR ENTERPRISE TEAMS?",
+    answer: "Claude Code is a powerful tool but ships with permissive defaults: it can read any file in your project, execute commands, and load unverified MCP servers. If an attacker gains access to your developer environment or if prompt injection occurs, these permissions can be abused."
+  },
+  {
+    question: "WHAT IS PROMPT INJECTION IN AI CODING AGENTS?",
+    answer: "It occurs when malicious instructions are embedded in files or data that the AI agent reads, causing it to execute unintended commands or leak sensitive information to an external server."
+  },
+  {
+    question: "HOW DO I PREVENT CLAUDE CODE FROM READING MY .ENV FILES?",
+    answer: "We configure strict permission boundaries using file exclusion rules, ensuring the agent operates in a restricted context and cannot access sensitive configuration files like .env or aws credentials."
+  },
+  {
+    question: "WHAT IS YOLO MODE AND WHY IS IT A SECURITY CONCERN?",
+    answer: "YOLO mode allows the agent to execute shell commands without human approval. If an agent encounters malicious code or is manipulated via prompt injection, it could silently execute destructive commands or exfiltrate data."
+  },
+  {
+    question: "HOW SHOULD WE VET MCP SERVERS BEFORE ADDING THEM TO CLAUDE CODE?",
+    answer: "We perform a thorough source code and permission review of the MCP server, ensuring it only requests necessary access and does not contain backdoor or data exfiltration mechanisms."
+  },
+  {
+    question: "DOES CLAUDE CODE SEND MY CODE TO ANTHROPIC'S SERVERS?",
+    answer: "Yes, by default it sends snippets to Anthropic for processing. We help configure data retention policies and zero-retention agreements where applicable to ensure your proprietary code is not used for model training."
+  },
+  {
+    question: "WHAT EXACTLY IS IN SCOPE FOR THE CLAUDE CODE AUDIT?",
+    answer: "Your repository, agent configurations, custom MCP servers, developer workflow patterns, and the integration points between your local environment and the AI agent."
+  },
+  {
+    question: "HOW LONG DOES AN AI CODE SECURITY ENGAGEMENT TAKE?",
+    answer: "Typically 1 to 2 weeks for a standard team. Complex enterprise deployments may require an additional week for comprehensive testing and documentation."
+  },
+  {
+    question: "HOW IS THIS DIFFERENT FROM CLAUDE CODE'S BUILT-IN /SECURITY-REVIEW COMMAND OR A GENERIC PENETRATION TEST?",
+    answer: "Built-in commands often miss architectural flaws and deep-seated vulnerabilities. Generic pen tests are not designed to understand AI-specific risks like prompt injection or MCP server trust. We specialize exclusively in these AI agent vulnerabilities."
+  },
+  {
+    question: "HOW IS A CLAUDE CODE SECURITY AUDIT PRICED?",
+    answer: "It is a fixed-price engagement based on the size of your team, codebase, and the complexity of your custom agent integrations."
+  },
+  {
+    question: "HOW CAN I AUDIT CODE GENERATED BY CLAUDE CODE OR COPILOT FOR COMPLIANCE?",
+    answer: "We establish automated scanning and manual review gates, integrating security checks directly into your CI/CD pipeline for all AI-generated Pull Requests."
+  },
+  {
+    question: "HOW DO I RECORD OR AUDIT WHAT AI CODING AGENTS LIKE CLAUDE CODE AND CURSOR DO?",
+    answer: "We implement robust logging and audit trails for all agent actions, terminal commands, and API calls, providing complete visibility into the agent's behavior."
+  },
+  {
+    question: "WHAT CAN AN AI CODING AGENT TOUCH ON A DEVELOPER MACHINE?",
+    answer: "By default, they have the same permissions as the developer running them. We help sandbox the agent's environment to limit access strictly to the project directory."
+  },
+  {
+    question: "DO YOU AUDIT SMALL TEAMS OR ONLY ENTERPRISE ENGINEERING ORGS?",
+    answer: "We audit teams of all sizes, from early-stage startups deploying their first AI agents to large enterprises with complex, custom-built AI tooling."
+  },
+  {
+    question: "DO WE HAVE TO STOP USING CLAUDE CODE DURING THE AUDIT?",
+    answer: "No, your team can continue working. We audit asynchronously and provide actionable feedback without interrupting your development cycle."
+  },
+  {
+    question: "WHO IS THIS AUDIT NOT FOR?",
+    answer: "Teams not using AI coding assistants, or teams looking for a traditional web application penetration test."
+  },
+  {
+    question: "CAN YOU REVIEW AN AI AGENT BEFORE IT GOES TO PRODUCTION, NOT JUST CODING TOOLS?",
+    answer: "Yes, we audit custom production AI agents, multi-agent systems, and RAG pipelines for security, reliability, and prompt injection vulnerabilities."
+  }
+];
+
+export default function ClaudeFAQSection() {
+  return (
+    <section className="bg-background py-24 border-t border-white/5">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-xl sm:text-2xl font-bold uppercase tracking-[0.1em] text-foreground mb-8">
+          <span className="border-b-2 border-primary-purple pb-1">CLAUDE CODE SECURITY: FAQ</span>
+        </h2>
+        
+        <div className="border border-white/10 rounded-sm overflow-hidden">
+          {faqs.map((faq, index) => (
+            <FAQItem key={index} question={faq.question} answer={faq.answer} />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
