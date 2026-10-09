@@ -437,138 +437,149 @@ export default function HireAiDevelopersPage() {
 
 
         {/* ===== START YOUR PLACEMENT + STRATEGY CALL ===== */}
-        <section className="bg-background/50 border-t border-border text-foreground relative py-24 overflow-hidden">
-          <div className="absolute inset-0 bg-[size:24px_24px] pointer-events-none" style={{ opacity: 'var(--grid-opacity)' }}></div>
-          <div className="absolute inset-x-0 top-0 h-32 pointer-events-none bg-gradient-to-b from-background to-transparent"></div>
-          <div className="relative z-10 w-full max-w-6xl mx-auto px-4 md:px-6 lg:px-8 xl:px-4">
-            {/* Top CTA text */}
+                {/* ===== STRATEGY CALL / HIRING CALL SECTION ===== */}
+        <section id="hire-developer-booking" className="bg-background/50 border-t border-border text-foreground relative py-24 sm:py-32 overflow-hidden transition-colors duration-500">
+          <div aria-hidden={true} className="absolute inset-0 pointer-events-none opacity-60 dark:opacity-40" style={{"backgroundImage": "url('https://www.ayautomate.com/bg-mountain-pixel.webp')","backgroundRepeat":"repeat-x","backgroundPosition":"center bottom","backgroundSize":"auto 100%"}}></div>
+          <div aria-hidden={true} className="absolute inset-0 pointer-events-none bg-gradient-to-r from-background/40 via-background/70 to-background/40"></div>
+          <div aria-hidden={true} className="absolute inset-x-0 top-0 h-32 pointer-events-none bg-gradient-to-b from-background to-transparent"></div>
+          <div className="absolute inset-0 bg-[size:24px_24px] pointer-events-none" style={{"opacity":"var(--grid-opacity, 0.05)"}}></div>
+          
+          <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-6 lg:px-8 xl:px-4">
+            {/* Section Header */}
             <div className="text-center mb-16">
-              <div className="inline-flex items-center gap-2 border border-primary-purple/30 bg-background/70 px-3 py-1 mb-8 backdrop-blur-sm">
-                <span className="relative flex h-2 w-2">
-                  <span className="animate-ping absolute inline-flex h-full w-full bg-primary-purple opacity-50 rounded-full"></span>
-                  <span className="relative inline-flex h-2 w-2 bg-primary-purple rounded-full"></span>
+              <div className="mb-6">
+                <span className="inline-flex items-center gap-2 px-3 py-1 border border-primary-purple/30 bg-primary-purple/10">
+                  <span className="relative flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full bg-primary-purple opacity-50 rounded-full"></span>
+                    <span className="relative inline-flex h-2 w-2 bg-primary-purple rounded-full"></span>
+                  </span>
+                  <span className="text-xs font-medium text-primary-purple uppercase tracking-widest">AI Developer Placement Call</span>
                 </span>
-                <span className="text-[11px] font-bold tracking-[0.25em] uppercase text-foreground">FREE HIRING CALL</span>
               </div>
-              <h2 className="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight leading-[1.05] text-foreground mb-6">
-                Start your{" "}
-                <span className="text-primary-purple italic">2-4 week placement this week.</span>
+              <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium mb-6 tracking-tight bg-clip-text text-transparent bg-gradient-to-br from-foreground to-foreground/50 dark:from-white dark:to-white/20">
+                Hire the right AI engineer <span className="text-primary-purple italic">in 2-4 weeks.</span>
               </h2>
-              <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                Book a free call. You leave knowing whether you need one developer or a small team, and which role fits. Placement runs 2-4 weeks from request to start.
+              <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto font-medium leading-relaxed">
+                Book a free 30-min call. We’ll map your stack, define the role, and match you with a placed AI engineer with a 90-day guarantee.
               </p>
             </div>
 
-            {/* Strategy Call + Form */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 border border-border">
-              {/* Left: Strategy Call info */}
-              <div className="bg-card p-8 md:p-10 border-r border-border">
-                <h3 className="text-2xl font-bold text-foreground mb-4">Book a 30min Free Strategy Call</h3>
-                <p className="text-muted-foreground mb-2 leading-relaxed">
-                  In this call, we'll walk through your project scope, timeline, and goals - so we can both check if we're a fit. No obligation, no slide deck, just a working session.
-                </p>
-                <p className="text-sm text-muted-foreground mb-6">
-                  Don't want a call? Email{" "}
-                  <a href="mailto:walid@ayautomate.com" className="text-primary-purple hover:underline">walid@ayautomate.com</a>
-                </p>
-                <button className="inline-flex items-center gap-2 bg-foreground text-background hover:bg-primary-purple hover:text-white px-6 py-3 text-sm font-bold uppercase tracking-widest transition-all duration-300 mb-8">
-                  Book Now
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M7 17 17 7"></path><path d="M7 7h10v10"></path></svg>
-                </button>
-                <ul className="space-y-4 mb-10">
-                  {[
-                    { icon: '🗺️', text: 'Opportunity Map' },
-                    { icon: '⚡', text: 'Implementation Path' },
-                    { icon: '🔄', text: 'Fast Follow-Up' },
-                  ].map(item => (
-                    <li key={item.text} className="flex items-center gap-3 text-foreground font-medium">
-                      <span className="text-base">{item.icon}</span>
-                      {item.text}
-                    </li>
-                  ))}
-                </ul>
-                {/* Testimonial */}
-                <blockquote className="border-l-2 border-primary-purple/40 pl-5 mb-6">
-                  <p className="text-lg font-semibold text-foreground italic leading-snug mb-4">
-                    "We needed a very specific role and AY Automate helped us get an AI engineer pretty fast - someone who got quickly into our processes and our team."
-                  </p>
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-muted border border-border overflow-hidden">
-                      <img src="https://www.ayautomate.com/images/clients/faces/othmane-khadri.png" alt="Othmane Khadri" className="w-full h-full object-cover" />
-                    </div>
-                    <div>
-                      <div className="text-sm font-bold text-foreground">Othmane Khadri</div>
-                      <div className="text-xs text-muted-foreground">Founder, Earleads.com</div>
-                    </div>
-                  </div>
-                </blockquote>
-                {/* Call options */}
-                <div className="flex flex-wrap gap-4 mb-8">
-                  {[
-                    { icon: '📹', label: 'Video Call' },
-                    { icon: '📞', label: 'Phone Call' },
-                    { icon: '🏢', label: 'In-Person' },
-                  ].map(opt => (
-                    <div key={opt.label} className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <span>{opt.icon}</span> {opt.label}
-                    </div>
-                  ))}
-                </div>
-                {/* Featured in */}
+            {/* 2-Column Card Box */}
+            <div className="border border-border bg-card/60 backdrop-blur-sm relative overflow-hidden flex flex-col lg:flex-row">
+              {/* Left Column */}
+              <div className="flex-1 p-8 lg:p-12 border-b lg:border-b-0 lg:border-r border-border flex flex-col justify-between">
                 <div>
-                  <p className="text-[10px] uppercase tracking-widest text-muted-foreground font-semibold mb-4">WE'VE CREATED PRODUCTS FEATURED IN</p>
-                  <div className="flex items-center gap-6 flex-wrap">
-                    <img src="https://www.ayautomate.com/press/dailymotion.svg" alt="Dailymotion" className="h-6 opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all" />
-                    <img src="https://www.ayautomate.com/press/fbm.svg" alt="FBM" className="h-6 opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all" />
-                    <img src="https://www.ayautomate.com/press/france-tv.svg" alt="France TV" className="h-6 opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all" />
+                  <blockquote className="mb-8 p-6 bg-background/60 border-l-2 border-primary-purple">
+                    <p className="text-lg font-semibold text-foreground italic leading-snug mb-4">
+                      &quot;We needed a very specific role and AY Automate helped us get an AI engineer pretty fast — someone who got quickly into our processes and our team.&quot;
+                    </p>
+                    <div className="flex items-center gap-3">
+                      <div className="w-10 h-10 rounded-full bg-muted border border-border overflow-hidden">
+                        <img src="https://www.ayautomate.com/images/clients/faces/othmane-khadri.png" alt="Othmane Khadri" className="w-full h-full object-cover" />
+                      </div>
+                      <div>
+                        <div className="text-sm font-bold text-foreground">Othmane Khadri</div>
+                        <div className="text-xs text-muted-foreground">Founder, Earleads.com</div>
+                      </div>
+                    </div>
+                  </blockquote>
+                  
+                  <div className="space-y-4 mb-8">
+                    <div className="flex items-center gap-3 text-sm text-foreground">
+                      <span className="h-2 w-2 rounded-full bg-primary-purple"></span>
+                      <span>Matched from our assessed team of AI-native developers</span>
+                    </div>
+                    <div className="flex items-center gap-3 text-sm text-foreground">
+                      <span className="h-2 w-2 rounded-full bg-primary-purple"></span>
+                      <span>Starts at $60K/year with zero recruitment overhead</span>
+                    </div>
+                    <div className="flex items-center gap-3 text-sm text-foreground">
+                      <span className="h-2 w-2 rounded-full bg-primary-purple"></span>
+                      <span>90-day no-cost replacement guarantee</span>
+                    </div>
                   </div>
                 </div>
-                <p className="mt-6 text-xs text-muted-foreground">Usually responds within 24h. No commitment required.</p>
+
+                <div>
+                  <p className="text-[10px] uppercase tracking-widest text-muted-foreground font-semibold mb-4">WE&apos;VE CREATED PRODUCTS FEATURED IN</p>
+                  <div className="flex items-center gap-6 flex-wrap">
+                    <img src="https://www.ayautomate.com/images/press/dailymotion.svg" alt="Dailymotion" className="h-6 opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all" />
+                    <img src="https://www.ayautomate.com/images/press/bbc.svg" alt="BBC" className="h-6 opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all" />
+                    <img src="https://www.ayautomate.com/images/press/fbm.svg" alt="FBM" className="h-6 opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all" />
+                    <img src="https://www.ayautomate.com/images/press/france-tv.png" alt="France TV" className="h-6 opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all" />
+                  </div>
+                </div>
               </div>
 
-              {/* Right: Booking form */}
-              <div className="bg-card p-8 md:p-10 flex flex-col">
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-border">
-                    <img src="https://www.ayautomate.com/images/walid-profile.jpg" alt="Walid Boulanouar" className="w-full h-full object-cover" />
-                  </div>
-                  <div>
-                    <div className="font-bold text-foreground">Walid Boulanouar</div>
-                    <a href="https://www.linkedin.com/in/walid-boulanouar/" target="_blank" rel="noopener noreferrer" className="text-xs text-primary-purple hover:underline">View LinkedIn</a>
+              {/* Right Column: Walid booking card with mountain background glow */}
+              <div className="relative z-20 flex-1 min-w-0 p-8 lg:p-12 flex items-center justify-center overflow-hidden">
+                <div aria-hidden={true} className="absolute inset-0 pointer-events-none bg-no-repeat bg-cover bg-center" style={{"backgroundImage": "url('https://www.ayautomate.com/bg-mountain-pixel.webp')"}}></div>
+                <div aria-hidden={true} className="absolute inset-0 pointer-events-none" style={{"background":"radial-gradient(ellipse 70% 55% at 50% 55%, color-mix(in srgb, var(--card) 78%, transparent) 0%, color-mix(in srgb, var(--card) 30%, transparent) 55%, transparent 85%)"}}></div>
+                
+                <div className="relative z-10 w-full max-w-md">
+                  <div className="rounded-2xl border border-primary-purple/20 bg-card p-3 shadow-sm transition-all duration-500 ease-out">
+                    <div className="rounded-xl border border-border bg-background p-7 sm:p-8 transition-colors">
+                      <div className="flex items-center gap-3 mb-4">
+                        <span className="relative inline-block h-10 w-10 overflow-hidden rounded-full ring-2 ring-primary-purple/40 bg-primary-purple/10">
+                          <img alt="Walid Boulanouar" loading="lazy" width="40" height="40" className="h-full w-full object-cover" src="https://www.ayautomate.com/images/downloaded/team-walid.webp" />
+                        </span>
+                        <div className="flex flex-col leading-tight">
+                          <p className="text-sm font-medium text-foreground">Walid Boulanouar</p>
+                          <a href="https://www.linkedin.com/in/walid-boulanouar" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-[11px] text-primary-purple hover:underline mt-0.5">
+                            <svg viewBox="0 0 24 24" className="h-3 w-3" fill="currentColor" aria-hidden={true}><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.4v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zm1.78 13.02H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"></path></svg>
+                            View LinkedIn
+                          </a>
+                        </div>
+                      </div>
+                      <h4 className="text-2xl font-bold text-foreground mb-3 tracking-tight">AI Developer Placement Call</h4>
+                      <p className="text-sm text-muted-foreground leading-relaxed mb-6">
+                        Share what you need built, then book a 30-min discovery call directly.
+                      </p>
+                      
+                      <div className="space-y-3 mb-6">
+                        <div>
+                          <label htmlFor="hire-name" className="sr-only">Your name</label>
+                          <input id="hire-name" type="text" placeholder="Your name" autoComplete="name" className="w-full rounded-lg border border-border bg-card px-3.5 py-2.5 text-sm text-foreground placeholder:text-muted-foreground/70 focus:border-primary-purple/60 focus:outline-none focus:ring-1 focus:ring-primary-purple/30" />
+                        </div>
+                        <div>
+                          <label htmlFor="hire-email" className="sr-only">Work email</label>
+                          <input id="hire-email" type="email" placeholder="Work email" autoComplete="email" className="w-full rounded-lg border border-border bg-card px-3.5 py-2.5 text-sm text-foreground placeholder:text-muted-foreground/70 focus:border-primary-purple/60 focus:outline-none focus:ring-1 focus:ring-primary-purple/30" />
+                        </div>
+                        <a href="https://cal.com/walidboulanouar/consultation" target="_blank" rel="noopener noreferrer" className="group/cta inline-flex w-full items-center justify-center gap-2 rounded-lg bg-primary-purple px-4 py-2.5 text-sm font-semibold text-white transition-all hover:bg-primary-purple/90">
+                          <span>Continue to pick a time</span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-arrow-right transition-transform group-hover/cta:translate-x-0.5"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                        </a>
+                      </div>
+
+                      <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-foreground border-t border-border pt-5">
+                        <div className="flex items-center gap-2">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-muted-foreground"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                          <span>30min</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <span className="flex h-5 w-5 items-center justify-center rounded bg-foreground text-background text-[9px] font-bold">Cal</span>
+                          <span>Google Meet</span>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <h4 className="text-xl font-bold text-foreground mb-6">AI Developer Hiring Call</h4>
-                <p className="text-sm text-muted-foreground mb-6 leading-relaxed">
-                  Share what you need built, then schedule the call directly on this page.
-                </p>
-                <div className="space-y-4 flex-1">
-                  <input
-                    type="text"
-                    placeholder="Your name"
-                    className="w-full bg-background border border-border px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary-purple/50 transition-colors"
-                  />
-                  <input
-                    type="email"
-                    placeholder="Work email"
-                    className="w-full bg-background border border-border px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary-purple/50 transition-colors"
-                  />
-                  <button className="w-full bg-primary-purple hover:bg-primary-purple/90 text-white px-6 py-3 text-sm font-bold tracking-wide transition-colors flex items-center justify-center gap-2">
-                    Continue to pick a time →
-                  </button>
-                </div>
-                <div className="mt-6 pt-6 border-t border-border">
-                  <p className="text-xs text-muted-foreground mb-4">Free call, no commitment. Wrong fit? Replaced free within 90 days.</p>
-                  <div className="flex items-center gap-4 text-xs text-muted-foreground">
-                    <span className="flex items-center gap-1.5">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-                      30min
-                    </span>
-                    <span className="flex items-center gap-1.5">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
-                      Google Meet
-                    </span>
-                  </div>
-                </div>
+              </div>
+            </div>
+
+            {/* Bottom features indicator */}
+            <div className="mt-8 flex items-center justify-center gap-8 text-sm text-muted-foreground font-medium flex-wrap">
+              <div className="flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary-purple"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                <span>Usually responds in 1 hour</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary-purple"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                <span>No commitment required</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary-purple"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                <span>90-Day Free Replacement Guarantee</span>
               </div>
             </div>
           </div>
