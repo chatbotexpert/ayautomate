@@ -13,7 +13,7 @@ export default function HowWeWorkSection() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-foreground text-background px-8 py-4 text-sm font-bold uppercase tracking-widest transition-all duration-300 hover:bg-primary-purple hover:text-white"
           >
-            BOOK A CALL
+            Book a Call
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17h10V7"/><path d="M17 17 7 7"/></svg>
           </a>
         </div>
@@ -229,7 +229,7 @@ export default function HowWeWorkSection() {
                 className="flex-1 bg-[#0A0A10] border border-[#2B2B40] px-4 py-3 text-[13px] focus:outline-none focus:border-[#8082C1] text-white placeholder:text-[#6B7280] rounded-sm"
               />
               <button className="bg-[#8082C1] text-white px-6 py-3 text-[12px] font-bold uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-[#6869A6] transition-colors rounded-sm whitespace-nowrap">
-                GET THE TEARDOWNS
+                Get the teardowns
                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="7" x2="17" y2="17"></line><polyline points="17 7 17 17 7 17"></polyline></svg>
               </button>
             </div>
