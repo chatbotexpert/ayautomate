@@ -30,7 +30,7 @@ const services = [
   {
     category: 'Grow',
     items: [
-      { name: 'Team Augmentation', desc: 'AI-native engineers, placed in 2 to 4 weeks', href: '/services/team-augmentation', icon: 'users' },
+      { name: 'Team Augmentation', desc: 'AI-native engineers, placed in 2 to 4 weeks', href: '/services/hire-ai-developers', icon: 'users' },
       { name: 'AI Strategy & Fractional CAIO', desc: 'Where to invest your AI dollar', href: '/services/ai-strategy', icon: 'compass' },
       { name: 'AI Workshops', desc: 'Up-level your team in one week', href: '/services/ai-workshops', icon: 'graduation' },
       { name: 'Custom Training', desc: 'Hands-on programs tailored to your stack', href: '/services/custom-training', icon: 'book' },
