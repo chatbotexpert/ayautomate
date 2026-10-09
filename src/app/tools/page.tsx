@@ -62,7 +62,6 @@ export default function ToolsPage() {
                 placeholder="you@company.com"
                 aria-label="Email address"
                 className="min-w-0 flex-1 border border-border bg-background px-3 py-2.5 text-base sm:text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary-purple/30 focus:border-primary-purple"
-                value=""
               />
               <button
                 type="submit"

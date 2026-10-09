@@ -10244,7 +10244,6 @@ export default function ModelsPage() {
                         fontSize: "13px",
                         width: "180px",
                       }}
-                      value=""
                     />
                     <select
                       style={{
