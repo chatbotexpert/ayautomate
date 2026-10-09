@@ -239,7 +239,7 @@ export default function Home() {
       </div>
 
       {/* Built to Ship Section */}
-      <section id="why-us" className="relative bg-[#05050A] border-t border-[#1F1F2E] text-foreground">
+      <section id="why-us" className="relative bg-background border-t border-border text-foreground">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-4 pt-24 sm:pt-32 pb-24">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-end mb-14">
             <div className="lg:col-span-7">
@@ -347,8 +347,8 @@ export default function Home() {
       <OurTeamSection />
 
       {/* Book a Call Band */}
-      <div className="flex justify-center py-12 bg-[#05050A] border-t border-[#1F1F2E] relative z-20">
-        <a href="#ai-agent-booking"><button type="button" className="relative z-20 group inline-flex items-center justify-center gap-3 px-8 sm:px-12 py-4 sm:py-6 font-bold uppercase text-xs transition-all w-full sm:w-auto sm:min-w-[250px] bg-white text-black hover:bg-[#8082C1] hover:text-white">
+      <div className="flex justify-center py-12 bg-background border-t border-border relative z-20">
+        <a href="#ai-agent-booking"><button type="button" className="relative z-20 group inline-flex items-center justify-center gap-3 px-8 sm:px-12 py-4 sm:py-6 font-bold uppercase text-xs transition-all w-full sm:w-auto sm:min-w-[250px] bg-foreground text-background hover:bg-primary-purple hover:text-white">
           Book a Call
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1">
             <path d="M7 7h10v10"></path>

@@ -96,13 +96,13 @@ export default function TestimonialCarousel() {
           <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-[#8082C1] mb-4">
             DON'T TAKE IT FROM US
           </p>
-          <h2 className="text-4xl md:text-5xl lg:text-[52px] font-medium tracking-tight text-white leading-[1.1]">
+          <h2 className="text-4xl md:text-5xl lg:text-[52px] font-medium tracking-tight text-foreground leading-[1.1]">
             Hear it from the <span className="text-[#8082C1] italic">operators</span><br />
             <span className="text-[#8082C1] italic">we shipped for.</span>
           </h2>
         </div>
         <div className="max-w-[320px] mb-2">
-          <p className="text-[#8F8F99] text-[15px] leading-relaxed">
+          <p className="text-muted-foreground text-[15px] leading-relaxed">
             Real founders. Real cameras. No scripts. Different<br className="hidden md:block" /> scales, same agent stack.
           </p>
         </div>
@@ -148,7 +148,7 @@ export default function TestimonialCarousel() {
                   <>
                     {/* Play Button Overlay (shown when paused, but since we autoplay, we'll just show it for a sec or keep it as UI element) */}
                     <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                      <div className="w-14 h-14 rounded-full bg-[#1a1a24]/80 backdrop-blur-sm flex items-center justify-center">
+                      <div className="w-14 h-14 rounded-full bg-card/80 backdrop-blur-sm flex items-center justify-center">
                         <svg
                           width="24"
                           height="24"

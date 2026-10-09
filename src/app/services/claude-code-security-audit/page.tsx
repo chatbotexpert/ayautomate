@@ -2420,7 +2420,7 @@ export default function ClaudeCodeSecurityAuditPage() {
             </div>
           </div>
         </section>
-        <div className="bg-black pb-16">
+        <div className="bg-background pb-16">
           <TestimonialCarousel />
         </div>
         <section

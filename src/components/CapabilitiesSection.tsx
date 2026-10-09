@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function CapabilitiesSection() {
   return (
-    <section id="services" className="bg-[#131319] border-t border-border-strong text-foreground relative py-24 sm:py-32 overflow-hidden transition-colors duration-500">
+    <section id="services" className="bg-background border-t border-border text-foreground relative py-24 sm:py-32 overflow-hidden transition-colors duration-500">
   <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-4 relative z-10">
     <div className="text-center mb-16">
       <div className="inline-flex items-center gap-2 px-3 py-1 border border-primary-purple/30 bg-primary-purple/10 mb-6">

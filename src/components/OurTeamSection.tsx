@@ -2,7 +2,7 @@ import React from 'react';
 
 const OurTeamSection = () => {
   return (
-    <section className="bg-[#0C0C12] py-32 w-full overflow-hidden relative">
+    <section className="bg-background py-32 w-full overflow-hidden relative">
       <div className="max-w-[1300px] mx-auto px-4 sm:px-6 relative z-10">
         
         {/* Header Section (Left Aligned) */}

@@ -1535,7 +1535,7 @@ export default function TeamAugmentationPage() {
             </div>
           </div>
         </section>
-        <div className="bg-black pb-16">
+        <div className="bg-background pb-16">
           <TestimonialCarousel />
         </div>
         <section className="bg-background/50 border-t border-border text-foreground relative py-24 sm:py-32 overflow-hidden">

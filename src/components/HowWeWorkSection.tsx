@@ -5,7 +5,7 @@ export default function HowWeWorkSection() {
   return (
     <>
       {/* Dark Band for the Book a Call Button */}
-      <section className="bg-[#0F0F15] py-12 border-t border-border-strong w-full">
+      <section className="bg-background py-12 border-t border-border-strong w-full">
         <div className="flex justify-center">
           <a
             href="https://cal.com/walidboulanouar/consultation"
@@ -20,7 +20,7 @@ export default function HowWeWorkSection() {
       </section>
 
       {/* Main How We Work Section */}
-      <section id="how-work-container" className="bg-[#0C0C12] border-t border-[#1F1F2E] text-foreground relative py-24 sm:py-32 overflow-hidden transition-colors duration-500">
+      <section id="how-work-container" className="bg-background border-t border-border text-foreground relative py-24 sm:py-32 overflow-hidden transition-colors duration-500">
         <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
 
           <div className="text-center mb-20 flex flex-col items-center">
@@ -74,8 +74,8 @@ export default function HowWeWorkSection() {
                   <div className="relative">
                     <button className="w-full text-left transition-all duration-300 group cursor-pointer">
                       <div className="relative mb-6 flex items-center justify-center transition-all duration-300 scale-100 group-hover:scale-105">
-                        <div className="absolute w-24 h-24 rounded-full transition-all duration-300 bg-[#12121A] border-2 border-[#1F1F2E] group-hover:border-[#8082C1]/50"></div>
-                        <div className="relative w-20 h-20 rounded-full flex items-center justify-center transition-all duration-300 bg-[#0C0C12] text-[#8F8F99] group-hover:text-[#8082C1] border border-[#1F1F2E]">
+                        <div className="absolute w-24 h-24 rounded-full transition-all duration-300 bg-[#12121A] border-2 border-border group-hover:border-[#8082C1]/50"></div>
+                        <div className="relative w-20 h-20 rounded-full flex items-center justify-center transition-all duration-300 bg-background text-[#8F8F99] group-hover:text-[#8082C1] border border-border">
                           <Map className="w-8 h-8" />
                         </div>
                       </div>
@@ -96,8 +96,8 @@ export default function HowWeWorkSection() {
                   <div className="relative">
                     <button className="w-full text-left transition-all duration-300 group cursor-pointer">
                       <div className="relative mb-6 flex items-center justify-center transition-all duration-300 scale-100 group-hover:scale-105">
-                        <div className="absolute w-24 h-24 rounded-full transition-all duration-300 bg-[#12121A] border-2 border-[#1F1F2E] group-hover:border-[#8082C1]/50"></div>
-                        <div className="relative w-20 h-20 rounded-full flex items-center justify-center transition-all duration-300 bg-[#0C0C12] text-[#8F8F99] group-hover:text-[#8082C1] border border-[#1F1F2E]">
+                        <div className="absolute w-24 h-24 rounded-full transition-all duration-300 bg-[#12121A] border-2 border-border group-hover:border-[#8082C1]/50"></div>
+                        <div className="relative w-20 h-20 rounded-full flex items-center justify-center transition-all duration-300 bg-background text-[#8F8F99] group-hover:text-[#8082C1] border border-border">
                           <Settings className="w-8 h-8" />
                         </div>
                       </div>
@@ -118,8 +118,8 @@ export default function HowWeWorkSection() {
                   <div className="relative">
                     <button className="w-full text-left transition-all duration-300 group cursor-pointer">
                       <div className="relative mb-6 flex items-center justify-center transition-all duration-300 scale-100 group-hover:scale-105">
-                        <div className="absolute w-24 h-24 rounded-full transition-all duration-300 bg-[#12121A] border-2 border-[#1F1F2E] group-hover:border-[#8082C1]/50"></div>
-                        <div className="relative w-20 h-20 rounded-full flex items-center justify-center transition-all duration-300 bg-[#0C0C12] text-[#8F8F99] group-hover:text-[#8082C1] border border-[#1F1F2E]">
+                        <div className="absolute w-24 h-24 rounded-full transition-all duration-300 bg-[#12121A] border-2 border-border group-hover:border-[#8082C1]/50"></div>
+                        <div className="relative w-20 h-20 rounded-full flex items-center justify-center transition-all duration-300 bg-background text-[#8F8F99] group-hover:text-[#8082C1] border border-border">
                           <TrendingUp className="w-8 h-8" />
                         </div>
                       </div>
@@ -140,7 +140,7 @@ export default function HowWeWorkSection() {
 
                 {/* Detail Card */}
                 <div className="mt-12">
-                  <div className="bg-card border border-[#1F1F2E] p-8 md:p-12 hover:border-[#8082C1]/50 transition-all duration-300 relative overflow-hidden group">
+                  <div className="bg-card border border-border p-8 md:p-12 hover:border-[#8082C1]/50 transition-all duration-300 relative overflow-hidden group">
                     
                     <div className="absolute top-0 left-0 w-[3px] h-[3px] border-t border-l border-[#8082C1]/50 opacity-0 group-hover:opacity-100 transition-opacity z-20"></div>
                     <div className="absolute bottom-0 right-0 w-[3px] h-[3px] border-b border-r border-[#8082C1]/50 opacity-0 group-hover:opacity-100 transition-opacity z-20"></div>
@@ -188,7 +188,7 @@ export default function HowWeWorkSection() {
                       </div>
                       
                       <div className="md:col-span-1">
-                        <div className="bg-[#12121A] border border-[#1F1F2E] p-6">
+                        <div className="bg-[#12121A] border border-border p-6">
                           <div className="flex items-center gap-2 mb-3">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4 text-[#F59E0B]"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
                             <span className="text-xs font-sans uppercase tracking-widest text-[#F59E0B]">Next Step</span>
@@ -214,7 +214,7 @@ export default function HowWeWorkSection() {
       </section>
 
       {/* Section for Newsletter Box - Distinct Background Band */}
-      <section className="bg-[#12121A] py-16 border-t border-[#1F1F2E] w-full flex justify-center">
+      <section className="bg-[#12121A] py-16 border-t border-border w-full flex justify-center">
         <div className="w-full max-w-[700px] px-4 sm:px-6">
           <div className="bg-[#181824] border border-[#2B2B40] border-t-[3px] border-t-[#8082C1] p-6 sm:p-8 relative overflow-hidden shadow-2xl rounded-sm">
             <p className="text-[10px] font-bold text-[#8082C1] uppercase tracking-[0.2em] mb-3">FREE WEEKLY BRIEF</p>
