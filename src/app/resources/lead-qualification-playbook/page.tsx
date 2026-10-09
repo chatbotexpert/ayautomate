@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "@/components/Navbar";
 import FooterSection from "@/components/FooterSection";
-import DeployAutomationSection from "@/components/DeployAutomationSection";
+import CallToActionSection from '@/components/CallToActionSection';
 import {
   ArrowUpRight,
   BookOpen,
@@ -520,7 +520,7 @@ Examples:{"\n"}
           </section>
         </main>
       </main>
-      <DeployAutomationSection />
+      <CallToActionSection />
       <FooterSection />
     </div>
   );

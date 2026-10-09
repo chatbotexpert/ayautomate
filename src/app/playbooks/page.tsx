@@ -1,6 +1,6 @@
 import Navbar from '@/components/Navbar';
 import FooterSection from '@/components/FooterSection';
-import DeployAutomationSection from '@/components/DeployAutomationSection';
+import CallToActionSection from '@/components/CallToActionSection';
 import Link from 'next/link';
 
 export const metadata = {
@@ -270,7 +270,7 @@ export default function PlaybooksPage() {
         </div>
       </section>
 
-      <DeployAutomationSection />
+      <CallToActionSection />
       <FooterSection />
     </div>
   );

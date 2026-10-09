@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import FooterSection from '@/components/FooterSection';
-import DeployAutomationSection from '@/components/DeployAutomationSection';
+import CallToActionSection from '@/components/CallToActionSection';
 
 const faqSections = [
   {
@@ -239,7 +239,7 @@ export default function FAQPage() {
         </div>
       </main>
 
-      <DeployAutomationSection />
+      <CallToActionSection />
       <FooterSection />
     </div>
   );

@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import FooterSection from '@/components/FooterSection';
-import DeployAutomationSection from '@/components/DeployAutomationSection';
+import CallToActionSection from '@/components/CallToActionSection';
 import { notFound } from 'next/navigation';
 import fsModule from 'fs';
 import path from 'path';
@@ -179,7 +179,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
         />
       </div>
 
-      <DeployAutomationSection />
+      <CallToActionSection />
       <FooterSection />
     </div>
   );

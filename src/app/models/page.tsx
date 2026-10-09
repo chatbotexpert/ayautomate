@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "@/components/Navbar";
 import FooterSection from "@/components/FooterSection";
-import DeployAutomationSection from "@/components/DeployAutomationSection";
+import CallToActionSection from '@/components/CallToActionSection';
 import {
   ArrowUpRight,
   BookOpen,
@@ -21595,7 +21595,7 @@ export default function ModelsPage() {
           </div>
         </main>
       </main>
-      <DeployAutomationSection />
+      <CallToActionSection />
       <FooterSection />
     </div>
   );

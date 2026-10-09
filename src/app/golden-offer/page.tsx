@@ -3,8 +3,8 @@
 import React from "react";
 import Navbar from "@/components/Navbar";
 import FooterSection from "@/components/FooterSection";
+import CallToActionSection from '@/components/CallToActionSection';
 import TestimonialCarousel from "@/components/TestimonialCarousel";
-import DeployAutomationSection from "@/components/DeployAutomationSection";
 
 export default function GoldenOfferPage() {
   return (
@@ -2706,7 +2706,7 @@ export default function GoldenOfferPage() {
           </section>
         </div>
       </main>
-      <DeployAutomationSection />
+      <CallToActionSection />
       <FooterSection />
     </div>
   );

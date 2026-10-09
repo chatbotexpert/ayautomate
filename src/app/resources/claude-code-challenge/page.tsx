@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import FooterSection from '@/components/FooterSection';
-import DeployAutomationSection from '@/components/DeployAutomationSection';
+import CallToActionSection from '@/components/CallToActionSection';
 import Link from 'next/link';
 import fs from 'fs';
 import path from 'path';
@@ -243,7 +243,7 @@ export default function ClaudeCodeChallengePage() {
         </div>
       </div>
 
-      <DeployAutomationSection />
+      <CallToActionSection />
       <FooterSection />
     </div>
   );

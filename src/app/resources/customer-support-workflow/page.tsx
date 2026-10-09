@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { ArrowLeft, ArrowRight, ArrowUpRight, BookOpen, CircleGauge, Settings2, ShieldCheck, Wrench, FileText, CheckCircle2, Workflow } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import FooterSection from '@/components/FooterSection';
-import DeployAutomationSection from '@/components/DeployAutomationSection';
+import CallToActionSection from '@/components/CallToActionSection';
 
 export default function CustomerSupportWorkflowPage() {
   return (
@@ -217,7 +217,7 @@ onTicket(ticket) {"{"}{"\n"}
           </div>
         </section>
 
-        <DeployAutomationSection />
+        <CallToActionSection />
       </main>
       <FooterSection />
     </div>
