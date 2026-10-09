@@ -1938,7 +1938,7 @@ export default function GoldenOfferPage() {
                 or{" "}
                 <a
                   className="text-primary-purple underline hover:no-underline"
-                  href="/services/hire-ai-developers"
+                  href="/services/engineer-placement"
                 >
                   Engineer Placement
                 </a>{" "}
