@@ -81,9 +81,16 @@ export default function CallToActionSection() {
         
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-            <a target="_blank" rel="noopener noreferrer" className="group relative inline-flex items-center gap-3 bg-primary-purple px-8 py-4 text-base font-bold text-white transition-all duration-300 hover:bg-primary-purple/90" href="https://cal.com/walidboulanouar/consultation">
-                <span aria-hidden="true" className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-gold-500/60 to-transparent"></span>
-                Book a 15-min call
+            <a 
+                href="https://cal.com/walidboulanouar/consultation" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="group relative inline-flex items-center justify-center gap-3 px-8 sm:px-10 py-4 sm:py-5 bg-[#FACC15] text-black font-bold text-sm sm:text-base tracking-widest uppercase transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(251,191,36,0.3)] w-full sm:w-auto"
+                style={{ clipPath: 'polygon(16px 0, 100% 0, 100% calc(100% - 16px), calc(100% - 16px) 100%, 0 100%, 0 16px)' }}
+            >
+                <div className="absolute inset-0 bg-white mix-blend-overlay opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                <Zap className="w-5 h-5 fill-black" />
+                <span>Initialize Automation</span>
                 <ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
             </a>
             
@@ -92,7 +99,7 @@ export default function CallToActionSection() {
                 className="group relative inline-flex items-center justify-center gap-2 px-8 sm:px-10 py-4 sm:py-5 border border-border-strong bg-card text-muted-foreground hover:text-foreground hover:border-primary-purple hover:bg-primary-purple/5 transition-all duration-300 uppercase text-xs sm:text-sm font-semibold tracking-widest rounded-none w-full sm:w-auto"
             >
                 <Mail className="w-4 h-4" />
-                <span>Book a Free Call</span>
+                <span>Book Free Call</span>
                 <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
             </a>
         </div>
