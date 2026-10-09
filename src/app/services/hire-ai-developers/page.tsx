@@ -63,13 +63,13 @@ export default function HireAiDevelopersPage() {
                   </span>
                 </div>
                 <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tight leading-[1.02] text-foreground">
-                  AI engineer placement inside your team.
-                  <br />
-                  <span className="text-primary-purple italic">
-                    {" "}
-                    One engineer, a fleet of agents, placed in 2 to 4 weeks.
-                  </span>
-                </h1>
+                AI developers for hire:
+                <br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-purple to-foreground">
+                  {" "}
+                  hire AI engineers in 2-4 weeks, from $60,000 a year
+                </span>
+              </h1>
                 <p className="mt-8 max-w-2xl text-lg md:text-xl text-muted-foreground leading-relaxed font-medium">
                   We embed one AI-native engineer from our own bench in your
                   team. They join your sprint, work in your repo and run a fleet
