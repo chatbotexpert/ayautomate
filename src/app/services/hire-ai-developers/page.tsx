@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "@/components/Navbar";
 import FooterSection from "@/components/FooterSection";
+import CallToActionSection from "@/components/CallToActionSection";
 import Link from "next/link";
 import { Metadata } from 'next';
 
@@ -434,6 +435,145 @@ export default function HireAiDevelopersPage() {
           </div>
         </section>
 
+
+        {/* ===== START YOUR PLACEMENT + STRATEGY CALL ===== */}
+        <section className="bg-background/50 border-t border-border text-foreground relative py-24 overflow-hidden">
+          <div className="absolute inset-0 bg-[size:24px_24px] pointer-events-none" style={{ opacity: 'var(--grid-opacity)' }}></div>
+          <div className="absolute inset-x-0 top-0 h-32 pointer-events-none bg-gradient-to-b from-background to-transparent"></div>
+          <div className="relative z-10 w-full max-w-6xl mx-auto px-4 md:px-6 lg:px-8 xl:px-4">
+            {/* Top CTA text */}
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center gap-2 border border-primary-purple/30 bg-background/70 px-3 py-1 mb-8 backdrop-blur-sm">
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full bg-primary-purple opacity-50 rounded-full"></span>
+                  <span className="relative inline-flex h-2 w-2 bg-primary-purple rounded-full"></span>
+                </span>
+                <span className="text-[11px] font-bold tracking-[0.25em] uppercase text-foreground">FREE HIRING CALL</span>
+              </div>
+              <h2 className="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight leading-[1.05] text-foreground mb-6">
+                Start your{" "}
+                <span className="text-primary-purple italic">2-4 week placement this week.</span>
+              </h2>
+              <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+                Book a free call. You leave knowing whether you need one developer or a small team, and which role fits. Placement runs 2-4 weeks from request to start.
+              </p>
+            </div>
+
+            {/* Strategy Call + Form */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 border border-border">
+              {/* Left: Strategy Call info */}
+              <div className="bg-card p-8 md:p-10 border-r border-border">
+                <h3 className="text-2xl font-bold text-foreground mb-4">Book a 30min Free Strategy Call</h3>
+                <p className="text-muted-foreground mb-2 leading-relaxed">
+                  In this call, we'll walk through your project scope, timeline, and goals - so we can both check if we're a fit. No obligation, no slide deck, just a working session.
+                </p>
+                <p className="text-sm text-muted-foreground mb-6">
+                  Don't want a call? Email{" "}
+                  <a href="mailto:walid@ayautomate.com" className="text-primary-purple hover:underline">walid@ayautomate.com</a>
+                </p>
+                <button className="inline-flex items-center gap-2 bg-foreground text-background hover:bg-primary-purple hover:text-white px-6 py-3 text-sm font-bold uppercase tracking-widest transition-all duration-300 mb-8">
+                  Book Now
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M7 17 17 7"></path><path d="M7 7h10v10"></path></svg>
+                </button>
+                <ul className="space-y-4 mb-10">
+                  {[
+                    { icon: '🗺️', text: 'Opportunity Map' },
+                    { icon: '⚡', text: 'Implementation Path' },
+                    { icon: '🔄', text: 'Fast Follow-Up' },
+                  ].map(item => (
+                    <li key={item.text} className="flex items-center gap-3 text-foreground font-medium">
+                      <span className="text-base">{item.icon}</span>
+                      {item.text}
+                    </li>
+                  ))}
+                </ul>
+                {/* Testimonial */}
+                <blockquote className="border-l-2 border-primary-purple/40 pl-5 mb-6">
+                  <p className="text-lg font-semibold text-foreground italic leading-snug mb-4">
+                    "We needed a very specific role and AY Automate helped us get an AI engineer pretty fast - someone who got quickly into our processes and our team."
+                  </p>
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-full bg-muted border border-border overflow-hidden">
+                      <img src="https://www.ayautomate.com/images/clients/faces/othmane-khadri.png" alt="Othmane Khadri" className="w-full h-full object-cover" />
+                    </div>
+                    <div>
+                      <div className="text-sm font-bold text-foreground">Othmane Khadri</div>
+                      <div className="text-xs text-muted-foreground">Founder, Earleads.com</div>
+                    </div>
+                  </div>
+                </blockquote>
+                {/* Call options */}
+                <div className="flex flex-wrap gap-4 mb-8">
+                  {[
+                    { icon: '📹', label: 'Video Call' },
+                    { icon: '📞', label: 'Phone Call' },
+                    { icon: '🏢', label: 'In-Person' },
+                  ].map(opt => (
+                    <div key={opt.label} className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <span>{opt.icon}</span> {opt.label}
+                    </div>
+                  ))}
+                </div>
+                {/* Featured in */}
+                <div>
+                  <p className="text-[10px] uppercase tracking-widest text-muted-foreground font-semibold mb-4">WE'VE CREATED PRODUCTS FEATURED IN</p>
+                  <div className="flex items-center gap-6 flex-wrap">
+                    <img src="https://www.ayautomate.com/press/dailymotion.svg" alt="Dailymotion" className="h-6 opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all" />
+                    <img src="https://www.ayautomate.com/press/fbm.svg" alt="FBM" className="h-6 opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all" />
+                    <img src="https://www.ayautomate.com/press/france-tv.svg" alt="France TV" className="h-6 opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all" />
+                  </div>
+                </div>
+                <p className="mt-6 text-xs text-muted-foreground">Usually responds within 24h. No commitment required.</p>
+              </div>
+
+              {/* Right: Booking form */}
+              <div className="bg-card p-8 md:p-10 flex flex-col">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-border">
+                    <img src="https://www.ayautomate.com/images/walid-profile.jpg" alt="Walid Boulanouar" className="w-full h-full object-cover" />
+                  </div>
+                  <div>
+                    <div className="font-bold text-foreground">Walid Boulanouar</div>
+                    <a href="https://www.linkedin.com/in/walid-boulanouar/" target="_blank" rel="noopener noreferrer" className="text-xs text-primary-purple hover:underline">View LinkedIn</a>
+                  </div>
+                </div>
+                <h4 className="text-xl font-bold text-foreground mb-6">AI Developer Hiring Call</h4>
+                <p className="text-sm text-muted-foreground mb-6 leading-relaxed">
+                  Share what you need built, then schedule the call directly on this page.
+                </p>
+                <div className="space-y-4 flex-1">
+                  <input
+                    type="text"
+                    placeholder="Your name"
+                    className="w-full bg-background border border-border px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary-purple/50 transition-colors"
+                  />
+                  <input
+                    type="email"
+                    placeholder="Work email"
+                    className="w-full bg-background border border-border px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary-purple/50 transition-colors"
+                  />
+                  <button className="w-full bg-primary-purple hover:bg-primary-purple/90 text-white px-6 py-3 text-sm font-bold tracking-wide transition-colors flex items-center justify-center gap-2">
+                    Continue to pick a time →
+                  </button>
+                </div>
+                <div className="mt-6 pt-6 border-t border-border">
+                  <p className="text-xs text-muted-foreground mb-4">Free call, no commitment. Wrong fit? Replaced free within 90 days.</p>
+                  <div className="flex items-center gap-4 text-xs text-muted-foreground">
+                    <span className="flex items-center gap-1.5">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                      30min
+                    </span>
+                    <span className="flex items-center gap-1.5">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                      Google Meet
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* ===== FAQ ===== */}
         <section className="bg-background/50 border-t border-border text-foreground relative py-20">
           <div className="w-full max-w-4xl mx-auto px-4 md:px-6 lg:px-8 xl:px-4">
@@ -496,6 +636,7 @@ export default function HireAiDevelopersPage() {
         </section>
 
       </div>
+      <CallToActionSection />
       <FooterSection />
     </div>
   );
